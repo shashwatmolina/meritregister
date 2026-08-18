@@ -58,15 +58,20 @@
     a{color:var(--stamp-dark);}
     .wrap{max-width:1080px; margin:0 auto; padding:0 20px;}
     .masthead{border-bottom:3px double var(--ink); padding:22px 0 16px; background:var(--surface);}
-    .masthead .wrap{display:flex; justify-content:space-between; align-items:flex-end; gap:12px; flex-wrap:wrap;}
+    .masthead .wrap{display:flex; justify-content:space-between; align-items:flex-start; gap:18px; flex-wrap:wrap;}
     .eyebrow{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 6px;}
     h1{font-size:30px; margin:0; font-weight:700; letter-spacing:-0.01em;}
     .masthead .sub{font-size:13px; color:var(--ink-soft); margin-top:6px; max-width:520px;}
+    .masthead-controls{display:flex; flex-direction:column; align-items:flex-end; gap:10px; margin-left:auto;}
     .rhs{text-align:right; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft);}
     .site-nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:12px;}
     .site-nav a, .theme-toggle{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; color:var(--ink-soft); border:1px solid var(--hairline); padding:6px 10px; border-radius:20px; background:var(--white); cursor:pointer;}
     .site-nav a:hover, .theme-toggle:hover{border-color:var(--stamp); color:var(--stamp-dark);}
-    .theme-toggle{display:inline-flex; align-items:center; justify-content:center; min-width:116px;}
+    .theme-toggle{
+      display:inline-flex; align-items:center; justify-content:center; min-width:116px;
+      border-radius:12px; padding:8px 14px; background:linear-gradient(180deg, rgba(255,255,255,0.96), rgba(245,240,230,0.96));
+      box-shadow:0 8px 18px rgba(29,42,56,0.04); font-weight:600;
+    }
 
     .page{padding:32px 0 48px;}
 
@@ -184,27 +189,30 @@
       .two-col{grid-template-columns:1fr;}
       .mini-grid{grid-template-columns:1fr;}
       .masthead .wrap{flex-direction:column; align-items:flex-start;}
-      .rhs{text-align:left;}
-      .stats-strip{grid-template-columns:repeat(2,minmax(140px,1fr));}
-      .stat:nth-child(2){border-right:none;}
-    }
+     .masthead-controls{width:100%; align-items:flex-start; margin-left:0;}
+     .rhs{text-align:left;}
+     .stats-strip{grid-template-columns:repeat(2,minmax(140px,1fr));}
+     .stat:nth-child(2){border-right:none;}
+   }
   </style>
 </head>
 <body>
   <header class="masthead">
-    <div class="wrap">
-      <div>
-        <p class="eyebrow">Independent &middot; Not affiliated with NMC or MCC</p>
-        <h1>The Merit Register</h1>
-        <p class="sub">A working ledger of every government MBBS college in India &mdash; core details for all 456, cutoff data as it gets added.</p>
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="merit-register-india.html">Directory</a>
-          <a href="about-this-site.html">About this project</a>
-          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">Dark mode</button>
+   <div class="wrap">
+     <div>
+       <p class="eyebrow">Independent &middot; Not affiliated with NMC or MCC</p>
+       <h1>The Merit Register</h1>
+       <p class="sub">A working ledger of every government MBBS college in India &mdash; core details for all 457, cutoff data as it gets added.</p>
+       <nav class="site-nav" aria-label="Main navigation">
+         <a href="merit-register-india.html">Directory</a>
+         <a href="about-this-site.html">About this project</a>
         </nav>
       </div>
-      <div class="rhs">Project overview<br>Version 0.1</div>
-    </div>
+     <div class="masthead-controls">
+       <div class="rhs">Project overview<br>Version 0.1</div>
+       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">Dark mode</button>
+     </div>
+   </div>
   </header>
 
   <main class="page">
@@ -224,7 +232,7 @@
         <aside class="meta-panel" aria-label="Project status overview">
           <div class="panel-head">Project snapshot</div>
           <ul class="fact-list">
-            <li><span class="label">Directory</span><strong>456 colleges</strong></li>
+            <li><span class="label">Directory</span><strong>457 colleges</strong></li>
             <li><span class="label">AIQ cutoffs</span><strong>57 colleges</strong></li>
             <li><span class="label">AIIMS detail</span><strong>20 colleges</strong></li>
             <li><span class="label">State quota</span><strong>32 added</strong></li>
@@ -233,10 +241,10 @@
       </section>
 
       <div class="stats-strip" aria-label="Data coverage summary">
-        <div class="stat"><div class="n">456 / 456</div><div class="l">Core directory info</div></div>
-        <div class="stat"><div class="n">57 / 456</div><div class="l">Any AIQ cutoff data</div></div>
-        <div class="stat"><div class="n">20 / 456</div><div class="l">Full AIIMS breakdown</div></div>
-        <div class="stat"><div class="n">32 / 456</div><div class="l">State quota cutoffs</div></div>
+        <div class="stat"><div class="n">457 / 457</div><div class="l">Core directory info</div></div>
+        <div class="stat"><div class="n">57 / 457</div><div class="l">Any AIQ cutoff data</div></div>
+        <div class="stat"><div class="n">20 / 457</div><div class="l">Full AIIMS breakdown</div></div>
+        <div class="stat"><div class="n">32 / 457</div><div class="l">State quota cutoffs</div></div>
       </div>
 
       <div class="mini-grid" aria-label="Project pillars">
@@ -272,7 +280,7 @@
 
         <article class="card">
           <h3>How it is built</h3>
-          <p>The site combines a nationwide directory with a partial cutoff dataset. The directory is structured around the full 456-college government MBBS list, while the cutoff layer is intentionally added only where data can be verified or clearly labelled with confidence.</p>
+          <p>The site combines a nationwide directory with a partial cutoff dataset. The directory is structured around the full 457-college government MBBS list, while the cutoff layer is intentionally added only where data can be verified or clearly labelled with confidence.</p>
         </article>
 
         <article class="card">
@@ -299,7 +307,7 @@
 
       <section class="section">
         <h2>How this is built &amp; what's still missing</h2>
-        <p>The college directory (name, location, management type, year established, seat intake) is sourced from National Medical Commission&ndash;derived listings for all 456 government MBBS colleges and cross-checked against the official seat count. Round-wise General-category AIQ cutoffs (39 colleges: Tamil Nadu/Puducherry + a handful of top national colleges) are sourced from MCC counselling data via one aggregator. Full category-wise (General/OBC/EWS/SC/ST) AIQ cutoffs now cover all 20 AIIMS, pieced together from two different aggregators &mdash; and those two sources disagree meaningfully for several colleges (for one AIIMS, final closing ranks reported as 1,537 vs 4,952 &mdash; a 3&times; gap). Cross-checking against the round-wise data suggests the lower/more-optimistic set of numbers may actually reflect an early round mislabelled as final, so every category figure here is tagged with a confidence level: <span class="conf-badge moderate">moderate</span> for numbers that could be cross-checked against a second source, <span class="conf-badge low">low</span> for single-source figures that couldn't be verified. Treat "low" figures as directional, not exact. Everything else &mdash; state-quota cutoffs for all 28 counselling authorities, category breakdowns beyond AIIMS, hostel details, and ragging records &mdash; is not yet populated, and nothing here is invented to fill the gaps.</p>
+        <p>The college directory (name, location, management type, year established, seat intake) is sourced from National Medical Commission&ndash;derived listings for all 457 government MBBS colleges and cross-checked against the official seat count. Round-wise General-category AIQ cutoffs (39 colleges: Tamil Nadu/Puducherry + a handful of top national colleges) are sourced from MCC counselling data via one aggregator. Full category-wise (General/OBC/EWS/SC/ST) AIQ cutoffs now cover all 20 AIIMS, pieced together from two different aggregators &mdash; and those two sources disagree meaningfully for several colleges (for one AIIMS, final closing ranks reported as 1,537 vs 4,952 &mdash; a 3&times; gap). Cross-checking against the round-wise data suggests the lower/more-optimistic set of numbers may actually reflect an early round mislabelled as final, so every category figure here is tagged with a confidence level: <span class="conf-badge moderate">moderate</span> for numbers that could be cross-checked against a second source, <span class="conf-badge low">low</span> for single-source figures that couldn't be verified. Treat "low" figures as directional, not exact. Everything else &mdash; state-quota cutoffs for all 28 counselling authorities, category breakdowns beyond AIIMS, hostel details, and ragging records &mdash; is not yet populated, and nothing here is invented to fill the gaps.</p>
         <p>On ragging specifically: there's no reliable centralized source of verified per-college incidents, and publishing unverified claims tied to a named institution risked being wrong. This build deliberately leaves that field blank rather than guess, and points to the official UGC helpline instead.</p>
         <p style="margin-top:20px;">Always confirm against the official sources before making decisions: <a href="https://mcc.nic.in" target="_blank" rel="noopener">mcc.nic.in</a> (AIQ counselling) and <a href="https://www.nmc.org.in" target="_blank" rel="noopener">nmc.org.in</a> (recognised college list). For any ragging concern, the National Anti-Ragging Helpline is 24&times;7 toll-free at <strong>1800-180-5522</strong> or helpline@antiragging.in.</p>
       </section>
