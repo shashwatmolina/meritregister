@@ -22,28 +22,51 @@
       --white:#FBFBF7;
       --shadow: 0 2px 10px rgba(29,42,56,0.08);
       --radius: 3px;
+      --surface: rgba(255,255,255,0.82);
+      --surface-strong: #F8F7F2;
+      --bg-1:#f0f0e6;
+      --bg-2:#e7e2d5;
     }
     *{box-sizing:border-box;}
     body{
       margin:0;
-      background:var(--paper);
+      background:linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
       color:var(--ink);
       font-family:'IBM Plex Sans', sans-serif;
       line-height:1.6;
       -webkit-font-smoothing:antialiased;
     }
+    body[data-theme="dark"]{
+      --paper:#111b25;
+      --paper-2:#1a2834;
+      --ink:#edf3f8;
+      --ink-soft:#a8b7c3;
+      --hairline:#2f3d4d;
+      --stamp:#dd8d7c;
+      --stamp-dark:#f4b9a4;
+      --reach:#8ecdb1;
+      --reach-bg:#12352d;
+      --gold:#e7c57a;
+      --white:#131d28;
+      --surface: rgba(18,25,34,0.92);
+      --surface-strong: #1b2a35;
+      --bg-1:#0d141b;
+      --bg-2:#111c27;
+      --shadow: 0 18px 34px rgba(0,0,0,0.28), 0 2px 10px rgba(0,0,0,0.16);
+    }
     h1,h2,h3,.display{font-family:'Roboto Slab', serif;}
     a{color:var(--stamp-dark);}
     .wrap{max-width:1080px; margin:0 auto; padding:0 20px;}
-    .masthead{border-bottom:3px double var(--ink); padding:22px 0 16px;}
+    .masthead{border-bottom:3px double var(--ink); padding:22px 0 16px; background:var(--surface);}
     .masthead .wrap{display:flex; justify-content:space-between; align-items:flex-end; gap:12px; flex-wrap:wrap;}
     .eyebrow{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 6px;}
     h1{font-size:30px; margin:0; font-weight:700; letter-spacing:-0.01em;}
     .masthead .sub{font-size:13px; color:var(--ink-soft); margin-top:6px; max-width:520px;}
     .rhs{text-align:right; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft);}
     .site-nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:12px;}
-    .site-nav a{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; color:var(--ink-soft); border:1px solid var(--hairline); padding:6px 10px; border-radius:20px; background:var(--white);}
-    .site-nav a:hover{border-color:var(--stamp); color:var(--stamp-dark);}
+    .site-nav a, .theme-toggle{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; text-decoration:none; color:var(--ink-soft); border:1px solid var(--hairline); padding:6px 10px; border-radius:20px; background:var(--white); cursor:pointer;}
+    .site-nav a:hover, .theme-toggle:hover{border-color:var(--stamp); color:var(--stamp-dark);}
+    .theme-toggle{display:inline-flex; align-items:center; justify-content:center; min-width:116px;}
 
     .page{padding:32px 0 48px;}
 
@@ -129,6 +152,33 @@
     .note{background:#FBF3EC; border:1px solid #E7CBB4; border-radius:3px; padding:12px 14px; color:var(--stamp-dark); font-size:14px;}
     footer{padding:20px 0 40px; text-align:center; font-size:11.5px; color:var(--ink-soft);}
 
+    body[data-theme="dark"] .intro,
+    body[data-theme="dark"] .meta-panel,
+    body[data-theme="dark"] .card,
+    body[data-theme="dark"] .pillar-card,
+    body[data-theme="dark"] .stats-strip,
+    body[data-theme="dark"] .site-nav a,
+    body[data-theme="dark"] .theme-toggle {
+      background: var(--surface-strong);
+      border-color: var(--hairline);
+      box-shadow: var(--shadow);
+    }
+    body[data-theme="dark"] .meta-panel {
+      background: linear-gradient(180deg, rgba(26,32,40,0.96), rgba(18,25,34,0.96));
+    }
+    body[data-theme="dark"] .pillar-card {
+      background: linear-gradient(180deg, rgba(25,34,42,0.96), rgba(18,24,31,0.96));
+    }
+    body[data-theme="dark"] .note {
+      background: rgba(154,101,58,0.18);
+      border-color: rgba(231,203,180,0.25);
+      color: #f4d6b3;
+    }
+    body[data-theme="dark"] .site-nav a,
+    body[data-theme="dark"] .theme-toggle {
+      color: var(--ink);
+    }
+
     @media (max-width:720px){
       .hero{grid-template-columns:1fr;}
       .two-col{grid-template-columns:1fr;}
@@ -150,6 +200,7 @@
         <nav class="site-nav" aria-label="Main navigation">
           <a href="merit-register-india.html">Directory</a>
           <a href="about-this-site.html">About this project</a>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">Dark mode</button>
         </nav>
       </div>
       <div class="rhs">Project overview<br>Version 0.1</div>
@@ -279,5 +330,36 @@
   </main>
 
   <footer>Independent student resource &middot; not an official government site &middot; verify before relying on it</footer>
+  <script>
+    function applyTheme(theme) {
+      const isDark = theme === 'dark';
+      document.body.dataset.theme = isDark ? 'dark' : 'light';
+      const toggle = document.getElementById('theme-toggle');
+      if (toggle) {
+        toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
+        toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+    }
+
+    function initTheme() {
+      try {
+        const savedTheme = localStorage.getItem('merit-register-theme');
+        applyTheme(savedTheme || 'light');
+      } catch (e) {
+        applyTheme('light');
+      }
+
+      const toggle = document.getElementById('theme-toggle');
+      if (toggle) {
+        toggle.addEventListener('click', () => {
+          const nextTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+          try { localStorage.setItem('merit-register-theme', nextTheme); } catch (e) {}
+          applyTheme(nextTheme);
+        });
+      }
+    }
+
+    initTheme();
+  </script>
 </body>
 </html>

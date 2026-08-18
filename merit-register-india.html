@@ -24,6 +24,11 @@
   --white:#FFFDF9;
   --shadow: 0 18px 34px rgba(22,31,43,0.07), 0 2px 10px rgba(22,31,43,0.04);
   --radius: 12px;
+  --surface: rgba(255,255,255,0.82);
+  --surface-alt: rgba(255,255,255,0.58);
+  --surface-strong: #F8F4EE;
+  --bg-1:#f3efe7;
+  --bg-2:#efe8dc;
 }
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -31,11 +36,124 @@ body{
   margin:0;
   background:
     radial-gradient(circle at top left, rgba(156,56,46,0.05), transparent 24%),
-    linear-gradient(180deg, #f3efe7 0%, #efe8dc 100%);
+    linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
   color:var(--ink);
   font-family:'IBM Plex Sans', sans-serif;
   line-height:1.5;
   -webkit-font-smoothing:antialiased;
+}
+body[data-theme="dark"]{
+  --paper:#111a24;
+  --paper-2:#1a2733;
+  --paper-3:#1d2b38;
+  --ink:#edf3f8;
+  --ink-soft:#a9b7c4;
+  --hairline:#2d3d4d;
+  --stamp:#dd8d7c;
+  --stamp-dark:#f4bca9;
+  --reach:#8ad0b2;
+  --reach-bg:#12362d;
+  --gold:#e9c884;
+  --gold-soft:#2d261d;
+  --white:#0f1821;
+  --surface: rgba(18,25,34,0.92);
+  --surface-alt: rgba(22,31,40,0.9);
+  --surface-strong: #1b2a35;
+  --bg-1:#0d141b;
+  --bg-2:#111c27;
+  --shadow: 0 18px 34px rgba(0,0,0,0.3), 0 2px 10px rgba(0,0,0,0.16);
+}
+
+body[data-theme="dark"] .masthead,
+body[data-theme="dark"] .filters,
+body[data-theme="dark"] .checker,
+body[data-theme="dark"] .modal,
+body[data-theme="dark"] .msection,
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .stat,
+body[data-theme="dark"] .methodology .card,
+body[data-theme="dark"] .site-nav a,
+body[data-theme="dark"] .theme-toggle,
+body[data-theme="dark"] .load-more,
+body[data-theme="dark"] .chip,
+body[data-theme="dark"] .modal-star,
+body[data-theme="dark"] .mrow,
+body[data-theme="dark"] .college-row,
+body[data-theme="dark"] .badge,
+body[data-theme="dark"] .pillar-card,
+body[data-theme="dark"] .intro,
+body[data-theme="dark"] .meta-panel,
+body[data-theme="dark"] .stats-strip,
+body[data-theme="dark"] .result-row,
+body[data-theme="dark"] .field input,
+body[data-theme="dark"] .field select,
+body[data-theme="dark"] .filters input,
+body[data-theme="dark"] .filters select,
+body[data-theme="dark"] #aiq-category-select,
+body[data-theme="dark"] #state-category-select{
+  background: var(--surface-strong);
+}
+
+body[data-theme="dark"] .checker{
+  background: linear-gradient(180deg, rgba(20,28,36,0.96) 0%, rgba(24,35,43,0.96) 100%);
+}
+
+body[data-theme="dark"] .site-nav a,
+body[data-theme="dark"] .theme-toggle,
+body[data-theme="dark"] .chip,
+body[data-theme="dark"] .filters input,
+body[data-theme="dark"] .filters select,
+body[data-theme="dark"] .field input,
+body[data-theme="dark"] .field select,
+body[data-theme="dark"] #aiq-category-select,
+body[data-theme="dark"] #state-category-select,
+body[data-theme="dark"] .load-more,
+body[data-theme="dark"] .modal-star {
+  color: var(--ink);
+  border-color: var(--hairline);
+}
+
+body[data-theme="dark"] .checker-note,
+body[data-theme="dark"] .result-loc,
+body[data-theme="dark"] .loc,
+body[data-theme="dark"] .row-main .loc,
+body[data-theme="dark"] .mrow .k,
+body[data-theme="dark"] .state-cutoff-note,
+body[data-theme="dark"] .pending-note,
+body[data-theme="dark"] footer,
+body[data-theme="dark"] .directory > .wrap > p.lede,
+body[data-theme="dark"] .hero p.lede,
+body[data-theme="dark"] .masthead .sub,
+body[data-theme="dark"] .masthead .rhs,
+body[data-theme="dark"] .stat .l,
+body[data-theme="dark"] .result-count,
+body[data-theme="dark"] .eyebrow,
+body[data-theme="dark"] .site-nav a,
+body[data-theme="dark"] .theme-toggle,
+body[data-theme="dark"] .field label,
+body[data-theme="dark"] .msection h4,
+body[data-theme="dark"] .cutoff-table th,
+body[data-theme="dark"] .state-cutoff-table th,
+body[data-theme="dark"] .methodology p,
+body[data-theme="dark"] .methodology .card .l,
+body[data-theme="dark"] .methodology .card .n {
+  color: var(--ink-soft);
+}
+
+body[data-theme="dark"] .site-nav a:hover,
+body[data-theme="dark"] .theme-toggle:hover,
+body[data-theme="dark"] .chip:hover,
+body[data-theme="dark"] .load-more:hover {
+  border-color: var(--stamp);
+  color: var(--stamp-dark);
+}
+
+body[data-theme="dark"] .methodology {
+  background: #0b1118;
+}
+
+body[data-theme="dark"] .methodology .card {
+  background: rgba(255,255,255,0.02);
 }
 .num, .tabular{font-family:'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums;}
 h1,h2,h3,.display{font-family:'Roboto Slab', serif;}
@@ -48,7 +166,7 @@ button, input, select{font-family:inherit;}
 /* ---- Masthead ---- */
 .masthead{
   border-bottom:1px solid var(--hairline);
-  background:rgba(255,253,249,0.9);
+  background:var(--surface);
   backdrop-filter: blur(4px);
   padding:22px 0 18px;
   box-shadow:inset 0 -1px 0 rgba(22,31,43,0.04);
@@ -62,10 +180,13 @@ button, input, select{font-family:inherit;}
   background:rgba(255,255,255,0.52); border:1px solid var(--hairline); border-radius:10px; padding:8px 10px;
 }
 .site-nav{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:14px;}
-.site-nav a{
-  font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.1em; text-decoration:none; color:var(--ink-soft); border:1px solid var(--hairline); padding:7px 12px; border-radius:999px; background:var(--white); transition:all 0.18s ease;
+.site-nav a,
+.theme-toggle{
+  font-family:'IBM Plex Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:0.1em; text-decoration:none; color:var(--ink-soft); border:1px solid var(--hairline); padding:7px 12px; border-radius:999px; background:var(--white); transition:all 0.18s ease; cursor:pointer;
 }
-.site-nav a:hover{border-color:var(--stamp); color:var(--stamp-dark); transform:translateY(-1px); box-shadow:0 8px 18px rgba(156,56,46,0.08);}
+.site-nav a:hover,
+.theme-toggle:hover{border-color:var(--stamp); color:var(--stamp-dark); transform:translateY(-1px); box-shadow:0 8px 18px rgba(156,56,46,0.08);}
+.theme-toggle{display:inline-flex; align-items:center; justify-content:center; min-width:122px;}
  
 /* ---- Hero / rank checker ---- */
 .hero{padding:34px 0 28px; border-bottom:1px solid var(--hairline);}
@@ -154,23 +275,35 @@ button, input, select{font-family:inherit;}
   padding:6px 12px; border-radius:999px; font-size:12px; cursor:pointer; user-select:none; transition:all 0.15s ease;
 }
 .chip:hover{border-color:var(--stamp); color:var(--stamp-dark); transform:translateY(-1px);}
-.chip.active{background:var(--ink); color:var(--white); border-color:var(--ink); box-shadow:0 8px 12px rgba(22,31,43,0.12);}
+.chip.active{background:linear-gradient(180deg, #1e2b37 0%, #161f2b 100%); color:var(--white); border-color:rgba(22,31,43,0.8); box-shadow:0 10px 18px rgba(22,31,43,0.12);}
+body[data-theme="dark"] .chip.active{background:linear-gradient(180deg, #e5d2a8 0%, #d7b26d 100%); color:#111b25; border-color:rgba(231,197,120,0.9);}
 .result-count{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft); margin:2px 2px 10px;}
  
 .college-list{border-top:1px solid var(--hairline);}
 .college-row{
   display:grid; grid-template-columns: 34px 1fr auto auto auto; gap:14px; align-items:center;
   padding:12px 10px; border-bottom:1px solid var(--hairline); cursor:pointer; border-radius:10px; margin-top:2px; transition:all 0.18s ease;
+  border-left:3px solid transparent;
 }
-.college-row:hover{background:rgba(232,228,215,0.7); box-shadow: inset 0 0 0 1px rgba(156,56,46,0.04); transform:translateY(-1px);}
+.college-row:hover{background:rgba(232,228,215,0.7); box-shadow: inset 0 0 0 1px rgba(156,56,46,0.04), 0 10px 20px rgba(22,31,43,0.02); transform:translateY(-1px);}
+.college-row:has(.type-badge.AIIMS){border-left-color:rgba(156,56,46,0.9);}
+.college-row:has(.type-badge.ESIC){border-left-color:rgba(58,110,166,0.9);}
+.college-row:has(.type-badge.Central){border-left-color:rgba(107,91,154,0.9);}
+.college-row:has(.type-badge.JIPMER){border-left-color:rgba(44,143,117,0.9);}
+.college-row:has(.type-badge.AFMC){border-left-color:rgba(197,139,47,0.9);}
 .row-id{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-soft);}
 .row-main .name{font-size:14px; font-weight:600;}
 .row-main .loc{font-size:11.5px; color:var(--ink-soft); margin-top:1px;}
 .type-badge{
   font-family:'IBM Plex Mono',monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.06em;
-  padding:4px 8px; border-radius:8px; background:var(--paper-2); color:var(--ink-soft); border:1px solid var(--hairline); white-space:nowrap; font-weight:600;
+  padding:4px 8px; border-radius:8px; background:var(--paper-2); color:var(--ink-soft); border:1px solid var(--hairline); white-space:nowrap; font-weight:700; box-shadow:inset 0 1px 0 rgba(255,255,255,0.35);
 }
-.type-badge.AIIMS{color:var(--stamp-dark); border-color:rgba(156,56,46,0.35); background:#F9EEE9;}
+.type-badge.AIIMS{color:#fffaf7; border-color:rgba(156,56,46,0.7); background:linear-gradient(180deg, #b4473a 0%, #8f382f 100%);}
+.type-badge.ESIC{color:#edf6ff; border-color:rgba(49,98,168,0.7); background:linear-gradient(180deg, #3a6ea6 0%, #2c4d7c 100%);}
+.type-badge.Central{color:#f9f2ff; border-color:rgba(106,82,158,0.7); background:linear-gradient(180deg, #6b5b9a 0%, #4b3d73 100%);}
+.type-badge.AFMC{color:#fff9ec; border-color:rgba(176,124,32,0.7); background:linear-gradient(180deg, #c58b2f 0%, #9c6d22 100%);}
+.type-badge.JIPMER{color:#edfff8; border-color:rgba(35,109,89,0.7); background:linear-gradient(180deg, #2c8f75 0%, #1c6457 100%);}
+.type-badge.State{color:var(--ink); border-color:rgba(94,110,124,0.45); background:linear-gradient(180deg, rgba(232,222,199,0.92), rgba(216,206,184,0.9));}
 .seats-col{font-family:'IBM Plex Mono',monospace; font-size:13px; text-align:right; min-width:44px;}
 .cutoff-col{font-size:11px; text-align:right; min-width:78px; color:var(--ink-soft);}
 .cutoff-col.has-data{color:var(--reach); font-family:'IBM Plex Mono',monospace; font-weight:600;}
@@ -257,6 +390,7 @@ footer{padding:20px 0 40px; text-align:center; font-size:11.5px; color:var(--ink
       <nav class="site-nav" aria-label="Main navigation">
         <a href="merit-register-india.html">Directory</a>
         <a href="about-this-site.html">About this project</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">Dark mode</button>
       </nav>
     </div>
     <div class="rhs">Updated Aug 2026<br>v0.1 &mdash; early build</div>
@@ -379,7 +513,28 @@ function toggleShortlist(id){
 const TYPES = [...new Set(ALL_COLLEGES.map(c=>c.type))];
 const STATES = [...new Set(ALL_COLLEGES.map(c=>c.state))].sort();
 
+function applyTheme(theme){
+  const isDark = theme === 'dark';
+  document.body.dataset.theme = isDark ? 'dark' : 'light';
+  const toggle = document.getElementById('theme-toggle');
+  if(toggle){
+    toggle.textContent = isDark ? 'Light mode' : 'Dark mode';
+    toggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+}
+
+function initThemeToggle(){
+  const savedTheme = localStorage.getItem('merit-register-theme');
+  applyTheme(savedTheme || 'light');
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    const nextTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('merit-register-theme', nextTheme);
+    applyTheme(nextTheme);
+  });
+}
+
 function init(){
+  initThemeToggle();
   const stateSel = document.getElementById('state-select');
   STATES.forEach(s=>{
     const o = document.createElement('option'); o.value=s; o.textContent=s; stateSel.appendChild(o);
