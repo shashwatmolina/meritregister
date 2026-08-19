@@ -767,9 +767,10 @@ function renderStateQuotaTable(stateCutoff, selectedCategory){
   }));
 
   const categories = [...new Set(rows.map(row => row.categoryKey).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+  const defaultUR = categories.includes('UR') ? 'UR' : categories.includes('General') ? 'General' : (categories[0] || '');
   const normalizedSelection = selectedCategory ? normalizeStateCategoryName(selectedCategory) : '';
-  const category = categories.includes(normalizedSelection) ? normalizedSelection : (categories[0] || 'All');
-  const filtered = category && category !== 'All' ? rows.filter(row => row.categoryKey === category) : rows;
+  const category = categories.includes(normalizedSelection) ? normalizedSelection : defaultUR;
+  const filtered = category ? rows.filter(row => row.categoryKey === category) : rows;
 
   if (!rows.length || !filtered.length) return '<div class="pending-note">State quota data is available but not yet formatted for this college.</div>';
 
@@ -777,7 +778,7 @@ function renderStateQuotaTable(stateCutoff, selectedCategory){
     <div class="category-filter-row" style="margin-bottom:12px; display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
       <label for="state-category-select" style="font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-soft); font-weight:600;">Category</label>
       <select id="state-category-select" style="border:1px solid var(--hairline); background:var(--paper); padding:7px 10px; border-radius:2px; min-width:160px;">
-        ${['All', ...categories].map(opt => `<option value="${escapeHtml(opt)}" ${opt===category?'selected':''}>${escapeHtml(opt)}</option>`).join('')}
+        ${categories.map(opt => `<option value="${escapeHtml(opt)}" ${opt===category?'selected':''}>${escapeHtml(opt)}</option>`).join('')}
       </select>
     </div>
   `;
