@@ -1,0 +1,33 @@
+{
+  "shared_css_prefix_lines": 899,
+  "pages": [
+    "index.html",
+    "compare.html",
+    "about.html",
+    "status.html"
+  ],
+  "data_files": [
+    "academics.js",
+    "aiq-cutoffs-2025.js",
+    "aiq-cutoffs-2026.js",
+    "campus.js",
+    "clinical.js",
+    "colleges.js",
+    "comparison-calibration.js",
+    "deep-research.js",
+    "demand-trends.js",
+    "finances.js",
+    "hostels.js",
+    "research.js",
+    "state-quota-legacy.js",
+    "stats.js"
+  ],
+  "js_files": [
+    "about.js",
+    "common.js",
+    "compare.js",
+    "directory.js",
+    "status.js"
+  ],
+  "note": "The polluted extra hostel-like entries formerly nested in compare AIIMS_R1_MEDIAN_TRENDS were removed; demand trends now use the clean canonical directory series."
+}

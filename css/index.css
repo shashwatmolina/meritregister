@@ -1,0 +1,47 @@
+.site-nav a.active{border-color:var(--stamp);color:var(--stamp-dark);background:rgba(156,56,46,.06);font-weight:800;}
+
+/* ===== Persistent compare tray ===== */
+.compare-mini-btn,.modal-compare-btn{
+  appearance:none;border:1px solid var(--hairline);background:var(--panel-strong);color:var(--ink-soft);
+  border-radius:999px;padding:4px 8px;font-family:'IBM Plex Mono',monospace;font-size:8.5px;font-weight:700;
+  letter-spacing:.03em;cursor:pointer;white-space:nowrap;transition:.15s;
+}
+.compare-mini-btn:hover,.modal-compare-btn:hover{border-color:var(--stamp);color:var(--stamp-dark);background:rgba(156,56,46,.06)}
+.compare-mini-btn.is-active,.modal-compare-btn.is-active{border-color:rgba(156,56,46,.36);background:rgba(156,56,46,.10);color:var(--stamp-dark)}
+.row-subline{display:flex;align-items:center;gap:8px;min-width:0;margin-top:1px}
+.row-subline .loc{margin-top:0;min-width:0;flex:1}
+.top-match-row{grid-template-columns:24px minmax(0,1fr) auto auto;cursor:default}
+.top-match-open{appearance:none;border:0;background:none;color:inherit;padding:0;text-align:left;min-width:0;cursor:pointer;font:inherit}
+.top-match-open:hover .top-match-name{color:var(--stamp-dark);text-decoration:underline;text-underline-offset:3px}
+.compare-tray{
+  position:fixed;left:50%;bottom:16px;z-index:760;width:min(940px,calc(100% - 28px));
+  transform:translate(-50%,calc(100% + 34px));opacity:0;pointer-events:none;
+  background:var(--panel-strong);border:1px solid var(--hairline);border-radius:16px;
+  box-shadow:0 18px 50px rgba(10,18,28,.22);padding:11px 12px;transition:transform .22s ease,opacity .18s ease;
+}
+.compare-tray.is-visible{transform:translate(-50%,0);opacity:1;pointer-events:auto}
+body.compare-tray-active{padding-bottom:102px}
+.compare-tray-inner{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center}
+.compare-tray-title{font-size:11px;font-weight:800;white-space:nowrap}.compare-tray-title span{display:block;font-family:'IBM Plex Mono',monospace;font-size:8px;font-weight:600;color:var(--ink-soft);margin-top:2px}
+.compare-tray-chips{display:flex;gap:7px;min-width:0;overflow-x:auto;scrollbar-width:thin;padding:2px 0}
+.compare-tray-chip{display:flex;align-items:center;gap:6px;min-width:0;max-width:220px;border:1px solid var(--hairline);border-radius:999px;padding:6px 7px 6px 10px;background:var(--input-bg)}
+.compare-tray-chip-name{font-size:9.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.compare-tray-chip button{border:0;background:transparent;color:var(--ink-soft);font-size:15px;line-height:1;cursor:pointer;padding:0 2px}
+.compare-tray-action{display:flex;align-items:center;gap:7px}
+.compare-tray-clear{border:0;background:transparent;color:var(--ink-soft);font-size:9px;cursor:pointer;padding:7px}
+.compare-tray-go{border:1px solid var(--stamp);background:var(--stamp);color:#fff;border-radius:10px;padding:9px 12px;font-size:10.5px;font-weight:800;cursor:pointer;white-space:nowrap}
+.compare-tray-go:disabled{opacity:.42;cursor:not-allowed}
+.compare-tray-note{font-size:8.5px;color:var(--ink-soft);white-space:nowrap}
+.compare-tray-toast{position:fixed;left:50%;bottom:112px;z-index:770;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:8px 12px;border-radius:999px;font-size:9.5px;opacity:0;pointer-events:none;transition:.18s}
+.compare-tray-toast.show{opacity:1}
+@media(max-width:720px){
+  body.compare-tray-active{padding-bottom:154px}
+  .compare-tray{bottom:9px;width:calc(100% - 16px);padding:9px}
+  .compare-tray-inner{grid-template-columns:1fr auto;grid-template-areas:'title action' 'chips chips';gap:8px}
+  .compare-tray-title{grid-area:title}.compare-tray-action{grid-area:action}.compare-tray-chips{grid-area:chips}
+  .compare-tray-clear{display:none}.compare-tray-go{padding:8px 10px}
+  .top-match-row{grid-template-columns:20px minmax(0,1fr) auto}
+  .top-match-side{grid-column:2;justify-content:flex-start;margin-top:-3px}
+  .top-match-row>.compare-mini-btn{grid-column:3;grid-row:1 / span 2}
+  .row-subline{align-items:flex-start;flex-direction:column;gap:4px}
+}
