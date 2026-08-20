@@ -905,6 +905,8 @@ footer{padding:20px 0 40px; text-align:center; font-size:11.5px; color:var(--ink
   .field input,.field select{min-width:0; width:100%;}
   .result-row{grid-template-columns:1fr; row-gap:4px;}
 }
+
+.site-nav a.active{border-color:var(--stamp);color:var(--stamp-dark);background:rgba(156,56,46,.06);font-weight:800;}
 </style>
 </head>
 <body>
@@ -914,15 +916,15 @@ footer{padding:20px 0 40px; text-align:center; font-size:11.5px; color:var(--ink
     <div>
       <p class="eyebrow">Independent &middot; Not affiliated with NMC or MCC</p>
       <h1>The Merit Register</h1>
-      <p class="sub">A working ledger of every government MBBS college in India &mdash; core details for all 465, cutoff data as it gets added.</p>
+      <p class="sub">A working ledger of government MBBS colleges in India &mdash; counselling data, college intelligence and student-facing decision tools.</p>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="merit-register-india.html">Directory</a>
-        <a href="preference-list.html">My Preference List</a>
-        <a href="about-this-site.html">About this project</a>
+        <a class="active" aria-current="page" href="index.html">Directory</a>
+        <a href="compare.html">Compare colleges</a>
+        <a href="about.html">About this project</a>
       </nav>
     </div>
     <div class="masthead-controls">
-      <div class="rhs">Updated Aug 2026<br>v0.1 &mdash; early build</div>
+      <div class="rhs">Updated Aug 2026<br>working build</div>
       <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
           <span class="theme-switch" aria-hidden="true">
             <span class="theme-thumb">
@@ -944,7 +946,7 @@ footer{padding:20px 0 40px; text-align:center; font-size:11.5px; color:var(--ink
   <div class="wrap">
     <div class="hero-head">
       <h2>Where does your rank actually reach?</h2>
-      <p class="lede">Enter your NEET UG All India Rank and category. The predictor checks the loaded MCC All India Quota data and shows the earliest round in which each government medical college becomes reachable.</p>
+      <p class="lede">Enter your NEET UG All India Rank and category. The predictor checks the loaded MCC All India Quota data and shows the earliest round in which each government medical college becomes reachable. Use <a href="compare.html">Compare colleges</a> when you want to inspect shortlisted colleges in depth.</p>
     </div>
     <div class="checker">
       <div class="checker-form">

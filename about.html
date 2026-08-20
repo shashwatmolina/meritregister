@@ -352,7 +352,9 @@ body[data-theme="dark"] .moon-symbol{
      .stats-strip{grid-template-columns:repeat(2,minmax(140px,1fr));}
      .stat:nth-child(2){border-right:none;}
    }
-  </style>
+  
+.site-nav a.active{border-color:var(--stamp);color:var(--stamp-dark);background:rgba(156,56,46,.06);font-weight:800;}
+</style>
 </head>
 <body>
   <header class="masthead">
@@ -360,15 +362,15 @@ body[data-theme="dark"] .moon-symbol{
      <div>
        <p class="eyebrow">Independent &middot; Not affiliated with NMC or MCC</p>
        <h1>The Merit Register</h1>
-       <p class="sub">A working ledger of 465 public MBBS colleges in India &mdash; reconciled against NMC/MCC 2025 records, including late counselling additions.</p>
-       <nav class="site-nav" aria-label="Main navigation">
-         <a href="merit-register-india.html">Directory</a>
-         <a href="preference-list.html">My Preference List</a>
-         <a href="about-this-site.html">About this project</a>
-        </nav>
+       <p class="sub">A working ledger of government MBBS colleges in India &mdash; counselling data, college intelligence and student-facing decision tools.</p>
+      <nav class="site-nav" aria-label="Main navigation">
+         <a href="index.html">Directory</a>
+         <a href="compare.html">Compare colleges</a>
+         <a class="active" aria-current="page" href="about.html">About this project</a>
+       </nav>
       </div>
      <div class="masthead-controls">
-       <div class="rhs">Project overview<br>Version 0.1</div>
+       <div class="rhs">Updated Aug 2026<br>working build</div>
        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
           <span class="theme-switch" aria-hidden="true">
             <span class="theme-thumb">
@@ -392,118 +394,121 @@ body[data-theme="dark"] .moon-symbol{
         <div class="intro">
           <p class="eyebrow">Project overview</p>
           <h2 class="display">About this project</h2>
-          <p class="lede">This website is meant to act as a transparent, working ledger for government MBBS colleges in India. It focuses on the parts students actually need to understand quickly: college identity, location, seat count, and whether cutoff information is available for a given AIQ or category.</p>
+          <p class="lede">The Merit Register is a student-facing directory and counselling reference for government MBBS colleges in India. The current build combines a nationwide searchable directory, 2026 seat intake, MCC/AIQ cutoff layers, an AIQ rank predictor, demand trends, structured hostel research and a deep college-comparison workspace.</p>
           <div class="status">
-            <span class="badge done">Core directory complete</span>
-            <span class="badge done">AIQ data partial</span>
-            <span class="badge done">AIIMS category view partial</span>
+            <span class="badge done">Nationwide directory</span>
+            <span class="badge done">2026 seat intake</span>
+            <span class="badge done">MCC / AIQ cutoff layers</span>
+            <span class="badge done">AIQ predictor + compare</span>
           </div>
         </div>
 
         <aside class="meta-panel" aria-label="Project status overview">
-          <div class="panel-head">Project snapshot</div>
+          <div class="panel-head">Current build</div>
           <ul class="fact-list">
-            <li><span class="label">Directory</span><strong>465 colleges</strong></li>
-            <li><span class="label">AIQ cutoffs</span><strong>57 colleges</strong></li>
-            <li><span class="label">AIIMS R1–R3</span><strong>20 colleges</strong></li>
-            <li><span class="label">State quota</span><strong>32 added</strong></li>
+            <li><span class="label">Directory</span><strong>Nationwide GMC register</strong></li>
+            <li><span class="label">AIQ cutoffs</span><strong>Round-wise where loaded</strong></li>
+            <li><span class="label">Comparison</span><strong>30 deep profiles</strong></li>
+            <li><span class="label">Hostel research</span><strong>10 exhaustive profiles</strong></li>
           </ul>
         </aside>
       </section>
 
       <div class="stats-strip" aria-label="Data coverage summary">
-        <div class="stat"><div class="n">465 / 465</div><div class="l">Core directory info</div></div>
-        <div class="stat"><div class="n">160 / 465</div><div class="l">Any AIQ cutoff data</div></div>
-        <div class="stat"><div class="n">20 / 20</div><div class="l">AIIMS R1–R3 category data</div></div>
-        <div class="stat"><div class="n">79 / 465</div><div class="l">State quota cutoffs</div></div>
+        <div class="stat"><div class="n">2026</div><div class="l">Current seat-intake layer</div></div>
+        <div class="stat"><div class="n">AIQ</div><div class="l">Round-wise predictor</div></div>
+        <div class="stat"><div class="n">30</div><div class="l">Deep compare profiles</div></div>
+        <div class="stat"><div class="n">10</div><div class="l">Exhaustive hostel profiles</div></div>
       </div>
 
       <div class="mini-grid" aria-label="Project pillars">
         <article class="pillar-card">
           <div class="label">01 / Directory</div>
-          <h3>Full-college map</h3>
-          <p>Every government MBBS institution is listed with the essentials students look for first: state, city, management, seats, and age of the college.</p>
+          <h3>A nationwide government-college register</h3>
+          <p>Each entry brings together college identity, city and state, management/type, establishment year, current MBBS intake, AIQ data where available and structured research as coverage expands.</p>
         </article>
         <article class="pillar-card">
-          <div class="label">02 / Cutoffs</div>
-          <h3>Verified where possible</h3>
-          <p>AIQ and AIIMS data are included only where there is clear sourcing or a workable cross-check; uncertain numbers are left labelled rather than guessed.</p>
+          <div class="label">02 / Counselling data</div>
+          <h3>Round-wise cutoffs where available</h3>
+          <p>College detail panels can show category-wise MCC/AIQ closing AIRs and demand history. Missing rounds remain missing rather than being converted into a made-up cutoff.</p>
         </article>
         <article class="pillar-card">
-          <div class="label">03 / Transparency</div>
-          <h3>Data gaps stay visible</h3>
-          <p>State quota cutoffs and other missing fields are called out rather than silently filled in. The sheet is meant to be honest about what is known and what is not.</p>
+          <div class="label">03 / Decision tools</div>
+          <h3>Built for actual choice filling</h3>
+          <p>The site includes an AIQ rank predictor, searchable filters, detailed college modals and a separate comparison workspace for turning raw data into actual college decisions.</p>
         </article>
       </div>
 
       <div class="grid">
         <article class="card">
-          <h3>Scope</h3>
-          <p>The project covers government MBBS colleges across India, with:</p>
+          <h3>What the directory currently contains</h3>
           <ul>
-            <li>college name and location</li>
-            <li>state and city</li>
-            <li>management &amp; establishment year</li>
-            <li>MBBS seat count</li>
-            <li>AIQ cutoff data where it has been added</li>
+            <li>a nationwide government/public MBBS college directory</li>
+            <li>state, city, institution type and management</li>
+            <li>establishment year and 2026 MBBS seat intake</li>
+            <li>distinct tags for AIIMS, ESIC, Central, JIPMER, AFMC, State and ASMC colleges</li>
+            <li>new-2026 tags for colleges added this year</li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>How it is built</h3>
-          <p>The site combines a nationwide directory with a partial cutoff dataset. The directory is structured around the audited 465-college public MBBS list, while the cutoff layer is intentionally added only where data can be verified or clearly labelled with confidence.</p>
+          <h3>What the counselling layer does</h3>
+          <p>The embedded counselling layer is MCC/AIQ-focused. Depending on the college, the detail panel can show General/OBC/EWS/SC/ST category data and Round 1, Round 2 and Round 3 closing AIRs. The predictor reports the earliest round in which the entered AIR reaches a college.</p>
         </article>
 
         <article class="card">
-          <h3>What is complete</h3>
-          <p>Core college metadata is present for the full set of government MBBS colleges. This is the most reliable part of the build.</p>
+          <h3>Deep comparison coverage</h3>
+          <p>The comparison workspace currently has 30 researched college profiles across clinical exposure, academics, research/international pathway, campus life and finances. Ten of those also have exhaustive hostel reconstructions.</p>
           <div class="status">
-            <span class="badge done">Directory: complete</span>
-            <span class="badge done">AIQ general: partial</span>
-            <span class="badge done">AIIMS categories: partial</span>
-            <span class="badge done">State quota: partial</span>
+            <span class="badge done">30 deep profiles</span>
+            <span class="badge done">10 hostel deep-dives</span>
+            <span class="badge missing">National expansion ongoing</span>
           </div>
         </article>
 
         <article class="card">
-          <h3>What is still missing</h3>
-          <p>Several important sections are still incomplete, such as broader state quota coverage beyond the current Bihar and Madhya Pradesh research build, hostel details, and verified ragging records.</p>
+          <h3>What is still incomplete</h3>
+          <p>Evidence depth remains uneven. AIQ coverage varies by college, only part of the directory has deep non-counselling research, and fees/hostel/student-life information can change by batch or year.</p>
           <div class="status">
-            <span class="badge missing">State quota: partial</span>
-            <span class="badge missing">Hostels: missing</span>
-            <span class="badge missing">Ragging: not included</span>
+            <span class="badge missing">AIQ coverage uneven</span>
+            <span class="badge missing">Deep profiles still expanding</span>
+            <span class="badge missing">Current-year verification matters</span>
           </div>
         </article>
       </div>
 
       <section class="section">
-        <h2>How this is built &amp; what's still missing</h2>
-        <p>The college directory (name, location, management type, year established, seat intake) is sourced from National Medical Commission&ndash;derived listings for all 465 public MBBS colleges and cross-checked against the official seat count. Round-wise General-category AIQ cutoffs (39 colleges: Tamil Nadu/Puducherry + a handful of top national colleges) are sourced from MCC counselling data via one aggregator. Full category-wise (General/OBC/EWS/SC/ST) Round 1, Round 2 and Round 3 closing AIRs now cover all 20 AIIMS and are reconstructed directly from the official MCC 2025 final allotment result PDFs. For AIIMS these are MCC Open Seat Quota allotments. A blank round/category means no fresh or upgraded allotment for that combination was recorded in that round. Older aggregator-only AIIMS figures have been replaced by this official round-wise layer. Confidence badges remain relevant for non-AIIMS data that still relies on secondary sources: <span class="conf-badge moderate">moderate</span> for numbers that could be cross-checked against a second source, <span class="conf-badge low">low</span> for single-source figures that couldn't be verified. Treat "low" figures as directional, not exact. Everything else &mdash; state-quota cutoffs for all 28 counselling authorities, category breakdowns beyond AIIMS, hostel details, and ragging records &mdash; is not yet populated, and nothing here is invented to fill the gaps.</p>
-        <p>On ragging specifically: there's no reliable centralized source of verified per-college incidents, and publishing unverified claims tied to a named institution risked being wrong. This build deliberately leaves that field blank rather than guess, and points to the official UGC helpline instead.</p>
-        <p style="margin-top:20px;">Always confirm against the official sources before making decisions: <a href="https://mcc.nic.in" target="_blank" rel="noopener">mcc.nic.in</a> (AIQ counselling) and <a href="https://www.nmc.org.in" target="_blank" rel="noopener">nmc.org.in</a> (recognised college list). For any ragging concern, the National Anti-Ragging Helpline is 24&times;7 toll-free at <strong>1800-180-5522</strong> or helpline@antiragging.in.</p>
+        <h2>How to use the site</h2>
+        <p>Start with the AIQ predictor if you want a quick view of colleges your rank reaches. Use the directory to search or filter the full register. When you have two to four serious options, open <a href="compare.html">Compare colleges</a> for a structured side-by-side view of counselling, clinical exposure, academics, research, hostel, campus life and finances.</p>
+      </section>
+
+      <section class="section">
+        <h2>How the cutoff data is represented</h2>
+        <p>Cutoffs are shown primarily as closing All India Rank. For round-wise MCC/AIQ data, a dash means no fresh or upgraded allotment for that college-category combination was recorded in that round; it should not be read as a zero or an inferred cutoff. Where only a narrower or older source layer exists, the site keeps that limitation visible rather than pretending every college has the same depth of evidence.</p>
+        <p>The project is increasingly based on direct counselling reconstructions and official-source cross-checks, but not every embedded record has the same provenance. For an admission decision, the relevant MCC or state counselling authority remains the final source of truth.</p>
       </section>
 
       <section class="section">
         <h2>Project intent</h2>
-        <p>The aim is not to replace official counselling portals. It is to provide a cleaner, student-friendly starting point for understanding where a college sits in the wider government MBBS map and which data fields are already verified versus still incomplete.</p>
+        <p>The goal is to make a fragmented counselling landscape easier to inspect. Official portals are authoritative, but they are usually organised around notices, seat matrices and allotment PDFs rather than around the question a student is actually asking: <em>what colleges exist, how many seats do they have now, what happened in recent rounds, and how should I organise my choices?</em></p>
       </section>
 
       <section class="section">
         <h2>What is intentionally not included</h2>
         <div class="two-col">
           <div>
-            <p>Some information is deliberately left blank instead of guessed. This includes uncertain category-wise cutoffs, hostel details, and ragging incident claims. A data gap is treated as a data gap, not a placeholder.</p>
-            <p>That is important because medical counselling decisions depend on official numbers and the latest counselling rounds. This tool is meant to make the landscape easier to understand, not to give final admissions advice.</p>
+            <p>The site does not invent missing cutoffs or fill weakly sourced college-life fields merely to make every profile look complete. Official facts and student-reported experience are kept distinct, and a blank or Unknown field is intentionally allowed to remain a data gap.</p>
+            <p>It also does not replace the current MCC seat matrix, allotment result, state counselling notice, NMC recognition data, or the rules published by the relevant counselling authority.</p>
           </div>
           <div class="note">
-            This project should be treated as a transparent early build, not a definitive source of counselling information.
+            Use The Merit Register as a research and choice-organisation layer. Before locking choices or acting on a cutoff, verify the relevant year, quota, category and round against the official counselling source.
           </div>
         </div>
       </section>
 
       <section class="section">
         <h2>Current limitations</h2>
-        <p>At this stage, the site has a fuller set of core college data, but cutoff data is only partially populated. The General AIQ data is stronger for some colleges than others, while the AIIMS category-wise R1/R2/R3 layer is now sourced directly from the official MCC 2025 final allotment results. State quota data is now partially populated for the Bihar and Madhya Pradesh research build, with more states still pending.</p>
+        <p>The directory is broader than the deep-research layer. AIQ/cutoff coverage and evidence depth differ from college to college, and only 30 institutions currently have the full comparison research pass. Treat the site as an evolving evidence-backed research build, and verify counselling rules, current fees and official notices before acting.</p>
       </section>
     </div>
   </main>
