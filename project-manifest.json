@@ -4,6 +4,7 @@
     "index.html",
     "compare.html",
     "about.html",
+    "preference.html",
     "status.html"
   ],
   "data_files": [
@@ -27,7 +28,8 @@
     "common.js",
     "compare.js",
     "directory.js",
+    "preference.js",
     "status.js"
   ],
-  "note": "The polluted extra hostel-like entries formerly nested in compare AIIMS_R1_MEDIAN_TRENDS were removed; demand trends now use the clean canonical directory series."
+  "note": "The polluted extra hostel-like entries formerly nested in compare AIIMS_R1_MEDIAN_TRENDS were removed; demand trends now use the clean canonical directory series. Preference List restored as a modular fourth public page using shared colleges.js and browser-persisted shortlist/preference_order state."
 }

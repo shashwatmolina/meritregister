@@ -1236,6 +1236,10 @@ function escapeHtml(s){
   return String(s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 }
 
+window.addEventListener('storage', async (e)=>{
+  if(e.key === 'shortlist'){ await loadShortlist(); renderList(); }
+});
+
 loadShortlist().then(init);
 
 

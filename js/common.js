@@ -26,3 +26,12 @@ function initTheme() {
     });
   }
 }
+
+
+if(!window.storage){
+  window.storage = {
+    get: async (key) => ({ value: localStorage.getItem(key) }),
+    set: async (key, value) => { localStorage.setItem(key, value); return { value }; },
+    remove: async (key) => { localStorage.removeItem(key); return true; }
+  };
+}

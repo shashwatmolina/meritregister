@@ -1,11 +1,12 @@
 # The Merit Register — static VS Code project
 
-This folder is a refactored version of the three-page prototype. It has **no build step** and can be served directly with VS Code Live Server or any static host.
+This folder is a refactored version of the multi-page prototype. It has **no build step** and can be served directly with VS Code Live Server or any static host.
 
 ## Entry pages
 
 - `index.html` — nationwide directory + AIQ predictor
 - `compare.html` — 2–4 college comparison
+- `preference.html` — shortlisted colleges + drag/reorder choice-filling list
 - `about.html` — methodology/about
 - `status.html` — internal data-coverage dashboard (not linked in the public nav)
 
@@ -15,18 +16,21 @@ This folder is a refactored version of the three-page prototype. It has **no bui
 merit-register-vscode/
 ├── index.html
 ├── compare.html
+├── preference.html
 ├── about.html
 ├── status.html
 ├── css/
 │   ├── styles.css        # shared directory/compare design system
 │   ├── index.css
 │   ├── compare.css
+│   ├── preference.css
 │   ├── about.css
 │   └── status.css
 ├── js/
 │   ├── common.js         # shared theme behavior
 │   ├── directory.js
 │   ├── compare.js
+│   ├── preference.js
 │   ├── about.js
 │   └── status.js
 └── data/
@@ -64,4 +68,24 @@ Keep unsupported values `null` / absent. Do not turn missing evidence into zero 
 
 Recommended: open this folder in VS Code and run **Live Server** on `index.html`.
 
-The site also uses relative paths only, so all four pages can be moved together to a static host without path changes.
+The site also uses relative paths only, so all public pages can be moved together to a static host without path changes.
+
+
+## Shortlist and preference list
+
+The Directory and `preference.html` share browser-local state:
+
+- `shortlist` — numeric canonical college IDs starred in the Directory
+- `preference_order` — the user's ranked ordering of those shortlisted IDs
+
+Newly starred colleges are appended to the bottom of the saved preference order. Removing a college from the preference page also un-stars it in the Directory.
+
+## Quick start in VS Code
+
+1. Extract the ZIP.
+2. Open the extracted `merit-register-vscode-integrated` folder in VS Code (or open `merit-register.code-workspace`).
+3. Install the recommended **Live Server** extension if VS Code prompts you.
+4. Right-click `index.html` → **Open with Live Server**.
+5. Navigate normally between Directory, Compare colleges, My Preference List and About this project.
+
+Do not move one HTML file out of the project folder by itself; the pages intentionally share the sibling `css/`, `js/` and `data/` folders.
