@@ -45,3 +45,6 @@ body.compare-tray-active{padding-bottom:102px}
   .top-match-row>.compare-mini-btn{grid-column:3;grid-row:1 / span 2}
   .row-subline{align-items:flex-start;flex-direction:column;gap:4px}
 }
+.profile-inline-link{color:inherit;text-decoration:none}.profile-inline-link:hover{color:var(--stamp-dark);text-decoration:underline;text-underline-offset:3px}.top-match-open{text-decoration:none}.modal-profile-link{text-decoration:none;display:inline-flex;align-items:center}.row-main .name .profile-inline-link{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.directory-reach-line{margin-top:5px}.directory-reach-line .reach-badge{max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.cutoff-col{display:flex;flex-direction:column;align-items:flex-end;gap:2px}.cutoff-movement{font:500 7.5px 'IBM Plex Mono',monospace;color:var(--ink-soft);white-space:nowrap}.cutoff-movement.stronger{color:var(--reach)}.cutoff-movement.softer{color:var(--stamp-dark)}

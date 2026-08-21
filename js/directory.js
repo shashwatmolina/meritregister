@@ -87,8 +87,40 @@ function renderCompareTray(){
   if(go){go.disabled=items.length<2;go.textContent=items.length<2?'Add one more college':'Compare selected →';go.onclick=()=>{if(items.length>=2)location.href=compareUrl();};}
 }
 
+function currentDirectoryCutoff(id){
+  const cur = recordForYear(id,2026);
+  return cur || CUTOFFS[id] || null;
+}
+function directoryCutoffLabel(id){
+  const r26=recordForYear(id,2026);
+  const r26g=categoryRoundsFromRecord(r26,'General');
+  if(r26g){
+    for(const r of ['R3','R2','R1']){
+      const n=validRank(r26g[r]);
+      if(n) return `26 ${r} ${n.toLocaleString('en-IN')}`;
+    }
+  }
+  const r25=recordForYear(id,2025);
+  const label=cutoffLabel(r25);
+  return label==='—'?'—':`25 ${label}`;
+}
+function renderCurrentAiqStatus(){
+  const el=document.getElementById('current-aiq-status'); if(!el)return;
+  const meta=currentAiqMeta(),r1=meta.rounds&&meta.rounds.R1;
+  const loaded=typeof AIQ_CUTOFFS_2026!=='undefined'?Object.keys(AIQ_CUTOFFS_2026).length:0;
+  if(r1&&r1.published){
+    el.innerHTML=`<div class="current-data-strip"><span class="current-data-pill ${loaded?'live':''}">${loaded?'2026 live':'2026 provisional'}</span><strong>MCC Round 1</strong><span>${loaded?`${loaded} college cutoff profiles imported.`:'Provisional result published; audited cutoff import is pending.'}</span>${!loaded?'<span>2025 remains the predictor fallback — no 2026 ranks are being guessed.</span>':''}</div>`;
+  }else el.innerHTML='';
+}
+function syncCandidateIntoPredictor(){
+  const p=getCandidateProfile(),air=document.getElementById('air-input'),cat=document.getElementById('category-select');
+  if(air&&p.air&&!air.value)air.value=p.air;
+  if(cat&&p.category)cat.value=p.category;
+}
 function init(){
   loadCompareSelection();
+  renderCurrentAiqStatus();
+  syncCandidateIntoPredictor();
   const trayClear=document.getElementById('compare-tray-clear');if(trayClear)trayClear.addEventListener('click',clearCompareSelection);
   renderCompareTray();
   const totalSeats = ALL_COLLEGES.reduce((sum, c) => sum + Number(c.seats || 0), 0);
@@ -120,6 +152,7 @@ function init(){
   document.getElementById('modal-overlay').addEventListener('click', e=>{
     if(e.target.id==='modal-overlay') closeModal();
   });
+  window.addEventListener('candidateprofilechange',()=>{syncCandidateIntoPredictor();renderList();});
   renderList();
 }
 
@@ -201,24 +234,27 @@ function renderList(){
     const row = document.createElement('div');
     row.className='college-row';
     const starred = shortlist.includes(c.id);
-    const cutoff = CUTOFFS[c.id];
+    const cutoff = currentDirectoryCutoff(c.id);
+    const cp=getCandidateProfile();
+    const reach=cp.air?getCollegeReach(c.id,cp.air,cp.category):null;
+    const move26=getRoundMovement(c.id,'General','R1');
     row.innerHTML = `
       <button class="star-btn ${starred?'active':''}" data-id="${c.id}" title="Shortlist">${starred?'&#9733;':'&#9734;'}</button>
       <div class="row-main">
-        <div class="name">${escapeHtml(formatCollegeName(c.name))}</div>
+        <div class="name"><a class="profile-inline-link" href="college.html?id=${c.id}">${escapeHtml(formatCollegeName(c.name))}</a></div>
         <div class="row-subline">
-          <div class="loc">${escapeHtml(c.city)}, ${escapeHtml(c.state)} &middot; Est. ${c.established}${c.established===2026 ? ' &middot; <span class="new-2026-tag">NEW 2026</span>' : ''}${HOSTELS[c.id]&&hasHostelData(HOSTELS[c.id]) ? ' <span class="hostel-data-tag">HOSTEL PROFILE</span>' : ''}</div>
+          <div class="loc">${escapeHtml(c.city)}, ${escapeHtml(c.state)} &middot; Est. ${c.established}${c.established===2026 ? ' &middot; <span class="new-2026-tag">NEW 2026</span>' : ''}${HOSTELS[c.id]&&hasHostelData(HOSTELS[c.id]) ? ' <span class="hostel-data-tag">HOSTEL PROFILE</span>' : ''}</div>${reach?`<div class="directory-reach-line"><span class="reach-badge ${escapeHtml(reach.state)}">${escapeHtml(reachShortText(reach))}</span></div>`:''}
           <button class="compare-mini-btn ${compareSelection.includes(c.id)?'is-active':''}" data-compare-id="${c.id}" type="button">${compareSelection.includes(c.id)?'✓ Compare':'+ Compare'}</button>
         </div>
       </div>
       <span class="type-badge ${c.type}">${c.type}</span>
       <span class="seats-col">${c.seats}</span>
-      <span class="cutoff-col ${cutoff?'has-data':''}">${cutoffLabel(cutoff)}</span>
+      <span class="cutoff-col ${cutoff?'has-data':''}"><span>${directoryCutoffLabel(c.id)}</span>${move26?`<small class="cutoff-movement ${move26.direction}">${escapeHtml(movementText(move26))}</small>`:''}</span>
     `;
     row.querySelector('.star-btn').addEventListener('click', (e)=>{ e.stopPropagation(); toggleShortlist(c.id); });
     const compareBtn=row.querySelector('[data-compare-id]');
     if(compareBtn) compareBtn.addEventListener('click',(e)=>{e.stopPropagation();toggleCompareSelection(c.id);});
-    row.addEventListener('click', ()=>openModal(c.id));
+    row.addEventListener('click', (e)=>{ if(e.target.closest('a,button')) return; location.href=`college.html?id=${c.id}`; });
     container.appendChild(row);
   });
   document.getElementById('load-more').style.display = list.length>visibleCount ? 'block':'none';
@@ -291,9 +327,9 @@ function getActiveAiqPredictorDataset(){
   // automatically prefers it. A Round-1-only 2026 object is valid; R2/R3
   // simply remain unavailable until added.
   if(typeof AIQ_CUTOFFS_2026 !== 'undefined' && AIQ_CUTOFFS_2026 && Object.keys(AIQ_CUTOFFS_2026).length){
-    return {year:2026, data:AIQ_CUTOFFS_2026, label:'MCC AIQ 2026'};
+    return {year:2026, data:AIQ_CUTOFFS_2026, label:'MCC AIQ 2026', current:true};
   }
-  return {year:2025, data:CUTOFFS, label:'MCC AIQ 2025'};
+  return {year:2025, data:CUTOFFS, label:'MCC AIQ 2025 historical', current:false};
 }
 
 function populatePredictorFilters(){
@@ -313,7 +349,7 @@ function initPredictorControls(){
   populatePredictorFilters();
   const dataset=getActiveAiqPredictorDataset();
   const note=document.getElementById('predictor-dataset-note');
-  if(note) note.textContent=`${dataset.label} historical reference`;
+  if(note) note.textContent=dataset.year===2026?`${dataset.label} current imported rounds; later rounds are pending.`:`${dataset.label} reference · 2026 provisional cutoff import pending`;
   ['predictor-filter-state','predictor-filter-type','predictor-filter-status','predictor-sort'].forEach(id=>{
     const el=document.getElementById(id);
     if(el) el.addEventListener('change',()=>{
@@ -474,10 +510,10 @@ function renderTopMatches(eligible, air){
     const best=e.best;
     return `<div class="top-match-row">
       <span class="top-match-index">${i+1}</span>
-      <button class="top-match-open" type="button" data-open-college="${e.college.id}">
+      <a class="top-match-open" href="college.html?id=${e.college.id}">
         <span class="top-match-name">${escapeHtml(formatCollegeName(e.college.name))}</span>
         <span class="top-match-loc">${escapeHtml(e.college.city)}, ${escapeHtml(e.college.state)}</span>
-      </button>
+      </a>
       <span class="top-match-side">
         <span class="reach-status ${e.reachClass.className}">${escapeHtml(e.reachClass.label)}</span>
         <span class="top-match-round">${escapeHtml(best.basisRound)} ${Number(best.closing).toLocaleString('en-IN')}</span>
@@ -500,7 +536,7 @@ function renderFullPredictorResults(eligible, air){
     return `
     <div class="result-row" data-college-id="${e.college.id}">
       <div class="result-main">
-        <button class="result-name" type="button" data-open-college="${e.college.id}">${escapeHtml(formatCollegeName(e.college.name))}</button>
+        <a class="result-name" href="college.html?id=${e.college.id}">${escapeHtml(formatCollegeName(e.college.name))}</a>
         <div class="result-loc">${escapeHtml(e.college.city)}, ${escapeHtml(e.college.state)}</div>
         <div class="route-stack"><div class="route-line best">Earliest: ${escapeHtml(best.basisRound)} · historical cutoff ${Number(best.closing).toLocaleString('en-IN')} · ${escapeHtml(formatRankMargin(margin))}</div></div>
       </div>
@@ -527,6 +563,8 @@ function runChecker(){
     resultsEl.innerHTML='<p class="empty-note">Enter a valid AIR to check.</p>';
     return;
   }
+  const existingProfile=getCandidateProfile();
+  saveCandidateProfile({air,category:aiqCategory,domicile:existingProfile.domicile});
 
   let eligible=[];
   Object.keys(dataset.data).forEach(id=>{
@@ -536,7 +574,7 @@ function runChecker(){
     const reach=earliestAiqReach(cutoff,aiqCategory,air);
     if(!reach) return;
     const best={...reach,routeKey:'AIQ',quotaLabel:'MCC / AIQ',demandSortRank:aiqDemandSortRank(cutoff,aiqCategory)};
-    const reachClass=classifyHistoricalReach(best,air);
+    const reachClass=dataset.year===2026?{label:`${best.basisRound} reached`,className:'safe',margin:Number(best.closing)-air,ratio:0}:classifyHistoricalReach(best,air);
     eligible.push({college,routes:[best],best,reachClass,demandSortRank:best.demandSortRank});
   });
 
@@ -1170,6 +1208,7 @@ function openModal(id){
        <div class="loc">${escapeHtml(c.city)}, ${escapeHtml(c.state)}</div>
      </div>
      <div class="modal-head-actions">
+       <a class="modal-compare-btn modal-profile-link" href="college.html?id=${id}">Full profile →</a>
        <button class="modal-compare-btn ${compareSelection.includes(id)?'is-active':''}" id="modal-compare-btn" type="button">${compareSelection.includes(id)?'✓ In compare':'+ Compare'}</button>
        <button class="modal-shortlist ${starred?'active':''}" id="modal-shortlist-btn" type="button">${starred?'★ Shortlisted':'☆ Shortlist'}</button>
        <button class="modal-close" id="modal-close-btn" type="button">&times;</button>

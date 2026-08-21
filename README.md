@@ -6,6 +6,7 @@ This folder is a refactored version of the multi-page prototype. It has **no bui
 
 - `index.html` — nationwide directory + AIQ predictor
 - `compare.html` — 2–4 college comparison
+- `college.html?id=64` — dynamic shareable profile for any canonical college ID
 - `preference.html` — shortlisted colleges + drag/reorder choice-filling list
 - `about.html` — methodology/about
 - `status.html` — internal data-coverage dashboard (not linked in the public nav)
@@ -16,6 +17,7 @@ This folder is a refactored version of the multi-page prototype. It has **no bui
 merit-register-vscode/
 ├── index.html
 ├── compare.html
+├── college.html
 ├── preference.html
 ├── about.html
 ├── status.html
@@ -23,6 +25,7 @@ merit-register-vscode/
 │   ├── styles.css        # shared directory/compare design system
 │   ├── index.css
 │   ├── compare.css
+│   ├── college.css
 │   ├── preference.css
 │   ├── about.css
 │   └── status.css
@@ -30,6 +33,7 @@ merit-register-vscode/
 │   ├── common.js         # shared theme behavior
 │   ├── directory.js
 │   ├── compare.js
+│   ├── college.js
 │   ├── preference.js
 │   ├── about.js
 │   └── status.js
@@ -86,6 +90,24 @@ Newly starred colleges are appended to the bottom of the saved preference order.
 2. Open the extracted `merit-register-vscode-integrated` folder in VS Code (or open `merit-register.code-workspace`).
 3. Install the recommended **Live Server** extension if VS Code prompts you.
 4. Right-click `index.html` → **Open with Live Server**.
-5. Navigate normally between Directory, Compare colleges, My Preference List and About this project.
+5. Navigate normally between Directory, college profiles, Compare colleges, My Preference List and About this project.
 
 Do not move one HTML file out of the project folder by itself; the pages intentionally share the sibling `css/`, `js/` and `data/` folders.
+
+
+## Dynamic college profiles
+
+`college.html` is a single data-driven template for all 465 colleges. It reads the canonical numeric ID from the query string, for example `college.html?id=64`.
+
+The profile automatically shows whatever is currently available for that ID: 2026 seat intake, MCC AIQ cutoffs, reconstructed demand history, clinical exposure, academics, research/international pathway, hostel, campus/student life, fees/bond/stipend, newest verification notes and source links. Missing research layers stay visibly pending.
+
+Directory names, predictor results, Compare cards and Preference List names now link into this profile template.
+
+
+## Persistent candidate profile
+
+The site stores AIR, AIQ category and optional domicile under `merit-register-candidate-profile-v1` in localStorage. Directory and Preference List use the shared helpers in `js/common.js`.
+
+## Backup previews
+
+`previews/directory-live-preview.html` and `previews/preference-live-preview.html` are self-contained snapshots useful for checking the current visual state without Live Server.
