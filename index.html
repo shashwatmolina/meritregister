@@ -1,168 +1,183 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Merit Register &mdash; Government MBBS Colleges of India</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/index.css">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Merit Register — Government MBBS Colleges of India</title>
+
+
+<link href="css/index.css" rel="stylesheet"/><meta content="V7 VSCode export 2026-08-22" name="merit-register-export"/></head>
 <body>
-
 <header class="masthead">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">Independent &middot; Not affiliated with NMC or MCC</p>
-      <h1>The Merit Register</h1>
-      <p class="sub">A working ledger of government MBBS colleges in India &mdash; counselling data, college intelligence and student-facing decision tools.</p>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="active" aria-current="page" href="index.html">Directory</a>
-        <a href="compare.html">Compare colleges</a>
-        <a href="preference.html">My Preference List</a>
-        <a href="about.html">About this project</a>
-      </nav>
-    </div>
-    <div class="masthead-controls">
-      <div class="rhs">Updated Aug 2026<br>working build</div>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-          <span class="theme-switch" aria-hidden="true">
-            <span class="theme-thumb">
-              <svg class="theme-symbol sun-symbol" viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="4.25"></circle>
-                <path d="M12 1.75v2.5M12 19.75v2.5M1.75 12h2.5M19.75 12h2.5M4.75 4.75l1.8 1.8M17.45 17.45l1.8 1.8M4.75 19.25l1.8-1.8M17.45 6.55l1.8-1.8"></path>
-              </svg>
-              <svg class="theme-symbol moon-symbol" viewBox="0 0 24 24">
-                <path d="M20.1 15.15A8.55 8.55 0 0 1 8.85 3.9 9.1 9.1 0 1 0 20.1 15.15Z"></path>
-              </svg>
-            </span>
-          </span>
-        </button>
-    </div>
-  </div>
+<div class="wrap">
+<div>
+<p class="eyebrow">Independent · Not affiliated with NMC or MCC</p>
+<h1>The Merit Register</h1>
+<p class="sub">A working ledger of government MBBS colleges in India — counselling data, college intelligence and student-facing decision tools.</p>
+<nav aria-label="Main navigation" class="site-nav"><a aria-current="page" class="active" href="index.html">Directory</a><a href="compare.html">Compare</a><a href="assistant.html">Choice Assistant</a><a href="culture.html">Junior Culture</a><a href="preference.html">♡ My List</a><span class="nav-more"><button aria-label="More pages" class="nav-more-btn" type="button">More ▾</button><span class="nav-more-menu"><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
+</div>
+<div class="masthead-controls">
+<div class="rhs">Updated Aug 2026<br/>working build</div>
+<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button">
+<span aria-hidden="true" class="theme-switch">
+<span class="theme-thumb">
+<svg class="theme-symbol sun-symbol" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="4.25"></circle>
+<path d="M12 1.75v2.5M12 19.75v2.5M1.75 12h2.5M19.75 12h2.5M4.75 4.75l1.8 1.8M17.45 17.45l1.8 1.8M4.75 19.25l1.8-1.8M17.45 6.55l1.8-1.8"></path>
+</svg>
+<svg class="theme-symbol moon-symbol" viewbox="0 0 24 24">
+<path d="M20.1 15.15A8.55 8.55 0 0 1 8.85 3.9 9.1 9.1 0 1 0 20.1 15.15Z"></path>
+</svg>
+</span>
+</span>
+</button>
+</div>
+</div>
 </header>
-
-<section class="hero">
-  <div class="wrap">
-    <div class="hero-head">
-      <h2>Where does your rank actually reach?</h2>
-      <p class="lede">Enter your NEET UG All India Rank and category. The predictor checks the loaded MCC All India Quota data and shows the earliest round in which each government medical college becomes reachable. Star colleges to build <a href="preference.html">My Preference List</a>, or use <a href="compare.html">Compare colleges</a> when you want to inspect a shortlist in depth.</p>
-    </div>
-    <div class="checker">
-      <div class="checker-form">
-        <div class="field">
-          <label for="air-input">NEET AIR</label>
-          <input type="number" id="air-input" placeholder="e.g. 8500" min="1">
-        </div>
-        <div class="field">
-          <label for="category-select">AIQ category</label>
-          <select id="category-select">
-            <option value="General">General / UR</option>
-            <option value="OBC">OBC-NCL</option>
-            <option value="EWS">EWS</option>
-            <option value="SC">SC</option>
-            <option value="ST">ST</option>
-          </select>
-        </div>
-        <button id="check-btn" type="button">Check my reach</button>
-      </div>
-      <p class="checker-note predictor-simple-note">Uses 2025 MCC AIQ cutoffs. Shows the <strong>earliest round</strong> your rank reaches each college.</p>
-      <details class="predictor-more" id="predictor-more">
-        <summary>More filters</summary>
-        <div class="predictor-tools" id="predictor-tools">
-          <div class="predictor-tool"><label for="predictor-filter-state">College state</label><select id="predictor-filter-state"><option value="">All states</option></select></div>
-          <div class="predictor-tool"><label for="predictor-filter-type">College type</label><select id="predictor-filter-type"><option value="">All types</option></select></div>
-          <div class="predictor-tool"><label for="predictor-filter-status">Chance</label><select id="predictor-filter-status"><option value="">All chances</option><option value="Safe">Safe</option><option value="Competitive">Competitive</option><option value="Reach">Reach</option></select></div>
-          <div class="predictor-tool"><label for="predictor-sort">Sort</label><select id="predictor-sort"><option value="demand">R1 demand</option><option value="safety">Safest first</option><option value="round">Earliest round</option><option value="name">College name</option></select></div>
-        </div>
-      </details>
-      <div class="predictor-dataset-note" id="predictor-dataset-note"></div>
-      <div id="checker-results"></div>
-    </div>
-  </div>
+<section class="hero home-hero">
+<div class="wrap">
+<div class="hero-head">
+<p class="eyebrow">2026 counselling + evidence-backed college intelligence</p>
+<h2>Find what your rank reaches — then decide what is actually worth choosing.</h2>
+<p class="lede">The Merit Register combines current MCC Round-1 routes with deeper profiles on clinical exposure, academics, research, hostel life, campus trade-offs and junior culture. Cutoffs tell you what is possible; the research layers help you decide what you would actually prefer.</p>
+<div aria-label="Core tools" class="hero-paths">
+<a href="compare.html"><strong>Compare</strong><span>2–4 colleges across the full evidence stack.</span></a>
+<a href="assistant.html"><strong>Choice Assistant</strong><span>Check list breadth without replacing your own preference order.</span></a>
+<a href="culture.html"><strong>Junior Culture</strong><span>First 90 days, senior rules, incidents and evidence timelines.</span></a>
+</div>
+</div>
+<div class="checker home-checker">
+<div class="checker-kicker">Rank &amp; route checker</div>
+<div class="checker-form">
+<div class="field">
+<label for="air-input">NEET AIR</label>
+<input id="air-input" min="1" placeholder="e.g. 8500" type="number"/>
+</div>
+<div class="field">
+<label for="category-select">Category</label>
+<select id="category-select">
+<option value="General">General / UR</option>
+<option value="OBC">OBC-NCL</option>
+<option value="EWS">EWS</option>
+<option value="SC">SC</option>
+<option value="ST">ST</option>
+</select>
+</div>
+<button id="check-btn" type="button">Check my reach</button>
+</div>
+<p class="checker-note predictor-simple-note">Uses the current <strong>2026 MCC Round-1 provisional</strong> result with quota streams kept separate. Additional routes come from your saved counselling profile; later 2026 rounds remain pending until published.</p>
+<details class="predictor-more" id="predictor-more">
+<summary>More filters</summary>
+<div class="predictor-tools" id="predictor-tools">
+<div class="predictor-tool"><label for="predictor-filter-state">College state</label><select id="predictor-filter-state"><option value="">All states</option></select></div>
+<div class="predictor-tool"><label for="predictor-filter-type">College type</label><select id="predictor-filter-type"><option value="">All types</option></select></div>
+<div class="predictor-tool"><label for="predictor-filter-status">Planning band</label><select id="predictor-filter-status"><option value="">All bands</option><option value="Safety">Safety</option><option value="Likely">Likely</option><option value="Competitive">Competitive</option></select></div>
+<div class="predictor-tool"><label for="predictor-sort">Sort</label><select id="predictor-sort"><option value="demand">R1 demand</option><option value="safety">Safest first</option><option value="round">R1 cushion</option><option value="name">College name</option></select></div>
+</div>
+</details>
+<div class="predictor-dataset-note" id="predictor-dataset-note"></div>
+<div id="current-aiq-status"></div>
+<div id="checker-results"></div>
+</div>
+</div>
 </section>
-
-<section class="stats-strip">
-  <div class="wrap" style="display:flex; flex-wrap:wrap; width:100%;">
-    <div class="stat"><div class="n">465</div><div class="l">Govt. MBBS colleges</div></div>
-    <div class="stat"><div class="n" id="total-seats">0</div><div class="l">Total MBBS seats</div></div>
-    <div class="stat"><div class="n">33</div><div class="l">States &amp; UTs</div></div>
-    <div class="stat"><div class="n">160</div><div class="l">With AIQ cutoff data</div></div>
-    <div class="stat"><div class="n">20</div><div class="l">AIIMS with R1–R3 category data</div></div>
-  </div>
+<section class="stats-strip home-stats">
+<div class="wrap stats-grid">
+<div class="stat"><div class="n" id="college-count">465</div><div class="l">Govt. MBBS colleges</div></div>
+<div class="stat"><div class="n" id="total-seats">0</div><div class="l">2026 MBBS seats</div></div>
+<div class="stat"><div class="n" id="current-cutoff-count">0</div><div class="l">2026 R1 cutoff profiles</div></div>
+<div class="stat"><div class="n" id="deep-profile-count">0</div><div class="l">Deep research profiles</div></div>
+<div class="stat"><div class="n" id="culture-profile-count">0</div><div class="l">Junior-culture profiles</div></div>
+<div class="stat"><div class="n" id="movement-pair-count">0</div><div class="l">R1 year-on-year pairs</div></div>
+</div>
 </section>
-
 <section class="directory">
-  <div class="wrap">
-    <h2>Full directory</h2>
-    <p class="lede">Search and filter all 465 colleges. The directory prefers the 2025 Round 2 closing AIR, falls back to Round 1 when R2 is unavailable, and uses Round 3 only if neither R2 nor R1 exists; tap any row for full round-wise and category-wise detail.</p>
-
-    <div class="filters">
-      <input type="search" id="search-input" placeholder="Search college, city, or state&hellip;">
-      <select id="state-select"><option value="">All states</option></select>
-      <select id="sort-select">
-        <option value="name">Sort: Name (A&ndash;Z)</option>
-        <option value="seats-desc">Sort: Seats (high&ndash;low)</option>
-        <option value="estd-asc">Sort: Oldest first</option>
-        <option value="estd-desc">Sort: Newest first</option>
-        <option value="cutoff-first">Sort: Cutoff data first</option>
-        <option value="hostel-quality">Sort: Hostel quality</option>
-      </select>
-    </div>
-    <div class="filters" style="margin-top:8px">
-      <select id="hostel-filter-select">
-        <option value="">Hostel: Any</option>
-        <option value="researched">Hostel profile researched</option>
-        <option value="good">Overall hostel: Good / Excellent</option>
-        <option value="single">Single room reported</option>
-        <option value="attached">Attached bathroom reported</option>
-        <option value="cooling">AC / cooler allowed</option>
-        <option value="freedom">No / loose curfew reported</option>
-      </select>
-    </div>
-    <div class="hostel-filter-note">Hostel filters currently apply only to colleges with researched hostel profiles; unknown is never treated as “No”.</div>
-    <div class="chip-row" id="type-chips" style="margin-bottom:14px;"></div>
-
-    <div class="result-count" id="result-count"></div>
-    <div class="directory-columns" aria-hidden="true">
-      <span></span><span>College</span><span>Type</span><span>Seats '26</span><span>AIQ cutoff*</span>
-    </div>
-    <div class="directory-cutoff-note">* R2 preferred; R1 is the fallback; R3 is used only when both R2 and R1 are unavailable.</div>
-    <div class="college-list" id="college-list"></div>
-    <button class="load-more" id="load-more" type="button">Show 50 more</button>
-  </div>
+<div class="wrap">
+<div class="directory-headline">
+<div><p class="eyebrow">465-college master directory</p><h2>Full directory</h2></div>
+<p class="lede">Search every college, then use the evidence filters to surface the institutions for which we have actually reconstructed the deeper story. <strong>Unknown never means poor.</strong></p>
+</div>
+<div class="directory-toolbar">
+<div class="directory-toolbar-primary">
+<input id="search-input" placeholder="Search college, city, or state…" type="search"/>
+<select id="state-select"><option value="">All states</option></select>
+<select id="sort-select">
+<option value="name">Sort: Name (A–Z)</option>
+<option value="seats-desc">Sort: Seats (high–low)</option>
+<option value="estd-asc">Sort: Oldest first</option>
+<option value="estd-desc">Sort: Newest first</option>
+<option value="cutoff-first">Sort: Cutoff data first</option>
+<option value="research-depth">Sort: Deepest research first</option>
+<option value="movement-stronger">Sort: Biggest R1 stronger shift</option>
+<option value="movement-softer">Sort: Biggest R1 softer shift</option>
+<option value="hostel-quality">Sort: Hostel quality</option>
+</select>
+</div>
+<div class="directory-toolbar-secondary">
+<select id="research-filter-select">
+<option value="">Evidence: Any</option>
+<option value="deep">Deep profile (4+ core layers)</option>
+<option value="clinical">Clinical profile researched</option>
+<option value="research">Research / USMLE profile researched</option>
+<option value="hostel">Hostel profile researched</option>
+<option value="culture">Junior culture researched</option>
+<option value="timeline">Freshers timeline evidence</option>
+</select>
+<select id="hostel-filter-select">
+<option value="">Hostel: Any</option>
+<option value="researched">Hostel profile researched</option>
+<option value="good">Overall hostel: Good / Excellent</option>
+<option value="single">Single room reported</option>
+<option value="attached">Attached bathroom reported</option>
+<option value="cooling">AC / cooler allowed</option>
+<option value="freedom">No / loose curfew reported</option>
+</select>
+<span class="directory-unknown-note">Evidence filters only use researched fields; missing data is never treated as a negative.</span>
+</div>
+<div class="chip-row" id="type-chips"></div>
+</div>
+<div class="result-count" id="result-count"></div>
+<div aria-hidden="true" class="directory-columns">
+<span></span><span>College</span><span>Type</span><span>Seats '26</span><span>AIQ/Open R1*</span>
+</div>
+<div class="directory-cutoff-note">* Latest loaded 2026 round is shown first. If no 2026 profile exists, the directory falls back to 2025. The smaller line is 2026 R1 movement vs 2025 when comparable.</div>
+<div class="college-list" id="college-list"></div>
+<button class="load-more" id="load-more" type="button">Show 50 more</button>
+</div>
 </section>
-
-
-<div class="compare-tray" id="compare-tray" aria-live="polite">
-  <div class="compare-tray-inner">
-    <div class="compare-tray-title">Compare colleges<span id="compare-tray-count">0 / 4 selected</span></div>
-    <div class="compare-tray-chips" id="compare-tray-chips"></div>
-    <div class="compare-tray-action">
-      <button class="compare-tray-clear" id="compare-tray-clear" type="button">Clear</button>
-      <button class="compare-tray-go" id="compare-tray-go" type="button" disabled>Compare selected →</button>
-    </div>
-  </div>
+<div aria-live="polite" class="compare-tray" id="compare-tray">
+<div class="compare-tray-inner">
+<div class="compare-tray-title">Compare colleges<span id="compare-tray-count">0 / 4 selected</span></div>
+<div class="compare-tray-chips" id="compare-tray-chips"></div>
+<div class="compare-tray-action">
+<button class="compare-tray-clear" id="compare-tray-clear" type="button">Clear</button>
+<button class="compare-tray-go" disabled="" id="compare-tray-go" type="button">Compare selected →</button>
+</div>
+</div>
 </div>
 <div class="compare-tray-toast" id="compare-tray-toast"></div>
-
 <div class="modal-overlay" id="modal-overlay">
-  <div class="modal" id="modal-content"></div>
+<div class="modal" id="modal-content"></div>
 </div>
+<footer>Independent student resource · not an official government site · data may contain errors, verify before relying on it</footer>
 
 
-<footer>Independent student resource &middot; not an official government site &middot; data may contain errors, verify before relying on it</footer>
 
-<script src="js/common.js" defer></script>
-<script src="data/colleges.js" defer></script>
-<script src="data/hostels.js" defer></script>
-<script src="data/aiq-cutoffs-2025.js" defer></script>
-<script src="data/aiq-cutoffs-2026.js" defer></script>
-<script src="data/state-quota-legacy.js" defer></script>
-<script src="data/stats.js" defer></script>
-<script src="data/demand-trends.js" defer></script>
-<script src="js/directory.js" defer></script>
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script defer="True" src="js/index.js"></script></body>
 </html>

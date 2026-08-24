@@ -1,13 +1,8 @@
 {
   "folders": [
-    { "path": "." }
-  ],
-  "settings": {
-    "files.exclude": {
-      "**/.DS_Store": true
+    {
+      "path": "."
     }
-  },
-  "extensions": {
-    "recommendations": ["ritwickdey.liveserver"]
-  }
+  ],
+  "settings": {}
 }

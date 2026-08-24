@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Evidence Inbox · Research workspace | The Merit Register</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Roboto+Slab:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="css/inbox.css" rel="stylesheet"/><meta content="V7 VSCode export 2026-08-22" name="merit-register-export"/></head>
+<body><header class="masthead"><div class="wrap"><div><p class="eyebrow">Research workflow · browser-local review state</p><h1>The Merit Register</h1><p class="sub">Evidence Inbox: new fresher-culture leads, research gaps, ambiguous artifacts and reviewed sources before they become published college claims.</p>
+<nav aria-label="Main navigation" class="site-nav"><a href="index.html">Directory</a><a href="compare.html">Compare</a><a href="assistant.html">Choice Assistant</a><a href="culture.html">Junior Culture</a><a href="preference.html">♡ My List</a><span class="nav-more"><button aria-label="More pages" class="nav-more-btn" type="button">More ▾</button><span class="nav-more-menu"><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav></div>
+<div class="masthead-controls"><div class="rhs">Research workflow<br/>21 Aug 2026</div><button aria-label="Switch theme" class="theme-toggle" id="theme-toggle" type="button">◐</button></div></div></header>
+<main class="inbox-main"><div class="wrap">
+<section class="inbox-hero"><div><p class="eyebrow">Nothing publishes itself</p><h2>Evidence Inbox</h2><p class="lede">Use this page to triage new 2026 fresher reports before they enter the Junior Culture dataset. <strong>Incoming → Corroborated → Published</strong> is the normal path. Ambiguous material stays quarantined; rejected material stays visible in the audit trail. Changes here are stored in this browser until exported.</p></div><aside class="inbox-callout"><strong>Evidence grades</strong><p><b>A</b> strong/official or verified · <b>B</b> detailed first-hand/corroborated · <b>C</b> isolated/second-hand/older · <b>D</b> lead only. A high grade for an official anti-ragging system does not prove low lived prevalence.</p><a href="JUNIOR-CULTURE-METHODOLOGY.md">Methodology →</a></aside></section>
+<section class="inbox-stats" id="inbox-stats"></section>
+<section class="inbox-toolbar">
+<div><label for="inbox-search">Search</label><input id="inbox-search" placeholder="College, claim, note…" type="search"/></div>
+<div><label for="inbox-status">Status</label><select id="inbox-status"><option value="all">All statuses</option><option value="incoming">Incoming</option><option value="corroborated">Corroborated</option><option value="published">Published</option><option value="ambiguous">Ambiguous</option><option value="rejected">Rejected</option></select></div>
+<div><label for="inbox-type">Type</label><select id="inbox-type"><option value="all">All types</option></select></div>
+<div><label for="inbox-grade">Grade</label><select id="inbox-grade"><option value="all">All grades</option><option>A</option><option>B</option><option>C</option><option>D</option><option>Ungraded</option></select></div>
+</section>
+<section class="inbox-actions-bar"><div id="inbox-count"></div><div class="inbox-actions"><button id="inbox-add-toggle" type="button">+ Add evidence</button><button id="inbox-export" type="button">Export JSON</button><button class="quiet" id="inbox-reset" type="button">Reset to seed</button></div></section>
+<section class="inbox-add-panel" hidden="" id="inbox-add-panel">
+<div class="inbox-add-head"><div><p class="eyebrow">Manual intake</p><h3>Add a new lead</h3></div><p>Use “research gap” when you have a question but no source yet. A source URL is expected for evidence claims.</p></div>
+<form class="inbox-form" id="inbox-add-form">
+<label>College<select id="inbox-college" name="collegeId" required=""></select></label>
+<label>Type<select name="type" required=""><option value="student_account">Student account</option><option value="artifact">Artifact / rulebook</option><option value="official">Official</option><option value="news_disciplinary">News / disciplinary</option><option value="source_lead">Source lead</option><option value="research_gap">Research gap</option></select></label>
+<label>Batch / year<input name="batchYear" placeholder="2026"/></label>
+<label>Timeline phase<select name="phase"><option value="unknown">Unknown / not phase-specific</option><option value="arrival">Joining / foundation</option><option value="weeks1_4">Weeks 1–4</option><option value="months2_3">Months 2–3</option><option value="freshers">Freshers / welcome</option><option value="restFirstYear">Rest of first year</option><option value="secondYear">Second year</option></select></label>
+<label class="span2">Title<input name="title" placeholder="Short description of the evidence or gap" required=""/></label>
+<label class="span2">Source URL<input name="sourceUrl" placeholder="https://…" type="url"/></label>
+<label>Source type<input name="sourceType" placeholder="first-hand Reddit post / official circular / news"/></label>
+<label>First-hand?<select name="firstHand"><option value="unknown">Unknown</option><option value="yes">Yes</option><option value="no">No / second-hand</option><option value="target">Research target</option></select></label>
+<label>Artifact attached?<select name="artifact"><option value="no">No</option><option value="yes">Yes / reported</option><option value="unknown">Unknown</option></select></label>
+<label>Initial grade<select name="grade"><option>Ungraded</option><option>A</option><option>B</option><option>C</option><option>D</option></select></label>
+<label class="span2">Claim / research question<textarea name="claim" required="" rows="4"></textarea></label>
+<label class="span2">Reviewer note<textarea name="reviewerNote" rows="3"></textarea></label>
+<div class="span2 inbox-form-actions"><button type="submit">Add to incoming</button><button class="quiet" id="inbox-add-cancel" type="button">Cancel</button></div>
+</form>
+</section>
+<section class="inbox-grid" id="inbox-grid"></section>
+</div></main>
+<footer>Independent student-built research workflow · local browser state is not a published finding until reviewed and exported</footer>
+<script defer="True" src="js/inbox.js"></script></body></html>

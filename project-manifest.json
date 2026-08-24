@@ -1,37 +1,25 @@
 {
-  "shared_css_prefix_lines": 899,
+  "name": "The Merit Register",
+  "export_version": "V7-VSCode",
+  "generated": "2026-08-22",
   "pages": [
     "index.html",
     "compare.html",
+    "assistant.html",
+    "culture.html",
     "college.html",
-    "about.html",
     "preference.html",
-    "status.html"
+    "movement.html",
+    "status.html",
+    "about.html",
+    "inbox.html"
   ],
-  "data_files": [
-    "academics.js",
-    "aiq-cutoffs-2025.js",
-    "aiq-cutoffs-2026.js",
-    "campus.js",
-    "clinical.js",
-    "colleges.js",
-    "comparison-calibration.js",
-    "deep-research.js",
-    "demand-trends.js",
-    "finances.js",
-    "hostels.js",
-    "research.js",
-    "state-quota-legacy.js",
-    "stats.js"
-  ],
-  "js_files": [
-    "about.js",
-    "common.js",
-    "college.js",
-    "compare.js",
-    "directory.js",
-    "preference.js",
-    "status.js"
-  ],
-  "note": "The polluted extra hostel-like entries formerly nested in compare AIIMS_R1_MEDIAN_TRENDS were removed; demand trends now use the clean canonical directory series. Preference List restored as a modular fourth public page using shared colleges.js and browser-persisted shortlist/preference_order state. Dynamic college profile template added and linked from Directory, predictor, Compare and Preference List."
+  "deep_profiles": 30,
+  "fresh_source_refreshed": 10,
+  "canonical_colleges": 465,
+  "mcc_2026_profiles": 451,
+  "notes": [
+    "college.html is dynamic via ?id=<canonical id>",
+    "runtime page datasets are bundled into page-specific JS files"
+  ]
 }

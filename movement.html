@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Compare MCC NEET UG 2026 Round 1 closing AIR movement against 2025 for government MBBS colleges across India." name="description"/>
+<title>2026 vs 2025 R1 Movement — The Merit Register</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+
+
+<link href="css/movement.css" rel="stylesheet"/><meta content="V7 VSCode export 2026-08-22" name="merit-register-export"/></head>
+<body>
+<header class="masthead">
+<div class="wrap">
+<div>
+<p class="eyebrow">Independent · Not affiliated with NMC or MCC</p>
+<h1>The Merit Register</h1>
+<p class="sub">A working ledger of government MBBS colleges in India — counselling data, college intelligence and student-facing decision tools.</p>
+<nav aria-label="Main navigation" class="site-nav"><a href="index.html">Directory</a><a href="compare.html">Compare</a><a href="assistant.html">Choice Assistant</a><a href="culture.html">Junior Culture</a><a href="preference.html">♡ My List</a><span class="nav-more"><button aria-label="More pages" class="nav-more-btn" type="button">More ▾</button><span class="nav-more-menu"><a aria-current="page" class="active" href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
+</div>
+<div class="masthead-controls">
+<div class="rhs">Updated Aug 2026<br/>working build</div>
+<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button">
+<span aria-hidden="true" class="theme-switch"><span class="theme-thumb">
+<svg class="theme-symbol sun-symbol" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4.25"></circle><path d="M12 1.75v2.5M12 19.75v2.5M1.75 12h2.5M19.75 12h2.5M4.75 4.75l1.8 1.8M17.45 17.45l1.8 1.8M4.75 19.25l1.8-1.8M17.45 6.55l1.8-1.8"></path></svg>
+<svg class="theme-symbol moon-symbol" viewbox="0 0 24 24"><path d="M20.1 15.15A8.55 8.55 0 0 1 8.85 3.9 9.1 9.1 0 1 0 20.1 15.15Z"></path></svg>
+</span></span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<section class="movement-hero">
+<div class="wrap">
+<div class="movement-kicker">MCC Round 1 · year-on-year movement</div>
+<h2>What got harder — and what got easier?</h2>
+<p class="lede">Compare the exact category-specific Round-1 closing AIR for 2026 against 2025. A <strong>lower</strong> closing AIR means the college became more competitive; a <strong>higher</strong> closing AIR means it softened.</p>
+<div id="movement-data-strip"></div>
+</div>
+</section>
+<section class="movement-main">
+<div class="wrap">
+<div class="movement-controls">
+<label>AIQ category<select id="movement-category"><option value="General">General / UR</option><option value="OBC">OBC-NCL</option><option value="EWS">EWS</option><option value="SC">SC</option><option value="ST">ST</option></select></label>
+<label>State<select id="movement-state"><option value="">All states</option></select></label>
+<label class="movement-search-label">Search<input id="movement-search" placeholder="College, city or state…" type="search"/></label>
+<label>2025 evidence<select id="movement-quality"><option value="all">All comparable records</option><option value="official">Official MCC 2025 only</option></select></label>
+<label>Sort<select id="movement-sort"><option value="stronger">Biggest stronger shift</option><option value="softer">Biggest softer shift</option><option value="current">2026 cutoff: strongest first</option><option value="previous">2025 cutoff: strongest first</option><option value="name">College name</option></select></label>
+</div>
+<div class="movement-summary" id="movement-summary"></div>
+<section class="movement-extremes">
+<div class="movement-extreme-panel">
+<div class="movement-section-head"><div><span class="movement-section-kicker stronger">Risers</span><h3>Biggest stronger shifts</h3></div><p>Largest drops in closing AIR.</p></div>
+<div class="movement-card-list" id="movement-risers"></div>
+</div>
+<div class="movement-extreme-panel">
+<div class="movement-section-head"><div><span class="movement-section-kicker softer">Fallers</span><h3>Biggest softer shifts</h3></div><p>Largest increases in closing AIR.</p></div>
+<div class="movement-card-list" id="movement-fallers"></div>
+</div>
+</section>
+<section class="movement-table-section">
+<div class="movement-table-head"><div><h3>All comparable colleges</h3><p id="movement-table-note"></p></div><span class="movement-count" id="movement-count"></span></div>
+<div class="movement-table-wrap">
+<table class="movement-table">
+<thead><tr><th>College</th><th>2025 R1</th><th>2026 R1</th><th>Δ AIR</th><th>Shift</th><th>2025 evidence</th></tr></thead>
+<tbody id="movement-body"></tbody>
+</table>
+</div>
+</section>
+<div class="movement-method">
+<strong>Method:</strong> movement is calculated only when both years have a verified positive Round-1 closing AIR for the selected category. Δ AIR = 2026 closing AIR − 2025 closing AIR. Negative values are stronger; positive values are softer. 2026 Round 1 is currently provisional. Colleges without a comparable 2025 value are excluded rather than assigned an artificial movement.
+    </div>
+</div>
+</section>
+</main>
+<footer>Independent student resource · not an official government site · data may contain errors, verify before relying on it</footer>
+
+
+
+
+
+<script defer="True" src="js/movement.js"></script></body>
+</html>

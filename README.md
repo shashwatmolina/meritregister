@@ -1,113 +1,44 @@
-# The Merit Register — static VS Code project
+# The Merit Register — V7 VS Code Export
 
-This folder is a refactored version of the multi-page prototype. It has **no build step** and can be served directly with VS Code Live Server or any static host.
+Generated: 22 August 2026.
 
-## Entry pages
+## Run locally
 
-- `index.html` — nationwide directory + AIQ predictor
-- `compare.html` — 2–4 college comparison
-- `college.html?id=64` — dynamic shareable profile for any canonical college ID
-- `preference.html` — shortlisted colleges + drag/reorder choice-filling list
-- `about.html` — methodology/about
-- `status.html` — internal data-coverage dashboard (not linked in the public nav)
+Open this folder in VS Code and use **Live Server** on `index.html`, or run:
 
-## Folder structure
-
-```text
-merit-register-vscode/
-├── index.html
-├── compare.html
-├── college.html
-├── preference.html
-├── about.html
-├── status.html
-├── css/
-│   ├── styles.css        # shared directory/compare design system
-│   ├── index.css
-│   ├── compare.css
-│   ├── college.css
-│   ├── preference.css
-│   ├── about.css
-│   └── status.css
-├── js/
-│   ├── common.js         # shared theme behavior
-│   ├── directory.js
-│   ├── compare.js
-│   ├── college.js
-│   ├── preference.js
-│   ├── about.js
-│   └── status.js
-└── data/
-    ├── colleges.js       # canonical college master / IDs
-    ├── aiq-cutoffs-2025.js
-    ├── aiq-cutoffs-2026.js  # intentionally empty drop-in target
-    ├── demand-trends.js
-    ├── hostels.js
-    ├── clinical.js
-    ├── academics.js
-    ├── research.js
-    ├── campus.js
-    ├── finances.js
-    ├── deep-research.js
-    ├── comparison-calibration.js
-    ├── state-quota-legacy.js
-    └── stats.js
+```bash
+python3 -m http.server 8000
 ```
 
-## Updating 2026 MCC results
+then open `http://localhost:8000/`. Serving the folder over HTTP is recommended because the site shares candidate/profile state through browser localStorage.
 
-Put official 2026 round data into `data/aiq-cutoffs-2026.js` using the same college IDs and `category_rounds` shape used in `aiq-cutoffs-2025.js`.
+## Main pages
 
-The predictor already checks `AIQ_CUTOFFS_2026`; once the object contains records it automatically prefers 2026 data. A Round-1-only dataset is valid, so R2/R3 can be added later without changing the UI.
+- `index.html` — nationwide Directory / predictor
+- `compare.html` — deep comparison, V7 dossiers
+- `assistant.html` — Choice List Assistant
+- `culture.html` — Junior Culture / First 90 Days / timeline / artifacts
+- `college.html?id=71` — dynamic college profile (change `id`)
+- `preference.html` — saved preference list
+- `movement.html` — strict R1-vs-R1 cutoff movement
+- `status.html` — current data/research status
+- `about.html` — methodology overview
+- `inbox.html` — internal evidence-review workspace
 
-## College IDs
+## Export architecture
 
-`data/colleges.js` is canonical. Every other dataset must reference the numeric `id` from that file. Do not match datasets by display-name strings.
+The latest working previews from the research build were converted into VS-Code-friendly HTML + page-specific CSS/JS bundles. Runtime datasets are embedded inside the page JS bundles so this export is self-contained and does not depend on the earlier chat workspace.
 
-## Data-quality rule
+The underlying research/audit files are included under `audit/`, `research/`, `data/`, and `scripts/`.
 
-Keep unsupported values `null` / absent. Do not turn missing evidence into zero or a negative rating.
+## Important data rules
 
-## Local development
+- 2026 MCC Round 1 is **provisional**.
+- Year-on-year movement is **same round + same category + same quota family only**.
+- Quota streams are not merged.
+- Junior Culture evidence is descriptive and source-labelled; it is not a numerical ragging score.
+- A missing research field means **not reconstructed**, not poor quality.
 
-Recommended: open this folder in VS Code and run **Live Server** on `index.html`.
+## Current deep-profile status
 
-The site also uses relative paths only, so all public pages can be moved together to a static host without path changes.
-
-
-## Shortlist and preference list
-
-The Directory and `preference.html` share browser-local state:
-
-- `shortlist` — numeric canonical college IDs starred in the Directory
-- `preference_order` — the user's ranked ordering of those shortlisted IDs
-
-Newly starred colleges are appended to the bottom of the saved preference order. Removing a college from the preference page also un-stars it in the Directory.
-
-## Quick start in VS Code
-
-1. Extract the ZIP.
-2. Open the extracted `merit-register-vscode-integrated` folder in VS Code (or open `merit-register.code-workspace`).
-3. Install the recommended **Live Server** extension if VS Code prompts you.
-4. Right-click `index.html` → **Open with Live Server**.
-5. Navigate normally between Directory, college profiles, Compare colleges, My Preference List and About this project.
-
-Do not move one HTML file out of the project folder by itself; the pages intentionally share the sibling `css/`, `js/` and `data/` folders.
-
-
-## Dynamic college profiles
-
-`college.html` is a single data-driven template for all 465 colleges. It reads the canonical numeric ID from the query string, for example `college.html?id=64`.
-
-The profile automatically shows whatever is currently available for that ID: 2026 seat intake, MCC AIQ cutoffs, reconstructed demand history, clinical exposure, academics, research/international pathway, hostel, campus/student life, fees/bond/stipend, newest verification notes and source links. Missing research layers stay visibly pending.
-
-Directory names, predictor results, Compare cards and Preference List names now link into this profile template.
-
-
-## Persistent candidate profile
-
-The site stores AIR, AIQ category and optional domicile under `merit-register-candidate-profile-v1` in localStorage. Directory and Preference List use the shared helpers in `js/common.js`.
-
-## Backup previews
-
-`previews/directory-live-preview.html` and `previews/preference-live-preview.html` are self-contained snapshots useful for checking the current visual state without Live Server.
+30 standardized V7 dossiers; 10 have completed the fresh-source refresh, and 20 are queued for the same pass.

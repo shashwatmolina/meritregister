@@ -1,0 +1,316 @@
+{
+  "version": "v7",
+  "updated": "2026-08-22",
+  "total_profiles": 30,
+  "batch1_ids": [
+    45,
+    49,
+    64,
+    65,
+    69,
+    71,
+    72,
+    255,
+    262,
+    402
+  ],
+  "batch2_ids": [
+    168,
+    38,
+    239,
+    372,
+    189,
+    220,
+    226,
+    230,
+    51,
+    288
+  ],
+  "batch3_ids": [
+    129,
+    75,
+    248,
+    323,
+    360,
+    440,
+    66,
+    181,
+    211,
+    327
+  ],
+  "profiles": [
+    {
+      "id": 168,
+      "name": "All India Institute of Medical Sciences, Bhopal",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 129,
+      "name": "Rajendra Institute of Medical Sciences, Ranchi",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 5,
+      "junior_culture": true
+    },
+    {
+      "id": 38,
+      "name": "All India Institute of Medical Sciences, Patna",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 75,
+      "name": "B.J. Medical College, Ahmedabad",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 189,
+      "name": "All India Institute of Medical Sciences, Nagpur",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 230,
+      "name": "Topiwala National Medical College, Mumbai",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 248,
+      "name": "SCB Medical College, Cuttack",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 288,
+      "name": "SMS Medical College, Jaipur",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 323,
+      "name": "Madras Medical College, Chennai",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 360,
+      "name": "Osmania Medical College, Hyderabad",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 372,
+      "name": "All India Institute of Medical Sciences, Rishikesh",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 440,
+      "name": "Institute of Postgraduate Medical Education & Research, Kolkata",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 10,
+      "junior_culture": true
+    },
+    {
+      "id": 51,
+      "name": "Government Medical College, Chandigarh",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 66,
+      "name": "Dr. Baba Saheb Ambedkar Medical College, Rohini, Delhi",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 181,
+      "name": "M G M Medical College, Indore",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 211,
+      "name": "Government Medical College, Nagpur",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 226,
+      "name": "Seth GS Medical College, Mumbai",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 239,
+      "name": "AIIMS, Bhubaneswar",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 5,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 255,
+      "name": "Jawaharlal Institute of Postgraduate Medical Education & Research (JIPMER), Puducherry",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 5,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 327,
+      "name": "Stanley Medical College, Chennai",
+      "status": "standardized-source-refresh-pending",
+      "batch": 3,
+      "existing_layers": 5,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 45,
+      "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 20,
+      "junior_culture": true
+    },
+    {
+      "id": 49,
+      "name": "Patna Medical College, Patna",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 12,
+      "junior_culture": true
+    },
+    {
+      "id": 262,
+      "name": "All India Institute of Medical Sciences, Jodhpur",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 15,
+      "junior_culture": true
+    },
+    {
+      "id": 220,
+      "name": "Grant Medical College, Mumbai",
+      "status": "standardized-source-refresh-pending",
+      "batch": 2,
+      "existing_layers": 6,
+      "existing_sources": 23,
+      "junior_culture": true
+    },
+    {
+      "id": 402,
+      "name": "King George's Medical University, Lucknow",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 21,
+      "junior_culture": true
+    },
+    {
+      "id": 72,
+      "name": "Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 21,
+      "junior_culture": true
+    },
+    {
+      "id": 65,
+      "name": "Atal Bihari Vajpayee Institute of Medical Sciences and Dr. RML Hospital, New Delhi",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 19,
+      "junior_culture": true
+    },
+    {
+      "id": 69,
+      "name": "Maulana Azad Medical College, New Delhi",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 20,
+      "junior_culture": true
+    },
+    {
+      "id": 64,
+      "name": "All India Institute of Medical Sciences, New Delhi",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 21,
+      "junior_culture": true
+    },
+    {
+      "id": 71,
+      "name": "University College of Medical Sciences & GTB Hospital, New Delhi",
+      "status": "fresh-source-refreshed",
+      "batch": 1,
+      "existing_layers": 6,
+      "existing_sources": 25,
+      "junior_culture": true
+    }
+  ],
+  "fresh_source_refreshed": 10,
+  "standardized_source_refresh_pending": 20,
+  "decision_dossier_coverage": 30
+}

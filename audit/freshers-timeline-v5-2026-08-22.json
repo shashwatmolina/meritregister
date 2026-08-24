@@ -1,0 +1,36 @@
+{
+  "generated": "2026-08-22",
+  "scope": "31 Junior Culture colleges × 6 phases",
+  "method_note": "A timeline cell is populated only when timing is directly supported. Official protection evidence is not treated as prevalence evidence. Contradictory accounts remain contradictory.",
+  "profilesWithEvidence": 20,
+  "supportedCells": 33,
+  "totalPossible": 186,
+  "gaps": 153,
+  "grades": {
+    "B": 12,
+    "C": 17,
+    "A": 4
+  },
+  "byPhase": {
+    "arrival": 6,
+    "restFirstYear": 3,
+    "weeks1_4": 15,
+    "secondYear": 4,
+    "freshers": 2,
+    "months2_3": 3
+  },
+  "first90": {
+    "total": 31,
+    "coverage": {
+      "firstWeeks": 22,
+      "genderSpecific": 5,
+      "optOut": 5,
+      "afterFreshers": 8,
+      "residenceMode": 11
+    },
+    "detailed": 4,
+    "partial": 14,
+    "insufficient": 9,
+    "official_only": 4
+  }
+}

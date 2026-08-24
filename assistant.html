@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Choice Assistant — The Merit Register</title>
+
+
+<link href="css/assistant.css" rel="stylesheet"/><meta content="V7 VSCode export 2026-08-22" name="merit-register-export"/></head>
+<body>
+<header class="masthead">
+<div class="wrap">
+<div>
+<p class="eyebrow">Independent · Not affiliated with NMC or MCC</p>
+<h1>The Merit Register</h1>
+<p class="sub">A working ledger of government MBBS colleges in India — counselling data, college intelligence and student-facing decision tools.</p>
+<nav aria-label="Main navigation" class="site-nav"><a href="index.html">Directory</a><a href="compare.html">Compare</a><a aria-current="page" class="active" href="assistant.html">Choice Assistant</a><a href="culture.html">Junior Culture</a><a href="preference.html">♡ My List</a><span class="nav-more"><button aria-label="More pages" class="nav-more-btn" type="button">More ▾</button><span class="nav-more-menu"><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
+</div>
+<div class="masthead-controls">
+<div class="rhs">Updated Aug 2026<br/>working build</div>
+<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button">
+<span aria-hidden="true" class="theme-switch"><span class="theme-thumb">
+<svg class="theme-symbol sun-symbol" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4.25"></circle><path d="M12 1.75v2.5M12 19.75v2.5M1.75 12h2.5M19.75 12h2.5M4.75 4.75l1.8 1.8M17.45 17.45l1.8 1.8M4.75 19.25l1.8-1.8M17.45 6.55l1.8-1.8"></path></svg>
+<svg class="theme-symbol moon-symbol" viewbox="0 0 24 24"><path d="M20.1 15.15A8.55 8.55 0 0 1 8.85 3.9 9.1 9.1 0 1 0 20.1 15.15Z"></path></svg>
+</span></span>
+</button>
+</div>
+</div>
+</header>
+<section class="assistant-hero">
+<div class="wrap">
+<p class="eyebrow">Quota-aware choice planning</p>
+<h2>Choice List Assistant</h2>
+<p class="lede">Group colleges into <strong>Dream, Competitive, Likely and Safety</strong> bands using your AIR, category and the 2026 Round-1 quota routes you are actually eligible for. A college can be missed through AIQ but reached through DU, IPU, ESI or another enabled route.</p>
+<div class="assistant-warning"><strong>These are planning bands, not allotment probabilities.</strong> They measure distance from the current provisional R1 cutoff. R2/R3 are still unpublished, and your final MCC choice order should follow your real preference—not these bands.</div>
+</div>
+</section>
+<main class="assistant-main">
+<div class="wrap">
+<section class="assistant-profile" id="assistant-profile"></section>
+<section class="assistant-controls" id="assistant-controls">
+<div aria-label="Assistant scope" class="assistant-scope" role="group">
+<button class="active" data-scope="all" type="button">Explore all colleges</button>
+<button data-scope="preference" type="button">My Preference List</button>
+</div>
+<div class="assistant-filter-grid">
+<label>Search<input id="assistant-search" placeholder="College, city or state…" type="search"/></label>
+<label>State<select id="assistant-state"><option value="">All states</option></select></label>
+<label>Type<select id="assistant-type"><option value="">All types</option></select></label>
+<label>Band<select id="assistant-band"><option value="">All bands</option><option>Dream</option><option>Competitive</option><option>Likely</option><option>Safety</option></select></label>
+<label>Evidence<select id="assistant-evidence"><option value="">Any evidence depth</option><option value="deep">Deep profile</option><option value="culture">Junior culture researched</option><option value="hostel">Hostel researched</option></select></label>
+</div>
+</section>
+<section class="assistant-band-summary" id="assistant-band-summary"></section>
+<section class="assistant-list-check" id="assistant-list-check"></section>
+<section class="assistant-columns" id="assistant-columns"></section>
+<section class="assistant-unknown" id="assistant-unknown"></section>
+</div>
+</main>
+<div aria-live="polite" class="assistant-toast" id="assistant-toast" role="status"></div>
+<footer>Independent student resource · not an official government site · verify eligibility, seat matrix and final choice order before locking</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script defer="True" src="js/assistant.js"></script></body>
+</html>

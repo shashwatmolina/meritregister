@@ -1,86 +1,79 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Compare Colleges — The Merit Register</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/compare.css">
-</head>
+
+
+<link href="css/compare.css" rel="stylesheet"/><meta content="V7 VSCode export 2026-08-22" name="merit-register-export"/></head>
 <body>
 <header class="masthead">
-  <div class="wrap">
-    <div>
-      <p class="eyebrow">Independent &middot; Not affiliated with NMC or MCC</p>
-      <h1>The Merit Register</h1>
-      <p class="sub">A working ledger of government MBBS colleges in India &mdash; counselling data, college intelligence and student-facing decision tools.</p>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Directory</a>
-        <a class="active" aria-current="page" href="compare.html">Compare colleges</a>
-        <a href="preference.html">My Preference List</a>
-        <a href="about.html">About this project</a>
-      </nav>
-    </div>
-    <div class="masthead-controls">
-      <div class="rhs">Updated Aug 2026<br>working build</div>
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-        <span class="theme-switch" aria-hidden="true"><span class="theme-thumb">
-          <svg class="theme-symbol sun-symbol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.25"></circle><path d="M12 1.75v2.5M12 19.75v2.5M1.75 12h2.5M19.75 12h2.5M4.75 4.75l1.8 1.8M17.45 17.45l1.8 1.8M4.75 19.25l1.8-1.8M17.45 6.55l1.8-1.8"></path></svg>
-          <svg class="theme-symbol moon-symbol" viewBox="0 0 24 24"><path d="M20.1 15.15A8.55 8.55 0 0 1 8.85 3.9 9.1 9.1 0 1 0 20.1 15.15Z"></path></svg>
-        </span></span>
-      </button>
-    </div>
-  </div>
+<div class="wrap">
+<div>
+<p class="eyebrow">Independent · Not affiliated with NMC or MCC</p>
+<h1>The Merit Register</h1>
+<p class="sub">A working ledger of government MBBS colleges in India — counselling data, college intelligence and student-facing decision tools.</p>
+<nav aria-label="Main navigation" class="site-nav"><a href="index.html">Directory</a><a aria-current="page" class="active" href="compare.html">Compare</a><a href="assistant.html">Choice Assistant</a><a href="culture.html">Junior Culture</a><a href="preference.html">♡ My List</a><span class="nav-more"><button aria-label="More pages" class="nav-more-btn" type="button">More ▾</button><span class="nav-more-menu"><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
+</div>
+<div class="masthead-controls">
+<div class="rhs">Updated Aug 2026<br/>working build</div>
+<button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button">
+<span aria-hidden="true" class="theme-switch"><span class="theme-thumb">
+<svg class="theme-symbol sun-symbol" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4.25"></circle><path d="M12 1.75v2.5M12 19.75v2.5M1.75 12h2.5M19.75 12h2.5M4.75 4.75l1.8 1.8M17.45 17.45l1.8 1.8M4.75 19.25l1.8-1.8M17.45 6.55l1.8-1.8"></path></svg>
+<svg class="theme-symbol moon-symbol" viewbox="0 0 24 24"><path d="M20.1 15.15A8.55 8.55 0 0 1 8.85 3.9 9.1 9.1 0 1 0 20.1 15.15Z"></path></svg>
+</span></span>
+</button>
+</div>
+</div>
 </header>
-
 <main>
 <section class="compare-hero">
-  <div class="wrap">
-    <h2>Compare colleges, line by line.</h2>
-    <p class="lede">Choose two to four government medical colleges. Compare seats and AIQ cutoffs alongside clinical exposure, academics, research/international pathway, hostel, campus life and finances. Missing evidence stays visibly unknown rather than being guessed.</p>
-
-    <div class="compare-shell">
-      <div class="compare-controls compare-controls-v2">
-        <div class="compare-controls-top">
-          <div><h3>Build your comparison</h3><p>Search and add 2–4 colleges. Remove any selected college with ×.</p></div>
-          <div class="compare-actions">
-            <div class="global-category"><label for="compare-category">AIQ category</label><select id="compare-category"><option value="General">General / UR</option><option value="OBC">OBC-NCL</option><option value="EWS">EWS</option><option value="SC">SC</option><option value="ST">ST</option></select></div>
-            <button class="compare-btn" id="diff-toggle" type="button" aria-pressed="false">Show only differences</button>
-            <button class="compare-btn" id="copy-link" type="button">Copy link</button>
-          </div>
-        </div>
-        <div class="college-search-block">
-          <label for="college-search">Search colleges to compare</label>
-          <div class="college-search-box"><span class="search-icon">⌕</span><input id="college-search" type="search" autocomplete="off" placeholder="Try MAMC, AIIMS Jodhpur, Grant, PMCH…" aria-label="Search colleges to compare"><span class="search-count" id="search-count"></span></div>
-          <div class="college-search-results" id="college-search-results" hidden></div>
-        </div>
-        <div class="selected-colleges-head"><span>Selected colleges</span><span id="selected-count">0 / 4</span></div>
-        <div class="compare-pickers selected-college-chips" id="compare-pickers"></div>
-      </div>
-      <div class="compare-note" id="compare-note">2026 seat data + 2025 MCC AIQ cutoff data. Hostel information is shown only where the current research build has a structured profile.</div>
-      <div id="compare-output"></div>
-      <div class="compare-foot">Lower AIR means stronger historical demand. Hostel statements retain the evidence limits of the underlying profile; student-reported information is not treated as an official institutional fact.</div>
-    </div>
-  </div>
+<div class="wrap">
+<h2>Compare colleges, line by line.</h2>
+<p class="lede">Choose two to four government medical colleges. Compare seats and AIQ cutoffs alongside clinical exposure, academics, research/international pathway, hostel, campus life and finances. Missing evidence stays visibly unknown rather than being guessed.</p>
+<div class="compare-shell">
+<div class="compare-controls compare-controls-v2">
+<div class="compare-controls-top">
+<div><h3>Build your comparison</h3><p>Search and add 2–4 colleges. Remove any selected college with ×.</p></div>
+<div class="compare-actions">
+<div class="global-category"><label for="compare-category">AIQ category</label><select id="compare-category"><option value="General">General / UR</option><option value="OBC">OBC-NCL</option><option value="EWS">EWS</option><option value="SC">SC</option><option value="ST">ST</option></select></div>
+<button aria-pressed="false" class="compare-btn" id="diff-toggle" type="button">Show only differences</button>
+<button class="compare-btn" id="copy-link" type="button">Copy link</button>
+</div>
+</div>
+<div class="college-search-block">
+<label for="college-search">Search colleges to compare</label>
+<div class="college-search-box"><span class="search-icon">⌕</span><input aria-label="Search colleges to compare" autocomplete="off" id="college-search" placeholder="Try MAMC, AIIMS Jodhpur, Grant, PMCH…" type="search"/><span class="search-count" id="search-count"></span></div>
+<div class="college-search-results" hidden="" id="college-search-results"></div>
+</div>
+<div class="selected-colleges-head"><span>Selected colleges</span><span id="selected-count">0 / 4</span></div>
+<div class="compare-pickers selected-college-chips" id="compare-pickers"></div>
+</div>
+<div class="compare-note" id="compare-note">2026 seat data + current 2026 MCC Round-1 provisional cutoffs, with 2025 shown alongside for year-on-year movement. Hostel information is shown only where the current research build has a structured profile.</div>
+<div id="compare-output"></div>
+<div class="compare-foot">Lower AIR means stronger historical demand. Hostel statements retain the evidence limits of the underlying profile; student-reported information is not treated as an official institutional fact.</div>
+</div>
+</div>
 </section>
 </main>
-<footer>This is an independent student-built research project &middot; not an official government site &middot; data may contain errors, verify before relying on it</footer>
+<footer>This is an independent student-built research project · not an official government site · data may contain errors, verify before relying on it</footer>
 
-<script src="js/common.js" defer></script>
-<script src="data/colleges.js" defer></script>
-<script src="data/aiq-cutoffs-2025.js" defer></script>
-<script src="data/aiq-cutoffs-2026.js" defer></script>
-<script src="data/hostels.js" defer></script>
-<script src="data/clinical.js" defer></script>
-<script src="data/academics.js" defer></script>
-<script src="data/research.js" defer></script>
-<script src="data/campus.js" defer></script>
-<script src="data/finances.js" defer></script>
-<script src="data/demand-trends.js" defer></script>
-<script src="data/deep-research.js" defer></script>
-<script src="data/comparison-calibration.js" defer></script>
-<script src="js/compare.js" defer></script>
-</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script defer="True" src="js/compare.js"></script></body></html>
