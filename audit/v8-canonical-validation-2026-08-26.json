@@ -1,0 +1,226 @@
+{
+  "generated": "2026-08-26",
+  "build": "The Merit Register V8 Canonical 175",
+  "result": "pass",
+  "pages": {
+    "count": 10,
+    "names": [
+      "about.html",
+      "assistant.html",
+      "college.html",
+      "compare.html",
+      "culture.html",
+      "inbox.html",
+      "index.html",
+      "movement.html",
+      "preference.html",
+      "status.html"
+    ],
+    "missing_local_refs": [],
+    "duplicate_ids": {},
+    "external_script_or_stylesheet_dependencies": []
+  },
+  "javascript": {
+    "files": 12,
+    "syntax_checks": [
+      {
+        "file": "js/assistant.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/college.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/compare.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/culture.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/inbox.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/index.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/movement.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/preference.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/shared-counselling-v8.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/shared-culture-v8.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/shared-intelligence-v8.js",
+        "ok": true,
+        "error": ""
+      },
+      {
+        "file": "js/shared-master-v8.js",
+        "ok": true,
+        "error": ""
+      }
+    ],
+    "original_v7_bytes": 12879768,
+    "v8_bytes": 3736391,
+    "reduction_bytes": 9143377,
+    "reduction_percent": 71.0
+  },
+  "shared_architecture": {
+    "shared_culture_consumers": {
+      "index.html": true,
+      "college.html": true,
+      "compare.html": true,
+      "assistant.html": true,
+      "culture.html": true,
+      "inbox.html": true
+    },
+    "shared_intelligence_consumers": {
+      "index.html": true,
+      "college.html": true,
+      "compare.html": true,
+      "assistant.html": true
+    },
+    "scripts_by_page": {
+      "about.html": [],
+      "assistant.html": [
+        "js/shared-master-v8.js",
+        "js/shared-counselling-v8.js",
+        "js/shared-intelligence-v8.js",
+        "js/shared-culture-v8.js",
+        "js/assistant.js"
+      ],
+      "college.html": [
+        "js/shared-master-v8.js",
+        "js/shared-counselling-v8.js",
+        "js/shared-intelligence-v8.js",
+        "js/shared-culture-v8.js",
+        "js/college.js"
+      ],
+      "compare.html": [
+        "js/shared-master-v8.js",
+        "js/shared-counselling-v8.js",
+        "js/shared-intelligence-v8.js",
+        "js/shared-culture-v8.js",
+        "js/compare.js"
+      ],
+      "culture.html": [
+        "js/shared-master-v8.js",
+        "js/shared-culture-v8.js",
+        "js/culture.js"
+      ],
+      "inbox.html": [
+        "js/shared-master-v8.js",
+        "js/shared-culture-v8.js",
+        "js/inbox.js"
+      ],
+      "index.html": [
+        "js/shared-master-v8.js",
+        "js/shared-counselling-v8.js",
+        "js/shared-intelligence-v8.js",
+        "js/shared-culture-v8.js",
+        "js/index.js"
+      ],
+      "movement.html": [
+        "js/shared-master-v8.js",
+        "js/shared-counselling-v8.js",
+        "js/movement.js"
+      ],
+      "preference.html": [
+        "js/shared-master-v8.js",
+        "js/shared-counselling-v8.js",
+        "js/preference.js"
+      ],
+      "status.html": []
+    }
+  },
+  "data": {
+    "canonical_colleges": 465,
+    "deep_research_refresh_profiles": 30,
+    "junior_culture_profiles": 175,
+    "first_90_days_profiles": 175,
+    "freshers_timeline_records": 69,
+    "timeline_grade_counts": {
+      "D": 4,
+      "B": 28,
+      "GAP": 8,
+      "C": 25,
+      "A": 18
+    },
+    "timeline_possible_cells": 1050,
+    "publishable_A_to_C_cells": 71,
+    "lead_only_D_cells": 4,
+    "blank_or_explicit_gap_cells": 975,
+    "unique_culture_source_urls": 329,
+    "source_kind_counts": {
+      "student": 147,
+      "official": 144,
+      "news": 38
+    }
+  },
+  "evidence_integrity": {
+    "hamirpur_official_source_linked": true,
+    "puri_official_activity_source_linked": true,
+    "source_empty_extension_profiles_are_not_given_unsourced_safety_claims": true,
+    "official_safeguards_not_treated_as_prevalence": true
+  },
+  "accessibility": {
+    "directory_main_filters_have_labels": true,
+    "main_navigation_aria_label": true
+  },
+  "visual_runtime_note": "Automated Chromium navigation to localhost/file URLs is blocked by the execution environment administrator policy, so a browser screenshot regression could not be completed here. A self-contained canonical index preview is generated separately for direct rendering.",
+  "manifest_crosscheck": {
+    "name": "The Merit Register",
+    "export_version": "V8-Canonical-175",
+    "generated": "2026-08-26",
+    "pages": [
+      "index.html",
+      "compare.html",
+      "assistant.html",
+      "culture.html",
+      "college.html",
+      "preference.html",
+      "movement.html",
+      "status.html",
+      "about.html",
+      "inbox.html"
+    ],
+    "deep_profiles": 30,
+    "fresh_source_refreshed": 30,
+    "canonical_colleges": 465,
+    "mcc_2026_profiles": 451,
+    "notes": [
+      "college.html is dynamic via ?id=<canonical id>",
+      "canonical runtime datasets are shared across page bundles through js/shared-*-v8.js",
+      "Freshers Timeline phase timing remains blank when evidence is insufficient",
+      "Junior Culture evidence is source-labelled and is not a numerical ragging score"
+    ],
+    "junior_culture_profiles": 175,
+    "first_90_days_profiles": 175,
+    "freshers_timeline_records": 69,
+    "culture_source_records": 329
+  }
+}

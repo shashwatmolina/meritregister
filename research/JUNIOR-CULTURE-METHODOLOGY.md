@@ -1,10 +1,10 @@
 # Junior Experience & Senior Culture — Research Method
 
-Updated: 25 August 2026
+Updated: 26 August 2026
 
 This layer tracks information that is both important to applicants and unusually easy to distort: ragging reports, senior-issued fresher rulebooks, informal “ground rules”, intro/PDP culture, dress or appearance expectations, access to common areas, senior–junior hierarchy, positive mentoring traditions, disciplinary incidents and the institution’s official response.
 
-Coverage in this build: **100 structured Junior Culture profiles.** The evidence layer now combines the national baseline, Bihar/UP retrospective, Delhi/Rajasthan/AIIMS passes, West/South and Andhra expansions, and the demand-ranked 75→100 pass completed on 26 Aug 2026.
+Coverage in this build: **175 structured Junior Culture profiles.** The evidence layer combines the national baseline, regional retrospectives and demand-ranked expansions through the 150→175 pass completed on 26 Aug 2026.
 
 ## Evidence classes
 
@@ -192,7 +192,7 @@ Additional controls introduced/strengthened in this pass:
 - **Applicant questions ≠ incidents:** a thread asking whether a college has ragging can document an evidence gap, but cannot create a concern signal unless substantive college-specific testimony follows.
 - **Rumor is graded as rumor:** PGIMS Rohtak and ESIC Faridabad retain low-confidence concern leads because the current/recent claims are anonymous or second-hand.
 - **Current lived signals get more weight than old reputation:** IGMC Shimla receives a moderate current concern signal from a detailed Aug 2026 student account; ESIC Hyderabad and JNMC Aligarh receive reassuring current signals, still labelled anonymous/community evidence rather than verified prevalence.
-- **No forced timeline:** all 150 profiles have First-90-Days records. The timeline dataset contains 69 college records; 63 currently have at least one non-`GAP` phase, supporting 85 phase cells in total. Unsupported timing remains `GAP`.
+- **No forced timeline:** every profile in the then-current milestone had a First-90-Days record. Phase timing is populated only when directly supported; the current V8 recount is given below.
 
 
 ## Demand-ranked expansion: 100 → 125 (26 Aug 2026)
@@ -209,4 +209,13 @@ Coverage expanded to **150 researched Junior Culture profiles** using the next 2
 
 Strong current formal-action signals in this pass include BRD Gorakhpur, Gauhati Medical College and NSCB Jabalpur. Haldwani and Pt JNM Raipur carry repeated student-culture concern signals with lower evidentiary certainty. Colleges without adequate current testimony remain explicitly `insufficient` rather than inheriting state or institutional reputation.
 
-All 150 profiles have a First-90-Days record. The timeline remains deliberately sparse: **63** colleges have at least one supported phase and **85** phase cells are supported out of **900** possible, leaving **815** explicit gaps. The timeline dataset itself contains **69** college records.
+At the 150-profile milestone, all 150 profiles had a First-90-Days record. The timeline remained deliberately sparse. The V8 recount below supersedes the earlier aggregate because explicit `GAP` cells had previously been included in the supported-cell total.
+
+
+## Demand-ranked expansion: 150 → 175 (26 Aug 2026)
+
+Coverage expanded to **175 Junior Culture profiles** and **175 First-90-Days records** using the next 25 unresolved colleges by 2026 General Round-1 demand. The pass keeps formal safeguards, disciplinary history, anonymous student reports and genuine evidence gaps separate. Source-empty profiles are presented as **insufficient evidence** rather than receiving an inferred safety or concern label.
+
+The canonical V8 Freshers Timeline contains **69 college records** across six possible phases per profile. Across all **1,050** profile-phase cells, the current grade counts are **A: 18, B: 28, C: 25, D: 4, explicit GAP: 8**; the remaining cells are blank because no phase-specific claim is supported. Therefore **71 A–C cells are publishable phase evidence**, **4 D cells are lead-only**, and **975 cells are blank or explicit GAP**.
+
+The canonical source ledger currently contains **329 unique URLs**: **144 official**, **38 news**, and **147 student/community** sources. Source type is not a truth score: official pages often establish policy rather than lived prevalence, while student reports establish that an account was made rather than that it is universal.

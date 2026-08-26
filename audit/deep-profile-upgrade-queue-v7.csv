@@ -9,23 +9,23 @@ batch,status,id,name,existing_layers,existing_sources,junior_culture
 1,fresh-source-refreshed,49,"Patna Medical College, Patna",6,12,True
 1,fresh-source-refreshed,71,"University College of Medical Sciences & GTB Hospital, New Delhi",6,25,True
 1,fresh-source-refreshed,72,"Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi",6,21,True
-2,standardized-source-refresh-pending,239,"AIIMS, Bhubaneswar",5,15,True
-2,standardized-source-refresh-pending,168,"All India Institute of Medical Sciences, Bhopal",5,10,True
-2,standardized-source-refresh-pending,189,"All India Institute of Medical Sciences, Nagpur",5,10,True
-2,standardized-source-refresh-pending,38,"All India Institute of Medical Sciences, Patna",5,10,True
-2,standardized-source-refresh-pending,372,"All India Institute of Medical Sciences, Rishikesh",5,10,True
-2,standardized-source-refresh-pending,51,"Government Medical College, Chandigarh",5,15,True
-2,standardized-source-refresh-pending,220,"Grant Medical College, Mumbai",6,23,True
-2,standardized-source-refresh-pending,288,"SMS Medical College, Jaipur",5,10,True
-2,standardized-source-refresh-pending,226,"Seth GS Medical College, Mumbai",5,15,True
-2,standardized-source-refresh-pending,230,"Topiwala National Medical College, Mumbai",5,10,True
-3,standardized-source-refresh-pending,75,"B.J. Medical College, Ahmedabad",5,10,True
-3,standardized-source-refresh-pending,66,"Dr. Baba Saheb Ambedkar Medical College, Rohini, Delhi",5,15,True
-3,standardized-source-refresh-pending,211,"Government Medical College, Nagpur",5,15,True
-3,standardized-source-refresh-pending,440,"Institute of Postgraduate Medical Education & Research, Kolkata",5,10,True
-3,standardized-source-refresh-pending,181,"M G M Medical College, Indore",5,15,True
-3,standardized-source-refresh-pending,323,"Madras Medical College, Chennai",5,10,True
-3,standardized-source-refresh-pending,360,"Osmania Medical College, Hyderabad",5,10,True
-3,standardized-source-refresh-pending,129,"Rajendra Institute of Medical Sciences, Ranchi",5,5,True
-3,standardized-source-refresh-pending,248,"SCB Medical College, Cuttack",5,10,True
-3,standardized-source-refresh-pending,327,"Stanley Medical College, Chennai",5,15,True
+2,fresh-source-refreshed,239,"AIIMS, Bhubaneswar",5,15,True
+2,fresh-source-refreshed,168,"All India Institute of Medical Sciences, Bhopal",5,10,True
+2,fresh-source-refreshed,189,"All India Institute of Medical Sciences, Nagpur",5,10,True
+2,fresh-source-refreshed,38,"All India Institute of Medical Sciences, Patna",5,10,True
+2,fresh-source-refreshed,372,"All India Institute of Medical Sciences, Rishikesh",5,10,True
+2,fresh-source-refreshed,51,"Government Medical College, Chandigarh",5,15,True
+2,fresh-source-refreshed,220,"Grant Medical College, Mumbai",6,23,True
+2,fresh-source-refreshed,288,"SMS Medical College, Jaipur",5,10,True
+2,fresh-source-refreshed,226,"Seth GS Medical College, Mumbai",5,15,True
+2,fresh-source-refreshed,230,"Topiwala National Medical College, Mumbai",5,10,True
+3,fresh-source-refreshed,75,"B.J. Medical College, Ahmedabad",5,10,True
+3,fresh-source-refreshed,66,"Dr. Baba Saheb Ambedkar Medical College, Rohini, Delhi",5,15,True
+3,fresh-source-refreshed,211,"Government Medical College, Nagpur",5,15,True
+3,fresh-source-refreshed,440,"Institute of Postgraduate Medical Education & Research, Kolkata",5,10,True
+3,fresh-source-refreshed,181,"M G M Medical College, Indore",5,15,True
+3,fresh-source-refreshed,323,"Madras Medical College, Chennai",5,10,True
+3,fresh-source-refreshed,360,"Osmania Medical College, Hyderabad",5,10,True
+3,fresh-source-refreshed,129,"Rajendra Institute of Medical Sciences, Ranchi",5,5,True
+3,fresh-source-refreshed,248,"SCB Medical College, Cuttack",5,10,True
+3,fresh-source-refreshed,327,"Stanley Medical College, Chennai",5,15,True

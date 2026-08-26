@@ -1,6 +1,6 @@
-# The Merit Register — V7 VS Code Export
+# The Merit Register — V8 VS Code Export
 
-Generated: 22 August 2026.
+Generated: 26 August 2026.
 
 ## Run locally
 
@@ -15,7 +15,7 @@ then open `http://localhost:8000/`. Serving the folder over HTTP is recommended 
 ## Main pages
 
 - `index.html` — nationwide Directory / predictor
-- `compare.html` — deep comparison, V7 dossiers
+- `compare.html` — deep comparison, V8 dossiers
 - `assistant.html` — Choice List Assistant
 - `culture.html` — Junior Culture / First 90 Days / timeline / artifacts
 - `college.html?id=71` — dynamic college profile (change `id`)
@@ -27,7 +27,7 @@ then open `http://localhost:8000/`. Serving the folder over HTTP is recommended 
 
 ## Export architecture
 
-The latest working previews from the research build were converted into VS-Code-friendly HTML + page-specific CSS/JS bundles. Runtime datasets are embedded inside the page JS bundles so this export is self-contained and does not depend on the earlier chat workspace.
+V8 uses shared runtime data layers for the canonical college master, counselling data, college intelligence, and Junior Culture/First 90 Days evidence. Page-specific JavaScript now contains mostly UI/runtime logic, preventing the same evidence block from drifting across Directory, Compare, College Profile, Culture, Assistant and Inbox. The export remains self-contained and does not require external application scripts or font services.
 
 The underlying research/audit files are included under `audit/`, `research/`, `data/`, and `scripts/`.
 
@@ -41,4 +41,13 @@ The underlying research/audit files are included under `audit/`, `research/`, `d
 
 ## Current deep-profile status
 
-30 standardized V7 dossiers; 10 have completed the fresh-source refresh, and 20 are queued for the same pass.
+30 standardized V8 dossiers; all 30 are marked fresh-source refreshed in the synchronized research queue. Junior Culture covers 175 colleges, with 175 First-90-Days records and timing left blank when phase-specific evidence is insufficient.
+
+## V8 shared data layer
+
+- `js/shared-master-v8.js` — canonical 465-college master
+- `js/shared-counselling-v8.js` — shared MCC/cutoff datasets
+- `js/shared-intelligence-v8.js` — hostel, clinical, academics, research, campus and finance layers
+- `js/shared-culture-v8.js` — 175 Junior Culture + 175 First 90 Days + timing-strict Freshers Timeline
+
+The page bundles load these files before page-specific logic. This replaces multi-megabyte duplication across pages.

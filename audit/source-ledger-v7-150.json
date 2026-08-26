@@ -1,0 +1,4240 @@
+{
+  "generated": "2026-08-26",
+  "schema": "junior-culture-source-ledger-v1",
+  "warning": "Source ledger tracks provenance and reuse. Student posts establish that a claim was made, not that it is universally true; third-party mirrors are explicitly provenance-limited.",
+  "count": 312,
+  "sources": [
+    {
+      "url": "https://aiimsbhubaneswar.nic.in/anti-ragging/",
+      "label": "AIIMS Bhubaneswar anti-ragging page",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 239,
+          "name": "AIIMS, Bhubaneswar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://api.aiimspatna.edu.in/advertisement/Office-Order-recostitutionOfAnti-RaggingCommittee-23052026.pdf",
+      "label": "AIIMS Patna — Anti-Ragging Core Committee office order (Apr 2026)",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 38,
+          "name": "All India Institute of Medical Sciences, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://bhu.ac.in/Site/Page/84_4_4657_7055_Institute-of-Medical-Sciences-Anti-Ragging-%28IMS%29",
+      "label": "BHU Institute of Medical Sciences — Anti-Ragging page",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 400,
+          "name": "Institute of Medical Sciences, BHU, Varanasi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://dell.aiimsnagpur.edu.in/pages/anti-ragging_committee_2025",
+      "label": "AIIMS Nagpur — Anti-Ragging Committee and Squad 2025/current",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 189,
+          "name": "All India Institute of Medical Sciences, Nagpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://gmcnagpur.org/announcements",
+      "label": "Government Medical College Nagpur — official site / Anti-Ragging Committee menu",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 211,
+          "name": "Government Medical College, Nagpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://indianexpress.com/article/cities/ahmedabad/3-pg-students-at-b-j-medical-college-suspended-for-ragging-juniors-10745072/",
+      "label": "Indian Express — 3 PG students suspended for ragging juniors",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 75,
+          "name": "B.J. Medical College, Ahmedabad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://jipmer.edu.in/anti-ragging-committee",
+      "label": "JIPMER Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 255,
+          "name": "Jawaharlal Institute of Postgraduate Medical Education & Research (JIPMER), Puducherry"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://mamc.delhi.gov.in/circular-notices/473",
+      "label": "MAMC circulars — Anti Ragging Booklet",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 69,
+          "name": "Maulana Azad Medical College, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://mamc.delhi.gov.in/mamc/under-graduate-hostel-rules",
+      "label": "MAMC undergraduate hostel rules",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 69,
+          "name": "Maulana Azad Medical College, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://medicaldialogues.in/n-167238",
+      "label": "Medical Dialogues — six suspended; later probe disputes complaint (Mar 2026)",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 288,
+          "name": "SMS Medical College, Jaipur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://medicaldialogues.in/state-news/madhya-pradesh/mgm-indore-mbbs-student-death-family-alleges-ragging-seeks-probe-164034",
+      "label": "Medical Dialogues — family alleges ragging after first-year death",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 181,
+          "name": "M G M Medical College, Indore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://nursing.aiimsbhopal.edu.in/downloads/anti_ragging_policy.pdf",
+      "label": "AIIMS Bhopal anti-ragging policy",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 168,
+          "name": "All India Institute of Medical Sciences, Bhopal"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://patnamedicalcollege.edu.in/",
+      "label": "PMCH official website",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 49,
+          "name": "Patna Medical College, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://placement.kgmu.org/do_donts.php",
+      "label": "KGMU student do’s & don’ts / institutional dress",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 402,
+          "name": "King George's Medical University, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://rimsranchi.ac.in/mand_disc.php",
+      "label": "RIMS Ranchi — anti-ragging cell reference",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 129,
+          "name": "Rajendra Institute of Medical Sciences, Ranchi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://rmlh.mohfw.gov.in/index1.aspx?langid=1&lev=3&lid=3575&lsid=2581",
+      "label": "ABVIMS Student Corner — do’s and don’ts",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 65,
+          "name": "Atal Bihari Vajpayee Institute of Medical Sciences and Dr. RML Hospital, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://rmlh.mohfw.gov.in/index1.aspx?langid=1&lev=4&lid=3556&lsid=2584",
+      "label": "ABVIMS / RML Institutional Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 65,
+          "name": "Atal Bihari Vajpayee Institute of Medical Sciences and Dr. RML Hospital, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://scbmch.odisha.gov.in/en/light/subpage/various-committee",
+      "label": "SCB Medical College — Anti-Ragging Flying Squad / committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 248,
+          "name": "SCB Medical College, Cuttack"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://tnmcnair.edu.in/",
+      "label": "TNMC/Nair official website",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 230,
+          "name": "Topiwala National Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://tnmcnair.edu.in/wp-content/uploads/2025/10/ARC-Members-list-FINAL-2025-26-26.12.25.pdf",
+      "label": "TNMC/Nair — Anti-Ragging Committee members 2025–26",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 230,
+          "name": "Topiwala National Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://vmmc-sjh.mohfw.gov.in/latest-news-page",
+      "label": "VMMC 2026 committee / latest notices",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 72,
+          "name": "Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://vmmc-sjh.mohfw.gov.in/student-zone",
+      "label": "VMMC Student Zone — anti-ragging policy",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 72,
+          "name": "Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.aiims.edu/index.php/en/hostel_accomodation_faqs",
+      "label": "AIIMS Delhi hostel FAQ — anti-ragging rules",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 64,
+          "name": "All India Institute of Medical Sciences, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.aiimsjodhpur.edu.in/news/antiragging.pdf",
+      "label": "AIIMS Jodhpur anti-ragging measures",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 262,
+          "name": "All India Institute of Medical Sciences, Jodhpur"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.bjmcabd.edu.in/",
+      "label": "BJMC Ahmedabad — Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 75,
+          "name": "B.J. Medical College, Ahmedabad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.gmch.gov.in/admissions",
+      "label": "GMCH Chandigarh — Admissions / anti-ragging guidelines",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 51,
+          "name": "Government Medical College, Chandigarh"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.gmch.gov.in/anti-ragging-gmch-committee",
+      "label": "GMCH Chandigarh — Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 51,
+          "name": "Government Medical College, Chandigarh"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.igims.org/",
+      "label": "IGIMS official website — Affidavit Regarding Ragging",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.ipgmer.gov.in/pdf/Prospectus.pdf",
+      "label": "IPGMER prospectus — Anti-Ragging & Disciplinary Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 440,
+          "name": "Institute of Postgraduate Medical Education & Research, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.kem.edu/",
+      "label": "KEM Hospital / Seth GS Medical College — official site",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 226,
+          "name": "Seth GS Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.kgmu.org/anti_ragging_squad.php",
+      "label": "KGMU Anti-Ragging Squad",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 402,
+          "name": "King George's Medical University, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.mgmmedicalcollege.edu.in/",
+      "label": "MGM Medical College Indore — official site / anti-ragging helpline",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 181,
+          "name": "M G M Medical College, Indore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.omc.ac.in/anti-ragging-committee.php",
+      "label": "Osmania Medical College — UG Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 360,
+          "name": "Osmania Medical College, Hyderabad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/genzmedschool/comments/1up48ur/one_of_my_aakash_senior_is_studying_in_aiims/",
+      "label": "Public follow-up — self-identified student says batch stopped following rules (Jul 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 38,
+          "name": "All India Institute of Medical Sciences, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1usvziw/ims_bhu/",
+      "label": "Conflicting IMS-BHU culture thread (Jul 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 400,
+          "name": "Institute of Medical Sciences, BHU, Varanasi"
+        }
+      ],
+      "layers": [
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Indore/comments/1usi24e/what_is_ragging_scene_in_mgm_indore/",
+      "label": "MGM Indore ragging discussion — hostel vs day scholar (Jul 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 181,
+          "name": "M G M Medical College, Indore"
+        }
+      ],
+      "layers": [
+        "first-90-days",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/JEENEETards/comments/1uzwn2q/i_am_a_student_of_mamc_delhi_ama/",
+      "label": "MAMC student AMA — hostel/PG and first-year context (Jul 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 69,
+          "name": "Maulana Azad Medical College, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1uhuplt/dress_code_in_pmch_igims_patna/",
+      "label": "PMCH & IGIMS dress-code discussion (Jun 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1v56ge5/bhai_mgm_indore_me_ragging_kitni_buri_hoti_h_can/",
+      "label": "Long-term day-scholar account — almost nil exposure, no social boycott (Jul/Aug 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 181,
+          "name": "M G M Medical College, Indore"
+        }
+      ],
+      "layers": [
+        "first-90-days",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/",
+      "label": "Public 2026 discussion about IGIMS ragging concerns — unverified",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1soxst2/interaction_at_aiims_patna/",
+      "label": "Anonymous public report — “Interaction at AIIMS Patna” (Apr 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 38,
+          "name": "All India Institute of Medical Sciences, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1tfki4s/horrendous_college/",
+      "label": "Conflicting student account alleging PDP pressure / social exclusion (May 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 69,
+          "name": "Maulana Azad Medical College, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1uelq3s/best_college_for_mbbs_in_kolkata/",
+      "label": "Public Kolkata college discussion — single IPGMER “no ragging” claim",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 440,
+          "name": "Institute of Postgraduate Medical Education & Research, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1uv2pn0/kem_or_jj/",
+      "label": "KEM vs JJ discussion (Jul 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 226,
+          "name": "Seth GS Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1uyed5z/college_help_kem_vs_aiims/",
+      "label": "Public 2026 KEM student report",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 226,
+          "name": "Seth GS Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1uzrsbs/any_future_pmch_patna_peeps_here_im_planning_to/",
+      "label": "Prospective PMCH/IGIMS thread with sibling-based IGIMS account (Jul 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1v5cdtu/bhai_mgmmc_indore_ki_ragging_kitni_buri_h_can_i/",
+      "label": "Current public discussion about MGM Indore hostel concerns — unverified",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 181,
+          "name": "M G M Medical College, Indore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vi2oen/why_arent_u_taking_clg_in_bihar/",
+      "label": "Public IGIMS/Bihar college discussion (Aug 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vjz21q/ama_related_to_vmmc/",
+      "label": "Public VMMC AMA — Aug 2026",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 72,
+          "name": "Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vl9ak9/senior_from_mamc_25_batch_ama/",
+      "label": "MAMC 2025-batch AMA — Aug 2026",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 69,
+          "name": "Maulana Azad Medical College, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vrlm9c/ragging_in_kgmu/",
+      "label": "Public KGMU ragging discussion — Aug 2026",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 402,
+          "name": "King George's Medical University, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vthm7h/ragging_in_gmc_nagpur/",
+      "label": "Public current discussion — “Ragging in GMC NAGPUR” (20 Aug 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 211,
+          "name": "Government Medical College, Nagpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vtkr1h/rulebook_given_to_freshers_at_pmchpatna/",
+      "label": "Public post: PMCH fresher rulebook resurfaced",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 49,
+          "name": "Patna Medical College, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vtss5c/whats_the_environment_in_kgmu/",
+      "label": "Incoming KGMU student thread with current second-hand signal (Aug 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 402,
+          "name": "King George's Medical University, Lucknow"
+        }
+      ],
+      "layers": [
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/nagpur/comments/1vqnsng/anyone_from_gmc_nagpur/",
+      "label": "Public current discussion — “Anyone from GMC Nagpur?” (17 Aug 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 211,
+          "name": "Government Medical College, Nagpur"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://www.ucms.ac.in/administration/committees",
+      "label": "UCMS committees — Anti Ragging & Disciplinary Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 71,
+          "name": "University College of Medical Sciences & GTB Hospital, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://gmcjjh.edu.in/wp-content/uploads/2025/08/Anti-ragging-week-program-12-18-aug-2025.pdf",
+      "label": "Grant GMC / JJ — Anti-Ragging Week 2025 programme",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 220,
+          "name": "Grant Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://jipmer.ac.in/sites/default/files/2025%20MBBS%20PROSPECTUS.pdf",
+      "label": "JIPMER MBBS Prospectus 2025–26",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 255,
+          "name": "Jawaharlal Institute of Postgraduate Medical Education & Research (JIPMER), Puducherry"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://medicaldialogues.in/news/education/medical-colleges/ims-bhu-25-mbbs-students-fined-rs-25k-each-for-ragging-juniors-149920",
+      "label": "Medical Dialogues — 25 IMS-BHU MBBS students fined (Jun 2025)",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 400,
+          "name": "Institute of Medical Sciences, BHU, Varanasi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://medicaldialogues.in/news/education/medical-colleges/sms-medical-college-16-mbbs-students-1-intern-suspended-for-ragging-159791",
+      "label": "Medical Dialogues — 16 MBBS students and 1 intern suspended (Dec 2025)",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 288,
+          "name": "SMS Medical College, Jaipur"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/indore/anonymous-ragging-complaint-at-mgm-found-false-after-investigation/articleshow/126128202.cms",
+      "label": "Times of India — separate anonymous complaint found false",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 181,
+          "name": "M G M Medical College, Indore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.aiims.edu/aiims/academic/Anti%20Ragging/",
+      "label": "AIIMS Delhi anti-ragging document index",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 64,
+          "name": "All India Institute of Medical Sciences, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.dtnext.in/news/chennai/six-mmc-students-suspended-over-ragging-probe-on",
+      "label": "DT Next — six MMC students suspended, probe on",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 323,
+          "name": "Madras Medical College, Chennai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.freepressjournal.in/indore/indore-news-mbbs-freshers-assaulted-forced-to-smoke-drink-four-suspended",
+      "label": "Free Press Journal — four seniors suspended after 2025 fresher complaint",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 181,
+          "name": "M G M Medical College, Indore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.newindianexpress.com/cities/chennai/2025/Dec/21/six-medical-students-suspended-for-ragging-juniors-at-hostel-in-madras-medical-college",
+      "label": "New Indian Express — six students suspended after hostel complaint",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 323,
+          "name": "Madras Medical College, Chennai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1mqy6gc/any_ucms_senior_here/",
+      "label": "UCMS admissions / ragging / hostel discussion (Aug 2025)",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 71,
+          "name": "University College of Medical Sciences & GTB Hospital, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1n484x3/",
+      "label": "Public student post reproducing alleged senior rules",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 168,
+          "name": "All India Institute of Medical Sciences, Bhopal"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1llsyyj/ama_ask_me_anything_about_ims_bhu/",
+      "label": "Public IMS BHU AMA / student discussion",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 400,
+          "name": "Institute of Medical Sciences, BHU, Varanasi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1mdtk9o/is_there_ragging_in_bombay_medical_colleges/",
+      "label": "Public 2025 Mumbai medical-college ragging discussion",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 226,
+          "name": "Seth GS Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1mzqp9d",
+      "label": "Telangana colleges ragging/dress discussion (Aug 2025)",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 360,
+          "name": "Osmania Medical College, Hyderabad"
+        }
+      ],
+      "layers": [
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1n4o2qn/",
+      "label": "Public complaint post regarding alleged AIIMS Bhopal rules",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 168,
+          "name": "All India Institute of Medical Sciences, Bhopal"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1n4z2iw/mamc_has_no_weird_rules_for_1st_years/",
+      "label": "Student report: “MAMC has no weird rules for 1st years”",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 69,
+          "name": "Maulana Azad Medical College, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1n8xi7u/medicos_from_pmch_kindly_confirm_this/",
+      "label": "Public thread: PMCH fresher booklet confirmation request",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 49,
+          "name": "Patna Medical College, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://aiimsbhubaneswar.nic.in/wp-content/uploads/2024/07/studentnotice_1349953378.pdf",
+      "label": "AIIMS Bhubaneswar anti-ragging policy for MBBS",
+      "kind": "official",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 239,
+          "name": "AIIMS, Bhubaneswar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://aiimsrishikesh.edu.in/a1_1/?page_id=2277",
+      "label": "AIIMS Rishikesh office orders — Anti-Ragging Squad",
+      "kind": "official",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 372,
+          "name": "All India Institute of Medical Sciences, Rishikesh"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://ipgmer.gov.in/pdf/AntiraggingNotice.pdf",
+      "label": "IPGMER — Zero Tolerance for Ragging notice",
+      "kind": "official",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 440,
+          "name": "Institute of Postgraduate Medical Education & Research, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://medicaldialogues.in/news/education/medical-colleges/jj-hospitals-grant-medical-college-two-2-year-mbbs-students-suspended-for-ragging-junior-136665",
+      "label": "Medical Dialogues — 2024 Grant/JJ ragging disciplinary case",
+      "kind": "news",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 220,
+          "name": "Grant Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/lucknow/nine-kgmu-medical-students-suspended-for-ragging-juniors-via-video-calls/articleshow/114556300.cms",
+      "label": "Times of India — nine KGMU students suspended for video-call ragging (Oct 2024)",
+      "kind": "news",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 402,
+          "name": "King George's Medical University, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.aiimsjodhpur.edu.in/annual%20report/ENG%20-%20Annual%20Report%2023-24%20%288%29%20%281%29%20%281%29.pdf",
+      "label": "AIIMS Jodhpur Annual Report 2023–24 — anti-ragging measures",
+      "kind": "official",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 262,
+          "name": "All India Institute of Medical Sciences, Jodhpur"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days"
+      ]
+    },
+    {
+      "url": "https://www.newindianexpress.com/states/odisha/2024/Nov/05/scb-medical-college-initiates-probe-into-alleged-ragging-of-first-year-mbbs-student",
+      "label": "New Indian Express — probe into alleged first-year MBBS ragging",
+      "kind": "news",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 248,
+          "name": "SCB Medical College, Cuttack"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1f73hxr",
+      "label": "Public student/alumni account — Sep 2024",
+      "kind": "student",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 239,
+          "name": "AIIMS, Bhubaneswar"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "first-90-days",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://www.ucms.ac.in/aboutucms/viewgallery",
+      "label": "UCMS institutional gallery / anti-ragging activity",
+      "kind": "official",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 71,
+          "name": "University College of Medical Sciences & GTB Hospital, New Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://rimsranchi.ac.in/gallery-antiraging.php",
+      "label": "RIMS Ranchi — anti-ragging orientation programme",
+      "kind": "official",
+      "year": 2023,
+      "colleges": [
+        {
+          "id": 129,
+          "name": "Rajendra Institute of Medical Sciences, Ranchi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.stanleymedicalcollege.in/templates/default/file/DOC-20230530-WA0003.pdf",
+      "label": "Stanley Medical College — Anti-Ragging Squad",
+      "kind": "official",
+      "year": 2023,
+      "colleges": [
+        {
+          "id": 327,
+          "name": "Stanley Medical College, Chennai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://aiimspatna.edu.in/document/Anti-Ragging-Measures.pdf",
+      "label": "AIIMS Patna — published anti-ragging measures",
+      "kind": "official",
+      "year": 2022,
+      "colleges": [
+        {
+          "id": 38,
+          "name": "All India Institute of Medical Sciences, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://aiimsrishikesh.edu.in/a1_1/wp-content/uploads/2020/11/Reporting-guidelines-for-MBBS-at-AIIMS-Rishikesh-for-Session-2022-Round-1.pdf",
+      "label": "AIIMS Rishikesh MBBS reporting guidelines",
+      "kind": "official",
+      "year": 2022,
+      "colleges": [
+        {
+          "id": 372,
+          "name": "All India Institute of Medical Sciences, Rishikesh"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://bsamch.ac.in/wp-content/uploads/2022/05/Anti-Ragging-Batch-2021-22-14-Feb-2022.pdf",
+      "label": "Dr BSA Medical College — Anti-Ragging booklet for MBBS batch 2021–22",
+      "kind": "official",
+      "year": 2022,
+      "colleges": [
+        {
+          "id": 66,
+          "name": "Dr. Baba Saheb Ambedkar Medical College, Rohini, Delhi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1frhw9j/rims_ranchi/",
+      "label": "RIMS Ranchi current first-year hostel discussion",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 129,
+          "name": "RIMS Ranchi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://rimsranchi.ac.in/odwbrms/infra.php",
+      "label": "RIMS Ranchi official hostel infrastructure",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 129,
+          "name": "RIMS Ranchi"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://news.careers360.com/indore-medical-college-mp-government-launch-probes-x-user-claims-ragging-at-boys-hostel",
+      "label": "MGM Indore first-year three-month allegation and formal probes",
+      "kind": "news",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 181,
+          "name": "M G M Medical College, Indore"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/nagpur/comments/1vthrdm/ragging_in_gmc_nagpur/",
+      "label": "GMC Nagpur current conflicting duration discussion",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 211,
+          "name": "Government Medical College, Nagpur"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://www.hindustantimes.com/cities/mumbai-news/antiragging-panel-recommends-suspension-of-two-students-101729191257281.html",
+      "label": "Grant/JJ anti-ragging case three days after classes began",
+      "kind": "news",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 220,
+          "name": "Grant Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://rajasthan.ndtv.in/rajasthan-news/jaipur-news-case-of-ragging-in-sms-medical-college-college-administration-suspends-17-students-9725174/amp/1",
+      "label": "SMS Jaipur first-year complaint and suspensions",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 288,
+          "name": "SMS Medical College, Jaipur"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://notopedia-uploads.s3.us-east-2.amazonaws.com/college_brochure/Madras%20Medical%20College/Madras%20Medical%20College%20-%20Hostel%20Details.pdf",
+      "label": "Madras Medical College hostel-details mirror: first-three-month vigilance",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 323,
+          "name": "Madras Medical College, Chennai"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://aiimsrishikesh.edu.in/images/upload_documents/updated%20guidelines%20for%20reporting%20for%20MBBS%202024%20session%20round-1%20at%20AIIMS%20Rishikesh.pdf",
+      "label": "AIIMS Rishikesh official reporting / joining-period anti-ragging guidance",
+      "kind": "official",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 372,
+          "name": "AIIMS Rishikesh"
+        }
+      ],
+      "layers": [
+        "junior-culture",
+        "freshers-timeline"
+      ]
+    },
+    {
+      "url": "https://vimspawapuri.org/committees-list/",
+      "label": "BMIMS Pawapuri — Anti-Ragging Committee & Squad",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 40,
+          "name": "Bhagwan Mahavir Institute of Medical Sciences, Pawapuri, Nalanda"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.antiragging.in/complaints-record/new-complaints-record.php",
+      "label": "National Anti-Ragging — public complaints record",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 40,
+          "name": "Bhagwan Mahavir Institute of Medical Sciences, Pawapuri, Nalanda"
+        },
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        },
+        {
+          "id": 48,
+          "name": "Nalanda Medical College, Patna"
+        },
+        {
+          "id": 49,
+          "name": "Patna Medical College, Patna"
+        },
+        {
+          "id": 389,
+          "name": "Dr. Ram Manohar Lohia Institute of Medical Sciences, Lucknow"
+        },
+        {
+          "id": 399,
+          "name": "GSVM Medical College, Kanpur"
+        },
+        {
+          "id": 404,
+          "name": "Moti Lal Nehru Medical College, Allahabad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://roharyana.esic.gov.in/attachments/admissionfile/Notice_regarding_MBBS_Admission_for_the_Session_2025_26_1754300943.pdf",
+      "label": "ESIC Bihta — MBBS admission 2025–26 / anti-ragging affidavit",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 42,
+          "name": "ESIC Medical College & Hospital, Bihta, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.igims.org/topics.aspx?mid=Anti+Ragging",
+      "label": "IGIMS — Anti Ragging page / dedicated email",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.igims.org/topics.aspx?mid=Office+Order+%2F+Circular",
+      "label": "IGIMS — anti-ragging committee / mentor-mentee office orders",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vwa3yg/igims_patna/",
+      "label": "IGIMS, PATNA — current discussion (Aug 23 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vw054b/kitni_achhi_fresher_party_hai_s/",
+      "label": "IGIMS/freshers-party discussion (Aug 23 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 40,
+          "name": "Bhagwan Mahavir Institute of Medical Sciences, Pawapuri, Nalanda"
+        },
+        {
+          "id": 42,
+          "name": "ESIC Medical College & Hospital, Bihta, Patna"
+        },
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vh4cli/igims_ragging_scenes_if_anyone_know/",
+      "label": "IGIMS ragging-scenes discussion (Aug 6 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 45,
+          "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.nmchpatna.ac.in/anti-ragging.php",
+      "label": "NMCH — Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 48,
+          "name": "Nalanda Medical College, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.nmchpatna.ac.in/anti-ragging-squat.php",
+      "label": "NMCH — Anti-Ragging Squad / helpline",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 48,
+          "name": "Nalanda Medical College, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1viqtqi/help_me_choose_clg/",
+      "label": "NMCH counselling discussion (Aug 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 48,
+          "name": "Nalanda Medical College, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vqrvuj/college_suggestions/",
+      "label": "PMCH vs IGIMS counselling discussion (Aug 17 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 49,
+          "name": "Patna Medical College, Patna"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vuc6lm/tips_to_survive_ragging_in_medical_colleges_from/",
+      "label": "UP 4th-year ragging thread (Aug 21 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 49,
+          "name": "Patna Medical College, Patna"
+        },
+        {
+          "id": 399,
+          "name": "GSVM Medical College, Kanpur"
+        },
+        {
+          "id": 404,
+          "name": "Moti Lal Nehru Medical College, Allahabad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://drrmlims.ac.in/data/Final%20SOP%20rev.pdf",
+      "label": "RMLIMS — Undergraduate MBBS SOP / Anti-Ragging Measures",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 389,
+          "name": "Dr. Ram Manohar Lohia Institute of Medical Sciences, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1ncaqle/",
+      "label": "RMLIMS alleged senior rules (Sep 2025)",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 389,
+          "name": "Dr. Ram Manohar Lohia Institute of Medical Sciences, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1nc9hqo/is_getting_rmlims_lucknow_a_w_or_l/",
+      "label": "RMLIMS student comparison / Aug 2026 follow-up",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 389,
+          "name": "Dr. Ram Manohar Lohia Institute of Medical Sciences, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://gsvmmedicalcollege.com/office-bearers/",
+      "label": "GSVM — Anti-Ragging Committee office bearers",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 399,
+          "name": "GSVM Medical College, Kanpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://gsvmmedicalcollege.com/anti-ragging/",
+      "label": "GSVM — Anti-Ragging page",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 399,
+          "name": "GSVM Medical College, Kanpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1t63xzp/rant_about_gsvm_kanpur/",
+      "label": "GSVM public discussion (May 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 399,
+          "name": "GSVM Medical College, Kanpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1usfbzf/college_regarding_doubt/",
+      "label": "GSVM counselling discussion (Jul 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 399,
+          "name": "GSVM Medical College, Kanpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://kgmu.org/antiragging.php",
+      "label": "KGMU — Anti-Ragging Cell / helplines",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 402,
+          "name": "King George's Medical University, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vvywos/kgmu_is_one_of_the_most_toxic_colleges_of_up/",
+      "label": "KGMU toxicity / acquaintance reports (Aug 23 2026)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 402,
+          "name": "King George's Medical University, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vvvevv/even_the_top_gmc_like_kgmu_isnt_free_from_this/",
+      "label": "KGMU historical ritual footage described as 2022 batch",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 402,
+          "name": "King George's Medical University, Lucknow"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://nhrc.nic.in/sites/default/files/2018_09_ENG.pdf",
+      "label": "NHRC Sep 2018 newsletter — MLN ragging notice",
+      "kind": "official",
+      "year": 2018,
+      "colleges": [
+        {
+          "id": 404,
+          "name": "Moti Lal Nehru Medical College, Allahabad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://sansad.in/getFile/loksabhaquestions/annex/172/AU4274.pdf?source=pqals",
+      "label": "Lok Sabha reply — status of ragging cases / MLN 2018–19",
+      "kind": "official",
+      "year": 2020,
+      "colleges": [
+        {
+          "id": 404,
+          "name": "Moti Lal Nehru Medical College, Allahabad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "college_id": 67,
+      "college": "ESIC Medical College & Hospital, Basaidarapur, New Delhi",
+      "kind": "student",
+      "label": "Detailed ESIC Basaidarapur current review — Jul 2026",
+      "url": "https://www.reddit.com/r/Neet_india/comments/1v89d8w/esic_basaidarapur_new_delhi_help_croww_yawrrr/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 67,
+      "college": "ESIC Medical College & Hospital, Basaidarapur, New Delhi",
+      "kind": "official",
+      "label": "ESIC Basaidarapur MBBS admission 2025–26 — anti-ragging affidavit",
+      "url": "https://esic.gov.in/attachments/admissionfile/UG_MBBS_Admission_2025_26_1761285876.pdf",
+      "year": 2025,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 68,
+      "college": "Lady Hardinge Medical College, New Delhi",
+      "kind": "official",
+      "label": "LHMC Citizen Charter 2025 — anti-ragging complaint pathway",
+      "url": "https://lhmc-hosp.gov.in/WriteReadData/l892s/CitizenCharter-2025.pdf",
+      "year": 2025,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 68,
+      "college": "Lady Hardinge Medical College, New Delhi",
+      "kind": "official",
+      "label": "LHMC Undergraduate Hostel Rules — ragging prohibited",
+      "url": "https://lhmc-hosp.gov.in/WriteReadData/l892s/UG%20hostel%20rules%20and%20regulations%2028%2011%2016.pdf",
+      "year": 2017,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 68,
+      "college": "Lady Hardinge Medical College, New Delhi",
+      "kind": "student",
+      "label": "LHMC review request — Jul 2025",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1ltt3ne/lhmc_from_aiq_need_honest_info_fees_hostel/",
+      "year": 2025,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 70,
+      "college": "North Delhi Municipal Corporation Medical College, Delhi",
+      "kind": "official",
+      "label": "North DMC Medical College — current Anti-Ragging Committee and Squad",
+      "url": "https://northdmcmedicalcollege.mcd.gov.in/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 467,
+      "college": "Central Armed Police Forces Institute of Medical Sciences (CAPFIMS), Delhi",
+      "kind": "official",
+      "label": "AIIMS New Delhi — AIIMS-CAPFIMS faculty selection programme, Jun 2026",
+      "url": "https://www.aiims.edu/images/pdf/notice/facultycell-25-5-26.pdf",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 467,
+      "college": "Central Armed Police Forces Institute of Medical Sciences (CAPFIMS), Delhi",
+      "kind": "student",
+      "label": "CAPFIMS counselling discussion — first batch / no seniors, Aug 2026",
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1vjpr4l/about_aiims_capfims/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 52,
+      "college": "All India Institute of Medical Sciences, Raipur",
+      "kind": "news",
+      "label": "Times of India — AIIMS Raipur students allege nightlong ragging, Nov 2024",
+      "url": "https://timesofindia.indiatimes.com/india/students-allege-nightlong-ragging-at-aiims-raipur/articleshow/115783458.cms",
+      "year": 2024,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 52,
+      "college": "All India Institute of Medical Sciences, Raipur",
+      "kind": "student",
+      "label": "First-person-style fest ragging account — Nov 2024",
+      "url": "https://www.reddit.com/r/CrushTheRagging/comments/1gwp24j/",
+      "year": 2024,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 52,
+      "college": "All India Institute of Medical Sciences, Raipur",
+      "kind": "official",
+      "label": "AIIMS Raipur — current Anti-Ragging Committee / squad / helpline",
+      "url": "https://www.aiimsraipur.edu.in/user/anti_ragging_committee.php",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 52,
+      "college": "All India Institute of Medical Sciences, Raipur",
+      "kind": "official",
+      "label": "AIIMS Raipur anti-ragging measures — fresher/senior separation",
+      "url": "https://aiimsraipur.edu.in/upload/anualreport/eng/6448bcbf50332AIIMS%20Raipur%20AR%202021-22_08.12.2022.pdf",
+      "year": 2022,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 74,
+      "college": "All India Institute of Medical Sciences, Rajkot",
+      "kind": "news",
+      "label": "PTI/ThePrint — five classmates arrested in AIIMS Rajkot harassment case, Mar 2026",
+      "url": "https://theprint.in/india/aiims-rajkot-intern-doctors-suicide-five-classmates-held-for-harassment/2879765/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 74,
+      "college": "All India Institute of Medical Sciences, Rajkot",
+      "kind": "student",
+      "label": "Current public discussion framing Rajkot case as ragging — Jun 2026",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1uhotfl/ragging_at_aiims_rajkot_off_topic/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 106,
+      "college": "All India Institute of Medical Sciences, Bilaspur",
+      "kind": "student",
+      "label": "AIIMS Bilaspur head-shaving ritual discussion — Jul 2026",
+      "url": "https://www.reddit.com/r/JEENEETards/comments/1uxvx3q/does_aiims_bilaspur_have_a_hidden_ragging_culture/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 106,
+      "college": "All India Institute of Medical Sciences, Bilaspur",
+      "kind": "student",
+      "label": "AIIMS Bilaspur freshers-party discussion — Aug 23 2026",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vvy5oy/ragging_at_aiims_bilaspur/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 106,
+      "college": "All India Institute of Medical Sciences, Bilaspur",
+      "kind": "official",
+      "label": "AIIMS Bilaspur — anti-ragging emergency contacts/measures, updated May 2026",
+      "url": "https://aiimsbilaspur.edu.in/index.php/academics/anti-ragging/emergency-contacts",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 106,
+      "college": "All India Institute of Medical Sciences, Bilaspur",
+      "kind": "official",
+      "label": "AIIMS Bilaspur — Anti-Ragging Committee, updated Jul 2026",
+      "url": "https://aiimsbilaspur.edu.in/index.php/academics/anti-ragging/anti-ragging-committee",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 256,
+      "college": "All India Institute of Medical Sciences, Bathinda",
+      "kind": "official",
+      "label": "AIIMS Bathinda — current Anti-Ragging Committee and reporting contacts",
+      "url": "https://www.aiimsbathinda.edu.in/Committees_Academic.aspx",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 256,
+      "college": "All India Institute of Medical Sciences, Bathinda",
+      "kind": "official",
+      "label": "AIIMS Bathinda — Academic notifications / Anti Ragging Measures 2025",
+      "url": "https://www.aiimsbathinda.edu.in/AcademicNotification.aspx",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 256,
+      "college": "All India Institute of Medical Sciences, Bathinda",
+      "kind": "student",
+      "label": "AIIMS Bathinda review request — Jul 2024",
+      "url": "https://www.reddit.com/r/Bathinda/comments/1e74ybe/what_are_some_pros_and_cons_of_studying_in_aiims/",
+      "year": 2024,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 379,
+      "college": "All India Institute of Medical Sciences, Rae Bareli",
+      "kind": "student",
+      "label": "Viral AIIMS Rae Bareli ragging/harassment allegation — Nov 2024",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1gnwcq5/",
+      "year": 2024,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 379,
+      "college": "All India Institute of Medical Sciences, Rae Bareli",
+      "kind": "student",
+      "label": "AIIMS Rae Bareli verified student review — Jun 2024",
+      "url": "https://collegedunia.com/reviews/727860-anonymous-review-on-all-india-institute-of-medical-sciences-aiims-rae-bareli",
+      "year": 2024,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 429,
+      "college": "AIIMS, Kalyani, Nadia",
+      "kind": "student",
+      "label": "AIIMS Kalyani first-year hierarchy report — Sep 2025",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1n6ikqz/ragging_reality_of_aiims_kalyani/",
+      "year": 2025,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 429,
+      "college": "AIIMS, Kalyani, Nadia",
+      "kind": "official",
+      "label": "AIIMS Kalyani — MBBS anti-ragging policy/joining formalities",
+      "url": "https://aiimskalyani.edu.in/wp-content/uploads/2021/01/MBBSCourseJoiningFormalities.pdf",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 429,
+      "college": "AIIMS, Kalyani, Nadia",
+      "kind": "official",
+      "label": "AIIMS Kalyani MBBS prospectus / hostel disciplinary rules",
+      "url": "https://aiimskalyani.edu.in/wp-content/uploads/2021/11/AIIMSK-MBBS-2021-prospectus-and-annexures.pdf",
+      "year": 2021,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 265,
+      "college": "Dr SN Medical College, Jodhpur",
+      "kind": "student",
+      "label": "RNT vs SNMC counselling comparison — Sep 2024",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1fkjxgk/help/",
+      "year": 2024,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 278,
+      "college": "Government Medical College, Kota",
+      "kind": "student",
+      "label": "GMC Kota student thread with ambiguous junior-file exchange — Feb 2026",
+      "url": "https://www.reddit.com/r/genzmedschool/comments/1r4qqdc/fed_up_with_these_files/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 278,
+      "college": "Government Medical College, Kota",
+      "kind": "student",
+      "label": "Medical-college ragging discussion involving GMC Kota allottee — Sep 2024",
+      "url": "https://www.reddit.com/r/JEENEETards/comments/1fo6d26/ragging_in_engineering_college/",
+      "year": 2024,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 282,
+      "college": "Jawaharlal Nehru Medical College, Ajmer",
+      "kind": "student",
+      "label": "JLN Ajmer hostel/ragging/sports discussion — Aug 20 2026",
+      "url": "https://www.reddit.com/r/ajmer/comments/1vthkp4/anyone_from_jln_ajmer/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 284,
+      "college": "R N T Medical College, Udaipur",
+      "kind": "student",
+      "label": "RNT Udaipur college review — Sep 2025",
+      "url": "https://www.reddit.com/r/genzmedschool/comments/1n365r4/college_review/",
+      "year": 2025,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 284,
+      "college": "R N T Medical College, Udaipur",
+      "kind": "student",
+      "label": "RNT housing discussion — Jul 2026",
+      "url": "https://www.reddit.com/r/udaipur/comments/1v0l57e/horrible_pg_experience_in_udaipur_girls_from/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 286,
+      "college": "Sardar Patel Medical College, Bikaner",
+      "kind": "student",
+      "label": "Rajasthan counselling discussion mentioning SPMC — Jul 2026",
+      "url": "https://www.reddit.com/r/ASKNEET/comments/1uw8hr8/sms_jaipur_ruhs_jaipur_rnt_udaipur/",
+      "year": 2026,
+      "added": "2026-08-26",
+      "purpose": "junior-culture expansion"
+    },
+    {
+      "college_id": 334,
+      "college": "AIIMS Bibinagar",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "AIIMS Bibinagar detailed counselling review — Aug 2026",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vvzffy/alims_bibinagar_aiims_hyderabad_detailed_review/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 334,
+      "college": "AIIMS Bibinagar",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Bibinagar — student facilities / anti-ragging statement",
+      "url": "https://aiimsbibinagar.edu.in/collegeofnursing.html",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 334,
+      "college": "AIIMS Bibinagar",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Bibinagar — committees",
+      "url": "https://aiimsbibinagar.edu.in/committee.html",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 124,
+      "college": "AIIMS Deoghar",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Deoghar — Anti-Ragging Policy",
+      "url": "https://www.aiimsdeoghar.edu.in/Content/resources/document/antiragging/Anti-Ragging%20Policy%20Aiims%20Deoghar.pdf",
+      "year": 2020,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 124,
+      "college": "AIIMS Deoghar",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Deoghar — Anti-Ragging Squad, hostel/mess rounds",
+      "url": "https://www.aiimsdeoghar.edu.in/Content/resources/document/antiragging/Anti%20Ragging%20Squad%20Boys%20and%20Girls%20Hostel%20AIIMS%20Deoghar.pdf",
+      "year": 2023,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 124,
+      "college": "AIIMS Deoghar",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Multi-AIIMS ragging query — Deoghar “minimal” reply, Jul 2026",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1uprc4d/heyy_seniors_ragging_in_aiims/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 466,
+      "college": "AIIMS Rewari",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "AIIMS Rewari inaugural-batch counselling discussion — Aug 2026",
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1vjhwqu/please_read/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 466,
+      "college": "AIIMS Rewari",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "AIIMS Rewari first-batch discussion — Aug 2026",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1vji213/is_taking_aiims_rewari_in_its_1st_batch_worth_it/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 3,
+      "college": "AIIMS Mangalagiri",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "AIIMS Mangalagiri head-shaving rumor thread — Jan 2026",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1qlkgx3/aiims_mangalgiri_rumors/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 3,
+      "college": "AIIMS Mangalagiri",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Mangalagiri — reconstituted Anti-Ragging Committee",
+      "url": "https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2025/12/Office-Order-Constitution-of-Anti-Ragging-Committee-at-AIIMS-Mangalagiri.pdf",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 3,
+      "college": "AIIMS Mangalagiri",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Mangalagiri — anti-ragging affidavit",
+      "url": "https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2024/06/4.Affidavit-for-Anti-ragging-by-candidate-and-Parent.pdf",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 22,
+      "college": "AIIMS Guwahati",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Guwahati — Anti-Ragging Policy",
+      "url": "https://aiimsguwahati.ac.in/uploads/pdfs/setting_compressed.pdf",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 22,
+      "college": "AIIMS Guwahati",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Guwahati — Anti-Ragging Squad order",
+      "url": "https://aiimsguwahati.ac.in/uploads/pdfs/Anti-Ragging%20Squad%20.pdf",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 378,
+      "college": "AIIMS Gorakhpur",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Gorakhpur — Anti Ragging",
+      "url": "https://aiimsgorakhpur.edu.in/anti-ragging-2/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 378,
+      "college": "AIIMS Gorakhpur",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Gorakhpur — Anti-Ragging Committee",
+      "url": "https://aiimsgorakhpur.edu.in/wp-content/uploads/2024/08/Anti-Ragging-committee.pdf",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 378,
+      "college": "AIIMS Gorakhpur",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Multi-AIIMS ragging query mentioning Gorakhpur — Jul 2026",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1upr8ep/to_the_ones_studying_in_different_aiims_is_their/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 113,
+      "college": "AIIMS Vijaypur/Jammu",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Vijaypur Jammu — MBBS Prospectus, anti-ragging measures",
+      "url": "https://www.aiimsjammu.edu.in/wp-content/uploads/2025/08/UG-Prospectus.pdf",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 295,
+      "college": "AIIMS Madurai",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Madurai — MBBS Admission 2026",
+      "url": "https://www.aiimsmadurai.edu.in/admission2026.php",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 295,
+      "college": "AIIMS Madurai",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AIIMS Madurai — Committees / Anti-Ragging Committee",
+      "url": "https://aiimsmadurai.edu.in/committees.php",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 190,
+      "college": "AFMC Pune",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "AFMC first-year AMA — Aug 2025",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1mk3hfe/afmc_1st_year_here/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 190,
+      "college": "AFMC Pune",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AFMC MBBS 2026 Information Brochure — ragging section",
+      "url": "https://afmc.nic.in/profilePhoto?filePath=S68xIEbFTLtzctgY7eK0j8akHRepArHmDWld7wJdQ4L2MPR2PrUoSD%2FJd74e0Pf2NHjnJ81E06Fck5gd+4%2FNl47xOH+uEjIWXoxKSlwulcc%3D",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 190,
+      "college": "AFMC Pune",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "AFMC anti-ragging squads 2025–26",
+      "url": "https://afmc.nic.in/vendor/pdf/administration/anti.pdf",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 191,
+      "college": "BJGMC Pune",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Maharashtra preference discussion mentioning BJ Pune ragging — Jul 2026",
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1vara9h/please_read_the_body_and_suggest_amends_in_my/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 131,
+      "college": "BMCRI Bengaluru",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "BMCRI new-student advice thread — Oct 2024",
+      "url": "https://www.reddit.com/r/bangalore/comments/1fxacfz/need_some_info_on_bangalore_medical_college/",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 131,
+      "college": "BMCRI Bengaluru",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "BMCRI ragging discussion — Jul 2025",
+      "url": "https://www.reddit.com/r/kcet/comments/1mdh7gq/ragging_in_bmcri/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 223,
+      "college": "LTMMC Sion",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Sion/LTMMC ragging thread — Aug 21 2026",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vuk4et/ragging_in_sion_medical_college/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 221,
+      "college": "HBT Cooper",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "HBT Cooper MBBS review request — Jul 2025",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1m9m7oj/how_is_hbt_cooper_mumbai_for_mbbs/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 148,
+      "college": "MMCRI Mysore",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "MMCRI Mysore current student thread — Jul 2026",
+      "url": "https://www.reddit.com/r/mysore/comments/1v2cebh/anyone_from_mmcri/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 143,
+      "college": "KIMS Hubballi",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "KIMS Hubballi UG review/ragging query — Sep 2024",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1fmozcn/kims_hubli/",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 143,
+      "college": "KIMS Hubballi",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "KIMS Hubballi PG toxicity discussion — excluded from UG inference",
+      "url": "https://www.reddit.com/r/neetpgcounselling/comments/1rhl1rj/karnataka_medical_college_and_research_institute/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 151,
+      "college": "SABVMCRI Bengaluru",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "SABVMCRI ragging/student-life thread — Aug 2026",
+      "url": "https://www.reddit.com/r/kcet/comments/1vn9qg1/raggingstudent_life_at_shri_atal_bihari_vajpayee/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 322,
+      "college": "Kilpauk Medical College",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Kilpauk MBBS 2025 incoming-batch thread",
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1nl4x6e/kmc_mbbs_2025_gang_where_you_at/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 4,
+      "college": "Andhra Medical College",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Detailed Andhra Medical College student account — Jul 2025",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1lrw2z6/behind_the_prestige_the_ugly_truth_of_andhra/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 4,
+      "college": "Andhra Medical College",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "AP UG preference thread questioning AMC toxicity — Jul 2026",
+      "url": "https://www.reddit.com/r/telugumedschool/comments/1v627yg/priority_list_for_medical_college_in_andhra/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 18,
+      "college": "Rangaraya Medical College",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Rangaraya Medical College insight thread — Aug 2025",
+      "url": "https://www.reddit.com/r/telugumedschool/comments/1mh54bv/might_get_into_rmc_kakinada_need_help_with_insights/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 15,
+      "college": "Guntur Medical College",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Guntur Medical College alumni/USMLE thread with 2026 ragging query",
+      "url": "https://www.reddit.com/r/USMLEindia/comments/1ouuuas/is_guntur_medical_college_a_great_college_for/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 16,
+      "college": "Kurnool Medical College",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Kurnool PG hostel thread — excluded from UG inference",
+      "url": "https://www.reddit.com/r/telugumedschool/comments/1r2ljyn/kurnool_medical_college/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 19,
+      "college": "S V Medical College Tirupati",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "SVMC Tirupati PG anesthesia discussion — excluded from UG inference",
+      "url": "https://www.reddit.com/r/telugumedschool/comments/1pobwkv/md_anaesthesia_in_sv_medical_college_tirupathi/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 157,
+      "college": "Government Medical College, Kozhikode",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Kozhikode Medical College discussion — PG/city context, excluded from UG inference",
+      "url": "https://www.reddit.com/r/kozhikode/comments/1nmyk0d/kozhikode_medical_college/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 164,
+      "college": "Medical College, Thiruvananthapuram",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "GMC Thiruvananthapuram PG medicine discussion — excluded from MBBS inference",
+      "url": "https://www.reddit.com/r/Trivandrum/comments/1oia34t/gmc_thiruvananthapuramtrivandrum/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 309,
+      "college": "Government Medical College, Omandurar, Chennai",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Tamil Nadu hostel/ragging query including Omandurar — Aug 2026",
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1vipa82/hostel_details_for_colleges_in_tamil_nadu/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 457,
+      "college": "JIPMER Karaikal",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Older JIPMER Karaikal student-oriented answer — historical context only",
+      "url": "https://www.careers360.com/question-sir-which-campus-is-a-better-one-osmania-medical-college-or-jipmer-karaikal-campuscan-i-get-jipmer-pondicherry-in-2-counseling",
+      "year": 2019,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 350,
+      "college": "Gandhi Medical College, Secunderabad",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Gandhi Medical College — student culture thread",
+      "url": "https://www.reddit.com/r/KNRUHS/comments/1fjqjn3/gandhi_medical_college_secunderabadwhat_to_expect/",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 350,
+      "college": "Gandhi Medical College, Secunderabad",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Hyderabad college-choice thread carrying current ragging rumors",
+      "url": "https://www.reddit.com/r/telugumedschool/comments/1uscxbg/picking_osmania_for_mbbs/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 122,
+      "college": "Government Medical College, Srinagar",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "GMC Srinagar — Anti-Ragging Committee",
+      "url": "https://gmcs.ac.in/DetailedView.aspx?id=&pid=b4w+eseEHD0%3D",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 122,
+      "college": "Government Medical College, Srinagar",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "GMC Srinagar — anti-ragging sensitization / NMC webinar",
+      "url": "https://gmcs.ac.in/DetailedView.aspx?id=9RJkLYlV7dU%3D&pid=gm5EDbvPLCE%3D",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 122,
+      "college": "Government Medical College, Srinagar",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "GMC Srinagar — Anti-Ragging Squad order",
+      "url": "https://www.gmcs.ac.in/Photos/09-24-2503-22-24-GMC-Anti-Ragging%20Squad%20Order%20Dated%2030-08-2025%20%281%29.pdf",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 156,
+      "college": "Government Medical College, Kottayam",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Public discussion labelled 'Kottayam Medical College Ragging' — level attribution checked/excluded",
+      "url": "https://www.reddit.com/r/TeensofKerala/comments/1ip83ey/this_needs_to_stop/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 285,
+      "college": "RUHS College of Medical Sciences, Jaipur",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Rajasthan college-choice discussion mentioning lower ragging at RUHS",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1v0h4is/which_collee_to_choosein_rajasthan_obc_girl_rank/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 92,
+      "college": "Medical College, Baroda",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Medical College Baroda PG ragging query — excluded from UG inference",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1vpcdx5/need_advice/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 110,
+      "college": "Indira Gandhi Medical College, Shimla",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "IGMC Shimla — current student account of first-year culture",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1nkc5x3/hi_i_just_got_into_igmc_shimla_i_am_from_punjab/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 296,
+      "college": "Chengalpattu Medical College",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Tamil Nadu medical-college guide including Chengalpattu — Aug 2026",
+      "url": "https://www.reddit.com/r/Tamizhteens/comments/1vwyug0/25_batch_guy_here_medical_college_guide_from_what/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 102,
+      "college": "PGIMS Rohtak",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Anonymous discussion containing PGIMS UG ragging allegations — Aug 2025",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1mtjguw/all_kgmu_senior_kitni_gaand_todoge/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 102,
+      "college": "PGIMS Rohtak",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Incoming-student PGIMS/day-scholar query — Aug 2025",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1n3uqp5/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 260,
+      "college": "Government Medical College, Patiala",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "GMC Patiala — committees / Anti-Ragging Committee",
+      "url": "https://gmcpatiala.edu.in/commitee/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 260,
+      "college": "Government Medical College, Patiala",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "GMC Patiala — mandatory disclosure / anti-ragging contacts",
+      "url": "https://gmcpatiala.edu.in/mandatory-disclosure/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 260,
+      "college": "Government Medical College, Patiala",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "GMC Patiala — Phase-I curriculum includes anti-ragging committee introduction",
+      "url": "https://gmcpatiala.edu.in/wp-content/uploads/2022/06/Phase-1-curriculum-2022-1.pdf",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 90,
+      "college": "Government Medical College, Surat",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Current discussion of resident-doctor ragging case at Surat — PG level",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1vkm9tb/resident_doctor_sucde_in_surat_ragging_by_4/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 90,
+      "college": "Government Medical College, Surat",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Current national discussion referencing Surat resident case",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vklmex/i_guess_ragging_never_stops_in_medical_fraternity/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 99,
+      "college": "ESIC Medical College, Faridabad",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "ESIC colleges discussion — second-hand Faridabad ragging claim",
+      "url": "https://www.reddit.com/r/ESICMed/comments/1vad432/questions_about_esics/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 99,
+      "college": "ESIC Medical College, Faridabad",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "ESIC Faridabad college review/query",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1uz4fmn/esic_faridabad/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 401,
+      "college": "JNMC Aligarh",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "JNMC Aligarh — 'Does ragging happen?' current thread",
+      "url": "https://www.reddit.com/r/AMU/comments/1vq4d7s/does_ragging_happens_at_jnmc/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 401,
+      "college": "JNMC Aligarh",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "JNMC vs KGMU current discussion",
+      "url": "https://www.reddit.com/r/AMU/comments/1vnyykw/kgmu_vs_jnmc_amu_aligarh/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 335,
+      "college": "ESIC Medical College, Hyderabad",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "ESIC Hyderabad — detailed current student/batch reply",
+      "url": "https://www.reddit.com/r/telugumedschool/comments/1vb5f2u/anyone_from_esic_hyderabad/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 325,
+      "college": "Mohan Kumaramangalam Medical College, Salem",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "GMKMC Salem — Anti-Ragging Committee",
+      "url": "https://gmkmc.com/images/pdf/anti-ragging-committee.pdf",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 328,
+      "college": "Thanjavur Medical College",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Older Thanjavur prospective-student thread",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1c0lgtr/",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 155,
+      "college": "Government Medical College, Ernakulam",
+      "layer": "junior_culture",
+      "kind": "official",
+      "label": "GMC Ernakulam — Anti-Ragging Committee",
+      "url": "https://cmccochin.org/academics/anti-ragging-committee/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 155,
+      "college": "Government Medical College, Ernakulam",
+      "layer": "junior_culture",
+      "kind": "news",
+      "label": "2019 MBBS physical-ragging allegation report",
+      "url": "https://education.medicaldialogues.in/national-level-powerlifting-champ-joins-mbbs-gets-ragged-at-ernakulam-medical-college",
+      "year": 2019,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 155,
+      "college": "Government Medical College, Ernakulam",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "Recent student-review platform — reassuring but third-party",
+      "url": "https://www.collegedunia.com/college/10435-government-medical-college-ernakulam/reviews",
+      "year": 2024,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 392,
+      "college": "Government Institute of Medical Sciences, Greater Noida",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "GIMS Noida MBBS current query — Jul 2026",
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1v95loz/how_is_gims_noida_for_mbbs/",
+      "year": 2026,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "college_id": 392,
+      "college": "Government Institute of Medical Sciences, Greater Noida",
+      "layer": "junior_culture",
+      "kind": "student",
+      "label": "GIMS Greater Noida college-opinion thread",
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1l5h7s3/your_opinion_on_gims_clg_grt_noida/",
+      "year": 2025,
+      "verified_on": "2026-08-26"
+    },
+    {
+      "url": "https://www.hindustantimes.com/cities/chandigarh-news/tanda-medical-college-four-mbbs-students-expelled-fined-for-ragging-101718133395783-amp.html",
+      "label": "Hindustan Times — four MBBS students punished after Tanda ragging inquiry",
+      "kind": "news",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 108,
+          "name": "Dr. Rajendra Prasad Government Medical College, Tanda"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.tribuneindia.com/news/archive/himachal/anti-ragging-pledge-by-tanda-college-students-607293/",
+      "label": "The Tribune — Tanda anti-ragging pledge / prevention context",
+      "kind": "news",
+      "year": 2018,
+      "colleges": [
+        {
+          "id": 108,
+          "name": "Dr. Rajendra Prasad Government Medical College, Tanda"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://nrsmc.edu.in/pages/anti-ragging-committee",
+      "label": "NRS Medical College — Anti-Ragging Committee, reconstituted w.e.f. 25 Mar 2026",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 448,
+          "name": "Nilratan Sircar Medical College, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://nrsmc.edu.in/public/",
+      "label": "NRS Medical College — current homepage / anti-ragging helplines",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 448,
+          "name": "Nilratan Sircar Medical College, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1vf6wgm/hi_i_cleared_reneet_2026/",
+      "label": "Aug 2026 prospective-student thread — no substantive NRS culture answer",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 448,
+          "name": "Nilratan Sircar Medical College, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.mkcgmch.org/antiragging.php",
+      "label": "MKCG Medical College — Anti-Ragging Committee / Squad",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 243,
+          "name": "MKCG Medical College, Berhampur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1gif713",
+      "label": "Public discussion of 2024 MKCG hostel disciplinary action",
+      "kind": "student",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 243,
+          "name": "MKCG Medical College, Berhampur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Bhubaneswar/comments/1vhwyoq/hows_scb_cuttack_mkcg_for_mbbs/",
+      "label": "Odisha college discussion — weak comparative signal only",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 243,
+          "name": "MKCG Medical College, Berhampur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.llrmmedicalcollege.edu.in/grievance-redressal-officer",
+      "label": "LLRM — grievance redressal / Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 403,
+          "name": "LLRM Medical College, Meerut"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/meerut/ahead-of-new-session-anti-ragging-mechanisms-in-place-at-llrm/articleshow/41286897.cms",
+      "label": "Times of India — historical LLRM anti-ragging mechanisms",
+      "kind": "news",
+      "year": 2014,
+      "colleges": [
+        {
+          "id": 403,
+          "name": "LLRM Medical College, Meerut"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.shiksha.com/college/pandit-dindayal-upadhyay-medical-college-rajkot-63077/reviews",
+      "label": "Shiksha student review — older reassuring ragging comment",
+      "kind": "student",
+      "year": 2022,
+      "colleges": [
+        {
+          "id": 95,
+          "name": "Pandit Deendayal Upadhyay Medical College, Rajkot"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.esic.nic.in/attachments/admissionfile/dfdd915ac2260d4c0eb526f215c95c21.pdf",
+      "label": "ESIC admissions / institute documentation",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 298,
+          "name": "ESI-PGIMSR, ESI Hospital, K.K Nagar, Chennai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/genzmedschool/comments/1mwiyrd",
+      "label": "ESI-PGIMSR Chennai joining/hostel discussion",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 298,
+          "name": "ESI-PGIMSR, ESI Hospital, K.K Nagar, Chennai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://health.kerala.gov.in/assets/backend/uploads/publicrelation/1774592409_69c62199187a5.pdf",
+      "label": "Kerala Health — GMC Manjeri Anti-Ragging Committee listing",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 158,
+          "name": "Government Medical College, Manjeri, Malappuram"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.amanmovement.org/",
+      "label": "Aman Movement complaint record — historical Manjeri entry",
+      "kind": "official",
+      "year": 2016,
+      "colleges": [
+        {
+          "id": 158,
+          "name": "Government Medical College, Manjeri, Malappuram"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vxa0ol/gmc_bhopal_w_or_l/",
+      "label": "GMC Bhopal W or L? — current ragging discussion",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 172,
+          "name": "Gandhi Medical College, Bhopal"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1v4at0i/gmc_bhopal_vs_mgm/",
+      "label": "GMC Bhopal vs MGM — conflicting current ragging comments",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 172,
+          "name": "Gandhi Medical College, Bhopal"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.esic.nic.in/attachments/admissionfile/c0ebdc86377d181f9ef137bc016da21a.pdf",
+      "label": "ESIC Bangalore 2025–26 admission document / anti-ragging compliance",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 138,
+          "name": "Employees State Insurance Corporation Medical College, Bangalore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://sansad.in/getFile/annex/269/AU575_FqCnt5.pdf?source=pqars",
+      "label": "Rajya Sabha annexure — new ESIC medical colleges including Jaipur",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 264,
+          "name": "ESIC Medical College & Hospital, Jaipur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.nmc.org.in/information-desk/for-students-to-study-in-india/list-of-college-teaching-mbbs/",
+      "label": "NMC — Government Medical College L.T. Marg, Mumbai, established 2024",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 231,
+          "name": "Government Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://dmer.maharashtra.gov.in/english/dmer-dashboard/",
+      "label": "Maharashtra DMER dashboard — Government Medical College, Mumbai",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 231,
+          "name": "Government Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://gmcmumbai.org/wp-content/uploads/2024/08/GMC-Mumbai-UG-ADMISSION-BROCHURE-2024.pdf",
+      "label": "Government Medical College Mumbai — 2024 UG admission brochure",
+      "kind": "official",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 231,
+          "name": "Government Medical College, Mumbai"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.kcgmc.edu.in/KCGMCHome/Commities",
+      "label": "KCGMC — committees / Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 100,
+          "name": "Kalpana Chawla Government Medical College, Karnal"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://kcgmc.edu.in/Downloads/Student",
+      "label": "KCGMC — student downloads / admission and hostel material",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 100,
+          "name": "Kalpana Chawla Government Medical College, Karnal"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vipf9l/how_is_esic_medical_college_alwar/",
+      "label": "ESIC Medical College Alwar — current college discussion",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 263,
+          "name": "Employees State Insurance Corporation Medical College, Alwar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.tribuneindia.com/news/himachal/medical-college-suspends-2-students-over-ragging-in-hp/",
+      "label": "The Tribune — two SLBS MBBS students suspended after ragging inquiry",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 112,
+          "name": "Shri Lal Bahadur Shastri Government Medical College, Mandi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.slbsgmchmandi.com/public/front_end/pdf/FINAL_BOOKLETS_RAGGING.pdf",
+      "label": "SLBS GMC Mandi — Anti-Ragging booklet",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 112,
+          "name": "Shri Lal Bahadur Shastri Government Medical College, Mandi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.slbsgmchmandi.com/hospital",
+      "label": "SLBS GMC Mandi — hospital / anti-ragging helpline",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 112,
+          "name": "Shri Lal Bahadur Shastri Government Medical College, Mandi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.snmcagra.ac.in/",
+      "label": "S.N. Medical College Agra — current anti-ragging regulations/forms",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 411,
+          "name": "S.N. Medical College, Agra"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://velloremedicalcollege.in/page/college-committees",
+      "label": "Government Vellore Medical College — College Committees / Anti-Ragging",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 316,
+          "name": "Government Vellore Medical College, Vellore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.shiksha.com/college/government-vellore-medical-college-62941",
+      "label": "Shiksha review — MBBS batch 2024, reviewed Feb 2025, says no ragging",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 316,
+          "name": "Government Vellore Medical College, Vellore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.gmckollam.edu.in/documents/admission/Revised_Check_List_AIQ_CEE_2022.pdf",
+      "label": "GMC Kollam — MBBS admission checklist / anti-ragging affidavit requirement",
+      "kind": "official",
+      "year": 2022,
+      "colleges": [
+        {
+          "id": 160,
+          "name": "Government Medical College, Parippally, Kollam"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/dehradun/2-mbbs-students-at-doon-medical-college-suspended-after-panel-finds-them-guilty-of-ragging-juniors/articleshow/126701176.cms",
+      "label": "Times of India — two MBBS students suspended after Doon anti-ragging panel finding",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 373,
+          "name": "Doon Medical College, Dehradun"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/dehradun/fresh-ragging-complaint-at-doon-med-college-mbbs-student-alleges-pressure-to-shave-beard/articleshow/130140418.cms",
+      "label": "Times of India — fresh Doon MBBS complaint alleges pressure to shave beard/get haircut",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 373,
+          "name": "Doon Medical College, Dehradun"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Dehradun/comments/1vrrcj8/ragging_scene/",
+      "label": "Aug 2026 Doon/Haldwani ragging query — no substantive answer",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 373,
+          "name": "Doon Medical College, Dehradun"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://gmckannur.edu.in/ragging.php",
+      "label": "GMC Kannur — Anti-Ragging Committee",
+      "kind": "official",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 162,
+          "name": "Government Medical College, Pariyaram, Kannur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vy1qau/is_this_list_okay_wbmcc/",
+      "label": "Aug 2026 WB counselling discussion — CNMC described as toxic by commenter",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 434,
+          "name": "Calcutta National Medical College, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vfuzl9/to_all_wb_seniors_what_are_the_top_gmcs_how_are/",
+      "label": "Aug 2026 WB seniors thread — unverified allegation of senior substance-use pressure",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 434,
+          "name": "Calcutta National Medical College, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.nmc.org.in/MCIRest/open/getDocument?path=%2FDocuments%2FPublic%2FPortal%2FMeetings%2FExecutive+Committee%2F2018%2F06%2F05%2FECMN-05.06.2018.pdf",
+      "label": "MCI Executive Committee minutes — historical CNMC ragging complaint / directions",
+      "kind": "official",
+      "year": 2018,
+      "colleges": [
+        {
+          "id": 434,
+          "name": "Calcutta National Medical College, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.cnmckolkata.com/download/71740115426.pdf",
+      "label": "CNMC — current Anti-Ragging Committee PDF",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 434,
+          "name": "Calcutta National Medical College, Kolkata"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://odishapostepaper.com/uploads/epaper/2025-05/68265b6fdb989.pdf",
+      "label": "Odisha Post — VIMSAR senior suspended from hostel after 2025 ragging incident",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 250,
+          "name": "Veer Surendra Sai Institute of Medical Sciences and Research, Burla"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.gmc.edu.in/antiragging",
+      "label": "GMC Amritsar — Anti-Ragging Resources",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 259,
+          "name": "Government Medical College, Amritsar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vkglyh/mbbs_counselling_confusion/",
+      "label": "Aug 2026 GMC Amritsar/Jabalpur/Gwalior/Bhopal counselling query",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 259,
+          "name": "Government Medical College, Amritsar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/thane/nine-thane-medical-students-suspended-for-ragging-junior/articleshow/104172017.cms",
+      "label": "Times of India — nine RGMC Thane students suspended for ragging junior",
+      "kind": "news",
+      "year": 2023,
+      "colleges": [
+        {
+          "id": 225,
+          "name": "Rajiv Gandhi Medical College and Chhatrapati Shivaji Maharaj Hospital, Thane"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.indiatoday.in/india/story/maharashtra-medical-students-suspended-ragging-junior-rajiv-gandhi-medical-college-thane-2444614-2023-10-05",
+      "label": "India Today — RGMC Thane students suspended after ragging inquiry",
+      "kind": "news",
+      "year": 2023,
+      "colleges": [
+        {
+          "id": 225,
+          "name": "Rajiv Gandhi Medical College and Chhatrapati Shivaji Maharaj Hospital, Thane"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vjnvse/rgmc_thane/",
+      "label": "Aug 2026 RGMC Thane general-college discussion — no ragging detail",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 225,
+          "name": "Rajiv Gandhi Medical College and Chhatrapati Shivaji Maharaj Hospital, Thane"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/noida/no-equipment-in-labs-no-acs-in-halls-mbbs-students-strike-on-campus/articleshow/130503264.cms",
+      "label": "Times of India — first ESIC Noida MBBS batch infrastructure protest; not ragging evidence",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 427,
+          "name": "ESIC Medical College and Hospital, Noida"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/lucknow/brd-medical-college-suspends-18-students-for-ragging-fines-25000-each/articleshow/131374686.cms",
+      "label": "Times of India — BRD suspends 18 MBBS students for ragging",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 388,
+          "name": "BRD Medical College, Gorakhpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.livehindustan.com/career/mbbs-seniors-sex-talk-force-students-stand-in-sexual-physical-postures-mbbs-students-ragging-ugc-nmc-letter-brd-college-201779850838539.amp.html",
+      "label": "LiveHindustan — first-year MBBS complaint details in BRD case",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 388,
+          "name": "BRD Medical College, Gorakhpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.brdmc.ac.in/ANTI-RAGGING-Cell",
+      "label": "BRD Medical College — Anti-Ragging Cell",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 388,
+          "name": "BRD Medical College, Gorakhpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Gorakhpur/comments/1u65xx1/what_happened_at_brd_medical_college_ragging_case/",
+      "label": "Reddit r/Gorakhpur — discussion after BRD 2026 case",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 388,
+          "name": "BRD Medical College, Gorakhpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/ahmedabad/comments/1nw1awe",
+      "label": "Reddit r/ahmedabad — ESIC Naroda college query; no reliable ragging detail",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 76,
+          "name": "ESIC Medical College Naroda, Bapunagar, Ahmedabad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.kapvgmctry.ac.in/news-events.aspx",
+      "label": "KAP Viswanatham GMC — current news/events and MBBS admission activity",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 320,
+          "name": "K A P Viswanathan Government Medical College, Trichy"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://iggmc.edu.in/facilities/",
+      "label": "IGGMC Nagpur — facilities / Anti-Ragging Committee / institution-reported NIL cases",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 222,
+          "name": "Indira Gandhi Government Medical College & Hospital, Nagpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1mtg72u",
+      "label": "Reddit — IGGMC joiner says no major ragging, only interaction/respectful address",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 222,
+          "name": "Indira Gandhi Government Medical College & Hospital, Nagpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MBBS_INDIA/comments/1nmiwag",
+      "label": "Reddit — hearsay claim that ragging exists at IGGMC",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 222,
+          "name": "Indira Gandhi Government Medical College & Hospital, Nagpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.mpsmc.in/Files/AntiRagging/AntiRaggingSquad.pdf",
+      "label": "M P Shah Medical College — Anti-Ragging Squad",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 93,
+          "name": "M P Shah Government Medical College, Jamnagar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://mpsgmc.edu.in/Files/AntiRagging/AntiRaggingPolicies.pdf",
+      "label": "M P Shah Medical College — anti-ragging policies/reporting QR",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 93,
+          "name": "M P Shah Government Medical College, Jamnagar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://tvmc.ac.in/",
+      "label": "Tirunelveli Medical College — current site / Anti-Ragging Activity Helpline",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 332,
+          "name": "Tirunelveli Medical College, Tirunelveli"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.dtnext.in/news/tamilnadu/madras-hc-orders-fresh-probe-into-attack-on-medical-college-warden",
+      "label": "DT Next — Madras HC orders fresh probe after anti-ragging action / warden attack allegation",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 332,
+          "name": "Tirunelveli Medical College, Tirunelveli"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/guwahati/gmch-expels-3-mbbs-students-for-ragging-assaulting-juniors/articleshow/129579824.cms",
+      "label": "Times of India — GMCH expels three MBBS students for ragging/assaulting juniors",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 28,
+          "name": "Gauhati Medical College, Guwahati"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://amanmovement.org/Reports/progressreport/PROGRESS_REPORT_-__4th_Quarter_2020.pdf",
+      "label": "Aman Movement anti-ragging monitoring progress report — older GRMC complaint context",
+      "kind": "official",
+      "year": 2020,
+      "colleges": [
+        {
+          "id": 171,
+          "name": "Gajra Raja Medical College, Gwalior"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/gwalior/comments/1ngltfb/grmc_gwalior_and_city_in_general/",
+      "label": "Reddit r/gwalior — 2025 GRMC student/city discussion without specific first-year ragging detail",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 171,
+          "name": "Gajra Raja Medical College, Gwalior"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1fm2ruq",
+      "label": "Reddit — non-student hearsay about Jhalawar junior culture",
+      "kind": "student",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 283,
+          "name": "Jhalawar Medical College, Jhalawar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1vmwalo/uttarakhand_ka_ragging_scene_kya_hai/",
+      "label": "Reddit Aug 2026 — Uttarakhand ragging discussion mentioning Haldwani restrictions",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 374,
+          "name": "Government Medical College, Haldwani"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Uttarakhand/comments/1vgrepl/gmc_doon_vs_haldwani/",
+      "label": "Reddit Aug 2026 — Haldwani grooming/greeting allegations sourced to a friend",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 374,
+          "name": "Government Medical College, Haldwani"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/dehradun/another-ragging-case-at-haldwani-med-college/articleshow/108174426.cms",
+      "label": "Times of India — another ragging case at Haldwani Medical College",
+      "kind": "news",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 374,
+          "name": "Government Medical College, Haldwani"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.abplive.com/states/up-uk/haldwani-news-case-of-alleged-ragging-in-haldwani-medical-college-college-administration-denied-ann-2075324",
+      "label": "ABP Live — 2022 shaved-head controversy; college denied ragging",
+      "kind": "news",
+      "year": 2022,
+      "colleges": [
+        {
+          "id": 374,
+          "name": "Government Medical College, Haldwani"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.livehindustan.com/uttarakhand/haldwani/story-ragging-with-first-year-students-at-haldwani-medical-college-2176159.html",
+      "label": "LiveHindustan — 2018 first-year ragging allegations at Haldwani",
+      "kind": "news",
+      "year": 2018,
+      "colleges": [
+        {
+          "id": 374,
+          "name": "Government Medical College, Haldwani"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/city/kanpur/inquiry-ordered-in-ragging-cases/articleshow/125336483.cms",
+      "label": "Times of India — inquiry ordered after UGC anti-ragging complaints at MLB Jhansi",
+      "kind": "news",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 407,
+          "name": "Maharani Laxmi Bai Medical College, Jhansi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Jhansi/comments/1vja0mz/mlb_jhansi_medical_clg/",
+      "label": "Reddit r/Jhansi Aug 2026 — conflicting comments on MLB UG environment/ragging",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 407,
+          "name": "Maharani Laxmi Bai Medical College, Jhansi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Jhansi/comments/1oj0vpf/mlb_jhansi/",
+      "label": "Reddit r/Jhansi Oct 2025 — family-linked commenter says MBBS ragging exists",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 407,
+          "name": "Maharani Laxmi Bai Medical College, Jhansi"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://nta.esic.gov.in/attachments/admissionfile/Checklist_For_MBBS_Admission_SESSION_2025_26_1759744096.pdf",
+      "label": "ESIC Andheri — 2025–26 MBBS admission checklist / anti-ragging affidavits",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 194,
+          "name": "ESIC Medical College and Hospital, Andheri"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://mcandheri.esic.gov.in/attachments/admissionfile/General_instructions_for_the_students_admission_for_MBBS_2025_26_Course_English_1758187776.pdf",
+      "label": "ESIC Andheri — MBBS student general instructions 2025–26",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 194,
+          "name": "ESIC Medical College and Hospital, Andheri"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://gmcpalakkad.in/arm.php",
+      "label": "GMC Palakkad — anti-ragging measures / committee",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 154,
+          "name": "Government Medical College (Institute of Integrated Medical Sciences), Yakkara, Palakkad"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1mp3e6q/gmc_pali_raj/",
+      "label": "Reddit — GMC Pali prospective-student query; no substantive ragging answer recovered",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 279,
+          "name": "Government Medical College, Pali"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://dhe.goa.gov.in/resource/getResource/%200%201366/",
+      "label": "Goa DHE / Goa University — 2025–26 anti-ragging guidelines and undertakings",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 73,
+          "name": "Goa Medical College, Panaji"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1mlfz0f/gmc_bhavnagar/",
+      "label": "Reddit — 2025 GMC Bhavnagar MBBS query with low-confidence hearsay about ragging",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 89,
+          "name": "Government Medical College, Bhavnagar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/indianmedschool/comments/1u9yidl/bhavnagar_medical_college_gujarat/",
+      "label": "Reddit — 2026 Bhavnagar Orthopaedics resident case (PG-level; quarantined)",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 89,
+          "name": "Government Medical College, Bhavnagar"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://news.careers360.com/bhilwara-government-medical-college-mbbs-student-severe-ragging-complaint-ugc-nmc-helpline-denies-rajasthan/amp",
+      "label": "Careers360 — first-year MBBS student severe ragging complaint at GMC Bhilwara; college denies circumstances",
+      "kind": "news",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 269,
+          "name": "Government Medical College, Bhilwara"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MBBSindia/comments/1vqnmkp/esic_indore/",
+      "label": "Reddit Aug 2026 — detailed ESIC Indore student review with no specific ragging allegation",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 170,
+          "name": "ESIC Medical College and Hospital, Indore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://indorehospital.esic.gov.in/attachments/prospectfile/e4e55ba938c7e837ec1bb36b27e53265.pdf",
+      "label": "ESIC Indore — current prospectus / anti-ragging rules and undertakings",
+      "kind": "official",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 170,
+          "name": "ESIC Medical College and Hospital, Indore"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=J4LYhCF3UME",
+      "label": "TV9 Bharatvarsh — eight MBBS students suspended in NSCB Jabalpur ragging case",
+      "kind": "news",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 182,
+          "name": "Netaji Subhash Chandra Bose Medical College, Jabalpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://nscbmc.ac.in/upload/New%20Order%20Anti%20Ragging.pdf",
+      "label": "NSCB Medical College — Anti-Ragging Committee order",
+      "kind": "official",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 182,
+          "name": "Netaji Subhash Chandra Bose Medical College, Jabalpur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1ghye2g/ragging_at_pt_jnm_medical_college_raipur/",
+      "label": "Reddit Nov 2024 — first-person-style Pt JNM first-year batch ragging allegations",
+      "kind": "student",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 62,
+          "name": "Pt. J N M Medical College, Raipur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1ds9zhi/jnm_raipur_gmc_raipur_has_the_shittiest_seniors/",
+      "label": "Reddit Jun 2024 — Pt JNM first-year senior hierarchy account",
+      "kind": "student",
+      "year": 2024,
+      "colleges": [
+        {
+          "id": 62,
+          "name": "Pt. J N M Medical College, Raipur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1jna0q5/another_jnm_raipur_shit/",
+      "label": "Reddit Mar 2025 — follow-up alleging culture continued through first year",
+      "kind": "student",
+      "year": 2025,
+      "colleges": [
+        {
+          "id": 62,
+          "name": "Pt. J N M Medical College, Raipur"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/jammu/comments/1v0ouaw/mbbs_in_jk/",
+      "label": "Reddit r/jammu Jul 2026 — prospective MBBS query about GMC Jammu culture/ragging; limited specific evidence",
+      "kind": "student",
+      "year": 2026,
+      "colleges": [
+        {
+          "id": 119,
+          "name": "Government Medical College, Jammu"
+        }
+      ],
+      "layers": [
+        "junior-culture"
+      ]
+    }
+  ]
+}

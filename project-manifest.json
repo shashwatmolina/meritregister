@@ -1,7 +1,7 @@
 {
   "name": "The Merit Register",
-  "export_version": "V7-VSCode",
-  "generated": "2026-08-22",
+  "export_version": "V8-Canonical-175",
+  "generated": "2026-08-26",
   "pages": [
     "index.html",
     "compare.html",
@@ -15,11 +15,17 @@
     "inbox.html"
   ],
   "deep_profiles": 30,
-  "fresh_source_refreshed": 10,
+  "fresh_source_refreshed": 30,
   "canonical_colleges": 465,
   "mcc_2026_profiles": 451,
   "notes": [
     "college.html is dynamic via ?id=<canonical id>",
-    "runtime page datasets are bundled into page-specific JS files"
-  ]
+    "canonical runtime datasets are shared across page bundles through js/shared-*-v8.js",
+    "Freshers Timeline phase timing remains blank when evidence is insufficient",
+    "Junior Culture evidence is source-labelled and is not a numerical ragging score"
+  ],
+  "junior_culture_profiles": 175,
+  "first_90_days_profiles": 175,
+  "freshers_timeline_records": 69,
+  "culture_source_records": 329
 }
