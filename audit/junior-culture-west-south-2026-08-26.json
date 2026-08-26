@@ -1,0 +1,54 @@
+{
+  "generated": "2026-08-26",
+  "previous_profile_count": 60,
+  "new_profile_count": 70,
+  "batch": "West + South Junior Culture expansion",
+  "added": [
+    {
+      "id": 190,
+      "college": "AFMC Pune"
+    },
+    {
+      "id": 191,
+      "college": "BJGMC Pune"
+    },
+    {
+      "id": 131,
+      "college": "BMCRI Bengaluru"
+    },
+    {
+      "id": 223,
+      "college": "LTMMC Sion"
+    },
+    {
+      "id": 221,
+      "college": "HBT Cooper"
+    },
+    {
+      "id": 148,
+      "college": "MMCRI Mysore"
+    },
+    {
+      "id": 143,
+      "college": "KIMS Hubballi"
+    },
+    {
+      "id": 151,
+      "college": "SABVMCRI Bengaluru"
+    },
+    {
+      "id": 322,
+      "college": "Kilpauk Medical College"
+    },
+    {
+      "id": 324,
+      "college": "Madurai Medical College"
+    }
+  ],
+  "principles": [
+    "Do not transfer PG toxicity to MBBS.",
+    "Single-source bare claims remain low-confidence watch signals.",
+    "Evidence gaps are explicit and not interpreted as safety.",
+    "Institutional discipline is separated from unauthorized senior coercion."
+  ]
+}

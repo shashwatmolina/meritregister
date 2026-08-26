@@ -1,0 +1,180 @@
+{
+  "version": "v7-junior-culture-100",
+  "generated": "2026-08-26",
+  "previous_profile_count": 75,
+  "current_profile_count": 100,
+  "first90_count": 100,
+  "selection": "Next 25 unresolved colleges by loaded 2026 General Round-1 demand, with source-quality override.",
+  "added": [
+    {
+      "id": 157,
+      "name": "Government Medical College, Kozhikode",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 164,
+      "name": "Medical College, Thiruvananthapuram",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 309,
+      "name": "Government Medical College, Omandurar, Chennai",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 457,
+      "name": "JIPMER Karaikal",
+      "signal": "Historically reassuring · current evidence insufficient",
+      "confidence": "Low current / historical only"
+    },
+    {
+      "id": 350,
+      "name": "Gandhi Medical College, Secunderabad",
+      "signal": "Mixed/thin: older positive senior culture + current rumor-level concern",
+      "confidence": "Low-moderate"
+    },
+    {
+      "id": 445,
+      "name": "Medical College, Kolkata",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 122,
+      "name": "Government Medical College, Srinagar",
+      "signal": "Formal safeguards clear · current lived evidence insufficient",
+      "confidence": "High for safeguards · Insufficient for prevalence"
+    },
+    {
+      "id": 156,
+      "name": "Government Medical College, Kottayam",
+      "signal": "MBBS evidence insufficient · nursing case quarantined",
+      "confidence": "Insufficient for MBBS"
+    },
+    {
+      "id": 285,
+      "name": "RUHS College of Medical Sciences, Jaipur",
+      "signal": "Slightly reassuring reputation signal · very low confidence",
+      "confidence": "Very low"
+    },
+    {
+      "id": 92,
+      "name": "Medical College, Baroda",
+      "signal": "UG evidence insufficient · PG/hearsay excluded",
+      "confidence": "Insufficient for UG"
+    },
+    {
+      "id": 163,
+      "name": "Government Medical College, Thrissur",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 297,
+      "name": "Coimbatore Medical College",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 110,
+      "name": "Indira Gandhi Medical College, Shimla",
+      "signal": "Concerning current student signal",
+      "confidence": "Moderate"
+    },
+    {
+      "id": 296,
+      "name": "Chengalpattu Medical College",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 102,
+      "name": "PGIMS Rohtak",
+      "signal": "Concerning reputation lead · direct current evidence missing",
+      "confidence": "Low"
+    },
+    {
+      "id": 260,
+      "name": "Government Medical College, Patiala",
+      "signal": "Formal safeguards documented · lived evidence insufficient",
+      "confidence": "High for safeguards · Insufficient for prevalence"
+    },
+    {
+      "id": 90,
+      "name": "Government Medical College, Surat",
+      "signal": "Serious PG-level red flag · UG fresher evidence insufficient",
+      "confidence": "Moderate for PG context · Insufficient for UG"
+    },
+    {
+      "id": 99,
+      "name": "ESIC Medical College, Faridabad",
+      "signal": "Possible concern · second-hand current signal",
+      "confidence": "Low"
+    },
+    {
+      "id": 401,
+      "name": "JNMC Aligarh",
+      "signal": "Reassuring current community signal",
+      "confidence": "Moderate-low"
+    },
+    {
+      "id": 165,
+      "name": "T D Medical College, Alappuzha",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 335,
+      "name": "ESIC Medical College, Hyderabad",
+      "signal": "Reassuring current lived signal",
+      "confidence": "Moderate"
+    },
+    {
+      "id": 325,
+      "name": "Mohan Kumaramangalam Medical College, Salem",
+      "signal": "Formal safeguards documented · lived evidence insufficient",
+      "confidence": "High for committee · Insufficient for prevalence"
+    },
+    {
+      "id": 328,
+      "name": "Thanjavur Medical College",
+      "signal": "Current MBBS evidence insufficient",
+      "confidence": "Insufficient"
+    },
+    {
+      "id": 155,
+      "name": "Government Medical College, Ernakulam",
+      "signal": "Historical serious incident · current evidence limited",
+      "confidence": "Moderate historical · Low current"
+    },
+    {
+      "id": 392,
+      "name": "Government Institute of Medical Sciences, Greater Noida",
+      "signal": "Current UG evidence insufficient · PG toxicity excluded",
+      "confidence": "Insufficient for UG"
+    }
+  ],
+  "controls": [
+    "PG/resident and nursing evidence quarantined from MBBS fresher inference",
+    "official prevention architecture is not treated as proof of low prevalence",
+    "prospective questions without substantive replies remain evidence gaps",
+    "anonymous/second-hand concern signals remain low-confidence",
+    "phase timing populated only when timing is supported"
+  ],
+  "validation_target": [
+    "js/college.js",
+    "js/compare.js",
+    "js/index.js",
+    "js/culture.js",
+    "js/assistant.js",
+    "js/inbox.js"
+  ],
+  "timeline_record_count": 69,
+  "timeline_profiles_with_supported_phase": 55,
+  "supported_phase_cells": 77,
+  "possible_phase_cells": 600,
+  "gap_phase_cells": 523
+}

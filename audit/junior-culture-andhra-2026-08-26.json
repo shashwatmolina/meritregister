@@ -1,0 +1,33 @@
+{
+  "generated": "2026-08-26",
+  "previous_profile_count": 70,
+  "new_profile_count": 75,
+  "batch": "Andhra Pradesh Junior Culture expansion",
+  "added": [
+    {
+      "id": 4,
+      "college": "Andhra Medical College"
+    },
+    {
+      "id": 18,
+      "college": "Rangaraya Medical College"
+    },
+    {
+      "id": 15,
+      "college": "Guntur Medical College"
+    },
+    {
+      "id": 16,
+      "college": "Kurnool Medical College"
+    },
+    {
+      "id": 19,
+      "college": "S V Medical College Tirupati"
+    }
+  ],
+  "principles": [
+    "Detailed student allegations are not adjudicated findings.",
+    "PG toxicity is not transferred to UG culture.",
+    "Applicant concern is not evidence that ragging occurs."
+  ]
+}

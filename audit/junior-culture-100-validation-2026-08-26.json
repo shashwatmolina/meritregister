@@ -1,0 +1,66 @@
+{
+  "version": "v7-junior-culture-100",
+  "validated_on": "2026-08-26",
+  "junior_culture_profiles": 100,
+  "first90_profiles": 100,
+  "timeline_records": 69,
+  "timeline_profiles_with_supported_phase": 55,
+  "supported_phase_cells": 77,
+  "possible_phase_cells": 600,
+  "explicit_gap_phase_cells": 523,
+  "source_ledger_records": 232,
+  "primary_bundle_block_sha256": {
+    "college": "e0e3aa4c6be9223ba733952115e61d421c327892e87922b1bb5657f1765b7fde",
+    "compare": "e0e3aa4c6be9223ba733952115e61d421c327892e87922b1bb5657f1765b7fde",
+    "index": "e0e3aa4c6be9223ba733952115e61d421c327892e87922b1bb5657f1765b7fde",
+    "culture": "e0e3aa4c6be9223ba733952115e61d421c327892e87922b1bb5657f1765b7fde"
+  },
+  "primary_blocks_identical": true,
+  "consumer_counts": {
+    "college": {
+      "junior_culture": 100,
+      "first90": 100,
+      "timeline": 69
+    },
+    "compare": {
+      "junior_culture": 100,
+      "first90": 100,
+      "timeline": 69
+    },
+    "index": {
+      "junior_culture": 100,
+      "first90": 100,
+      "timeline": 69
+    },
+    "culture": {
+      "junior_culture": 100,
+      "first90": 100,
+      "timeline": 69
+    },
+    "assistant": {
+      "junior_culture": 100,
+      "first90": 100,
+      "timeline": 69
+    },
+    "inbox": {
+      "junior_culture": 100,
+      "first90": 100,
+      "timeline": 69
+    }
+  },
+  "javascript_syntax": {
+    "files_checked": 8,
+    "failures": 0
+  },
+  "local_asset_reference_check": {
+    "pages_checked": 7,
+    "references_checked": 80,
+    "missing": 0
+  },
+  "notes": [
+    "PG/resident evidence remains quarantined from MBBS fresher inference.",
+    "Nursing/allied-health cases remain quarantined from MBBS fresher inference.",
+    "Formal anti-ragging systems are protection evidence, not a safety/prevalence score.",
+    "Timeline GAP is an evidence gap, not evidence of absence."
+  ]
+}

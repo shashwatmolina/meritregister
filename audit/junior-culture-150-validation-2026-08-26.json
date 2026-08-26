@@ -1,0 +1,81 @@
+{
+  "version": "V7 Junior Culture 150 milestone",
+  "generated": "2026-08-26",
+  "junior_culture_profiles": 150,
+  "first90_profiles": 150,
+  "timeline_records": 69,
+  "timeline_phases_per_profile": 6,
+  "colleges_with_supported_phase": 63,
+  "supported_phase_cells": 85,
+  "possible_phase_cells": 900,
+  "explicit_gap_phase_cells": 815,
+  "source_ledger_records": 312,
+  "consumer_counts": {
+    "college.js": {
+      "culture": 150,
+      "first90": 150,
+      "timeline": 69
+    },
+    "compare.js": {
+      "culture": 150,
+      "first90": 150,
+      "timeline": 69
+    },
+    "index.js": {
+      "culture": 150,
+      "first90": 150,
+      "timeline": 69
+    },
+    "culture.js": {
+      "culture": 150,
+      "first90": 150,
+      "timeline": 69
+    },
+    "assistant.js": {
+      "culture": 150,
+      "first90": 150,
+      "timeline": 69
+    },
+    "inbox.js": {
+      "culture": 150,
+      "first90": 150,
+      "timeline": 69
+    }
+  },
+  "expansion_126_150": {
+    "consumer_block_sha256": "fd81ec2e4e8dccbed6f6a7084ac458d832761501ddf357f8f37fc0da57869f7f",
+    "byte_identical_across_six_consumers": true,
+    "block_bytes": 112493
+  },
+  "javascript_syntax": {
+    "files_checked": 8,
+    "status": "pass"
+  },
+  "local_asset_references": {
+    "missing": 0,
+    "status": "pass"
+  },
+  "source_ledger": {
+    "declared_count": 312,
+    "actual_count": 312,
+    "duplicate_urls": 0,
+    "status": "pass"
+  },
+  "http_smoke": {
+    "pages": [
+      "index.html",
+      "college.html",
+      "compare.html",
+      "culture.html",
+      "assistant.html",
+      "inbox.html",
+      "status.html"
+    ],
+    "status": "HTTP 200"
+  },
+  "methodology_notes": [
+    "No new FRESHERS_TIMELINE phases were added merely because an incident involved a first-year student.",
+    "Timeline totals were recalculated directly from the actual timeline object: 63 supported colleges and 85 supported phase cells.",
+    "PG/resident and similarly named-college contamination safeguards remain active."
+  ]
+}
