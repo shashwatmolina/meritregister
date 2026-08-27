@@ -1,0 +1,86 @@
+{
+  "release": "V8.4-Demand-200",
+  "date": "2026-08-27",
+  "pages_present": 10,
+  "pages_expected": 10,
+  "missing_local_references": [],
+  "duplicate_ids": {},
+  "js_files_checked": 13,
+  "js_syntax_failures": [],
+  "runtime_counts": {
+    "colleges": 465,
+    "culture": 200,
+    "first90": 200,
+    "timeline": 69,
+    "meta": {
+      "updated": "27 Aug 2026",
+      "scope": "200 researched profiles: national baseline + regional retrospectives + demand-ranked expansion through 200",
+      "method": "Official anti-ragging/hostel material is separated from news-reported disciplinary cases and public student reports. No absence-of-reports claim is treated as evidence of absence.",
+      "sourceKinds": {
+        "official": "Official institution / government source",
+        "news": "Reported disciplinary case / established news source",
+        "student": "Public student report \u2014 unverified lived-experience evidence"
+      }
+    }
+  },
+  "source_ledger": {
+    "unique_records": 350
+  },
+  "consumer_script_order": {
+    "index.html": [
+      "js/shared-master-v8.js",
+      "js/shared-counselling-v8.js",
+      "js/shared-intelligence-v8.js",
+      "js/shared-culture-v8.js",
+      "js/index.js",
+      "js/nav.js"
+    ],
+    "compare.html": [
+      "js/shared-master-v8.js",
+      "js/shared-counselling-v8.js",
+      "js/shared-intelligence-v8.js",
+      "js/shared-culture-v8.js",
+      "js/compare.js",
+      "js/nav.js"
+    ],
+    "college.html": [
+      "js/shared-master-v8.js",
+      "js/shared-counselling-v8.js",
+      "js/shared-intelligence-v8.js",
+      "js/shared-culture-v8.js",
+      "js/college.js",
+      "js/nav.js"
+    ],
+    "culture.html": [
+      "js/shared-master-v8.js",
+      "js/shared-culture-v8.js",
+      "js/culture.js",
+      "js/nav.js"
+    ],
+    "inbox.html": [
+      "js/shared-master-v8.js",
+      "js/shared-culture-v8.js",
+      "js/inbox.js",
+      "js/nav.js"
+    ],
+    "assistant.html": [
+      "js/shared-master-v8.js",
+      "js/shared-counselling-v8.js",
+      "js/shared-intelligence-v8.js",
+      "js/shared-culture-v8.js",
+      "js/assistant.js",
+      "js/nav.js"
+    ]
+  },
+  "directory_filters": {
+    "culture-source-select": true,
+    "culture-coverage-select": true,
+    "culture-recency-select": true
+  },
+  "timeline_accounting": {
+    "possible_cells": 1200,
+    "supported_A_to_C": 71,
+    "lead_only_D": 4,
+    "gap_or_blank": 1125
+  }
+}

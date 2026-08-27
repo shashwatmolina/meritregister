@@ -1,6 +1,8 @@
-# The Merit Register — V8 VS Code Export
+# The Merit Register V8.4 — Demand 200
 
-Generated: 26 August 2026.
+# The Merit Register — V8.2 Original Style Export
+
+Generated: 27 August 2026.
 
 ## Run locally
 
@@ -15,7 +17,7 @@ then open `http://localhost:8000/`. Serving the folder over HTTP is recommended 
 ## Main pages
 
 - `index.html` — nationwide Directory / predictor
-- `compare.html` — deep comparison, V8 dossiers
+- `compare.html` — evidence-first 2–4 college comparison: Junior Culture / First 90 Days, counselling, clinical, academics, research, hostel and campus
 - `assistant.html` — Choice List Assistant
 - `culture.html` — Junior Culture / First 90 Days / timeline / artifacts
 - `college.html?id=71` — dynamic college profile (change `id`)
@@ -41,13 +43,20 @@ The underlying research/audit files are included under `audit/`, `research/`, `d
 
 ## Current deep-profile status
 
-30 standardized V8 dossiers; all 30 are marked fresh-source refreshed in the synchronized research queue. Junior Culture covers 175 colleges, with 175 First-90-Days records and timing left blank when phase-specific evidence is insufficient.
+30 standardized V8 dossiers; all 30 are marked fresh-source refreshed in the synchronized research queue. Junior Culture covers 200 colleges, with 200 First-90-Days records and timing left blank when phase-specific evidence is insufficient.
 
 ## V8 shared data layer
 
 - `js/shared-master-v8.js` — canonical 465-college master
 - `js/shared-counselling-v8.js` — shared MCC/cutoff datasets
 - `js/shared-intelligence-v8.js` — hostel, clinical, academics, research, campus and finance layers
-- `js/shared-culture-v8.js` — 175 Junior Culture + 175 First 90 Days + timing-strict Freshers Timeline
+- `js/shared-culture-v8.js` — 200 Junior Culture + 175 First 90 Days + timing-strict Freshers Timeline
 
 The page bundles load these files before page-specific logic. This replaces multi-megabyte duplication across pages.
+
+## V8.2 interaction update
+
+The global **More** control now uses one shared keyboard/touch-safe dropdown behavior while retaining the original V7 visual language. Compare now places Junior Culture and First-90 evidence near the top and separates official, news and student/community sources instead of collapsing them into a safety score.
+
+### V8.4 profile update
+College profiles now surface a compact evidence-first Junior Culture summary near the top: the current conclusion, why it exists, confidence/recency, source mix, First-90/timeline coverage, official evidence, lived/reporting evidence, unresolved gaps, and direct sources. The full field-by-field Junior Culture section remains later in each profile.

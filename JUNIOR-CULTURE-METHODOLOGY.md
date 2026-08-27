@@ -1,10 +1,10 @@
 # Junior Experience & Senior Culture — Research Method
 
-Updated: 26 August 2026
+Updated: 27 August 2026
 
 This layer tracks information that is both important to applicants and unusually easy to distort: ragging reports, senior-issued fresher rulebooks, informal “ground rules”, intro/PDP culture, dress or appearance expectations, access to common areas, senior–junior hierarchy, positive mentoring traditions, disciplinary incidents and the institution’s official response.
 
-Coverage in this build: **175 structured Junior Culture profiles.** The evidence layer combines the national baseline, regional retrospectives and demand-ranked expansions through the 150→175 pass completed on 26 Aug 2026.
+Coverage in this build: **200 structured Junior Culture profiles.** The evidence layer combines the national baseline, regional retrospectives and demand-ranked expansions through the 175→200 pass completed on 27 Aug 2026.
 
 ## Evidence classes
 
@@ -214,8 +214,15 @@ At the 150-profile milestone, all 150 profiles had a First-90-Days record. The t
 
 ## Demand-ranked expansion: 150 → 175 (26 Aug 2026)
 
-Coverage expanded to **175 Junior Culture profiles** and **175 First-90-Days records** using the next 25 unresolved colleges by 2026 General Round-1 demand. The pass keeps formal safeguards, disciplinary history, anonymous student reports and genuine evidence gaps separate. Source-empty profiles are presented as **insufficient evidence** rather than receiving an inferred safety or concern label.
+Coverage expanded to **200 Junior Culture profiles** and **200 First-90-Days records** using the next 25 unresolved colleges by 2026 General Round-1 demand. The pass keeps formal safeguards, disciplinary history, anonymous student reports and genuine evidence gaps separate. Source-empty profiles are presented as **insufficient evidence** rather than receiving an inferred safety or concern label.
 
 The canonical V8 Freshers Timeline contains **69 college records** across six possible phases per profile. Across all **1,050** profile-phase cells, the current grade counts are **A: 18, B: 28, C: 25, D: 4, explicit GAP: 8**; the remaining cells are blank because no phase-specific claim is supported. Therefore **71 A–C cells are publishable phase evidence**, **4 D cells are lead-only**, and **975 cells are blank or explicit GAP**.
 
 The canonical source ledger currently contains **329 unique URLs**: **144 official**, **38 news**, and **147 student/community** sources. Source type is not a truth score: official pages often establish policy rather than lived prevalence, while student reports establish that an account was made rather than that it is universal.
+
+
+## Demand-ranked expansion: 175 → 200 (27 Aug 2026)
+
+The next 25 unresolved colleges were selected by 2026 General Round-1 demand rather than alphabetically. The pass added College of Medicine & Sagore Dutta Hospital through Kalyan Singh Government Medical College, Bulandshahr.
+
+Evidence remained asymmetric by design. Kakatiya Medical College received a current concern signal because an April 2026 disciplinary case is directly reported; Kanyakumari Government Medical College received a limited reassuring signal from a first-person 2024 report plus current formal controls; several colleges received only formal-safeguard or historical-complaint context; and source-thin colleges remain explicitly insufficient. No new Freshers Timeline phase was populated unless a source actually supported phase timing.

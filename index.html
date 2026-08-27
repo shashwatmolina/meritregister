@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>The Merit Register — Government MBBS Colleges of India</title>
-<link href="css/index.css" rel="stylesheet"/><meta content="V8 canonical 175-profile build 2026-08-26" name="merit-register-export"/><meta content="The Merit Register: independent government MBBS college directory, counselling data and evidence-backed college intelligence." name="description"/><link href="css/site-v8.css" rel="stylesheet"/></head>
+<link href="css/index.css" rel="stylesheet"/><meta content="V8.4 original-style 200-profile build 2026-08-27" name="merit-register-export"/><meta content="The Merit Register: independent government MBBS college directory, counselling data and evidence-backed college intelligence." name="description"/></head>
 <body>
 <header class="masthead">
 <div class="wrap">
@@ -13,7 +13,7 @@
 <p class="eyebrow">Independent · Not affiliated with NMC or MCC</p>
 <h1>The Merit Register</h1>
 <p class="sub">A working ledger of government MBBS colleges in India — counselling data, college intelligence and student-facing decision tools.</p>
-<nav aria-label="Main navigation" class="site-nav"><a aria-current="page" class="active" href="index.html">Directory</a><a href="compare.html">Compare</a><a href="assistant.html">Choice Assistant</a><a href="culture.html">Junior Culture</a><a href="preference.html">♡ My List</a><span class="nav-more"><button aria-label="More pages" class="nav-more-btn" type="button">More ▾</button><span class="nav-more-menu"><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
+<nav aria-label="Main navigation" class="site-nav"><a aria-current="page" class="active" href="index.html">Directory</a><a href="compare.html">Compare</a><a href="assistant.html">Choice Assistant</a><a href="culture.html">Junior Culture</a><a href="preference.html">♡ My List</a><span class="nav-more"><button aria-label="More pages" class="nav-more-btn" type="button" aria-expanded="false">More</button><span class="nav-more-menu"><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
 </div>
 <div class="masthead-controls">
 <div class="rhs">Updated Aug 2026<br/>working build</div>
@@ -122,6 +122,27 @@
 <option value="culture">Junior culture researched</option>
 <option value="timeline">Freshers timeline evidence</option>
 </select>
+<select aria-label="Filter Junior Culture source strength" id="culture-source-select">
+<option value="">Culture sources: Any</option>
+<option value="2plus">2+ direct sources</option>
+<option value="official">Official source present</option>
+<option value="student">Student/community source present</option>
+<option value="news">News/formal case source present</option>
+<option value="gap">Evidence gap / no direct source</option>
+</select>
+<select aria-label="Filter Freshers evidence coverage" id="culture-coverage-select">
+<option value="">Freshers coverage: Any</option>
+<option value="culture">Junior Culture profile</option>
+<option value="first90">First 90 Days profile</option>
+<option value="timeline1">Timeline: 1+ supported phase</option>
+<option value="timeline3">Timeline: 3+ supported phases</option>
+</select>
+<select aria-label="Filter Junior Culture recency" id="culture-recency-select">
+<option value="">Culture recency: Any</option>
+<option value="30">Verified in last 30 days</option>
+<option value="90">Verified in last 90 days</option>
+<option value="older">Older / undated</option>
+</select>
 <select aria-label="Filter by hostel evidence" id="hostel-filter-select">
 <option value="">Hostel: Any</option>
 <option value="researched">Hostel profile researched</option>
@@ -159,5 +180,5 @@
 <div class="modal" id="modal-content"></div>
 </div>
 <footer>Independent student resource · not an official government site · data may contain errors, verify before relying on it</footer>
-<script defer="" src="js/shared-master-v8.js"></script><script defer="" src="js/shared-counselling-v8.js"></script><script defer="" src="js/shared-intelligence-v8.js"></script><script defer="" src="js/shared-culture-v8.js"></script><script defer="True" src="js/index.js"></script></body>
+<script defer="" src="js/shared-master-v8.js"></script><script defer="" src="js/shared-counselling-v8.js"></script><script defer="" src="js/shared-intelligence-v8.js"></script><script defer="" src="js/shared-culture-v8.js"></script><script defer="True" src="js/index.js"></script><script defer src="js/nav.js"></script></body>
 </html>

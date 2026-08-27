@@ -10971,3 +10971,1014 @@ Object.entries(JUNIOR_CULTURE_V8_EXTENSION).forEach(([id,p])=>{
 Object.assign(JUNIOR_FIRST90,JUNIOR_FIRST90_V8_EXTENSION);
 JUNIOR_CULTURE_META.scope='175 researched profiles: national baseline + regional retrospectives + demand-ranked expansion through 175';
 JUNIOR_FIRST90_META.scope='175 Junior Culture profiles; unsupported fields remain explicitly unknown';
+
+
+// V8.4 demand-ranked extension: profiles 176–200 (27 Aug 2026).
+const JUNIOR_CULTURE_V84_EXTENSION = {
+  "436": {
+    "currentPicture": "The college publicly lists an Anti-Ragging Committee and helplines. This pass did not recover sufficiently specific current MBBS fresher reports to characterize day-to-day senior-junior culture.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "The college publishes a current Anti-Ragging Committee, national/institutional helplines and a no-ragging-zone notice.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for formal safeguards; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Formal anti-ragging structure documented · current lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "window": "current institutional page; lived prevalence unresolved",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "The college publishes a current Anti-Ragging Committee, national/institutional helplines and a no-ragging-zone notice.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "COM&SDH — Anti-Ragging Committee and helplines",
+        "url": "https://comsdh.org.in/committee.html",
+        "year": 2026
+      }
+    ]
+  },
+  "377": {
+    "currentPicture": "Government Medical College Haridwar began MBBS recently, so long-run senior-culture history is still immature. Targeted current searches did not recover specific first-year lived evidence strong enough for a culture claim.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for programme age; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Very new MBBS programme · current lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "window": "new programme",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "147": {
+    "currentPicture": "The national anti-ragging complaints record lists a closed NMC complaint for Mandya Institute of Medical Sciences from May 2022. This is useful historical formal context, but current 2026 first-year routine was not reconstructed.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [
+      {
+        "year": 2022,
+        "label": "National anti-ragging complaint record",
+        "detail": "A closed NMC complaint is listed for Mandya Institute of Medical Sciences in May 2022; the public index does not establish present-day prevalence."
+      }
+    ],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "A historical complaint exists; no reliable current evidence was found to infer persistence or resolution.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for complaint-record existence; insufficient for current prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Historical formal complaint record · current lived prevalence unresolved",
+      "tone": "insufficient",
+      "confidence": "High for complaint-record existence; insufficient for current prevalence",
+      "window": "2022 formal record; current prevalence unresolved",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "National Anti-Ragging complaints record — Mandya Institute of Medical Sciences (May 2022)",
+        "url": "https://www.antiragging.in/complaints-record/new-complaints-record.php",
+        "year": 2022
+      }
+    ]
+  },
+  "321": {
+    "currentPicture": "A 2024 first-person post from a newly joined MBBS student described seniors as friendly, said they taught freshers sports, and characterized the main hierarchy as being asked to call seniors “sir”. The college separately publishes an anti-ragging committee and hostel controls. One student account is not a prevalence estimate, but it is a useful direct lived signal.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "One first-person 2024 report described friendly seniors and a “sir” form-of-address convention, without broader coercive rules.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No senior-imposed grooming rule was reported in the located first-person account.",
+    "movementCommonAreas": "The official hostel material states separate first-year accommodation/security controls; no senior-imposed movement ban was reconstructed.",
+    "seniorJunior": "One first-person 2024 report described friendly seniors and a “sir” form-of-address convention, without broader coercive rules.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "The college publishes an Anti-Ragging Committee and hostel rules that prohibit ragging, provide reporting measures and describe security/surprise visits.",
+    "trend": "Available lived evidence is reassuring but based on a single public first-person account; future batches may differ.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "Moderate for lived signal; high for formal safeguards",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Reassuring first-person student signal · formal controls visible",
+      "tone": "reassuring",
+      "confidence": "Moderate for lived signal; high for formal safeguards",
+      "window": "Oct 2024 student account + current formal controls",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No senior-imposed grooming rule was reported in the located first-person account.",
+      "socialCoercion": "One first-person 2024 report described friendly seniors and a “sir” form-of-address convention, without broader coercive rules.",
+      "physicalSafety": "No physical ragging was reported in the located first-person account.",
+      "enforcement": "The college publishes an Anti-Ragging Committee and hostel rules that prohibit ragging, provide reporting measures and describe security/surprise visits.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "student",
+        "label": "Reddit — first-year Kanyakumari GMC experience (Oct 2024)",
+        "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1g5r1wd",
+        "year": 2024
+      },
+      {
+        "kind": "official",
+        "label": "Kanyakumari GMC — Anti-Ragging Committee",
+        "url": "https://kgmc.ac.in/committee/",
+        "year": 2026
+      },
+      {
+        "kind": "official",
+        "label": "Kanyakumari GMC — Hostel rules and anti-ragging steps",
+        "url": "https://kgmc.ac.in/hostel/",
+        "year": 2026
+      }
+    ]
+  },
+  "105": {
+    "currentPicture": "The Faridabad government medical college began MBBS in 2022. Targeted current searches did not recover sufficiently specific first-year student evidence to characterize senior-junior culture.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for programme age; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Young MBBS programme · current lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "window": "young programme",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "111": {
+    "currentPicture": "Targeted searches found current institutional material but not specific, reliable first-year MBBS evidence about senior-imposed rules or routine ragging. A 2025 off-campus/local violence discussion was not used as ragging evidence.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "Insufficient",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current MBBS lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "Insufficient",
+      "window": "current search window",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "183": {
+    "currentPicture": "A 2022 news report describes a first-year student complaining to the national anti-ragging helpline after alleged prolonged hostel ragging by four seniors; the national complaints index also lists a closed NMC complaint for SSMC in Oct 2023. These establish historical concern, not current 2026 prevalence.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [
+      {
+        "year": 2022,
+        "label": "First-year hostel ragging complaint reported",
+        "detail": "News reporting said a first-year student approached the national anti-ragging helpline alleging prolonged ragging by seniors."
+      },
+      {
+        "year": 2023,
+        "label": "National complaint record",
+        "detail": "The national anti-ragging public index lists a closed NMC complaint for Shyam Shah Medical College."
+      }
+    ],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Historical formal/reporting signals exist, but current lived routine was not reconstructed.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for historical reported complaint; insufficient for current prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Historical first-year ragging complaint · current prevalence unresolved",
+      "tone": "concern",
+      "confidence": "High for historical reported complaint; insufficient for current prevalence",
+      "window": "2022–2023 formal/reporting history; current prevalence unresolved",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "news",
+        "label": "Navbharat Times — first-year ragging complaint at Shyam Shah Medical College (Oct 2022)",
+        "url": "https://navbharattimes.indiatimes.com/state/madhya-pradesh/rewa/ragging-with-first-year-student-in-shyam-shah-medical-college-rewa/articleshow/94658611.cms",
+        "year": 2022
+      },
+      {
+        "kind": "official",
+        "label": "National Anti-Ragging complaints record — Shyam Shah Medical College (Oct 2023)",
+        "url": "https://www.antiragging.in/complaints-record/new-complaints-record.php",
+        "year": 2023
+      }
+    ]
+  },
+  "300": {
+    "currentPicture": "A current institutional anti-ragging committee and reporting structure are public. Current first-year lived evidence remains too thin to infer the everyday senior-junior culture.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Government Dharmapuri Medical College publishes an Anti-Ragging Committee with institutional, hostel and police representation plus national helpline details.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for formal safeguards; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current anti-ragging committee documented · lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "window": "current formal safeguards",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Government Dharmapuri Medical College publishes an Anti-Ragging Committee with institutional, hostel and police representation plus national helpline details.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "Government Dharmapuri Medical College — Anti-Ragging Committee",
+        "url": "https://dharmapurimedicalcollege.in/page/anti-ragging-committee",
+        "year": 2026
+      }
+    ]
+  },
+  "267": {
+    "currentPicture": "Targeted searches did not recover specific current first-year MBBS culture evidence. Non-culture issues such as stipend compliance were excluded from the Junior Culture assessment.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "Insufficient",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current MBBS lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "Insufficient",
+      "window": "current search window",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "397": {
+    "currentPicture": "The college has an active current institutional website, but this pass did not recover a directly source-linked current anti-ragging page or specific first-year lived reports strong enough for a culture assessment.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "Insufficient",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current MBBS lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "Insufficient",
+      "window": "current search window",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "281": {
+    "currentPicture": "The college began MBBS in 2022. Public college-information material confirms hostel availability, but targeted searches did not reconstruct current senior-junior rules or first-year lived prevalence.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for programme age; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Young college · current lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "window": "young programme",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "359": {
+    "currentPicture": "A current April 2026 report documents disciplinary action against seven third-year MBBS students after juniors were allegedly summoned to a hostel terrace, made to kneel and apologise. This is strong evidence that a ragging incident occurred and that authorities acted; it does not establish how common such behaviour is across the entire fresher experience.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "The April 2026 case reportedly involved seniors summoning juniors to a hostel terrace and forcing them to kneel and apologise. A separate 2025 anonymous discussion alleged early-morning/midnight “interaction” at KMC but explicitly lacked proof.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "The April 2026 case reportedly involved seniors summoning juniors to a hostel terrace and forcing them to kneel and apologise. A separate 2025 anonymous discussion alleged early-morning/midnight “interaction” at KMC but explicitly lacked proof.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [
+      {
+        "year": 2026,
+        "label": "Seven third-year MBBS students disciplined after ragging complaint",
+        "detail": "Telangana Today reported six-month suspension plus hostel expulsion after juniors were allegedly summoned to a terrace and forced to kneel/apologise."
+      }
+    ],
+    "officialResponse": "Kakatiya Medical College publishes an Anti-Ragging Committee. In April 2026, authorities reportedly suspended seven third-year MBBS students for six months and expelled them from the hostel for the remainder of their course after a junior-ragging complaint.",
+    "trend": "Current concern signal is real because the 2026 case is documented; institutional enforcement was also substantial in the same case.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for documented 2026 case and formal response; insufficient for batch-wide prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current 2026 disciplinary ragging case · active formal enforcement",
+      "tone": "concern",
+      "confidence": "High for documented 2026 case and formal response; insufficient for batch-wide prevalence",
+      "window": "Sep 2025–Apr 2026",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "The April 2026 case reportedly involved seniors summoning juniors to a hostel terrace and forcing them to kneel and apologise. A separate 2025 anonymous discussion alleged early-morning/midnight “interaction” at KMC but explicitly lacked proof.",
+      "physicalSafety": "The documented 2026 case involved coercive punishment; no batch-wide physical-ragging prevalence estimate is justified.",
+      "enforcement": "Kakatiya Medical College publishes an Anti-Ragging Committee. In April 2026, authorities reportedly suspended seven third-year MBBS students for six months and expelled them from the hostel for the remainder of their course after a junior-ragging complaint.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "news",
+        "label": "Telangana Today — seven KMC MBBS students suspended/hostel-expelled after ragging complaint (Apr 2026)",
+        "url": "https://telanganatoday.com/ragging-at-warangal-kmc-seven-expelled-from-hostel-suspended-for-six-months-from-college",
+        "year": 2026
+      },
+      {
+        "kind": "official",
+        "label": "Kakatiya Medical College — Anti-Ragging Committee",
+        "url": "https://www.kmcwgl.com/anti-ragging.html",
+        "year": 2026
+      },
+      {
+        "kind": "student",
+        "label": "Reddit — Telangana ragging discussion mentioning KMC interaction allegations (Sep 2025)",
+        "url": "https://www.reddit.com/r/MEDICOreTARDS/comments/1n79no4",
+        "year": 2025
+      }
+    ]
+  },
+  "63": {
+    "currentPicture": "The institute publishes anti-ragging helpline information. Current public first-year lived evidence was not sufficient to characterize senior-junior culture.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "NAMO Medical Education & Research Institute publishes national and local anti-ragging helpline numbers.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for formal reporting channel; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Formal anti-ragging helplines visible · current lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for formal reporting channel; insufficient for lived prevalence",
+      "window": "current formal reporting channel",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "NAMO Medical Education & Research Institute publishes national and local anti-ragging helpline numbers.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "NAMO MERI — anti-ragging helpline information",
+        "url": "https://namomeri.in/lt-news/327.html",
+        "year": 2026
+      }
+    ]
+  },
+  "393": {
+    "currentPicture": "Official college material documents anti-ragging forms and committee activity. This research pass did not recover specific current first-year lived evidence sufficient to characterize informal senior rules.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "The official college site lists an anti-ragging committee notice and anti-ragging formats for students/parents in its MBBS material.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for formal material; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Formal anti-ragging material documented · current lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for formal material; insufficient for lived prevalence",
+      "window": "formal material; current lived prevalence unresolved",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "The official college site lists an anti-ragging committee notice and anti-ragging formats for students/parents in its MBBS material.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "GMC Azamgarh — MBBS notices including anti-ragging format",
+        "url": "https://www.gmcazamgarh.com/mbbs.html",
+        "year": 2026
+      },
+      {
+        "kind": "official",
+        "label": "GMC Azamgarh — anti-ragging committee archive",
+        "url": "https://www.gmcazamgarh.com/Hindi-gmc/index.html",
+        "year": 2022
+      }
+    ]
+  },
+  "242": {
+    "currentPicture": "Targeted searches confirmed the institution but did not recover specific current first-year culture evidence or a directly usable current anti-ragging source in this pass.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "Insufficient",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current MBBS lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "Insufficient",
+      "window": "current search window",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "132": {
+    "currentPicture": "The national anti-ragging complaints index lists a closed NMC complaint for Belagavi Institute of Medical Sciences in January 2024. The public index establishes complaint history but not the details or current 2026 prevalence.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [
+      {
+        "year": 2024,
+        "label": "National anti-ragging complaint record",
+        "detail": "The public national index lists a closed NMC complaint for Belagavi Institute of Medical Sciences."
+      }
+    ],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "A formal complaint history exists; current lived routine remains unresolved.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for complaint-record existence; insufficient for current prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Historical national complaint record · current lived prevalence unresolved",
+      "tone": "concern",
+      "confidence": "High for complaint-record existence; insufficient for current prevalence",
+      "window": "Jan 2024 formal record; current prevalence unresolved",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "National Anti-Ragging complaints record — Belagavi Institute of Medical Sciences (Jan 2024)",
+        "url": "https://www.antiragging.in/complaints-record/new-complaints-record.php",
+        "year": 2024
+      }
+    ]
+  },
+  "319": {
+    "currentPicture": "The college publishes a zero-tolerance policy and current anti-ragging committee. No representative current first-year lived evidence was recovered, so formal controls are not treated as proof of low prevalence.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Government Erode Medical College publishes a zero-tolerance anti-ragging policy, committee and reporting contacts.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for formal safeguards; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current zero-tolerance framework documented · lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "window": "current formal safeguards",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Government Erode Medical College publishes a zero-tolerance anti-ragging policy, committee and reporting contacts.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "Government Erode Medical College — Anti-Ragging Committee",
+        "url": "https://www.gemch.ac.in/anti-ragging-committee.php",
+        "year": 2026
+      }
+    ]
+  },
+  "241": {
+    "currentPicture": "The college currently publishes a detailed anti-ragging committee. Historical 2022 reporting, however, quoted local civil groups alleging the squad existed “only on paper” at that time. V8.4 keeps those facts separate and does not infer the present lived prevalence from either.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Bhima Bhoi Medical College currently publishes an Anti-Ragging Committee with student, parent, police and civil-administration representation plus national helpline information.",
+    "trend": "Formal structure is current; the only implementation criticism located was historical (2022), so present-day effectiveness remains unresolved.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for formal safeguards and 2022 reporting; insufficient for current lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current formal safeguards visible · historical implementation concern",
+      "tone": "insufficient",
+      "confidence": "High for formal safeguards and 2022 reporting; insufficient for current lived prevalence",
+      "window": "2022 historical concern + current formal safeguards",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Bhima Bhoi Medical College currently publishes an Anti-Ragging Committee with student, parent, police and civil-administration representation plus national helpline information.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "Bhima Bhoi Medical College — Anti-Ragging Committee",
+        "url": "https://bbmchbalangir.odisha.gov.in/anti-ragging/",
+        "year": 2026
+      },
+      {
+        "kind": "news",
+        "label": "New Indian Express — anti-ragging squad implementation concern (Apr 2022)",
+        "url": "https://www.newindianexpress.com/states/odisha/2022/Apr/26/bbmch-anti-ragging-squad-only-on-pen-and-paper-2446656.html",
+        "year": 2022
+      }
+    ]
+  },
+  "331": {
+    "currentPicture": "Current institutional committee, squad and reporting contacts are public. Specific current first-year lived evidence remains insufficient for a broader culture claim.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Government Thoothukudi Medical College publishes an Anti-Ragging Committee, Anti-Ragging Squad, nodal person and national helpline.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for formal safeguards; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current anti-ragging committee and squad documented · lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "window": "current formal safeguards",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Government Thoothukudi Medical College publishes an Anti-Ragging Committee, Anti-Ragging Squad, nodal person and national helpline.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "Government Thoothukudi Medical College — Anti-Ragging Committee and Squad",
+        "url": "https://gtkmc.ac.in/committees/anti-ragging/anti-ragging-committee/",
+        "year": 2026
+      }
+    ]
+  },
+  "292": {
+    "currentPicture": "Government Medical College Sawai Madhopur began MBBS recently. The programme is too young for a long senior-culture history, and current first-year lived evidence was not sufficiently specific in this pass.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for programme age; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Very new MBBS programme · current lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "window": "new programme",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "142": {
+    "currentPicture": "Targeted searches did not recover sufficiently specific current first-year MBBS evidence for senior-imposed rules, ragging prevalence or ordinary opt-out consequences at Hassan Institute of Medical Sciences.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "Insufficient",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current MBBS lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "Insufficient",
+      "window": "current search window",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "213": {
+    "currentPicture": "Government Medical College Nashik began MBBS in 2024, so senior-culture history is still immature. Official admission material documents hostel contacts, but current lived senior-junior evidence is insufficient.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "The 2025–26 official MBBS admission brochure publishes separate boys’ and girls’ hostel contact points; a current culture-specific anti-ragging source was not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for programme age; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Very new MBBS programme · formal hostel contacts visible · lived culture immature",
+      "tone": "insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "window": "new programme",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "The 2025–26 official MBBS admission brochure publishes separate boys’ and girls’ hostel contact points; a current culture-specific anti-ragging source was not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "Government Medical College Nashik — MBBS admission brochure 2025–26",
+        "url": "https://www.gmcnashik.edu.in/wp-content/uploads/2025/10/MBBS-ADMISSION-BROCHURE-AND-FORM-2025-26.pdf",
+        "year": 2025
+      }
+    ]
+  },
+  "54": {
+    "currentPicture": "Targeted current searches did not recover sufficiently specific first-year culture evidence at CIMS Bilaspur. Older regulatory comments about website/helpline disclosure were not used to infer current student culture.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "Insufficient",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current MBBS lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "Insufficient",
+      "window": "current search window",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  },
+  "314": {
+    "currentPicture": "The college publishes current anti-ragging committee/squad details and hostel information. This pass did not recover sufficiently specific first-year lived reports to characterize informal senior rules.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Government Medical College Tiruppur publishes an Anti-Ragging Committee, Anti-Ragging Squad, dedicated contact and national helpline information.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for formal safeguards; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Current anti-ragging committee and squad documented · lived evidence insufficient",
+      "tone": "insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "window": "current formal safeguards",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Government Medical College Tiruppur publishes an Anti-Ragging Committee, Anti-Ragging Squad, dedicated contact and national helpline information.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": [
+      {
+        "kind": "official",
+        "label": "Government Medical College Tiruppur — committees including anti-ragging",
+        "url": "https://tiruppurmedicalcollege.in/page/committee",
+        "year": 2026
+      },
+      {
+        "kind": "official",
+        "label": "Government Medical College Tiruppur — UG hostel capacity",
+        "url": "https://tiruppurmedicalcollege.in/page/undergraduate-hostel",
+        "year": 2026
+      }
+    ]
+  },
+  "421": {
+    "currentPicture": "Kalyan Singh Government Medical College began MBBS in 2024. Targeted searches did not recover specific current first-year lived evidence strong enough for a senior-culture assessment.",
+    "rulebookStatus": "No public senior-issued rulebook verified in this pass",
+    "rulebookSummary": "No authenticated senior-issued rules were recovered in this pass.",
+    "groundRules": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "introCulture": "Not reconstructed beyond the evidence summarized above.",
+    "dressAppearance": "No current grooming rule verified.",
+    "movementCommonAreas": "No current senior-imposed common-area restriction was reliably reconstructed.",
+    "seniorJunior": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+    "positives": "Formal safeguards are recorded separately where documented; missing lived evidence is never converted into a positive rating.",
+    "incidents": [],
+    "officialResponse": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+    "trend": "Current evidence remains too thin for a directional campus-wide trend claim.",
+    "unknowns": "Batch-wide prevalence, first-week routine, residence-mode gradient, gender differences and ordinary opt-out consequences remain unknown unless stated above.",
+    "confidence": "High for programme age; insufficient for lived prevalence",
+    "lastVerified": "27 Aug 2026",
+    "artifactStatus": "No public senior-issued artifact verified in this pass",
+    "artifactClaims": [],
+    "artifactNote": "Absence of a found artifact is not evidence that one has never existed.",
+    "signal": {
+      "label": "Very new MBBS programme · senior-culture history still immature",
+      "tone": "concern",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "window": "new programme",
+      "hostelRisk": "No reliable hostel-versus-day-scholar gradient established unless stated in the profile.",
+      "grooming": "No current grooming rule verified.",
+      "socialCoercion": "Current routine senior-junior social coercion was not reconstructed from reliable current evidence.",
+      "physicalSafety": "No current MBBS physical-safety prevalence pattern was established in this pass.",
+      "enforcement": "Current formal anti-ragging safeguards were not independently reconstructed in this pass.",
+      "evidenceMix": "Formal safeguards, disciplinary history, public student reports and evidence gaps are kept separate."
+    },
+    "sources": []
+  }
+};
+Object.assign(JUNIOR_CULTURE, JUNIOR_CULTURE_V84_EXTENSION);
+const JUNIOR_FIRST90_V84_EXTENSION = {};
+Object.entries(JUNIOR_CULTURE_V84_EXTENSION).forEach(([id,p])=>{ const hasDirect=(p.sources||[]).length>0; JUNIOR_FIRST90_V84_EXTENSION[id]={evidenceLevel:hasDirect?'partial':'insufficient',evidenceLabel:p.signal?.label||'Evidence gap',firstWeeks:'Timing-specific first-weeks evidence was not strong enough to reconstruct beyond the profile summary.',hostellerVsDayScholar:p.signal?.hostelRisk||'No reliable residence-mode comparison established.',genderDifferences:'No reliable current gender-specific comparison established unless the profile explicitly says otherwise.',optOut:'No reliable current college-specific opt-out consequence established.',afterFreshers:'No reliable current after-freshers transition established.',sourceNote:'V8.4 keeps unsupported timing fields explicit rather than inferring them.',sources:[...(p.sources||[])],coverage:{firstWeeks:false,residenceMode:false,genderSpecific:false,optOut:false,afterFreshers:false}}; });
+Object.assign(JUNIOR_FIRST90, JUNIOR_FIRST90_V84_EXTENSION);
+JUNIOR_CULTURE_META.updated='27 Aug 2026'; JUNIOR_CULTURE_META.scope='200 researched profiles: national baseline + regional retrospectives + demand-ranked expansion through 200';
+JUNIOR_FIRST90_META.scope='200 Junior Culture profiles; unsupported fields remain explicitly unknown';

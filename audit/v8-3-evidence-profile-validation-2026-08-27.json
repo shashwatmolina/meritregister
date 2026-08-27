@@ -1,0 +1,20 @@
+{
+  "build": "V8.3 Evidence-First Profiles 175",
+  "date": "2026-08-27",
+  "pages": 10,
+  "js_files": 13,
+  "js_syntax_ok": true,
+  "missing_local_references": [],
+  "duplicate_html_ids": {},
+  "counts": {
+    "master": 465,
+    "culture": 175,
+    "first90": 175,
+    "timeline": 69
+  },
+  "profile_upgrade_checks": {
+    "renderCultureEvidenceSummary_present": true,
+    "summary_rendered_before_cutoffs": true,
+    "evidence_css_present": true
+  }
+}

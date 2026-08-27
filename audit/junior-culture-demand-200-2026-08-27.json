@@ -1,0 +1,306 @@
+{
+  "generated": "2026-08-27",
+  "milestone": "Junior Culture 200 · V8.4 demand-ranked expansion",
+  "baseline_profiles": 175,
+  "added_profiles": 25,
+  "total_profiles": 200,
+  "selection": "Next 25 unresolved colleges by 2026 General Round-1 demand from the 175-profile build.",
+  "methodology": [
+    "Current lived/student evidence, formal disciplinary cases, official safeguards and evidence gaps are separately labelled.",
+    "Anonymous or second-hand student claims remain allegations and are not promoted to verified institutional facts.",
+    "Official anti-ragging safeguards do not establish low lived prevalence.",
+    "No phase timing is added unless a source actually supports the timing.",
+    "Source-empty profiles are presented as evidence gaps rather than carrying unsupported reassurance."
+  ],
+  "profiles": [
+    {
+      "order": 176,
+      "id": 436,
+      "name": "College of Medicine and Sagore Dutta Hospital, Kolkata",
+      "state": "West Bengal",
+      "signal": "Formal anti-ragging structure documented · current lived evidence insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "source_count": 1,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 177,
+      "id": 377,
+      "name": "Government Medical College and Hospital, Haridwar",
+      "state": "Uttarakhand",
+      "signal": "Very new MBBS programme · current lived evidence insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 178,
+      "id": 147,
+      "name": "Mandya Institute of Medical Sciences, Mandya",
+      "state": "Karnataka",
+      "signal": "Historical formal complaint record · current lived prevalence unresolved",
+      "confidence": "High for complaint-record existence; insufficient for current prevalence",
+      "source_count": 1,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 179,
+      "id": 321,
+      "name": "Kanyakumari Government Medical College, Asaripallam",
+      "state": "Tamil Nadu",
+      "signal": "Reassuring first-person student signal · formal controls visible",
+      "confidence": "Moderate for lived signal; high for formal safeguards",
+      "source_count": 3,
+      "source_kinds": [
+        "student",
+        "official"
+      ]
+    },
+    {
+      "order": 180,
+      "id": 105,
+      "name": "Shri Atal Bihari Vajpayee Government Medical College, Faridabad",
+      "state": "Haryana",
+      "signal": "Young MBBS programme · current lived evidence insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 181,
+      "id": 111,
+      "name": "Pt. Jawahar Lal Nehru Government Medical College, Chamba",
+      "state": "Himachal Pradesh",
+      "signal": "Current MBBS lived evidence insufficient",
+      "confidence": "Insufficient",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 182,
+      "id": 183,
+      "name": "Shyam Shah Medical College, Rewa",
+      "state": "Madhya Pradesh",
+      "signal": "Historical first-year ragging complaint · current prevalence unresolved",
+      "confidence": "High for historical reported complaint; insufficient for current prevalence",
+      "source_count": 2,
+      "source_kinds": [
+        "news",
+        "official"
+      ]
+    },
+    {
+      "order": 183,
+      "id": 300,
+      "name": "Government Dharmapuri Medical College, Dharmapuri",
+      "state": "Tamil Nadu",
+      "signal": "Current anti-ragging committee documented · lived evidence insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "source_count": 1,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 184,
+      "id": 267,
+      "name": "Government Medical College, Barmer",
+      "state": "Rajasthan",
+      "signal": "Current MBBS lived evidence insufficient",
+      "confidence": "Insufficient",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 185,
+      "id": 397,
+      "name": "Government Medical College, Kannauj",
+      "state": "Uttar Pradesh",
+      "signal": "Current MBBS lived evidence insufficient",
+      "confidence": "Insufficient",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 186,
+      "id": 281,
+      "name": "Government Medical College, Sri Ganganagar",
+      "state": "Rajasthan",
+      "signal": "Young college · current lived evidence insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 187,
+      "id": 359,
+      "name": "Kakatiya Medical College, Warangal",
+      "state": "Telangana",
+      "signal": "Current 2026 disciplinary ragging case · active formal enforcement",
+      "confidence": "High for documented 2026 case and formal response; insufficient for batch-wide prevalence",
+      "source_count": 3,
+      "source_kinds": [
+        "news",
+        "official",
+        "student"
+      ]
+    },
+    {
+      "order": 188,
+      "id": 63,
+      "name": "NAMO Medical Education & Research Institute, Silvassa",
+      "state": "Dadra and Nagar Haveli",
+      "signal": "Formal anti-ragging helplines visible · current lived evidence insufficient",
+      "confidence": "High for formal reporting channel; insufficient for lived prevalence",
+      "source_count": 1,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 189,
+      "id": 393,
+      "name": "Government Medical College & Superfacility Hospital, Azamgarh",
+      "state": "Uttar Pradesh",
+      "signal": "Formal anti-ragging material documented · current lived evidence insufficient",
+      "confidence": "High for formal material; insufficient for lived prevalence",
+      "source_count": 2,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 190,
+      "id": 242,
+      "name": "Fakir Mohan Medical College & Hospital, Balasore",
+      "state": "Odisha",
+      "signal": "Current MBBS lived evidence insufficient",
+      "confidence": "Insufficient",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 191,
+      "id": 132,
+      "name": "Belagavi Institute of Medical Sciences, Belagavi",
+      "state": "Karnataka",
+      "signal": "Historical national complaint record · current lived prevalence unresolved",
+      "confidence": "High for complaint-record existence; insufficient for current prevalence",
+      "source_count": 1,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 192,
+      "id": 319,
+      "name": "Government Erode Medical College & Hospital, Perundurai",
+      "state": "Tamil Nadu",
+      "signal": "Current zero-tolerance framework documented · lived evidence insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "source_count": 1,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 193,
+      "id": 241,
+      "name": "Bhima Bhoi Medical College & Hospital, Balangir",
+      "state": "Odisha",
+      "signal": "Current formal safeguards visible · historical implementation concern",
+      "confidence": "High for formal safeguards and 2022 reporting; insufficient for current lived prevalence",
+      "source_count": 2,
+      "source_kinds": [
+        "official",
+        "news"
+      ]
+    },
+    {
+      "order": 194,
+      "id": 331,
+      "name": "Thoothukudi Medical College, Thoothukudi",
+      "state": "Tamil Nadu",
+      "signal": "Current anti-ragging committee and squad documented · lived evidence insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "source_count": 1,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 195,
+      "id": 292,
+      "name": "Government Medical College, Sawai Madhopur",
+      "state": "Rajasthan",
+      "signal": "Very new MBBS programme · current lived evidence insufficient",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 196,
+      "id": 142,
+      "name": "Hassan Institute of Medical Sciences, Hassan",
+      "state": "Karnataka",
+      "signal": "Current MBBS lived evidence insufficient",
+      "confidence": "Insufficient",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 197,
+      "id": 213,
+      "name": "Government Medical College, Nashik",
+      "state": "Maharashtra",
+      "signal": "Very new MBBS programme · formal hostel contacts visible · lived culture immature",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "source_count": 1,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 198,
+      "id": 54,
+      "name": "Chhattisgarh Institute of Medical Sciences, Bilaspur",
+      "state": "Chhattisgarh",
+      "signal": "Current MBBS lived evidence insufficient",
+      "confidence": "Insufficient",
+      "source_count": 0,
+      "source_kinds": []
+    },
+    {
+      "order": 199,
+      "id": 314,
+      "name": "Government Medical College, Tiruppur",
+      "state": "Tamil Nadu",
+      "signal": "Current anti-ragging committee and squad documented · lived evidence insufficient",
+      "confidence": "High for formal safeguards; insufficient for lived prevalence",
+      "source_count": 2,
+      "source_kinds": [
+        "official"
+      ]
+    },
+    {
+      "order": 200,
+      "id": 421,
+      "name": "Kalyan Singh Government Medical College, Bulandshahr",
+      "state": "Uttar Pradesh",
+      "signal": "Very new MBBS programme · senior-culture history still immature",
+      "confidence": "High for programme age; insufficient for lived prevalence",
+      "source_count": 0,
+      "source_kinds": []
+    }
+  ],
+  "source_ledger_count": 350,
+  "source_kind_counts": {
+    "student": 149,
+    "official": 162,
+    "news": 39
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "The Merit Register",
-  "export_version": "V8-Canonical-175",
-  "generated": "2026-08-26",
+  "export_version": "V8.4-Demand-200",
+  "generated": "2026-08-27",
   "pages": [
     "index.html",
     "compare.html",
@@ -22,10 +22,14 @@
     "college.html is dynamic via ?id=<canonical id>",
     "canonical runtime datasets are shared across page bundles through js/shared-*-v8.js",
     "Freshers Timeline phase timing remains blank when evidence is insufficient",
-    "Junior Culture evidence is source-labelled and is not a numerical ragging score"
+    "Junior Culture evidence is source-labelled and is not a numerical ragging score",
+    "Compare surfaces source type, recency, First-90 coverage and evidence gaps before calibrated decision aids."
   ],
-  "junior_culture_profiles": 175,
-  "first_90_days_profiles": 175,
+  "junior_culture_profiles": 200,
+  "first_90_days_profiles": 200,
   "freshers_timeline_records": 69,
-  "culture_source_records": 329
+  "culture_source_records": 350,
+  "build": "V8.4 Demand-ranked 200 + evidence filters",
+  "buildDate": "2026-08-27",
+  "visualPolicy": "V7 visual system preserved; V8.4 adds demand-ranked research and evidence/coverage/recency filters without redesigning the site."
 }

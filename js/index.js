@@ -567,6 +567,20 @@ const TYPES = [...new Set(ALL_COLLEGES.map(c=>c.type))];
 const STATES = [...new Set(ALL_COLLEGES.map(c=>c.state))].sort();
 
 
+
+function directoryCultureSourceStats(id){
+  const c=typeof meritJuniorCulture==='function'?meritJuniorCulture(id):null;
+  const src=Array.isArray(c?.sources)?c.sources:[];
+  return {count:src.length,official:src.filter(s=>s.kind==='official').length,student:src.filter(s=>s.kind==='student').length,news:src.filter(s=>s.kind==='news').length};
+}
+function directoryCultureVerifiedAgeDays(id){
+  const c=typeof meritJuniorCulture==='function'?meritJuniorCulture(id):null;
+  const raw=String(c?.lastVerified||'').trim(); if(!raw)return null;
+  const dt=new Date(raw.replace(/^(\d{1,2}) ([A-Za-z]{3}) (\d{4})$/,'$2 $1, $3'));
+  if(Number.isNaN(dt.getTime()))return null;
+  return Math.max(0,Math.floor((Date.now()-dt.getTime())/86400000));
+}
+
 function directoryResearchFlags(id){
   const clinical=typeof CLINICAL_EXPOSURE!=='undefined'&&!!CLINICAL_EXPOSURE[id];
   const academics=typeof ACADEMICS_TEACHING!=='undefined'&&!!ACADEMICS_TEACHING[id];
@@ -715,6 +729,7 @@ function init(){
   document.getElementById('sort-select').addEventListener('change', renderList);
   document.getElementById('hostel-filter-select').addEventListener('change', ()=>{visibleCount=50; renderList();});
   document.getElementById('research-filter-select')?.addEventListener('change', ()=>{visibleCount=50; renderList();});
+  ['culture-source-select','culture-coverage-select','culture-recency-select'].forEach(id=>document.getElementById(id)?.addEventListener('change',()=>{visibleCount=50;renderList();}));
   document.getElementById('load-more').addEventListener('click', ()=>{visibleCount+=50; renderList();});
   initPredictorControls();
   document.getElementById('check-btn').addEventListener('click', runChecker);
@@ -752,6 +767,30 @@ function getFiltered(){
       if(rf==='hostel'&&!flags.hostel)return false;
       if(rf==='culture'&&!flags.culture)return false;
       if(rf==='timeline'&&!flags.timeline)return false;
+    }
+    const cs=(document.getElementById('culture-source-select')||{}).value||'';
+    if(cs){
+      const stats=directoryCultureSourceStats(c.id);
+      if(cs==='2plus'&&stats.count<2)return false;
+      if(cs==='official'&&!stats.official)return false;
+      if(cs==='student'&&!stats.student)return false;
+      if(cs==='news'&&!stats.news)return false;
+      if(cs==='gap'&&stats.count!==0)return false;
+    }
+    const cc=(document.getElementById('culture-coverage-select')||{}).value||'';
+    if(cc){
+      const flags=directoryResearchFlags(c.id); const phases=meritCultureEvidenceCount(c.id);
+      if(cc==='culture'&&!flags.culture)return false;
+      if(cc==='first90'&&!meritJuniorFirst90(c.id))return false;
+      if(cc==='timeline1'&&phases<1)return false;
+      if(cc==='timeline3'&&phases<3)return false;
+    }
+    const cr=(document.getElementById('culture-recency-select')||{}).value||'';
+    if(cr){
+      const age=directoryCultureVerifiedAgeDays(c.id);
+      if(cr==='30'&&!(Number.isFinite(age)&&age<=30))return false;
+      if(cr==='90'&&!(Number.isFinite(age)&&age<=90))return false;
+      if(cr==='older'&&(Number.isFinite(age)&&age<=90))return false;
     }
     const searchable = [c.name, formatCollegeName(c.name), c.city, c.state, c.type].join(' ').toLowerCase();
     if(q && !searchable.includes(q)) return false;

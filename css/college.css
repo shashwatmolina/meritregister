@@ -1148,3 +1148,58 @@ body[data-theme="dark"] .demand-bar{background:var(--stamp);}
 /* Evidence-graded Junior Culture signal dashboard — 25 Aug 2026 */
 .culture-signal-dashboard{margin:14px 0 18px;border:1px solid var(--hairline);border-left:4px solid var(--ink-soft);border-radius:11px;background:var(--surface-alt);overflow:hidden}.culture-signal-dashboard.tone-concern{border-left-color:var(--stamp)}.culture-signal-dashboard.tone-watch,.culture-signal-dashboard.tone-mixed{border-left-color:var(--gold)}.culture-signal-dashboard-head{display:flex;justify-content:space-between;gap:16px;padding:14px;border-bottom:1px solid var(--hairline)}.culture-signal-dashboard-head>div:first-child{display:flex;flex-direction:column;gap:4px}.culture-signal-dashboard-head span{font:700 9px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-soft)}.culture-signal-dashboard-head strong{font-size:16px;line-height:1.25}.culture-signal-dashboard-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;color:var(--ink-soft)}.culture-signal-dashboard-meta b{font-size:11px}.culture-signal-dashboard-meta small{font-size:10px}.culture-signal-dashboard-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;padding:0 14px 8px}.culture-signal-dashboard-grid>div{padding:11px 0;border-bottom:1px dotted var(--hairline)}.culture-signal-dashboard-grid span{display:block;font:700 9px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.055em;color:var(--ink-soft);margin-bottom:4px}.culture-signal-dashboard-grid p{margin:0;font-size:12px;line-height:1.5;color:var(--ink)}
 @media(max-width:700px){.culture-signal-dashboard-head{flex-direction:column}.culture-signal-dashboard-meta{align-items:flex-start}.culture-signal-dashboard-grid{grid-template-columns:1fr}}
+
+
+/* V8.2 nav polish — More behaves exactly like a primary nav item. */
+.site-nav .nav-more{position:relative;display:inline-flex;align-items:center;font-family:'IBM Plex Mono',monospace}
+.site-nav .nav-more-btn{
+  appearance:none;-webkit-appearance:none;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:400;
+  text-transform:uppercase;letter-spacing:.08em;line-height:1.55;color:var(--ink-soft);text-decoration:none;
+  border:1px solid var(--hairline);padding:6px 10px;border-radius:20px;background:var(--white);
+  cursor:pointer;transition:border-color .18s ease,color .18s ease,background .18s ease;white-space:nowrap;
+}
+.site-nav .nav-more-btn::after{content:'⌄';display:inline-block;margin-left:5px;font-size:10px;line-height:1;transform:translateY(-1px);transition:transform .16s ease}
+.site-nav .nav-more-btn:hover,.site-nav .nav-more-btn.active,.site-nav .nav-more.open>.nav-more-btn{border-color:var(--stamp);color:var(--stamp-dark);background:rgba(156,56,46,.035)}
+.site-nav .nav-more.open>.nav-more-btn::after{transform:translateY(1px) rotate(180deg)}
+.site-nav .nav-more-menu{display:none;position:absolute;right:0;top:calc(100% + 7px);z-index:1000;min-width:205px;padding:7px;background:var(--panel-strong);border:1px solid var(--hairline);border-radius:10px;box-shadow:var(--shadow)}
+.site-nav .nav-more.open>.nav-more-menu,.site-nav .nav-more:hover>.nav-more-menu,.site-nav .nav-more:focus-within>.nav-more-menu{display:grid;gap:3px}
+.site-nav .nav-more-menu a{display:block;white-space:nowrap;border:0!important;border-radius:7px;background:transparent;padding:9px 10px}
+.site-nav .nav-more-menu a:hover,.site-nav .nav-more-menu a.active{background:var(--hover-tint)}
+body[data-theme="dark"] .site-nav .nav-more-btn,body[data-theme="dark"] .site-nav .nav-more-menu{background:var(--surface-strong);color:var(--ink);border-color:var(--hairline)}
+@media(max-width:700px){.site-nav .nav-more-btn{font-size:10px;padding:6px 8px}.site-nav .nav-more-menu{left:0;right:auto;min-width:205px}}
+
+
+/* V8.3 college profile — evidence-first Junior Culture summary */
+.profile-culture-summary{border:1px solid var(--hairline);border-left:4px solid var(--gold);border-radius:10px;background:var(--surface-alt);overflow:hidden}
+.profile-culture-summary.concern{border-left-color:var(--stamp)}
+.profile-culture-summary.positive{border-left-color:var(--reach)}
+.profile-culture-summary-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding:14px 14px 12px;border-bottom:1px solid var(--hairline)}
+.profile-culture-summary-head>div:first-child{display:flex;flex-direction:column;gap:4px}
+.profile-culture-summary-head span,.profile-culture-metrics span,.profile-culture-evidence-grid>div>span{font:700 8.5px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-soft)}
+.profile-culture-summary-head strong{font:700 15px/1.35 'Roboto Slab',serif;color:var(--ink)}
+.profile-culture-summary-head>div:last-child{display:flex;flex-direction:column;align-items:flex-end;gap:3px;text-align:right}
+.profile-culture-summary-head b{font-size:11px;color:var(--ink)}
+.profile-culture-summary-head small{font-size:9.5px;color:var(--ink-soft)}
+.profile-culture-why{margin:0;padding:13px 14px;font-size:12.5px;line-height:1.6;color:var(--ink);border-bottom:1px solid var(--hairline)}
+.profile-culture-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--hairline)}
+.profile-culture-metrics>div{padding:11px 12px;border-right:1px dotted var(--hairline)}
+.profile-culture-metrics>div:last-child{border-right:0}
+.profile-culture-metrics span{display:block;margin-bottom:4px}
+.profile-culture-metrics strong{display:block;font-size:11px;line-height:1.4;color:var(--ink)}
+.profile-culture-evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-bottom:1px solid var(--hairline)}
+.profile-culture-evidence-grid>div{padding:12px 13px;border-right:1px dotted var(--hairline)}
+.profile-culture-evidence-grid>div:last-child{border-right:0}
+.profile-culture-evidence-grid>div.official{box-shadow:inset 0 2px 0 color-mix(in srgb,var(--reach) 55%,transparent)}
+.profile-culture-evidence-grid>div.lived{box-shadow:inset 0 2px 0 color-mix(in srgb,var(--gold) 65%,transparent)}
+.profile-culture-evidence-grid>div.gap{box-shadow:inset 0 2px 0 color-mix(in srgb,var(--ink-soft) 45%,transparent)}
+.profile-culture-evidence-grid p{margin:6px 0 0;font-size:11px;line-height:1.55;color:var(--ink-soft)}
+.profile-culture-source-drawer{border-bottom:1px solid var(--hairline);padding:0 14px}
+.profile-culture-source-drawer summary{cursor:pointer;padding:11px 0;font:700 10px 'IBM Plex Mono',monospace;color:var(--ink);list-style-position:inside}
+.profile-culture-source-list{display:grid;gap:5px;padding:0 0 12px}
+.profile-culture-source-list a{display:grid;grid-template-columns:110px 1fr auto;gap:9px;align-items:center;padding:8px 9px;border:1px solid var(--hairline);border-radius:8px;background:var(--panel-strong);text-decoration:none;color:var(--ink)}
+.profile-culture-source-list a:hover{border-color:var(--stamp)}
+.profile-culture-source-list a span{font:700 8px 'IBM Plex Mono',monospace;text-transform:uppercase;color:var(--ink-soft)}
+.profile-culture-source-list a strong{font-size:10.5px;line-height:1.35}
+.profile-culture-source-list a small{font:600 8.5px 'IBM Plex Mono',monospace;color:var(--ink-soft)}
+@media(max-width:800px){.profile-culture-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.profile-culture-metrics>div:nth-child(2){border-right:0}.profile-culture-metrics>div:nth-child(-n+2){border-bottom:1px dotted var(--hairline)}.profile-culture-evidence-grid{grid-template-columns:1fr}.profile-culture-evidence-grid>div{border-right:0;border-bottom:1px dotted var(--hairline)}.profile-culture-evidence-grid>div:last-child{border-bottom:0}}
+@media(max-width:560px){.profile-culture-summary-head{flex-direction:column}.profile-culture-summary-head>div:last-child{align-items:flex-start;text-align:left}.profile-culture-metrics{grid-template-columns:1fr}.profile-culture-metrics>div{border-right:0;border-bottom:1px dotted var(--hairline)}.profile-culture-metrics>div:last-child{border-bottom:0}.profile-culture-source-list a{grid-template-columns:1fr;gap:3px}}

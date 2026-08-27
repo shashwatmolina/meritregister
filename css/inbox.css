@@ -984,3 +984,23 @@ body[data-theme="dark"] .site-nav .nav-more>summary,body[data-theme="dark"] .sit
 .site-nav .nav-more:hover .nav-more-menu,.site-nav .nav-more:focus-within .nav-more-menu{display:grid;gap:3px}
 .site-nav .nav-more-menu a{display:block;white-space:nowrap;border:0!important;border-radius:8px;padding:9px 11px}
 @media(max-width:700px){.site-nav{gap:5px}.site-nav a,.site-nav .nav-more-btn{font-size:12px;padding:6px 8px}.site-nav .nav-more-menu{left:0;right:auto}}
+
+
+/* V8.2 nav polish — More behaves exactly like a primary nav item. */
+.site-nav .nav-more{position:relative;display:inline-flex;align-items:center;font-family:'IBM Plex Mono',monospace}
+.site-nav .nav-more-btn{
+  appearance:none;-webkit-appearance:none;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:400;
+  text-transform:uppercase;letter-spacing:.08em;line-height:1.55;color:var(--ink-soft);text-decoration:none;
+  border:1px solid var(--hairline);padding:6px 10px;border-radius:20px;background:var(--white);
+  cursor:pointer;transition:border-color .18s ease,color .18s ease,background .18s ease;white-space:nowrap;
+}
+.site-nav .nav-more-btn::after{content:'⌄';display:inline-block;margin-left:5px;font-size:10px;line-height:1;transform:translateY(-1px);transition:transform .16s ease}
+.site-nav .nav-more-btn:hover,.site-nav .nav-more-btn.active,.site-nav .nav-more.open>.nav-more-btn{border-color:var(--stamp);color:var(--stamp-dark);background:rgba(156,56,46,.035)}
+.site-nav .nav-more.open>.nav-more-btn::after{transform:translateY(1px) rotate(180deg)}
+.site-nav .nav-more-menu{display:none;position:absolute;right:0;top:calc(100% + 7px);z-index:1000;min-width:205px;padding:7px;background:var(--panel-strong);border:1px solid var(--hairline);border-radius:10px;box-shadow:var(--shadow)}
+.site-nav .nav-more.open>.nav-more-menu,.site-nav .nav-more:hover>.nav-more-menu,.site-nav .nav-more:focus-within>.nav-more-menu{display:grid;gap:3px}
+.site-nav .nav-more-menu a{display:block;white-space:nowrap;border:0!important;border-radius:7px;background:transparent;padding:9px 10px}
+.site-nav .nav-more-menu a:hover,.site-nav .nav-more-menu a.active{background:var(--hover-tint)}
+body[data-theme="dark"] .site-nav .nav-more-btn,body[data-theme="dark"] .site-nav .nav-more-menu{background:var(--surface-strong);color:var(--ink);border-color:var(--hairline)}
+@media(max-width:700px){.site-nav .nav-more-btn{font-size:10px;padding:6px 8px}.site-nav .nav-more-menu{left:0;right:auto;min-width:205px}}
+

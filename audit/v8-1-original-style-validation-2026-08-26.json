@@ -1,0 +1,22 @@
+{
+  "build": "V8.1 Original Style",
+  "date": "2026-08-26",
+  "purpose": "restore V7 visual system while retaining V8 data/runtime changes",
+  "css_byte_identical_to_v7": {
+    "about": true,
+    "assistant": true,
+    "college": true,
+    "compare": true,
+    "culture": true,
+    "inbox": true,
+    "index": true,
+    "movement": true,
+    "preference": true,
+    "status": true
+  },
+  "site_v8_override_removed": true,
+  "local_reference_errors": 0,
+  "javascript_syntax_failures": 0,
+  "junior_culture_profiles": 175,
+  "first_90_days_profiles": 175
+}
