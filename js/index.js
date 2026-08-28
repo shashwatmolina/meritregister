@@ -816,8 +816,8 @@ function getFiltered(){
       if(cr==='90'&&!(Number.isFinite(age)&&age<=90))return false;
       if(cr==='older'&&(Number.isFinite(age)&&age<=90))return false;
     }
-    const searchable = [c.name, formatCollegeName(c.name), c.city, c.state, c.type].join(' ').toLowerCase();
-    if(q && !searchable.includes(q)) return false;
+    const searchable = typeof collegeSearchText==='function' ? collegeSearchText(c) : [c.name, formatCollegeName(c.name), c.city, c.state, c.type].join(' ');
+    if(q && !(typeof collegeSearchMatches==='function' ? collegeSearchMatches(c,q) : searchable.toLowerCase().includes(q))) return false;
     return true;
   });
   const sort = document.getElementById('sort-select').value;

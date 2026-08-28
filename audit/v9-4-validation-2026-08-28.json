@@ -1,0 +1,74 @@
+{
+  "release": "V9.4 First-Time Friendly",
+  "date": "2026-08-28",
+  "pages": 14,
+  "javascript_files": 22,
+  "missing_local_references": [],
+  "duplicate_ids": {},
+  "all_pages_load_v94": true,
+  "javascript_syntax_ok": true,
+  "javascript_syntax_failures": [],
+  "homepage": {
+    "hero_search": true,
+    "start_actions": 3,
+    "rank_section": true,
+    "directory": true,
+    "primary_nav_links": [
+      "Home",
+      "Colleges",
+      "Compare",
+      "\u2661 My List"
+    ],
+    "more_present": true,
+    "stats_below_hero": true
+  },
+  "alias_search": {
+    "count": 465,
+    "tests": {
+      "IGIMS": {
+        "name": "Indira Gandhi Institute of Medical Sciences, Sheikhpura, Patna",
+        "score": 240
+      },
+      "UCMS": {
+        "name": "University College of Medical Sciences & GTB Hospital, New Delhi",
+        "score": 240
+      },
+      "MAMC": {
+        "name": "Maulana Azad Medical College, New Delhi",
+        "score": 240
+      },
+      "VMMC": {
+        "name": "Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi",
+        "score": 240
+      },
+      "ABVIMS": {
+        "name": "Atal Bihari Vajpayee Institute of Medical Sciences and Dr. RML Hospital, New Delhi",
+        "score": 240
+      },
+      "KGMU": {
+        "name": "King George's Medical University, Lucknow",
+        "score": 240
+      },
+      "JIPMER": {
+        "name": "Jawaharlal Institute of Postgraduate Medical Education & Research (JIPMER), Puducherry",
+        "score": 240
+      },
+      "PMCH": {
+        "name": "Patna Medical College, Patna",
+        "score": 240
+      },
+      "NMCH": {
+        "name": "Nalanda Medical College, Patna",
+        "score": 240
+      },
+      "CAPFIMS": {
+        "name": "Central Armed Police Forces Institute of Medical Sciences (CAPFIMS), Delhi",
+        "score": 240
+      }
+    },
+    "withAliases": 465
+  },
+  "counselling_scenarios": "10/10 passed",
+  "bug_regressions": "7/7 passed",
+  "browser_screenshot_note": "Chromium headless did not terminate reliably in this environment; no automated visual-regression claim."
+}

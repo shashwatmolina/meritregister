@@ -1,6 +1,6 @@
 {
   "name": "The Merit Register",
-  "export_version": "V9-Beta-200",
+  "export_version": "V9.3-Alias-Search-200",
   "generated": "2026-08-28",
   "pages": [
     "index.html",
@@ -29,20 +29,21 @@
   "freshers_timeline_d_leads": 4,
   "colleges_with_supported_phase": 73,
   "culture_source_records": 498,
-  "version": "V9.2",
+  "version": "V9.3",
   "updated": "2026-08-28",
-  "release": "Beta Hardening",
-  "build": "Theme-Integrated UX · 200-profile build · 2026-08-28",
+  "release": "V9.4 First-Time Friendly",
+  "build": "Alias Search \u00b7 200-profile build \u00b7 2026-08-28",
   "buildDate": "2026-08-28",
-  "visualPolicy": "Established V7/V8 visual identity preserved. V9.0 RC focuses on bug fixes, route-comparison correctness, robust browser storage handling and regression hardening.",
-  "release_note": "V9.0 release candidate based on V9 Beta with reproduced bug fixes for storage failures, timeline deep-links, stale choice-order state and quota-comparison labeling.",
+  "visualPolicy": "Established Merit Register ledger/editorial visual identity preserved. V9.3 changes search indexing only; no research, counselling or scoring logic is altered.",
+  "release_note": "V9.3 adds shared acronym/short-form aliases for all 465 colleges and fixes global search availability on every page.",
   "notes": [
     "college.html is dynamic via ?id=<canonical id>",
     "canonical runtime datasets are shared across page bundles through js/shared-*-v8.js",
     "Freshers Timeline phase timing remains blank when evidence is insufficient",
     "Junior Culture evidence is source-labelled and is not a numerical ragging score",
     "Choice Filling annotates reach but never reorders preferences by admission probability",
-    "V9 Beta includes a repeatable scenario regression suite under scripts/beta-scenario-tests.py.",
-    "Structured issue reports are stored locally in the browser and can be copied/exported; no report is transmitted automatically."
+    "Structured issue reports are stored locally in the browser and can be copied/exported; no report is transmitted automatically.",
+    "Every canonical college has generated acronym/location aliases; curated common aliases receive higher search priority.",
+    "All college-search surfaces use the shared alias-aware index."
   ]
 }

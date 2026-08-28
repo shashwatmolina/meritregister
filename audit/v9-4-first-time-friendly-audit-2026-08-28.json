@@ -1,0 +1,37 @@
+{
+  "release": "V9.4 First-Time Friendly",
+  "goal": "A first-time student should understand the site without learning its internal tool taxonomy.",
+  "changes": [
+    "One prominent alias-aware home search",
+    "Three starting actions only",
+    "Rank checker moved out of landing hero",
+    "Primary navigation reduced to Home / Colleges / Compare / My List / More",
+    "Planning and research links grouped under More",
+    "Repeated workflow steppers removed",
+    "Contextual next-step prompt on core planning pages",
+    "Mobile quick nav reduced to Home / Search / My List",
+    "Advanced research remains available without competing on first visit"
+  ],
+  "unchanged": [
+    "465-college canonical directory",
+    "cutoff/reach logic",
+    "200 Junior Culture profiles",
+    "200 First-90 profiles",
+    "evidence conclusions",
+    "Decision/Choice scoring logic"
+  ],
+  "first_screen_checks": {
+    "hero_search": true,
+    "start_actions": 3,
+    "rank_section": true,
+    "directory": true,
+    "primary_nav_links": [
+      "Home",
+      "Colleges",
+      "Compare",
+      "\u2661 My List"
+    ],
+    "more_present": true,
+    "stats_below_hero": true
+  }
+}

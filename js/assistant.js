@@ -529,7 +529,7 @@ function filteredDataset(){
     if(type&&c.type!==type)return false;
     if(band&&x.band.label!==band)return false;
     if(evidence){const e=assistantEvidence(c.id);if(evidence==='deep'&&!e.deep)return false;if(evidence==='culture'&&!e.culture)return false;if(evidence==='hostel'&&!(typeof HOSTELS!=='undefined'&&HOSTELS[c.id]))return false;}
-    if(q&&!`${c.name} ${c.city} ${c.state}`.toLowerCase().includes(q))return false;
+    if(q&&!(typeof collegeSearchMatches==='function'?collegeSearchMatches(c,q):`${c.name} ${c.city} ${c.state}`.toLowerCase().includes(q)))return false;
     return true;
   });
 }

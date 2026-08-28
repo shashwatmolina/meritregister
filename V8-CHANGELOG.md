@@ -1,3 +1,20 @@
+## V9.4 First-Time Friendly — 2026-08-28
+- Simplified first-time navigation and homepage mental model.
+- Added one prominent alias-aware home search.
+- Separated rank checking from the landing hero.
+- Reduced primary navigation and grouped advanced/planning tools under More.
+- Replaced repeated workflow steppers with contextual next-step prompts.
+- Reduced mobile quick nav to Home, Search and My List.
+- No research/counselling-data changes.
+
+## V9.3 Alias Search — 2026-08-28
+
+- Added a canonical shared alias/acronym search layer for all 465 colleges.
+- Fixed IGIMS and other common short forms returning no results.
+- Added curated aliases with collision-aware ranking; e.g. VMMC Delhi outranks the auto-derived VMMC Solapur for bare `VMMC`, while `VMMC Solapur` still resolves correctly.
+- Unified alias search across all college-search surfaces.
+- Fixed global college search on lightweight pages that previously did not load `ALL_COLLEGES`.
+
 ## V9.2 Theme-Integrated UX — 2026-08-28
 
 - Reworked the V9.1 platform layer to use the native paper/stamp/mono visual system rather than a separate SaaS-like component style.

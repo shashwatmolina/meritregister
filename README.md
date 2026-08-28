@@ -1,6 +1,26 @@
-# The Merit Register — V9.2 Theme-Integrated UX
+# The Merit Register — V9.4 First-Time Friendly
 
-V9.2 keeps the V9.1 platform usability improvements but visually integrates them into the established Merit Register ledger/editorial theme. Research and counselling logic are unchanged.
+V9.4 is a first-time-user simplification release. It keeps the V9.3 alias-aware search and the V9.2 visual identity, but collapses the first visit into three obvious tasks: **search a college, check what your rank can get, or compare your options**. The primary navigation is reduced to Home, Colleges, Compare, My List and More; planning/research tools remain available without competing for attention. Research and counselling logic are unchanged.
+
+## V9.4 First-Time Friendly — 28 Aug 2026
+
+- Rebuilt the homepage around one large college search and three plain-language starting actions.
+- Moved rank checking into its own section instead of crowding the landing screen.
+- Reduced primary navigation to Home · Colleges · Compare · My List · More.
+- Grouped More into Planning, Research and About.
+- Removed repeated workflow steppers from core pages; replaced them with one contextual next-step prompt.
+- Simplified mobile quick navigation to Home · Search · My List.
+- Preserved alias search across all 465 colleges.
+- No changes to cutoffs, evidence conclusions, or ranking logic.
+
+## V9.3 Alias Search — 28 Aug 2026
+
+- Shared alias-aware college search across global search, Directory, Compare, Shortlist Builder, Junior Culture, Cutoff Trends, First-Year Timeline, Assistant and Evidence Inbox.
+- Generated acronym aliases for all 465 canonical colleges.
+- Curated common aliases for high-frequency short forms such as IGIMS, UCMS, VMMC, ABVIMS, MAMC, JIPMER, KGMU, PMCH, NMCH and CAPFIMS.
+- Curated aliases rank above ambiguous automatically generated acronyms.
+- Location-qualified aliases such as `GMC Patiala`, `AIIMS Jodhpur`, `VMMC Solapur` are generated where applicable.
+- Global search now works from About and Data Status as well as the data-heavy pages.
 
 ## What changed
 - Universal college search from every page (button or `/` keyboard shortcut).

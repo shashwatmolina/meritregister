@@ -1,0 +1,11 @@
+{
+  "pages": 14,
+  "jsFiles": 21,
+  "missingLocalRefs": [],
+  "duplicateIds": [],
+  "allPagesAliasAware": true,
+  "allPagesHaveCollegeMaster": true,
+  "aliasAudit": "audit/v9-3-alias-search-audit-2026-08-28.json",
+  "counsellingScenarios": "10/10",
+  "bugRegressions": "7/7"
+}

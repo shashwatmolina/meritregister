@@ -54,11 +54,11 @@
     document.body.appendChild(overlay);
     const input=overlay.querySelector('input'),results=overlay.querySelector('.platform-search-results');
     const norm=s=>(s||'').toLowerCase().replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
-    function score(c,q){const n=norm(c.name),city=norm(c.city),state=norm(c.state),qq=norm(q);if(!qq)return 0;if(n===qq)return 100;if(n.startsWith(qq))return 80;if(n.includes(qq))return 60;if(city.startsWith(qq))return 45;if(state.startsWith(qq))return 35;if((n+' '+city+' '+state).includes(qq))return 20;return 0}
+    function score(c,q){return typeof collegeSearchScore==='function'?collegeSearchScore(c,q):0}
     function render(q=''){
-      if(!q.trim()){results.innerHTML='<div class="platform-search-empty"><strong>Find any college instantly.</strong><br>Try “UCMS”, “Jodhpur”, “Kolkata” or a state name.</div>';return}
+      if(!q.trim()){results.innerHTML='<div class="platform-search-empty"><strong>Find any college instantly.</strong><br>Try “IGIMS”, “UCMS”, “VMMC”, “Jodhpur” or a state name.</div>';return}
       const found=colleges().map(c=>[c,score(c,q)]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]||a[0].name.localeCompare(b[0].name)).slice(0,10).map(x=>x[0]);
-      results.innerHTML=found.length?found.map(c=>`<a class="platform-search-result" href="college.html?id=${encodeURIComponent(c.id)}"><div><strong>${c.name}</strong><span>${c.city||''}${c.city&&c.state?' · ':''}${c.state||''} · ${c.type||'Government'}</span></div><em>Open →</em></a>`).join(''):'<div class="platform-search-empty">No matching college. Try a shorter name, city or state.</div>';
+      results.innerHTML=found.length?found.map(c=>`<a class="platform-search-result" href="college.html?id=${encodeURIComponent(c.id)}"><div><strong>${c.name}</strong><span>${c.city||''}${c.city&&c.state?' · ':''}${c.state||''} · ${c.type||'Government'}${typeof collegeAliases==='function'&&collegeAliases(c).length?' · '+collegeAliases(c).slice(0,3).join(' / '):''}</span></div><em>Open →</em></a>`).join(''):'<div class="platform-search-empty">No matching college. Try a shorter name, city or state.</div>';
     }
     function open(){overlay.classList.add('open');overlay.setAttribute('aria-hidden','false');document.body.classList.add('platform-search-open');setTimeout(()=>input.focus(),0);render(input.value)}
     function close(){overlay.classList.remove('open');overlay.setAttribute('aria-hidden','true');document.body.classList.remove('platform-search-open');btn.focus()}

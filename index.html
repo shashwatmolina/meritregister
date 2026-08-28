@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>The Merit Register — Government MBBS Colleges of India</title>
-<link href="css/index.css" rel="stylesheet"/><meta content="V9.2 Theme-Integrated UX · 200-profile build · 2026-08-28" name="merit-register-export"/><meta content="The Merit Register: independent government MBBS college directory, counselling data and evidence-backed college intelligence." name="description"/><link href="css/ux-v823.css" rel="stylesheet"/><link href="css/v9-beta.css" rel="stylesheet"/><link href="css/platform-v92.css" rel="stylesheet"/></head>
+<link href="css/index.css" rel="stylesheet"/><meta content="V9.4 First-Time Friendly · 200-profile build · 2026-08-28" name="merit-register-export"/><meta content="The Merit Register: independent government MBBS college directory, counselling data and evidence-backed college intelligence." name="description"/><link href="css/ux-v823.css" rel="stylesheet"/><link href="css/v9-beta.css" rel="stylesheet"/><link href="css/platform-v92.css" rel="stylesheet"/><link href="css/platform-v94.css" rel="stylesheet"/></head>
 <body>
 <header class="masthead">
 <div class="wrap">
@@ -13,7 +13,7 @@
 <p class="eyebrow">Independent · Not affiliated with NMC or MCC</p>
 <h1>The Merit Register</h1>
 <p class="sub">A working ledger of government MBBS colleges in India — counselling data, college intelligence and student-facing decision tools.</p>
-<nav aria-label="Main navigation" class="site-nav"><a aria-current="page" class="active" href="index.html">Colleges</a><a href="compare.html">Compare</a><a class="nav-my-list" data-my-list-link="true" href="preference.html">♡ My List</a><a href="decision.html">Shortlist Builder</a><a href="choice.html">Final Choices</a><span class="nav-more"><button aria-expanded="false" aria-label="More pages" class="nav-more-btn" type="button">More</button><span class="nav-more-menu"><a href="culture.html">Junior Culture</a><a href="assistant.html">Help me choose</a><a href="evidence.html">Data Quality</a><a href="timeline.html">First-Year Timeline</a><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
+<nav aria-label="Main navigation" class="site-nav"><a aria-current="page" class="active" href="index.html">Home</a><a href="index.html#directory">Colleges</a><a href="compare.html">Compare</a><a class="nav-my-list" data-my-list-link="true" href="preference.html">♡ My List</a><span class="nav-more"><button aria-expanded="false" aria-label="More pages" class="nav-more-btn" type="button">More</button><span class="nav-more-menu"><a href="decision.html">Plan my shortlist</a><a href="choice.html">Final choice list</a><a href="culture.html">Junior Culture</a><a href="assistant.html">Help me choose</a><a href="evidence.html">Data Quality</a><a href="timeline.html">First-Year Timeline</a><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
 </div>
 <div class="masthead-controls">
 <div class="rhs">Updated Aug 2026<br/>working build</div>
@@ -33,15 +33,8 @@
 </div>
 </div>
 </header>
-<section class="hero home-hero">
-<div class="wrap">
-<div class="hero-head">
-<p class="eyebrow">2026 counselling + evidence-backed college intelligence</p>
-<h2>Start with the decision you need to make.</h2>
-<p class="lede">Search colleges, compare the ones you are considering, or build a shortlist around what matters to you. The deeper evidence is still there when you want it.</p>
-<div aria-label="Core tools" class="hero-paths"><a href="index.html#directory"><strong>Find colleges</strong><span>Search the full directory and check what your rank can reach.</span></a><a href="compare.html"><strong>Compare colleges</strong><span>Put 2–4 colleges side by side without digging through separate tabs.</span></a><a href="decision.html"><strong>Build my shortlist</strong><span>Tell us what matters to you and rank only the colleges you care about.</span></a></div>
-</div>
-<div class="checker home-checker">
+<section class="hero home-hero friendly-home-hero"><div class="wrap"><div class="friendly-start"><p class="eyebrow">Government MBBS colleges · counselling + real college research</p><h2>What do you want to do?</h2><p class="lede">Start with one thing. You can explore the deeper research later.</p><div class="friendly-home-search"><input aria-label="Search any college" id="friendly-home-search-input" placeholder="Search a college — try IGIMS, UCMS, MAMC…" type="search"/><div class="friendly-home-search-results" id="friendly-home-search-results"></div></div><div class="friendly-start-actions"><a href="#rank-checker"><strong>I know my rank</strong><span>See which colleges are realistic for your AIR and category.</span></a><a href="compare.html"><strong>I have a few options</strong><span>Compare 2–4 colleges side by side.</span></a><a href="preference.html"><strong>I already have a shortlist</strong><span>Open My List and organise the colleges I would actually take.</span></a></div><p class="friendly-start-hint">Not sure? Search any college above. You do not need to understand every tool on the site.</p></div></div></section>
+<section class="friendly-rank-section" id="rank-checker"><div class="wrap"><div class="friendly-section-head"><p class="eyebrow">Rank checker</p><h2>What can I get with my rank?</h2><p>Enter your AIR and category. Reach is shown separately from preference — easier colleges are not automatically better colleges.</p></div><div class="checker home-checker">
 <div class="checker-kicker">Rank &amp; route checker</div>
 <div class="checker-form">
 <div class="field">
@@ -73,10 +66,7 @@
 <div class="predictor-dataset-note" id="predictor-dataset-note"></div>
 <div id="current-aiq-status"></div>
 <div id="checker-results"></div>
-</div>
-</div>
-</section>
-<section class="stats-strip home-stats">
+</div></div></section><section class="stats-strip home-stats friendly-data-stats">
 <div class="wrap stats-grid">
 <div class="stat"><div class="n" id="college-count">465</div><div class="l">Govt. MBBS colleges</div></div>
 <div class="stat"><div class="n" id="total-seats">0</div><div class="l">2026 MBBS seats</div></div>
@@ -89,8 +79,8 @@
 <section class="directory" id="directory">
 <div class="wrap">
 <div class="directory-headline">
-<div><p class="eyebrow">465-college master directory</p><h2>Full directory</h2></div>
-<p class="lede">Search by college, city or state. Open Filters only when you need to narrow the list further.</p>
+<div><p class="eyebrow">465-college master directory</p><h2>Browse all colleges</h2></div>
+<p class="lede">Search by college name, acronym, city or state. Open Filters only when you need them.</p>
 </div>
 <div class="directory-toolbar">
 <div class="directory-toolbar-primary">
@@ -181,5 +171,5 @@
 <div class="modal" id="modal-content"></div>
 </div>
 <footer>Independent student resource · not an official government site · data may contain errors, verify before relying on it</footer>
-<script defer="" src="js/shared-master-v8.js"></script><script defer="" src="js/shared-counselling-v8.js"></script><script defer="" src="js/shared-intelligence-v8.js"></script><script defer="" src="js/shared-culture-v8.js"></script><script defer="True" src="js/index.js"></script><script defer="" src="js/nav.js"></script><script defer="True" src="js/ux-v823.js"></script><script src="js/v9-beta.js"></script><script defer="True" src="js/platform-v92.js"></script></body>
+<script defer="" src="js/shared-master-v8.js"></script><script defer="" src="js/college-aliases-v93.js"></script><script defer="" src="js/shared-counselling-v8.js"></script><script defer="" src="js/shared-intelligence-v8.js"></script><script defer="" src="js/shared-culture-v8.js"></script><script defer="True" src="js/index.js"></script><script defer="" src="js/nav.js"></script><script defer="True" src="js/ux-v823.js"></script><script src="js/v9-beta.js"></script><script defer="True" src="js/platform-v92.js"></script><script defer="True" src="js/platform-v94.js"></script></body>
 </html>

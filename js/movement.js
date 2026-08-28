@@ -263,7 +263,7 @@ function movementRows(){
   }).filter(Boolean).filter(x=>{
     if(state&&x.c.state!==state)return false;
     if(quality==='official'&&x.ev.tier!=='official')return false;
-    if(q&&!`${x.c.name} ${x.c.city} ${x.c.state}`.toLowerCase().includes(q))return false;
+    if(q&&!(typeof collegeSearchMatches==='function'?collegeSearchMatches(x.c,q):`${x.c.name} ${x.c.city} ${x.c.state}`.toLowerCase().includes(q)))return false;
     return true;
   });
   const sort=$m('movement-sort').value;
