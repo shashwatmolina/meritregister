@@ -1,0 +1,37 @@
+
+/* V9.5 Progressive Disclosure — concise by default */
+:root{--concise-rule:rgba(90,72,52,.18)}
+.concise-details{border-top:1px solid var(--concise-rule);margin-top:12px;padding-top:2px}
+.concise-details>summary,.profile-card-toggle,.compare-detail-master>summary,.decision-detail-toggle>summary,.pref-insights-details>summary,.home-data-details>summary{cursor:pointer;list-style:none;font-family:"IBM Plex Mono",monospace;font-size:.76rem;letter-spacing:.02em;color:var(--accent,#9a2f2f);padding:10px 0;display:flex;align-items:center;gap:7px}
+.concise-details>summary::-webkit-details-marker,.compare-detail-master>summary::-webkit-details-marker,.decision-detail-toggle>summary::-webkit-details-marker,.pref-insights-details>summary::-webkit-details-marker,.home-data-details>summary::-webkit-details-marker{display:none}
+.concise-details>summary::after,.compare-detail-master>summary::after,.decision-detail-toggle>summary::after,.pref-insights-details>summary::after,.home-data-details>summary::after{content:"+";font-size:1rem;margin-left:2px}
+.concise-details[open]>summary::after,.compare-detail-master[open]>summary::after,.decision-detail-toggle[open]>summary::after,.pref-insights-details[open]>summary::after,.home-data-details[open]>summary::after{content:"−"}
+.profile-card.compact-card .profile-card-head{padding-bottom:7px}
+.profile-card.compact-card .profile-card-head p{max-width:72ch;margin-top:4px;font-size:.9rem;line-height:1.45}
+.profile-card.compact-card .profile-card-body{padding-top:0}
+.profile-card.compact-card .concise-card-body{padding-top:12px}
+.profile-bottom-line{margin:14px 0;border-top:1px solid var(--concise-rule);border-bottom:1px solid var(--concise-rule);padding:14px 0}
+.profile-bottom-line .eyebrow{margin-bottom:5px}.profile-bottom-line p{font-family:"Roboto Slab",serif;font-size:1rem;line-height:1.55;margin:0;max-width:78ch}
+.profile-quick-note{display:none!important}
+.profile-side .side-card.method-card{display:none}
+.compare-detail-master{margin-top:18px;border-top:1px solid var(--concise-rule);padding-top:4px}
+.compare-detail-master>summary{font-size:.82rem;padding:12px 0}
+.compare-detail-master-content{display:grid;gap:18px;padding-top:4px}
+.compare-jump{display:none!important}
+.compare-foot,.compare-note{font-size:.78rem;line-height:1.45}
+.decision-detail-toggle{border-top:1px solid var(--concise-rule);margin-top:10px}
+.decision-detail-toggle .decision-card-detail{padding-top:8px}
+.decision-card .fit-note{display:none}
+.pref-insights-details{margin-top:10px}
+.pref-insights-details .pref-insights-inner{padding-top:5px}
+.home-data-details{margin-top:14px;border-top:1px solid var(--concise-rule)}
+.home-data-details .stats-strip{margin-top:4px}
+.friendly-start-hint,.compare-hero .lede,.decision-hero .lede,.pref-note{max-width:72ch}
+@media(max-width:760px){
+ .profile-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .profile-quick-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .profile-card.compact-card .profile-card-head{display:block}
+ .profile-card.compact-card .profile-confidence{display:inline-block;margin-top:7px}
+ .compare-overview-stats .compare-pill:nth-child(n+3){display:none}
+ .decision-card .decision-badges{gap:5px}
+}

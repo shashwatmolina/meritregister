@@ -447,7 +447,7 @@ function renderPreferenceInsights(){
   if(inversion) notes.push({kind:'info',title:'Demand-order check',text:`${formatCollegeName(inversion.b.name)} had substantially stronger 2025 AIQ/Open R1 demand than ${formatCollegeName(inversion.a.name)} but is placed below it. Keep the order if that reflects your actual preference—choice order should follow preference, not cutoff rank.`});
   const bandCounts=reaches.reduce((a,x)=>{a[x.band.label]=(a[x.band.label]||0)+1;return a;},{});
   notes.push({kind:'ok',title:'Current R1 mix',text:`Safety ${bandCounts.Safety||0} · Likely ${bandCounts.Likely||0} · Competitive ${bandCounts.Competitive||0} · Dream ${bandCounts.Dream||0}. These are planning bands based on distance from 2026 R1 cutoffs, not forecasts of unpublished rounds.`});
-  el.hidden=false;el.innerHTML=`<div class="pref-insights-title">Choice-list checks</div>${notes.map(n=>`<div class="pref-insight ${n.kind}"><strong>${escapeHtml(n.title)}</strong><span>${escapeHtml(n.text)}</span></div>`).join('')}`;
+  el.hidden=false;el.innerHTML=`<details class="pref-insights-details"><summary>Review ${notes.length} list check${notes.length===1?'':'s'}</summary><div class="pref-insights-inner"><div class="pref-insights-title">Choice-list checks</div>${notes.map(n=>`<div class="pref-insight ${n.kind}"><strong>${escapeHtml(n.title)}</strong><span>${escapeHtml(n.text)}</span></div>`).join('')}</div></details>`;
 }
 
 function renderList(){

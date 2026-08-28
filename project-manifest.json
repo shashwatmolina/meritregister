@@ -29,9 +29,9 @@
   "freshers_timeline_d_leads": 4,
   "colleges_with_supported_phase": 73,
   "culture_source_records": 498,
-  "version": "V9.3",
+  "version": "V9.5",
   "updated": "2026-08-28",
-  "release": "V9.4 First-Time Friendly",
+  "release": "V9.5 Concise by Default",
   "build": "Alias Search \u00b7 200-profile build \u00b7 2026-08-28",
   "buildDate": "2026-08-28",
   "visualPolicy": "Established Merit Register ledger/editorial visual identity preserved. V9.3 changes search indexing only; no research, counselling or scoring logic is altered.",
@@ -45,5 +45,6 @@
     "Structured issue reports are stored locally in the browser and can be copied/exported; no report is transmitted automatically.",
     "Every canonical college has generated acronym/location aliases; curated common aliases receive higher search priority.",
     "All college-search surfaces use the shared alias-aware index."
-  ]
+  ],
+  "build_name": "Concise by Default"
 }

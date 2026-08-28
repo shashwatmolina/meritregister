@@ -1,0 +1,27 @@
+{
+  "build": "V9.5 Concise by Default",
+  "date": "2026-08-28",
+  "pages": 14,
+  "javascript_files": 22,
+  "broken_local_references": 0,
+  "duplicate_id_pages": 0,
+  "javascript_parse_failures": 0,
+  "regressions": {
+    "counselling": "10/10",
+    "bug": "7/7"
+  },
+  "canonical_colleges": 465,
+  "junior_culture_profiles": 200,
+  "first_90_profiles": 200,
+  "progressive_disclosure": {
+    "college_profile": "Bottom line + at-a-glance visible; research cards collapsed by default",
+    "compare": "Overview + strengths visible; full comparison collapsed by default",
+    "shortlist_builder": "Ranking summary visible; scoring internals behind Why this ranking?",
+    "my_list": "List checks collapsed by default",
+    "choice_filling": "Choice-list checks collapsed by default",
+    "homepage": "Dataset statistics collapsed by default"
+  },
+  "missing_refs": [],
+  "duplicate_ids": [],
+  "parse_failures": []
+}

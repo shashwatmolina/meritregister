@@ -890,7 +890,7 @@ function field(label,value){
 }
 function confidence(text){return text?`<span class="profile-confidence">${esc(text)}</span>`:'';}
 function card(title,subtitle,body,conf=''){
-  return `<section class="profile-card"><div class="profile-card-head"><div><h2>${esc(title)}</h2>${subtitle?`<p>${esc(subtitle)}</p>`:''}</div>${confidence(conf)}</div><div class="profile-card-body">${body}</div></section>`;
+  return `<section class="profile-card compact-card"><div class="profile-card-head"><div><h2>${esc(title)}</h2>${subtitle?`<p>${esc(subtitle)}</p>`:''}</div>${confidence(conf)}</div><div class="profile-card-body"><details class="concise-details"><summary>Show details</summary><div class="concise-card-body">${body}</div></details></div></section>`;
 }
 function pending(message){return `<div class="profile-pending">${esc(message)}</div>`;}
 
@@ -1137,6 +1137,12 @@ function renderQuickSummary(c){
   return `<section class="profile-quick-summary"><h3>At a glance</h3><div class="profile-quick-grid">${item('General R1',r1?fmt(r1):'Not loaded')}${item('Clinical',clinical)}${item('Hostel',hostel)}${item('Research',research)}${item('Junior culture',culture)}${item('Fees',fee)}</div><p class="profile-quick-note">Start here. Open the detailed sections below only for the evidence you need. “Not yet researched” is not a negative finding.</p></section>`;
 }
 
+function renderBottomLine(c){
+  const d=typeof meritProfileIntelligence==='function'?meritProfileIntelligence(c.id):null;
+  if(!d || !d.headline) return '';
+  return `<section class="profile-bottom-line"><p class="eyebrow">Bottom line</p><p>${esc(d.headline)}</p></section>`;
+}
+
 function bindActions(c){
   const pref=$('#profile-pref-btn'),cmp=$('#profile-compare-btn'),openCmp=$('#profile-open-compare');
   function refresh(){
@@ -1164,7 +1170,7 @@ function bindActions(c){
 function renderProfile(c){
   const root=$('#profile-root');
   document.title=`${shortName(c.name)} — The Merit Register`;
-  root.innerHTML=`${renderHero(c)}${renderQuickSummary(c)}<div class="profile-layout"><div class="profile-main">${renderCutoffs(c.id)}${renderDecisionDossier(c.id)}${renderCultureEvidenceSummary(c.id)}${renderMovementCard(c.id)}${renderDemand(c.id)}${renderEvidenceSection('Clinical exposure','Hospitals, patient load, trauma, specialty breadth and MBBS learning context.',CLINICAL_EXPOSURE[c.id],FIELD_MAPS.clinical)}${renderEvidenceSection('Academics & teaching','Teaching model, attendance, internal assessment, clinical teaching and study infrastructure.',ACADEMICS_TEACHING[c.id],FIELD_MAPS.academics)}${renderEvidenceSection('Research & international pathway','Institutional research strength, undergraduate access, mentorship, funding and international context.',RESEARCH_USMLE[c.id],FIELD_MAPS.research)}${renderHostel(c.id)}${renderJuniorCulture(c.id)}${renderEvidenceSection('Campus & student life','Sports, clubs, festivals, city access, social environment and the main lifestyle trade-off.',CAMPUS_STUDENT_LIFE[c.id],FIELD_MAPS.campus)}${renderLatest(c.id)}${renderEvidenceSection('Fees & internship stipend','Current fee evidence, hostel/mess cost and internship stipend. Service-bond terms are intentionally kept out of the decision profile.',FEES_BOND_STIPEND[c.id],FIELD_MAPS.finance)}</div><aside class="profile-side">${renderCoverage(c.id)}${renderSimilar(c)}${renderMethod()}</aside></div>`;
+  root.innerHTML=`${renderHero(c)}${renderBottomLine(c)}${renderQuickSummary(c)}<div class="profile-layout"><div class="profile-main">${renderCutoffs(c.id)}${renderDecisionDossier(c.id)}${renderCultureEvidenceSummary(c.id)}${renderMovementCard(c.id)}${renderDemand(c.id)}${renderEvidenceSection('Clinical exposure','Hospitals, patient load, trauma, specialty breadth and MBBS learning context.',CLINICAL_EXPOSURE[c.id],FIELD_MAPS.clinical)}${renderEvidenceSection('Academics & teaching','Teaching model, attendance, internal assessment, clinical teaching and study infrastructure.',ACADEMICS_TEACHING[c.id],FIELD_MAPS.academics)}${renderEvidenceSection('Research & international pathway','Institutional research strength, undergraduate access, mentorship, funding and international context.',RESEARCH_USMLE[c.id],FIELD_MAPS.research)}${renderHostel(c.id)}${renderJuniorCulture(c.id)}${renderEvidenceSection('Campus & student life','Sports, clubs, festivals, city access, social environment and the main lifestyle trade-off.',CAMPUS_STUDENT_LIFE[c.id],FIELD_MAPS.campus)}${renderLatest(c.id)}${renderEvidenceSection('Fees & internship stipend','Current fee evidence, hostel/mess cost and internship stipend. Service-bond terms are intentionally kept out of the decision profile.',FEES_BOND_STIPEND[c.id],FIELD_MAPS.finance)}</div><aside class="profile-side">${renderCoverage(c.id)}${renderSimilar(c)}</aside></div>`;
   root.hidden=false;$('#profile-loading').hidden=true;bindActions(c);
 }
 

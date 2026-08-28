@@ -1,3 +1,11 @@
+## V9.5 — Concise by Default (2026-08-28)
+- College profiles now lead with a bottom line + at-a-glance summary; detailed research cards are collapsed by default.
+- Compare shows quick overview + strengths first; the full evidence comparison is one explicit expansion.
+- Shortlist Builder hides dimension-level scoring internals behind “Why this ranking?”.
+- My List collapses list diagnostics into an optional review panel.
+- Homepage dataset statistics are secondary instead of occupying default attention.
+- No counselling or research data changed.
+
 ## V9.4 First-Time Friendly — 2026-08-28
 - Simplified first-time navigation and homepage mental model.
 - Added one prominent alias-aware home search.

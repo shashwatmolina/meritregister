@@ -1,0 +1,18 @@
+{
+  "build": "V9.5 Concise by Default",
+  "principle": "answer first; details on demand",
+  "changes": {
+    "college_profile": "Bottom line + at-a-glance visible; research cards collapsed by default",
+    "compare": "Overview + strengths visible; full comparison collapsed by default",
+    "shortlist_builder": "Ranking summary visible; scoring internals behind Why this ranking?",
+    "my_list": "List checks collapsed by default",
+    "choice_filling": "Choice-list checks collapsed by default",
+    "homepage": "Dataset statistics collapsed by default"
+  },
+  "data_changed": false,
+  "logic_changed": false,
+  "tests": {
+    "counselling": "10/10",
+    "bug": "7/7"
+  }
+}

@@ -1,3 +1,7 @@
+# The Merit Register — V9.5 Concise by Default
+
+V9.5 introduces progressive disclosure across the main student flows. Default views show decision-relevant summaries; detailed evidence, methodology, tables, and scoring internals remain available on demand.
+
 # The Merit Register — V9.4 First-Time Friendly
 
 V9.4 is a first-time-user simplification release. It keeps the V9.3 alias-aware search and the V9.2 visual identity, but collapses the first visit into three obvious tasks: **search a college, check what your rank can get, or compare your options**. The primary navigation is reduced to Home, Colleges, Compare, My List and More; planning/research tools remain available without competing for attention. Research and counselling logic are unchanged.
