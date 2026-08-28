@@ -7211,6 +7211,61 @@ Object.assign(FRESHERS_TIMELINE, {
 });
 
 
+
+// V8.15 — phase-timing deepening (27 Aug 2026).
+// Adds phase cells only where a source fixes the timing strongly enough to publish.
+if (JUNIOR_CULTURE['230']) {
+  const u='https://tnmcnair.edu.in/nirf/';
+  if (!(JUNIOR_CULTURE['230'].sources||[]).some(x=>x.url===u)) JUNIOR_CULTURE['230'].sources.push({kind:'official',label:'TNMC/Nair — 2026–27 first MBBS hostel notice (girls hostel unavailable)',url:u,year:2026});
+  JUNIOR_CULTURE['230'].lastVerified='27 Aug 2026';
+}
+if (JUNIOR_FIRST90['230']) {
+  const u='https://tnmcnair.edu.in/nirf/';
+  const src=[...(JUNIOR_FIRST90['230'].sources||[])];
+  if(!src.some(x=>x.url===u)) src.push({kind:'official',label:'TNMC/Nair — 2026–27 first MBBS hostel notice (girls hostel unavailable)',url:u,year:2026});
+  JUNIOR_FIRST90['230']={...JUNIOR_FIRST90['230'],hostellerVsDayScholar:'TNMC/Nair’s current official site states that girls’ hostel accommodation will not be available for First MBBS in 2026–27 because of renovation. This is a current residence-allocation fact; it does not establish senior-junior prevalence.',genderDifferences:'For the 2026–27 first MBBS batch, the official college site specifically says girls’ hostel accommodation is unavailable because of renovation. Comparable current boys’ allocation was not established in this pass.',sources:src,coverage:{...(JUNIOR_FIRST90['230'].coverage||{}),residenceMode:true,genderSpecific:true},sourceNote:'V8.15 adds an official 2026–27 first-MBBS residence restriction for girls; senior-contact, opt-out and after-freshers culture remain separate evidence questions.'};
+}
+if (JUNIOR_CULTURE['189']) {
+  const u='https://www.reddit.com/r/AIIMSNagpur/comments/1vb1hit/aiims_nagpur_hostel/';
+  if (!(JUNIOR_CULTURE['189'].sources||[]).some(x=>x.url===u)) JUNIOR_CULTURE['189'].sources.push({kind:'student',label:'Reddit r/AIIMSNagpur — Jul–Aug 2026 hostel progression account',url:u,year:2026});
+  JUNIOR_CULTURE['189'].lastVerified='27 Aug 2026';
+}
+if (JUNIOR_FIRST90['189']) {
+  const u='https://www.reddit.com/r/AIIMSNagpur/comments/1vb1hit/aiims_nagpur_hostel/';
+  const src=[...(JUNIOR_FIRST90['189'].sources||[])]; if(!src.some(x=>x.url===u)) src.push({kind:'student',label:'Reddit r/AIIMSNagpur — Jul–Aug 2026 hostel progression account',url:u,year:2026});
+  JUNIOR_FIRST90['189']={...JUNIOR_FIRST90['189'],hostellerVsDayScholar:'A July 2026 AIIMS Nagpur hostel discussion from an older-batch respondent says first-year boys share rooms; second year moves to single rooms, while a follow-up says girls get single rooms from the start. This is residence structure, not a ragging-risk estimate.',genderDifferences:'The same current hostel discussion reports boys sharing in first year while girls get single rooms from the start; this is an anonymous alumni/current-community account.',afterFreshers:'The hostel account describes a structural transition by second year: boys move from first-year shared rooms to single rooms, with later-year accommodation changing again.',sources:src,coverage:{...(JUNIOR_FIRST90['189'].coverage||{}),residenceMode:true,genderSpecific:true,afterFreshers:true},sourceNote:'V8.15 adds current phase-specific hostel progression; it does not use a paramedical ragging incident as MBBS prevalence evidence.'};
+}
+if (JUNIOR_CULTURE['410']) {
+  const u='https://www.livehindustan.com/uttar-pradesh/saharanpur/story-senior-students-caught-ragging-juniors-at-pilkhani-medical-college-201741203726875.html';
+  if (!(JUNIOR_CULTURE['410'].sources||[]).some(x=>x.url===u)) JUNIOR_CULTURE['410'].sources.push({kind:'news',label:'Hindustan — Mar 2025 seniors entered junior hostel; anti-ragging response',url:u,year:2025});
+  JUNIOR_CULTURE['410'].lastVerified='27 Aug 2026';
+}
+
+Object.assign(FRESHERS_TIMELINE, {
+  '63': {phases:{
+    arrival:{grade:'B',basis:'direct student first-day account',status:'reassuring',summary:'A self-identified NAMO MBBS student described the first day after orientation: seniors answered questions, gave survival tips and joked about ragging. This supports a friendly initial-contact signal only; later first-year dynamics are not inferred.',sources:[{label:'NAMO first-day student account',url:'https://www.reddit.com/r/MEDICOreTARDS/comments/1nnm2xs/'}]}
+  }},
+  '255': {phases:{
+    weeks1_4:{grade:'C',basis:'current second-hand community account',status:'reassuring-but-limited',summary:'An Aug 2026 medical-student discussion says a JIPMER senior from the prior year described fresher interaction as simple introductions without improper tasks. Because the key statement is second-hand and anonymous, it is kept as limited early-period evidence.',sources:[{label:'Aug 2026 JIPMER early-interaction discussion',url:'https://www.reddit.com/r/MEDICOreTARDS/comments/1vvy5oy/ragging_at_aiims_bilaspur/'}]}
+  }},
+  '410': {phases:{
+    weeks1_4:{grade:'C',basis:'second-hand newly joined fresher allegation + formal junior-hostel reporting',status:'reported',summary:'A Sep 2025 post says a friend who had just joined Saharanpur after Round 2 was being contacted late at night, given tasks and subjected to grooming demands. Separate Mar 2025 reporting documents seniors entering a junior hostel and an anti-ragging response. The immediate-post-joining timing is second-hand, so confidence remains limited.',sources:[{label:'Sep 2025 newly joined fresher allegation',url:'https://www.reddit.com/r/MEDICOreTARDS/comments/1nsibrz'},{label:'Mar 2025 junior-hostel ragging report',url:'https://www.livehindustan.com/uttar-pradesh/saharanpur/story-senior-students-caught-ragging-juniors-at-pilkhani-medical-college-201741203726875.html'}]}
+  }},
+  '230': {phases:{
+    arrival:{grade:'A',basis:'official 2026–27 first-MBBS notice',status:'official-residence',summary:'TNMC/Nair’s current official site states that girls’ hostel accommodation will not be available for First MBBS 2026–27 because of renovation. This fixes the incoming-batch residence arrangement, not the senior culture.',sources:[{label:'TNMC/Nair 2026–27 first MBBS hostel notice',url:'https://tnmcnair.edu.in/nirf/'}]},
+    restFirstYear:{grade:'A',basis:'official 2026–27 first-MBBS notice',status:'official-residence',summary:'The same official notice applies to First MBBS 2026–27 and therefore supports a first-year residence constraint for girls. It does not establish whether senior interaction is higher or lower off-hostel.',sources:[{label:'TNMC/Nair 2026–27 first MBBS hostel notice',url:'https://tnmcnair.edu.in/nirf/'}]}
+  }},
+  '189': {phases:{
+    restFirstYear:{grade:'B',basis:'current alumni/community hostel account',status:'residence-structure',summary:'A Jul–Aug 2026 AIIMS Nagpur hostel discussion says first-year boys share rooms, while a follow-up says girls receive single rooms from the start. This is current phase-specific residence evidence, not a culture verdict.',sources:[{label:'AIIMS Nagpur hostel progression discussion',url:'https://www.reddit.com/r/AIIMSNagpur/comments/1vb1hit/aiims_nagpur_hostel/'}]},
+    secondYear:{grade:'B',basis:'current alumni/community hostel account',status:'changed-residence',summary:'The same account says boys move to single rooms in second year, with further hostel changes in later years. This supports a residence transition after first year.',sources:[{label:'AIIMS Nagpur hostel progression discussion',url:'https://www.reddit.com/r/AIIMSNagpur/comments/1vb1hit/aiims_nagpur_hostel/'}]}
+  }},
+  '122': {phases:{
+    restFirstYear:{grade:'C',basis:'current community hostel-allotment discussion',status:'residence-structure',summary:'An Aug 2026 GMC Srinagar discussion says some first-year students may wait roughly a year for a college-hostel room and use nearby private accommodation meanwhile; other replies describe triple-sharing when hostel is allotted. The account is anonymous and internally variable, so confidence is limited.',sources:[{label:'GMC Srinagar first-year hostel discussion',url:'https://www.reddit.com/r/srinagar/comments/1veh44j/hostel_in_gmc_srinagar_kashmir/'}]}
+  }}
+});
+FRESHERS_TIMELINE_META.updated='27 Aug 2026';
+FRESHERS_TIMELINE_META.scope='200 Junior Culture profiles · phase timing only where supported';
+
 function freshersTimelineFor(collegeId){
   const id=String(collegeId);
   const base=FRESHERS_TIMELINE[id] || {phases:{}};
@@ -11980,5 +12035,1204 @@ Object.assign(JUNIOR_CULTURE, JUNIOR_CULTURE_V84_EXTENSION);
 const JUNIOR_FIRST90_V84_EXTENSION = {};
 Object.entries(JUNIOR_CULTURE_V84_EXTENSION).forEach(([id,p])=>{ const hasDirect=(p.sources||[]).length>0; JUNIOR_FIRST90_V84_EXTENSION[id]={evidenceLevel:hasDirect?'partial':'insufficient',evidenceLabel:p.signal?.label||'Evidence gap',firstWeeks:'Timing-specific first-weeks evidence was not strong enough to reconstruct beyond the profile summary.',hostellerVsDayScholar:p.signal?.hostelRisk||'No reliable residence-mode comparison established.',genderDifferences:'No reliable current gender-specific comparison established unless the profile explicitly says otherwise.',optOut:'No reliable current college-specific opt-out consequence established.',afterFreshers:'No reliable current after-freshers transition established.',sourceNote:'V8.4 keeps unsupported timing fields explicit rather than inferring them.',sources:[...(p.sources||[])],coverage:{firstWeeks:false,residenceMode:false,genderSpecific:false,optOut:false,afterFreshers:false}}; });
 Object.assign(JUNIOR_FIRST90, JUNIOR_FIRST90_V84_EXTENSION);
+
+
+// V8.6 targeted evidence-fill pass — top research-gap queue, 27 Aug 2026.
+// This patch adds source evidence without converting formal safeguards or historical cases into current prevalence claims.
+const JUNIOR_CULTURE_V86_EVIDENCE_FILL = {
+  "54": {
+    currentPicture: "CIMS Bilaspur publishes hostel rules with an explicit zero-tolerance anti-ragging policy and controls on hostel meetings. Current MBBS first-year lived evidence is still insufficient, so the formal hostel safeguards are not treated as proof of ordinary senior-junior culture.",
+    officialResponse: "CIMS Bilaspur's official hostel rules state a zero-tolerance anti-ragging policy and require prior authorization for hostel meetings.",
+    confidence: "High for formal hostel safeguards; insufficient for lived prevalence",
+    signal: {label:"Formal hostel anti-ragging safeguards documented · lived evidence insufficient",tone:"insufficient",confidence:"High for formal hostel safeguards; insufficient for lived prevalence",window:"2023–Aug 2026",enforcement:"Official CIMS hostel rules state zero tolerance for ragging and regulate hostel meetings."},
+    sources:[{kind:"official",label:"CIMS Bilaspur — Hostel Rules & Regulations: anti-ragging policy",url:"https://cimsbilaspur.ac.in/Down2023/Hostel_Rules_Regulations_CIMS2023.pdf",year:2023}]
+  },
+  "142": {
+    currentPicture: "A March 2026 news report describes a surgery postgraduate resident at Hassan Institute of Medical Sciences alleging ragging/harassment by senior residents. This is a current institutional concern signal, but it concerns PG training rather than MBBS freshers and is therefore not used as an MBBS prevalence estimate.",
+    officialResponse: "An anti-ragging committee is publicly listed for HIMS; this pass did not independently reconstruct the institution's response to the March 2026 PG allegation.",
+    confidence: "Moderate for current PG concern signal; insufficient for MBBS first-year prevalence",
+    signal:{label:"Current 2026 PG ragging allegation · MBBS first-year prevalence unresolved",tone:"concern",confidence:"Moderate for current PG concern signal; insufficient for MBBS first-year prevalence",window:"Mar 2026",physicalSafety:"A March 2026 report records a PG resident allegation; it is not evidence of MBBS batch-wide physical-safety prevalence.",enforcement:"HIMS has a publicly listed anti-ragging committee; response to the cited PG allegation was not independently reconstructed."},
+    sources:[{kind:"news",label:"Medical Dialogues — HIMS surgery resident alleges harassment/ragging (6 Mar 2026)",url:"https://medicaldialogues.in/n-165950",year:2026}]
+  },
+  "163": {
+    currentPicture: "Government Medical College Thrissur publishes an anti-ragging committee. A first-person MBBS review published in 2024 describes hostel life positively and says seniors were very friendly; one review cannot establish batch-wide prevalence, but it provides a useful lived signal alongside the formal safeguards.",
+    seniorJunior: "One first-person MBBS review described seniors as very friendly; broader batch-wide prevalence and opt-out consequences remain unknown.",
+    officialResponse: "The official college site publishes an anti-ragging committee with institutional members and disciplinary remit.",
+    trend: "Available lived evidence is reassuring but limited to a single public student review; future batches may differ.",
+    confidence: "Moderate for lived signal; high for formal safeguards",
+    signal:{label:"Reassuring student report · formal anti-ragging committee visible",tone:"reassuring",confidence:"Moderate for lived signal; high for formal safeguards",window:"2024 student review + current formal safeguards",socialCoercion:"One MBBS student review described seniors as very friendly; no broader coercive pattern was established.",enforcement:"The official college site publishes an anti-ragging committee and disciplinary remit."},
+    sources:[{kind:"official",label:"Government Medical College Thrissur — Anti-Ragging Committee",url:"https://gmctcr.kerala.gov.in/content?cid=19&title=Committees+%26+Cells",year:2026},{kind:"student",label:"CollegeBatch — GMC Thrissur MBBS student review",url:"https://www.collegebatch.com/reviews/26724-thrissur-govt-medical-college-thrissur",year:2024}]
+  },
+  "166": {
+    currentPicture: "Government Medical College Kasaragod publishes a current anti-ragging committee structure that explicitly includes a 2026 fresher representative, a 2025 senior student representative, police, media, parent and NGO members. Current first-year lived evidence remains insufficient.",
+    officialResponse: "The official college anti-ragging page lists the current committee, national helpline and a structure including fresher/senior student, police, parent, media and NGO representation.",
+    confidence: "High for current formal safeguards; insufficient for lived prevalence",
+    signal:{label:"Current anti-ragging committee documented · lived evidence insufficient",tone:"insufficient",confidence:"High for current formal safeguards; insufficient for lived prevalence",window:"2026 formal safeguards",enforcement:"The official college page lists a current anti-ragging committee with fresher/senior student and external representation."},
+    sources:[{kind:"official",label:"Government Medical College Kasaragod — Anti-Ragging Committee",url:"https://gmcksd.in/page5.html",year:2026}]
+  },
+  "200": {
+    currentPicture: "Government Medical College Chhatrapati Sambhajinagar (Aurangabad) publishes a current anti-ragging helpline and states strict compliance with anti-ragging regulations. A Government of India parliamentary annexure also records a 2020–21 complaint involving the college; that historical record is not treated as evidence of current MBBS prevalence.",
+    incidents:[{year:2020,label:"Government of India ragging-case annexure",detail:"A 2020–21 parliamentary annexure lists a complaint at Government Medical College, Aurangabad; the public table records it as ragging by departmental staff and does not establish current MBBS prevalence."}],
+    officialResponse: "The current official college site displays the national anti-ragging helpline and states strict compliance with the medical-college anti-ragging regulations.",
+    trend: "A historical formal complaint exists alongside current safeguards; current first-year lived prevalence remains unresolved.",
+    confidence: "High for current formal safeguards and historical complaint record; insufficient for current lived prevalence",
+    signal:{label:"Current formal controls + historical complaint record · lived prevalence unresolved",tone:"insufficient",confidence:"High for formal/historical evidence; insufficient for current lived prevalence",window:"2020–21 formal case + current safeguards",enforcement:"The official college site displays an anti-ragging helpline and strict-compliance statement."},
+    sources:[{kind:"official",label:"Government Medical College Chhatrapati Sambhajinagar — anti-ragging helpline and compliance",url:"https://gmcaurangabad.com/",year:2026},{kind:"official",label:"Lok Sabha annexure — ragging cases 2020–21",url:"https://sansad.in/getFile/loksabhaquestions/annex/176/AU1961.pdf?source=pqals",year:2021}]
+  },
+  "242": {
+    currentPicture: "Fakir Mohan Medical College & Hospital's official 2024–25 MBBS admission brochure requires student and parent anti-ragging undertakings. A public student review describes the campus as friendly and ragging-free; that review is a single lived account rather than a prevalence estimate.",
+    seniorJunior: "One public student review describes a friendly campus and says it is ragging-free; broader first-week routines and opt-out consequences remain unknown.",
+    officialResponse: "The official MBBS admission brochure requires anti-ragging undertakings from students and parents and directs online filing through the national anti-ragging portal.",
+    trend: "Available lived evidence is reassuring but limited; no batch-wide prevalence inference is made.",
+    confidence: "Moderate for lived signal; high for formal admission safeguards",
+    signal:{label:"Reassuring student review · formal anti-ragging undertakings required",tone:"reassuring",confidence:"Moderate for lived signal; high for formal admission safeguards",window:"2024–25 official brochure + 2025 student review",socialCoercion:"One student review describes a friendly campus and says it is ragging-free; this is not a prevalence estimate.",enforcement:"The official admission brochure requires student and parent anti-ragging undertakings."},
+    sources:[{kind:"official",label:"Fakir Mohan Medical College — MBBS Admission Brochure 2024–25 anti-ragging undertaking",url:"https://blsmch.nic.in/wp-content/uploads/2024/08/MBBS-Admission-Brochure-2024-25.pdf",year:2024},{kind:"student",label:"CollegeBatch — Fakir Mohan Medical College student review",url:"https://www.collegebatch.com/reviews/36551-government-medical-college-and-hospital-balasore",year:2025}]
+  },
+  "258": {
+    currentPicture: "ESIC Medical College Ludhiana's official 2025–26 hostel rules explicitly ban ragging inside and outside campus and provide disciplinary consequences. Current MBBS first-year lived evidence was not sufficiently specific to characterize ordinary senior culture.",
+    officialResponse: "Official ESIC hostel rules state that ragging in any form is strictly banned inside and outside campus and make hostel residents undertake not to participate in ragging.",
+    confidence: "High for current formal hostel safeguards; insufficient for lived prevalence",
+    signal:{label:"Current ESIC hostel anti-ragging rules documented · lived evidence insufficient",tone:"insufficient",confidence:"High for current formal hostel safeguards; insufficient for lived prevalence",window:"2025–26 hostel rules",enforcement:"Official ESIC hostel rules expressly ban ragging inside and outside campus and provide disciplinary action."},
+    sources:[{kind:"official",label:"ESIC Medical College Ludhiana — Hostel Rules & Regulations 2025–26",url:"https://robihar.esic.gov.in/attachments/circularfile/ESIC_Medical_College_amp_Hospital_Ludhiana_Hostel_Rules_amp_Regulations_along_with_Application_From_English_1760168879.pdf",year:2025}]
+  },
+  "302": {
+    currentPicture: "Government Medical College & ESI Hospital Coimbatore publishes a current anti-ragging committee and national helpline information. Current MBBS first-year lived evidence remains insufficient for a senior-culture characterization.",
+    officialResponse: "The official college site publishes an Anti-Ragging Committee and the national 24×7 anti-ragging helpline.",
+    confidence: "High for current formal safeguards; insufficient for lived prevalence",
+    signal:{label:"Current anti-ragging committee documented · lived evidence insufficient",tone:"insufficient",confidence:"High for current formal safeguards; insufficient for lived prevalence",window:"2024–Aug 2026 formal safeguards",enforcement:"The official college site publishes an Anti-Ragging Committee and national helpline information."},
+    sources:[{kind:"official",label:"Government Medical College & ESI Hospital Coimbatore — Anti-Ragging Committee",url:"https://gmcesi.ac.in/",year:2026}]
+  },
+  "313": {
+    currentPicture: "Government Medical College Thiruvallur publicly lists an anti-ragging committee with the dean, vice-principal, police, media, NGO, wardens and other representatives. Current MBBS first-year lived evidence remains insufficient.",
+    officialResponse: "A current anti-ragging committee with institutional and external representation is publicly listed for GMC Thiruvallur.",
+    confidence: "High for current formal safeguards; insufficient for lived prevalence",
+    signal:{label:"Current anti-ragging committee documented · lived evidence insufficient",tone:"insufficient",confidence:"High for current formal safeguards; insufficient for lived prevalence",window:"2026 formal safeguards",enforcement:"A current anti-ragging committee with dean, wardens and external representation is publicly listed."},
+    sources:[{kind:"official",label:"GMC Thiruvallur — Anti-Ragging Committee listing",url:"https://www.gmcthiruvallur.ac.in/committees.php",year:2026}]
+  },
+  "324": {
+    currentPicture: "Madurai Medical College has a well-documented historical 2018 MBBS ragging case in which 19 second-year students were suspended after an anti-ragging inquiry; reporting also described seniors entering the first-year hostel block despite separation controls. The college currently maintains an anti-ragging committee. The 2018 case is historical and is not used as a 2026 prevalence estimate.",
+    incidents:[{year:2018,label:"MBBS ragging case and disciplinary action",detail:"An anti-ragging inquiry found a complaint by first-year students substantiated; 19 second-year students were suspended for six months and barred from the hostel for a year, according to contemporaneous reporting."}],
+    officialResponse: "The current college site lists an Anti-Ragging Committee. In the 2018 case, the college anti-ragging committee investigated and disciplinary action followed.",
+    trend: "Strong historical disciplinary evidence exists, but current 2026 first-year lived prevalence was not reconstructed in this pass.",
+    confidence: "High for historical disciplinary case and current committee; insufficient for 2026 prevalence",
+    signal:{label:"Documented historical MBBS ragging case · current prevalence unresolved",tone:"concern",confidence:"High for historical case; insufficient for 2026 prevalence",window:"2018 case + current formal committee",physicalSafety:"A substantiated 2018 case led to major disciplinary action; it is not a current prevalence estimate.",enforcement:"The current site lists an Anti-Ragging Committee; the 2018 complaint produced an inquiry and suspensions."},
+    sources:[{kind:"news",label:"Times of India — Madurai Medical College: 19 students suspended after ragging inquiry (4 Sep 2018)",url:"https://timesofindia.indiatimes.com/city/madurai/ragging-19-students-suspended-for-6-months/articleshow/65663047.cms",year:2018},{kind:"official",label:"Madurai Medical College — current committees including Anti-Ragging Committee",url:"https://maduraimedicalcollege.ac.in/department/emergency-medicine",year:2026}]
+  },
+  "377": {
+    currentPicture: "Government Medical College Haridwar publishes a current anti-ragging committee, national helpline, and multiple complaint routes. The institution is very new, and current lived evidence is still too thin to characterize ordinary senior-junior culture.",
+    officialResponse: "The official college site lists an anti-ragging committee and states that complaints may be made to committee members, faculty, wardens, complaint box or principal's office.",
+    confidence: "High for current formal safeguards; insufficient for lived prevalence",
+    signal:{label:"Current anti-ragging committee and complaint routes documented · lived evidence insufficient",tone:"insufficient",confidence:"High for current formal safeguards; insufficient for lived prevalence",window:"2026 formal safeguards",enforcement:"The official site lists an anti-ragging committee, national helpline and multiple reporting routes."},
+    sources:[{kind:"official",label:"Government Medical College Haridwar — Anti-Ragging Committee",url:"https://gmcharidwar.com/anti-ragging-committee",year:2026}]
+  }
+  ,
+  "267": {
+    currentPicture: "A November 2024 report describes two ragging complaints by newly admitted first-year students at Government Medical College Barmer. The college anti-ragging committee heard victims and accused students; eight students were suspended from the hostel and six female students received warning letters after admitting fault. This is a strong recent disciplinary signal, but it does not establish current 2026 batch-wide prevalence.",
+    incidents:[{year:2024,label:"First-year complaints and disciplinary action",detail:"Reporting from November 2024 says first-year students complained about separate ragging incidents; eight students were suspended from the hostel and six female students received warning letters after the anti-ragging committee heard the parties."}],
+    officialResponse:"The 2024 report describes an anti-ragging committee inquiry followed by hostel suspensions and warning letters.",
+    trend:"A recent disciplinary case is documented; current 2026 first-year prevalence remains unresolved.",
+    confidence:"High for the reported 2024 disciplinary action; insufficient for 2026 prevalence",
+    signal:{label:"Documented 2024 first-year ragging complaints and disciplinary action",tone:"concern",confidence:"High for 2024 disciplinary action; insufficient for 2026 prevalence",window:"Nov 2024",physicalSafety:"The located report documents ragging complaints and sanctions but does not provide a current prevalence estimate.",enforcement:"The anti-ragging committee reportedly heard victims and accused students and imposed hostel suspensions/warnings."},
+    sources:[{kind:"news",label:"First India — 8 suspended for ragging in Barmer Medical College (13 Nov 2024)",url:"https://storage.firstindia.co.in/public/epapers/November2024/173143643822.pdf",year:2024}]
+  },
+  "268": {
+    currentPicture: "The national anti-ragging complaints record contains closed NMC complaints for Government Medical College Bharatpur in August 2022 and July 2023. These formal records establish that complaints were lodged, but the public index does not by itself establish the underlying facts or current 2026 prevalence.",
+    incidents:[{year:2022,label:"National anti-ragging complaint record",detail:"A closed NMC complaint is listed for Government Medical College Bharatpur in August 2022."},{year:2023,label:"National anti-ragging complaint record",detail:"A second closed NMC complaint is listed for Government Medical College Bharatpur in July 2023."}],
+    officialResponse:"The public national complaints index records both complaints as closed; college-specific response details were not reconstructed from the index.",
+    trend:"Multiple historical formal complaint records exist; current first-year lived prevalence remains unresolved.",
+    confidence:"High for complaint-record existence; insufficient for current prevalence",
+    signal:{label:"Multiple historical formal complaint records · current prevalence unresolved",tone:"insufficient",confidence:"High for complaint-record existence; insufficient for current prevalence",window:"2022–2023 formal records",enforcement:"The national complaints index records the complaints as closed; institution-specific actions were not reconstructed."},
+    sources:[{kind:"official",label:"National Anti-Ragging complaints record — Government Medical College Bharatpur",url:"https://www.antiragging.in/complaints-record/new-complaints-record.php",year:2023}]
+  }
+
+};
+
+Object.entries(JUNIOR_CULTURE_V86_EVIDENCE_FILL).forEach(([id, patch]) => {
+  const prior = JUNIOR_CULTURE[id] || {};
+  const priorSources = Array.isArray(prior.sources) ? prior.sources : [];
+  const newSources = Array.isArray(patch.sources) ? patch.sources : [];
+  const byUrl = new Map();
+  [...priorSources, ...newSources].forEach(src => { if (src && src.url) byUrl.set(src.url, src); });
+  JUNIOR_CULTURE[id] = {
+    ...prior,
+    ...patch,
+    lastVerified: '27 Aug 2026',
+    signal: {...(prior.signal || {}), ...(patch.signal || {})},
+    sources: [...byUrl.values()]
+  };
+  if (JUNIOR_FIRST90[id]) {
+    JUNIOR_FIRST90[id] = {
+      ...JUNIOR_FIRST90[id],
+      sources: [...byUrl.values()],
+      sourceNote: 'V8.6 source-fill pass adds corroborating formal/lived evidence without inferring unsupported timing.'
+    };
+  }
+});
+
 JUNIOR_CULTURE_META.updated='27 Aug 2026'; JUNIOR_CULTURE_META.scope='200 researched profiles: national baseline + regional retrospectives + demand-ranked expansion through 200';
 JUNIOR_FIRST90_META.scope='200 Junior Culture profiles; unsupported fields remain explicitly unknown';
+
+
+// V8.7 zero-source fill — targeted pass on remaining V8.6 no-source profiles, 27 Aug 2026.
+// Context-only student reviews are explicitly not treated as ragging prevalence evidence.
+const JUNIOR_CULTURE_V87_ZERO_SOURCE_FILL = {
+"257":{currentPicture:"AIMS Mohali's official site exposes a dedicated Mentorship and Anti-Ragging section. Current first-year lived prevalence is still insufficient, so the formal safeguard is not treated as a culture verdict.",officialResponse:"The institute's official website includes a dedicated Mentorship and Anti-Ragging section.",confidence:"High for formal safeguard; insufficient for lived prevalence",signal:{label:"Official anti-ragging framework visible · lived evidence insufficient",tone:"insufficient",confidence:"High for formal safeguard; insufficient for lived prevalence",window:"Aug 2026",enforcement:"AIMS Mohali's official site publishes a dedicated Mentorship and Anti-Ragging section."},sources:[{kind:"official",label:"AIMS Mohali — Mentorship and Anti-Ragging",url:"https://aimsmohali.punjab.gov.in/",year:2026}]},
+"428":{currentPicture:"ESIC Medical College & Hospital Varanasi publishes 2025–26 MBBS admission instructions containing the prescribed anti-ragging undertaking format. The college is very new and current lived senior-junior evidence remains insufficient.",officialResponse:"Official ESIC admission instructions include the anti-ragging undertaking required under the regulatory framework.",confidence:"High for formal admission safeguard; insufficient for lived prevalence",signal:{label:"Formal anti-ragging undertaking documented · lived evidence insufficient",tone:"insufficient",confidence:"High for formal safeguard; insufficient for lived prevalence",window:"2025–26 admission material",enforcement:"Official ESIC Varanasi MBBS admission instructions include the prescribed anti-ragging undertaking."},sources:[{kind:"official",label:"ESIC Medical College Varanasi — MBBS admission instructions 2025–26",url:"https://kknagarhospital.esic.gov.in/attachments/admissionfile/General_instructions_for_the_students_for_MBBS_admission_2025_26_at_ESIC_Medical_College_and_Hospital_Varanasi_English_1760683563.pdf",year:2025}]},
+"266":{currentPicture:"The NMC anti-ragging registry lists Government Medical College, Alwar among institutions with anti-ragging committee membership. Current first-year lived evidence remains insufficient.",officialResponse:"NMC's anti-ragging committee registry includes Government Medical College, Alwar.",confidence:"High for registry presence; insufficient for lived prevalence",signal:{label:"NMC anti-ragging registry presence · lived evidence insufficient",tone:"insufficient",confidence:"High for formal registry presence; insufficient for lived prevalence",window:"2026 registry",enforcement:"The NMC anti-ragging registry lists the college."},sources:[{kind:"official",label:"NMC — Member of the Anti-Ragging Committee registry",url:"https://www.nmc.org.in/ActivitiWebClient/open/initiateAntiRaggingHome",year:2026}]},
+"271":{currentPicture:"The national anti-ragging complaints record contains a closed NMC complaint for Government Medical College, Chittorgarh dated 4 December 2023. The public index establishes that a complaint was lodged, not the underlying facts or current 2026 prevalence.",incidents:[{year:2023,label:"National anti-ragging complaint record",detail:"A closed NMC complaint is listed for Government Medical College, Chittorgarh on 4 December 2023."}],officialResponse:"The national complaints index records the case as closed; college-specific action details were not reconstructed.",confidence:"High for complaint-record existence; insufficient for current prevalence",signal:{label:"Historical formal complaint record · current prevalence unresolved",tone:"insufficient",confidence:"High for record existence; insufficient for current prevalence",window:"Dec 2023 formal record",enforcement:"The national complaints index records the complaint as closed."},sources:[{kind:"official",label:"National Anti-Ragging complaints record — GMC Chittorgarh",url:"https://www.antiragging.in/complaints-record/new-complaints-record.php",year:2023}]},
+"159":{currentPicture:"GMC Idukki's official site publishes the national ragging helpline and 2025–26 anti-ragging affidavit/online-filing materials. A verified 2024 MBBS student review explicitly says there was no ragging; that remains one lived account rather than a batch-wide guarantee.",seniorJunior:"One 2024 MBBS student review explicitly reported no ragging; broader first-week routines and opt-out consequences remain unverified.",officialResponse:"The official college site publishes anti-ragging affidavit guidance, online filing instructions and the national helpline.",confidence:"Moderate for lived signal; high for formal safeguards",signal:{label:"Reassuring student report + current formal safeguards",tone:"reassuring",confidence:"Moderate for lived signal; high for formal safeguards",window:"2024 student review + 2025–26 formal material",socialCoercion:"One verified MBBS review states there was no ragging; this is not treated as a prevalence guarantee.",enforcement:"The official site publishes anti-ragging affidavit guidance and the national helpline."},sources:[{kind:"official",label:"Government Medical College Idukki — MBBS admission anti-ragging material",url:"https://www.gmci.in/",year:2026},{kind:"student",label:"Collegedunia — GMC Idukki MBBS review",url:"https://collegedunia.com/college/64524-government-medical-college-idukki-idukki/reviews",year:2024}]},
+"397":{currentPicture:"A public 2020 MBBS Q&A describes seniors at GMC Kannauj as available for guidance, but it is not a ragging-specific first-person account and is old. Current anti-ragging prevalence remains unresolved.",seniorJunior:"An older public MBBS Q&A describes seniors as available for guidance; this is weak context, not a current culture estimate.",confidence:"Low for lived context; insufficient for current prevalence",signal:{label:"Older positive senior-guidance context · current prevalence unresolved",tone:"insufficient",confidence:"Low for lived context; insufficient for current prevalence",window:"2020 public Q&A",socialCoercion:"An older public Q&A describes seniors as available for guidance; no ragging-specific prevalence conclusion is drawn."},sources:[{kind:"student",label:"Careers360 Q&A — GMC Kannauj MBBS senior guidance context",url:"https://www.careers360.com/question-how-is-gmc-kannauj-for-mbbs-in-up",year:2020}]},
+"290":{currentPicture:"A July–August 2026 Reddit discussion includes a second-hand report from a current GMC Nagaur student's sibling describing decent hostels and saying first-years were expected to be housed in hostel, with off-campus stay apparently possible. It does not directly address ragging and is kept as weak lived-context evidence only.",confidence:"Low for lived context; insufficient for ragging prevalence",signal:{label:"Current hostel-context lead · ragging prevalence unresolved",tone:"insufficient",confidence:"Low for lived context; insufficient for ragging prevalence",window:"Aug 2026 community discussion"},sources:[{kind:"student",label:"Reddit r/MBBSindia — GMC Nagaur current hostel context",url:"https://www.reddit.com/r/MBBSindia/comments/1vasaz8/is_gmc_baran_fully_developed_need_honest_reviews/",year:2026}]},
+"292":{currentPicture:"A 2025 public MBBS review describes the campus environment positively, but it does not provide ragging-specific detail. It is retained only as lived campus context; senior-junior prevalence and First-90 routines remain unresolved.",confidence:"Low for lived context; insufficient for ragging prevalence",signal:{label:"Positive campus-context review · ragging prevalence unresolved",tone:"insufficient",confidence:"Low for lived context; insufficient for ragging prevalence",window:"Oct 2025 review"},sources:[{kind:"student",label:"Vidyavision — GMC Sawai Madhopur student review",url:"https://www.vidyavision.com/college/gmc-sawai-madhopur",year:2025}]},
+"281":{currentPicture:"A 2025 public MBBS review describes the college environment positively and management/students as helpful, but it is not ragging-specific. It is therefore used only as weak lived campus context.",confidence:"Low for lived context; insufficient for ragging prevalence",signal:{label:"Positive campus-context review · ragging prevalence unresolved",tone:"insufficient",confidence:"Low for lived context; insufficient for ragging prevalence",window:"Oct 2025 review"},sources:[{kind:"student",label:"Vidyavision — GMC Sri Ganganagar student review",url:"https://www.vidyavision.com/college/government-medical-college-sri-ganganagar/reviews",year:2025}]},
+"254":{currentPicture:"A 2025 public MBBS review describes a friendly campus environment and lists an anti-ragging cell among safety measures. The review is generic and not sufficient to characterize First-90 senior-junior prevalence.",officialResponse:"The located student-review page lists an anti-ragging cell among safety measures; an institution-specific official committee page was not independently located in this pass.",confidence:"Low-to-moderate for lived context; insufficient for prevalence",signal:{label:"Friendly campus-context review + anti-ragging cell mention",tone:"insufficient",confidence:"Low-to-moderate for lived context; insufficient for prevalence",window:"Oct 2025 review"},sources:[{kind:"student",label:"Vidyavision — IGMCRI student review and safety measures",url:"https://www.vidyavision.com/reviews/107688/papri-dutta-review-on-indira-gandhi-medical-college-and-research-institute-puducherry",year:2025}]},
+"421":{currentPicture:"A current public institutional-information page lists a named anti-ragging committee chairman and describes committee functions for Kalyan Singh GMC Bulandshahr. This is secondary-source formal evidence; current lived prevalence remains insufficient.",officialResponse:"A current institutional-information page lists a named anti-ragging committee chairman and describes monitoring/disciplinary functions.",confidence:"Moderate for formal safeguard listing; insufficient for lived prevalence",signal:{label:"Anti-ragging committee listed · lived evidence insufficient",tone:"insufficient",confidence:"Moderate for formal listing; insufficient for lived prevalence",window:"2026 listing",enforcement:"A public institutional-information page lists the anti-ragging committee chairman and committee remit."},sources:[{kind:"news",label:"Hospitals-info — KSGMC Bulandshahr anti-ragging committee details",url:"https://hospitals-info.in/kalyan-singh-government-medical-college-ksgmc-bulandshahr-contact-number-information-opd-timing-details/",year:2026}]},
+"111":{currentPicture:"The Himachal MBBS/BDS prospectus publishes college-specific anti-ragging reporting contacts for Pt. JLN Government Medical College Chamba. Current lived first-year prevalence remains insufficient.",officialResponse:"The state prospectus lists the Chamba principal among authorities for reporting ragging incidents and sets out anti-ragging penalties/reporting routes.",confidence:"High for formal reporting framework; insufficient for lived prevalence",signal:{label:"State prospectus anti-ragging reporting framework · lived evidence insufficient",tone:"insufficient",confidence:"High for formal framework; insufficient for lived prevalence",window:"2023 prospectus / current framework",enforcement:"The Himachal prospectus lists college-specific reporting contacts for ragging incidents."},sources:[{kind:"official",label:"Himachal MBBS/BDS prospectus — anti-ragging reporting authorities",url:"https://www.scribd.com/document/1044140386/Corrigendum-MBBS-BDS-Prospectus-Final-2023-Hin",year:2023}]},
+"105":{currentPicture:"A 2025 public review describes the Faridabad campus as friendly and lists an anti-ragging cell among safety measures. A separate current institutional-information page describes zero-tolerance and committee/security controls. These are limited lived/secondary signals, not proof of batch-wide prevalence.",confidence:"Low-to-moderate for lived context; moderate for formal secondary evidence",signal:{label:"Friendly campus-context review + anti-ragging safeguards reported",tone:"insufficient",confidence:"Low-to-moderate; prevalence unresolved",window:"2025–26 public evidence",enforcement:"Public institutional information describes an anti-ragging committee, monitoring and zero-tolerance policy."},sources:[{kind:"student",label:"Vidyavision — SABVGMC Faridabad student review",url:"https://www.vidyavision.com/reviews/104874/papri-dutta-review-on-shri-atal-bihari-vajpayee-government-medical-college-faridabad",year:2025},{kind:"news",label:"CollegeReviewz — SABVGMC Faridabad anti-ragging policy and monitoring",url:"https://collegereviewz.com/college/shri-atal-bihari-vajpayee-government-medical-college-faridabad",year:2026}]},
+"287":{currentPicture:"Current student reviews describe Shri Kalyan GMC Sikar's campus life, hostels and faculty positively, but do not provide ragging-specific detail. The college is also listed in public anti-ragging/facility information. Current First-90 prevalence remains unresolved.",confidence:"Low for lived culture inference; insufficient for ragging prevalence",signal:{label:"Current positive campus reviews · ragging-specific evidence still thin",tone:"insufficient",confidence:"Low for ragging inference; current campus context available",window:"2024–Jul 2026 reviews"},sources:[{kind:"student",label:"Careers360 — Shri Kalyan GMC Sikar verified MBBS review",url:"https://www.careers360.com/colleges/shri-kalyan-government-medical-college-sikar/reviews",year:2026},{kind:"student",label:"Shiksha — Shri Kalyan GMC Sikar verified MBBS reviews",url:"https://www.shiksha.com/college/shri-kalyan-government-medical-college-sikar-150095/reviews",year:2026}]},
+"165":{currentPicture:"A current public contact directory reproduces a detailed anti-ragging committee roster and dedicated anti-ragging email for Government T.D. Medical College Alappuzha. This is secondary-source formal evidence; current lived prevalence remains unresolved.",officialResponse:"A current public directory lists a dedicated anti-ragging email, helpline and committee roster including principal, faculty and hostel wardens.",confidence:"Moderate for formal committee listing; insufficient for lived prevalence",signal:{label:"Anti-ragging committee roster documented · lived evidence insufficient",tone:"insufficient",confidence:"Moderate for formal listing; insufficient for lived prevalence",window:"2026 listing",enforcement:"A current public directory lists a detailed anti-ragging committee roster and dedicated reporting email."},sources:[{kind:"news",label:"India Customer Care — Government T.D. Medical College anti-ragging committee contacts",url:"https://www.indiacustomercare.com/government-t-d-medical-college-alappuzha-contact-no",year:2026}]},
+"272":{currentPicture:"Current verified MBBS reviews describe hostel, campus life and freshers events at Government Medical College Churu, but the located reviews do not make a ragging-specific claim. They are therefore retained only as lived-context evidence.",confidence:"Low for ragging inference; current lived campus context available",signal:{label:"Current lived campus reviews · ragging-specific evidence unresolved",tone:"insufficient",confidence:"Low for ragging inference",window:"2025–May 2026 verified reviews"},sources:[{kind:"student",label:"Shiksha — GMC Churu verified MBBS reviews",url:"https://www.shiksha.com/college/government-medical-college-churu-62909/reviews",year:2026}]}
+};
+Object.entries(JUNIOR_CULTURE_V87_ZERO_SOURCE_FILL).forEach(([id,patch])=>{
+  const prior=JUNIOR_CULTURE[id]||{}; const ps=Array.isArray(prior.sources)?prior.sources:[]; const ns=Array.isArray(patch.sources)?patch.sources:[]; const m=new Map(); [...ps,...ns].forEach(s=>{if(s&&s.url)m.set(s.url,s)});
+  JUNIOR_CULTURE[id]={...prior,...patch,lastVerified:'27 Aug 2026',signal:{...(prior.signal||{}),...(patch.signal||{})},sources:[...m.values()]};
+  if(JUNIOR_FIRST90[id]) JUNIOR_FIRST90[id]={...JUNIOR_FIRST90[id],sources:[...m.values()],sourceNote:'V8.7 zero-source fill adds formal/lived context while keeping unsupported timing explicit.'};
+});
+JUNIOR_CULTURE_META.updated='27 Aug 2026';
+
+// V8.8 official-only fill — targeted lived-evidence pass, 27 Aug 2026.
+// Student/community sources below are graded as unverified lived evidence and are never treated as institutional findings.
+const JUNIOR_CULTURE_V88_OFFICIAL_ONLY_FILL = {
+  "436": {
+    currentPicture: "College of Medicine & Sagore Dutta Hospital publishes current anti-ragging safeguards. Two August 2026 public discussions add limited lived context: one commenter identifying as a Sagore Dutta student described ragging as comparatively 'normal level' versus northern colleges, while another thread said day-scholars face negligible ragging and described the college as relatively laid-back. These are anonymous community reports, not representative survey evidence.",
+    seniorJunior: "Current public student/community discussion suggests some senior-junior interaction/ragging exists but may be lighter than in some comparison colleges; the strength and hostel-specific routine are not fully reconstructed.",
+    trend: "Fresh August 2026 community discussion is mildly reassuring relative to some comparison colleges, especially for day-scholars, but remains low-confidence and anonymous.",
+    unknowns: "Hosteller first-week routine, girls' experience, opt-out consequences and batch-wide prevalence remain unresolved. Day-scholar comments should not be generalized to hostellers.",
+    confidence: "High for formal safeguards; low-to-moderate for current lived signal",
+    signal: {label:"Formal safeguards + fresh low-intensity community signal",tone:"mixed",confidence:"Low-to-moderate for lived signal; high for formal safeguards",window:"Aug 2026 community discussion",hostelRisk:"A current thread says day-scholars experience negligible ragging; hosteller exposure is not quantified."},
+    sources: [
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — Sagore Dutta ragging scene / day-scholar discussion (23 Aug 2026)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1vwc9aj/what_is_the_ragging_scene_in_sagore_dutta_gmc_and/",year:2026},
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — West Bengal ragging discussion with self-identified Sagore Dutta student (4 Aug 2026)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1vfa780/how_is_the_ragging_scene_in_west_bengal_colleges/",year:2026}
+    ]
+  },
+  "319": {
+    currentPicture: "Government Erode Medical College publishes a zero-tolerance policy and anti-ragging committee. A detailed April 2026 public complaint post alleges prolonged hostel harassment by seniors, coercive meetings, intimidation and an attempted institutional cover-up after an August 2025 episode. The post says supporting medical/RTI/audio/email material existed, but this dataset has not independently authenticated those attachments, so it remains a serious student/community allegation rather than an adjudicated finding.",
+    seniorJunior: "A current public allegation describes a coercive hostel hierarchy involving seniors and an unofficial student-council-like group. It is detailed but not independently verified here and cannot establish batch-wide prevalence.",
+    incidents: [{year:2025,label:"Detailed public allegation of prolonged hostel harassment and coercive senior meetings",detail:"An April 2026 public post alleges that a student was repeatedly pressured and intimidated by seniors and was confined in a late-night meeting in August 2025, followed by hospitalization after a suicide attempt. The post also alleges administrative mishandling. The supporting attachments were not independently authenticated in this pass."}],
+    trend: "Formal safeguards coexist with a serious recent public allegation. Current prevalence and institutional findings remain unresolved.",
+    confidence: "High for formal safeguards; moderate for existence/detail of public allegation; insufficient for prevalence",
+    signal: {label:"Current formal safeguards + serious recent public allegation",tone:"concern",confidence:"Moderate for allegation existence; insufficient for prevalence",window:"Aug 2025 incident alleged in Apr 2026 post",hostelRisk:"The allegation is hostel-centred and describes senior pressure inside hostel governance; no representative hostel prevalence estimate exists."},
+    sources: [
+      {kind:"student",label:"Reddit r/TamilNaduDiscussion — detailed Erode Medical College ragging/harassment allegation (21 Apr 2026)",url:"https://www.reddit.com/r/TamilNaduDiscussion/comments/1srg7i5/erode_medical_college_horror_ragging_suicide/",year:2026}
+    ]
+  },
+  "197": {
+    currentPicture: "Government Medical College Baramati has a formally constituted anti-ragging committee. A July 2026 counselling discussion contains only a second-hand comment that the writer had 'heard' there is some ragging; because the commenter does not establish firsthand knowledge, it is retained as a weak lead rather than a prevalence claim.",
+    seniorJunior: "One current community comment mentions hearsay of some ragging, but no sufficiently detailed firsthand first-year account was recovered.",
+    trend: "Formal safeguards are documented; a weak 2026 community lead exists but current lived prevalence remains unresolved.",
+    confidence: "High for formal requirements; very low for lived-ragging inference",
+    signal: {label:"Formal safeguards + weak current community lead",tone:"insufficient",confidence:"Very low for lived inference",window:"Jul 2026 community discussion"},
+    sources: [
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — GMC Baramati vs Aurangabad discussion; second-hand ragging mention (22 Jul 2026)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1v3jj30/gmc_aurangabad_and_gmc_baramati/",year:2026}
+    ]
+  },
+  "428": {
+    currentPicture: "ESIC Medical College & Hospital Varanasi is a very new programme with official anti-ragging undertakings. August 2026 public discussions add current student/visitor context about temporary hostel and campus arrangements, including conflicting claims about accommodation in/near the mental-hospital complex. Those posts do not establish a senior-ragging pattern and are used only as lived infrastructure context.",
+    trend: "The programme is too new for a stable multi-batch senior-culture trend. Current community discussion is dominated by campus/hostel infrastructure rather than verified ragging routines.",
+    confidence: "High for formal admission safeguard; low for lived infrastructure context; insufficient for ragging prevalence",
+    signal: {label:"New college · lived hostel/campus context available · ragging pattern unresolved",tone:"insufficient",confidence:"Low for lived context; insufficient for prevalence",window:"Aug 2026 community discussion"},
+    sources: [
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — ESIC Varanasi current hostel/campus discussion (15 Aug 2026)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1vp9pz3/esic_varansi/",year:2026},
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — visitor discussion of ESIC Varanasi temporary campus arrangements (24 Oct 2025)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1oesao8/for_all_those_considering_esic_varanasi/",year:2025}
+    ]
+  },
+  "162": {
+    currentPicture: "Government Medical College Kannur publishes a college-specific anti-ragging committee order. Public student/community discussions provide general lived context on campus, departments, patient flow and college life, but the located threads do not make a reliable ragging-specific claim. They are therefore used only to reduce the 'no lived source' gap, not to infer safety.",
+    trend: "General lived campus evidence exists, but current first-year senior-junior prevalence remains unknown.",
+    confidence: "High for formal safeguard; low for general lived context; insufficient for ragging prevalence",
+    signal: {label:"Formal safeguard + lived campus context · ragging prevalence unresolved",tone:"insufficient",confidence:"Low for lived context; insufficient for prevalence",window:"2023–26 community discussion"},
+    sources: [
+      {kind:"student",label:"Reddit r/Kerala — Pariyaram/GMC Kannur student and graduate discussion (18 Aug 2023)",url:"https://www.reddit.com/r/Kerala/comments/15unpxg/to_all_mbbs_students_and_graduates/",year:2023},
+      {kind:"student",label:"Reddit r/kannur — GMC Kannur/Pariyaram department and campus discussion (Dec 2025–Jan 2026)",url:"https://www.reddit.com/r/kannur/comments/1pxltzt/looking_for_insights_on_govt_medical_college/",year:2026}
+    ]
+  },
+  "123": {
+    currentPicture: "SKIMS Medical College & Hospital Bemina publishes an anti-ragging policy and named cell contacts. A 2025 public counselling discussion adds firsthand-style campus/infrastructure context about the Bemina MBBS college and distinguishes it from SKIMS Soura, but it does not provide a ragging-specific account. Lived senior culture therefore remains unresolved.",
+    trend: "Current lived campus context exists, but senior-junior/ragging prevalence is still not reconstructed.",
+    confidence: "High for formal safeguards; low for lived campus context; insufficient for ragging prevalence",
+    signal: {label:"Formal safeguards + lived campus context · ragging prevalence unresolved",tone:"insufficient",confidence:"Low for lived context; insufficient for prevalence",window:"Jul 2025 community discussion"},
+    sources: [
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — SKIMS Bemina MBBS campus/infrastructure discussion (29 Jul 2025)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1mc5ew8/skims/",year:2025}
+    ]
+  },
+  "111": {
+    currentPicture: "The Himachal MBBS/BDS prospectus provides anti-ragging reporting routes for Pt. JLN GMC Chamba. A June 2025 community post adds current-ish student/campus context about academics and college life, but it is not ragging-specific; a separate July 2025 violence discussion is also not treated as ragging evidence.",
+    trend: "Some lived campus context is available, but current first-year senior-junior prevalence remains unresolved.",
+    confidence: "High for formal reporting framework; low for lived campus context; insufficient for ragging prevalence",
+    signal: {label:"Formal framework + lived campus context · ragging prevalence unresolved",tone:"insufficient",confidence:"Low for lived context; insufficient for prevalence",window:"Jun 2025 community discussion"},
+    sources: [
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — GMC Chamba campus/academics discussion (12 Jun 2025)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1l9pwmv/%E0%A4%AA%E0%A4%B9%E0%A4%A1_%E0%A4%95_%E0%A4%97%E0%A4%A6_%E0%A4%AE_college/",year:2025}
+    ]
+  },
+  "132": {
+    currentPicture: "The national anti-ragging complaints index lists a closed NMC complaint for Belagavi Institute of Medical Sciences in January 2024. A December 2025 local discussion contains a brief comment saying ragging is common at BIMS, but the context is a PG-department query and the commenter provides no detail. It is retained only as a low-confidence community lead, not evidence of MBBS-fresher prevalence.",
+    seniorJunior: "A low-detail local community comment raises a ragging concern, but it is not specific enough to reconstruct ordinary MBBS senior-junior routine.",
+    trend: "A formal 2024 complaint history plus a weak 2025 community concern signal exists; current undergraduate prevalence remains unresolved.",
+    confidence: "High for complaint-record existence; very low for current lived-ragging inference",
+    signal: {label:"Formal complaint history + weak community concern lead",tone:"insufficient",confidence:"Very low for current lived inference",window:"2024 formal record + Dec 2025 community lead"},
+    sources: [
+      {kind:"student",label:"Reddit r/Belagavi — BIMS discussion with brief ragging concern comment (Dec 2025)",url:"https://www.reddit.com/r/Belagavi/comments/1prcp5k/bimsbelagavi/",year:2025}
+    ]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V88_OFFICIAL_ONLY_FILL).forEach(([id,patch])=>{
+  const prior=JUNIOR_CULTURE[id]||{}; const ps=Array.isArray(prior.sources)?prior.sources:[]; const ns=Array.isArray(patch.sources)?patch.sources:[]; const m=new Map(); [...ps,...ns].forEach(s=>{if(s&&s.url)m.set(s.url,s)});
+  JUNIOR_CULTURE[id]={...prior,...patch,lastVerified:'27 Aug 2026',signal:{...(prior.signal||{}),...(patch.signal||{})},sources:[...m.values()]};
+});
+// Only Sagore Dutta has a college-specific residence-mode statement strong enough to upgrade a First-90 dimension in this pass.
+if(JUNIOR_FIRST90['436']){
+  const s=JUNIOR_CULTURE['436'].sources||[];
+  JUNIOR_FIRST90['436']={...JUNIOR_FIRST90['436'],hostellerVsDayScholar:"An Aug 2026 public discussion says day-scholars face negligible ragging at Sagore Dutta; the same thread does not quantify hosteller exposure. This is anonymous community evidence, not a representative survey.",sources:s,coverage:{...(JUNIOR_FIRST90['436'].coverage||{}),residenceMode:true},sourceNote:"V8.8 adds a fresh, college-specific day-scholar signal while leaving unsupported first-week/gender/opt-out timing unknown."};
+}
+JUNIOR_CULTURE_META.updated='27 Aug 2026';
+
+// V8.8b prominent-college lived-evidence additions from the same targeted pass.
+const JUNIOR_CULTURE_V88B = {
+  "65": {
+    currentPicture: "ABVIMS/RML has current formal anti-ragging safeguards. A July 2026 public discussion includes a commenter who says they chose ABVIMS the previous year and describes the college as 'chill', with broad hostel access and a manageable academic environment. This is useful lived campus context but does not directly establish ragging prevalence.",
+    trend: "Fresh lived campus context is comparatively positive, but ragging-specific first-year evidence remains thin.",
+    confidence: "High for formal safeguards; low-to-moderate for lived campus context; insufficient for ragging prevalence",
+    signal: {label:"Formal safeguards + current positive lived campus context",tone:"insufficient",confidence:"Low-to-moderate for lived context; ragging prevalence unresolved",window:"Jul 2026 community discussion"},
+    sources: [{kind:"student",label:"Reddit r/indianmedschool — current ABVIMS student describes college/hostel experience (22 Jul 2026)",url:"https://www.reddit.com/r/indianmedschool/comments/1v38xv8/mamc_vs_abvims/",year:2026}]
+  },
+  "262": {
+    currentPicture: "AIIMS Jodhpur has current official anti-ragging safeguards, but public student/community evidence contains recurring concern signals. A detailed 2024 post relayed a friend's first-year experience as highly coercive, while July–August 2026 threads continue to ask about severe ragging and include a second-hand allegation of forced nudity/dancing. These are anonymous/second-hand reports rather than adjudicated findings, so the site records concern without converting them into a batch-wide prevalence claim.",
+    seniorJunior: "Multiple community reports allege a strong hierarchy; the most detailed material is second-hand and cannot establish how representative it is for the 2026 batch.",
+    trend: "Concern signals recur from 2024 into 2026, but current institutional findings and representative first-year prevalence remain unresolved.",
+    confidence: "High for formal safeguards; moderate for recurrence of public concern signals; low for specific allegation verification",
+    signal: {label:"Recurring community concern signals · prevalence unresolved",tone:"concern",confidence:"Moderate for concern-signal recurrence; low for allegation verification",window:"2024–Aug 2026 community reports"},
+    sources: [
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — relayed AIIMS Jodhpur first-year ragging experience (14 Oct 2024)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1g3fk1m/my_reddit_friend_joined_aiims_jodhpur_last_year/",year:2024},
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — AIIMS Jodhpur current ragging query with second-hand allegation (3 Jul 2026)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1umir8s/aiims_jodhpur_doubt/",year:2026}
+    ]
+  },
+  "372": {
+    currentPicture: "AIIMS Rishikesh has formal safeguards and unusually specific current community discussion of first-year separation. In an August 2026 thread, a visitor said first-years are kept apart from seniors for the first few months/till freshers, with separate immediate-senior hostel arrangements, group movement and guards; other commenters nevertheless alleged that seniors find ways around the separation and that opting out can mean social exclusion. These are anonymous/visitor/community accounts, not institutional findings.",
+    groundRules: "A current community account describes administrative separation of first-years from seniors, escorted group movement and restricted interaction during the initial months; other anonymous comments allege informal senior contact still occurs.",
+    seniorJunior: "The current discussion suggests a tension between strong formal separation and informal senior access. One commenter alleges students who avoid ragging/interaction may be excluded from senior-controlled societies, but this is unverified.",
+    trend: "Fresh 2026 discussion suggests strong formal separation remains in place while informal interaction may still occur around it.",
+    confidence: "Moderate for existence of current separation practices; low for anonymous coercion/exclusion allegations",
+    signal: {label:"Strong first-year separation reported · informal contact still alleged",tone:"mixed",confidence:"Moderate for separation practices; low for coercion claims",window:"Aug 2026 community discussion",hostelRisk:"A visitor account says immediate seniors are housed separately from first-years during the initial period; informal contact is still alleged."},
+    sources: [{kind:"student",label:"Reddit r/MEDICOreTARDS — AIIMS Rishikesh first-year separation/ragging discussion (23–24 Aug 2026)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1vwgjhz/ragging_in_aiims_rishikesh/",year:2026}]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V88B).forEach(([id,patch])=>{
+  const prior=JUNIOR_CULTURE[id]||{}; const ps=Array.isArray(prior.sources)?prior.sources:[]; const ns=Array.isArray(patch.sources)?patch.sources:[]; const m=new Map(); [...ps,...ns].forEach(s=>{if(s&&s.url)m.set(s.url,s)});
+  JUNIOR_CULTURE[id]={...prior,...patch,lastVerified:'27 Aug 2026',signal:{...(prior.signal||{}),...(patch.signal||{})},sources:[...m.values()]};
+});
+if(JUNIOR_FIRST90['372']){
+  JUNIOR_FIRST90['372']={...JUNIOR_FIRST90['372'],firstWeeks:"An Aug 2026 community discussion says first-years are formally separated from seniors for the first few months/till freshers, move together to mess/classes and are escorted by guards. Other anonymous comments say informal senior access still occurs. This is low-to-moderate confidence community evidence.",hostellerVsDayScholar:"The same discussion says immediate seniors are housed separately from first-years during the initial period; it does not provide a reliable day-scholar comparison.",sources:JUNIOR_CULTURE['372'].sources||[],coverage:{...(JUNIOR_FIRST90['372'].coverage||{}),firstWeeks:true,residenceMode:true},sourceNote:"V8.8 adds current community evidence for formal first-year separation; coercion/exclusion claims remain unverified."};
+}
+
+// V8.9 — high-value lived-evidence fill for prominent official-only profiles.
+const JUNIOR_CULTURE_V89_LIVED_FILL = {
+  "66": {
+    currentPicture: "Dr. BSA Medical College Rohini has current formal anti-ragging safeguards and a fresh August 2026 public comparison thread in which commenters describe BSA as less toxic/less ragging than KGMU. This is anonymous community evidence rather than a representative survey, so it is used as a current lived signal, not as proof that ragging is absent.",
+    seniorJunior: "A current public comparison discussion characterizes BSA as comparatively less toxic and with less ragging, but the commenters do not provide a detailed first-week reconstruction.",
+    trend: "Current community signal is comparatively reassuring, but detailed first-year/hostel routine remains under-documented.",
+    confidence: "High for formal safeguards; low-to-moderate for current comparative lived signal; insufficient for prevalence",
+    signal: {label:"Current comparatively reassuring community signal · formal safeguards documented",tone:"reassuring",confidence:"Low-to-moderate for lived signal; insufficient for prevalence",window:"Aug 2026 community discussion"},
+    sources: [
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — KGMU vs BSA discussion; commenters describe BSA as less toxic/less ragging (6–17 Aug 2026)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1vh395f/kgmulucknow_vs_dr_bsadelhi_what_to_prefer_really/",year:2026}
+    ]
+  },
+  "189": {
+    currentPicture: "AIIMS Nagpur has a current Anti-Ragging Committee and multiple public lived/community signals. A 2026 experience write-up says the campus is free from ragging in the writer's experience and that senior interactions were pleasant/helpful. A 2025 discussion separately describes a strict anti-ragging separation policy, while August 2026 social posts also show rumours/jokes about severe ragging being actively disputed. These sources are not a representative survey, so the site records a reassuring lived signal alongside the uncertainty created by recurring rumours.",
+    groundRules: "A 2025 community discussion describes a very strict separation norm in which seniors should not initiate contact with juniors for roughly six months; this is community-reported policy context, not an independently verified operational rule.",
+    seniorJunior: "A 2026 experience write-up describes pleasant/helpful senior interactions and no serious ragging in the writer's experience. Other 2026 posts show rumours of severe ragging circulating, with users disputing them.",
+    positives: "Current formal committee structure is documented; a 2026 lived-experience write-up describes helpful seniors and no ragging in the writer's experience.",
+    trend: "Available lived evidence leans reassuring, but recurring online rumours mean the site does not convert this into a campus-wide 'no ragging' claim.",
+    confidence: "High for formal committee; moderate for reassuring lived signal; low for rumour-based counter-signals",
+    signal: {label:"Reassuring lived signal + strict anti-ragging separation reported",tone:"reassuring",confidence:"Moderate for lived signal; low for rumour counter-signals",window:"2025–Aug 2026"},
+    sources: [
+      {kind:"student",label:"Collegedunia Q&A — AIIMS Nagpur experience reports no ragging and helpful senior interactions",url:"https://collegedunia.com/qna/question/37214-how-was-your-experience-in-aiims-nagpur-so-far",year:2026},
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — AIIMS Raipur vs Nagpur thread; strict anti-ragging separation described and severe-ragging rumour disputed",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1lztiyi/aiims_raipur_vs_aiims_nagpur/",year:2025},
+      {kind:"student",label:"Reddit r/MEDICOreTARDS — Aug 2026 AIIMS Nagpur ragging-rumour discussion",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1vo4hgp/aiims_nagpur_is_very_toxic_too_much_ragging/",year:2026}
+    ]
+  },
+  "98": {
+    currentPicture: "BPS Government Medical College for Women has current formal anti-ragging contacts plus a detailed 2024 MBBS student review describing seniors as very supportive and explicitly reporting no ragging on campus. This is a single public student review rather than a prevalence survey, but it is materially stronger lived evidence than an official policy page alone.",
+    seniorJunior: "A 2024 MBBS review describes seniors as very supportive and reports no ragging on campus.",
+    positives: "The located MBBS student review describes supportive seniors and no ragging; formal helpline/nodal safeguards are also published.",
+    trend: "Available lived signal is reassuring, but based on one public review and should not be generalized beyond that evidence.",
+    confidence: "High for formal safeguards; moderate for single-review lived signal",
+    signal: {label:"Reassuring MBBS student review · supportive seniors reported",tone:"reassuring",confidence:"Moderate for lived signal",window:"May 2024 student review + current formal safeguards"},
+    sources: [
+      {kind:"student",label:"Collegedunia — BPSGMC MBBS review reports supportive seniors and no ragging campus",url:"https://collegedunia.com/college/57895-bps-govt-medical-college-for-women-sonepat/reviews/page-1",year:2024}
+    ]
+  },
+  "147": {
+    currentPicture: "Mandya Institute of Medical Sciences has a historical 2022 formal complaint record, but student reviews add more recent lived context. A 2024 MBBS review explicitly says there is no ragging in the hostel, while another anonymous 2024 MBBS review describes freshers being greeted unofficially in rooms by seniors and advises newcomers to settle with what seniors tell them. Those two accounts are not perfectly aligned, so the current signal is mixed-but-mostly-reassuring rather than a categorical conclusion.",
+    introCulture: "One anonymous 2024 MBBS review says newcomers are greeted unofficially in rooms by seniors and given substantial information, with wording suggesting juniors are expected to go along with the interaction. The review does not describe physical abuse.",
+    seniorJunior: "One 2024 review explicitly reports no hostel ragging; another describes structured unofficial room interactions with seniors. Both are public student reviews and neither is a representative survey.",
+    trend: "Recent student reviews are more reassuring than the older formal complaint history, but informal senior-room interaction may still exist.",
+    confidence: "High for 2022 complaint-record existence; moderate for 2024 lived reviews; insufficient for batch-wide prevalence",
+    signal: {label:"Recent reviews largely reassuring · informal senior-room interaction also described",tone:"mixed",confidence:"Moderate for student-review signal",window:"2022 formal record + 2024 student reviews"},
+    sources: [
+      {kind:"student",label:"Collegedunia — Mandya MIMS MBBS review says no ragging in hostel",url:"https://collegedunia.com/college/10712-mandya-institute-of-medical-sciencesautonomous-mims-mandya/reviews",year:2024},
+      {kind:"student",label:"Shiksha — Mandya MIMS anonymous MBBS review describes unofficial senior room interaction",url:"https://www.shiksha.com/college/mandya-institute-of-medical-sciences-mandya-63031/reviews",year:2024}
+    ]
+  },
+  "54": {
+    currentPicture: "CIMS Bilaspur publishes hostel rules with an explicit anti-ragging policy. A January 2025 MBBS student review adds direct lived context: the reviewer describes seniors as very supportive and explicitly says there is no ragging culture in the college. This remains one public review, so it is a reassuring signal rather than a campus-wide guarantee.",
+    seniorJunior: "A 2025 MBBS review describes seniors as very supportive and reports no ragging culture in the college.",
+    positives: "Formal hostel anti-ragging rules are paired with a direct student review describing supportive seniors.",
+    trend: "Available lived signal is reassuring but limited to a small number of public reviews.",
+    confidence: "High for formal hostel policy; moderate for single-review lived signal",
+    signal: {label:"Reassuring MBBS review · supportive seniors/no ragging culture reported",tone:"reassuring",confidence:"Moderate for lived signal",window:"Jan 2025 review + current hostel policy"},
+    sources: [
+      {kind:"student",label:"Collegedunia — CIMS Bilaspur MBBS review reports supportive seniors and no ragging culture",url:"https://collegedunia.com/college/10339-chhattisgarh-institute-of-medical-sciences-cims-bilaspur/reviews/page-1",year:2025}
+    ]
+  },
+  "109": {
+    currentPicture: "GMC Nahan has a documented November–December 2024 MBBS ragging case with institutional findings and substantial penalties. Seven second-year students were found involved in ragging juniors, including making juniors stand for extended periods at private accommodation, abusive language and forced academic assignments; reports state no physical harm was found. The college suspended the students for three months, fined each ₹75,000 and imposed additional activity bans. This is a substantiated historical incident, not proof of current 2026 prevalence.",
+    seniorJunior: "A 2024 institutional inquiry found seven second-year MBBS students had subjected juniors to coercive standing, abusive language and forced assignments at private accommodation.",
+    incidents: [{year:2024,label:"Seven second-year MBBS students disciplined after institutional ragging inquiry",detail:"After an anonymous complaint dated 26 Nov 2024, the institutional inquiry found seven students involved in ragging juniors. Reported conduct included prolonged standing, abusive language and forced academic assignments; no physical harm was found. Each was suspended for three months and fined ₹75,000, with additional activity restrictions."}],
+    officialResponse: "The anti-ragging committee investigated, suspended seven students for three months, fined each ₹75,000 and barred them from institutional cultural/sports representation for one year.",
+    trend: "The 2024 case establishes that ragging occurred and triggered enforcement. It does not establish whether the pattern persisted into the 2026 batch.",
+    confidence: "High for 2024 incident and disciplinary response; insufficient for current prevalence",
+    signal: {label:"Substantiated 2024 ragging case with strong disciplinary response · current prevalence unknown",tone:"concern",confidence:"High for historical incident; insufficient for 2026 prevalence",window:"Nov–Dec 2024 incident; current prevalence unresolved"},
+    sources: [
+      {kind:"news",label:"Hindustan Times — seven MBBS students suspended/fined after Nahan ragging inquiry",url:"https://www.hindustantimes.com/cities/chandigarh-news/7-mbbs-students-suspended-for-ragging-in-nahan-medical-college-101733424620907.html",year:2024},
+      {kind:"news",label:"Indian Express — Nahan MBBS students suspended for ragging",url:"https://indianexpress.com/article/cities/chandigarh/mbbs-students-himachal-pradesh-government-medical-college-suspended-ragging-9708086/lite/",year:2024}
+    ]
+  },
+  "73": {
+    currentPicture: "Goa Medical College has clear statutory/official anti-ragging requirements. Current student reviews provide lived campus/hostel context and describe faculty/mentors and seniors as helpful, but the located current reviews do not make a specific ragging-prevalence claim. A serious 2010 first-year hostel ragging case remains relevant historical context only and is not used as a proxy for 2026.",
+    seniorJunior: "Current student reviews describe seniors/staff as helpful in general campus life, but do not provide enough detail to characterize present-day fresher ragging routines.",
+    incidents: [{year:2010,label:"Nine senior MBBS students arrested/suspended after first-year hostel ragging incident",detail:"Goa Medical College's anti-ragging committee investigated an August 2010 hostel episode in which seniors were caught ragging first-year students; authorities suspended students from the hostel and police made arrests. This is historical context only."}],
+    trend: "Current lived campus reviews are broadly positive but ragging-specific evidence remains thin; the serious 2010 case is too old to infer current prevalence.",
+    confidence: "High for formal safeguards and historical incident; low-to-moderate for general current lived context; insufficient for current ragging prevalence",
+    signal: {label:"Current lived campus context available · ragging-specific prevalence unresolved",tone:"insufficient",confidence:"Low-to-moderate for lived context; high for historical incident",window:"2025–26 student reviews + 2010 historical case"},
+    sources: [
+      {kind:"student",label:"Shiksha — verified Goa Medical College MBBS reviews describing current hostel/campus and helpful seniors/staff",url:"https://www.shiksha.com/college/goa-medical-college-panaji-goa-other-62875/reviews",year:2026},
+      {kind:"news",label:"Times of India — 2010 Goa Medical College anti-ragging inquiry after first-year hostel incident",url:"https://timesofindia.indiatimes.com/city/goa/gmcs-anti-ragging-committee-submits-inquiry-report/articleshow/6477911.cms",year:2010}
+    ]
+  },
+  "41": {
+    currentPicture: "Darbhanga Medical College now publishes a refreshed August 2026 anti-ragging page with named committee/squad contacts and reporting routes. Lived public evidence remains weak on ragging specifically, but a 2025 student-community post describes difficult hostel conditions and a large student protest over attendance, providing current campus context. A Government of India parliamentary annexure also lists a 2020–21 ragging complaint at Darbhanga Medical College described as 'ragging by seniors'. These are kept separate: one is current campus context, one is historical formal complaint evidence.",
+    seniorJunior: "Current ragging-specific senior-junior routine was not reconstructed. A 2020–21 government complaint record establishes historical senior-ragging reporting, while a 2025 community post provides non-ragging-specific campus/hostel context.",
+    incidents: [{year:2020,label:"Government of India annexure lists ragging-by-seniors complaint",detail:"A Lok Sabha annexure on ragging cases for 2020–21 lists Darbhanga Medical College with a complaint described as 'Ragging by Seniors'. The public annexure does not establish current prevalence."}],
+    officialResponse: "The college's Aug 2026 anti-ragging page lists committee/squad members, local reporting routes and the national helpline.",
+    trend: "Formal reporting architecture is current; lived ragging prevalence remains insufficiently documented.",
+    confidence: "High for current formal safeguards and historical complaint record; low for current lived ragging inference",
+    signal: {label:"Current formal safeguards + historical complaint record · lived prevalence unresolved",tone:"insufficient",confidence:"High for formal/historical records; low for current lived inference",window:"2026 formal system + 2020–21 complaint + 2025 campus context"},
+    sources: [
+      {kind:"official",label:"Darbhanga Medical College — updated Anti-Ragging page and committee/squad contacts",url:"https://dmc.edu.in/academics/anti-ragging/",year:2026},
+      {kind:"official",label:"Lok Sabha annexure — 2020–21 ragging cases lists Darbhanga Medical College complaint as ragging by seniors",url:"https://sansad.in/getFile/loksabhaquestions/annex/176/AU1961.pdf?source=pqals",year:2021},
+      {kind:"student",label:"Reddit r/genzmedschool — DMCH student protest/hostel-condition campus context",url:"https://www.reddit.com/r/genzmedschool/comments/1ntd6wg",year:2025}
+    ]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V89_LIVED_FILL).forEach(([id,patch])=>{
+  const prior=JUNIOR_CULTURE[id]||{};
+  const ps=Array.isArray(prior.sources)?prior.sources:[];
+  const ns=Array.isArray(patch.sources)?patch.sources:[];
+  const m=new Map(); [...ps,...ns].forEach(s=>{if(s&&s.url)m.set(s.url,s)});
+  JUNIOR_CULTURE[id]={...prior,...patch,lastVerified:'27 Aug 2026',signal:{...(prior.signal||{}),...(patch.signal||{})},sources:[...m.values()]};
+});
+JUNIOR_CULTURE_META.updated='27 Aug 2026';
+JUNIOR_CULTURE_META.scope='200 researched profiles: national baseline + regional retrospectives + demand-ranked expansion through 200, followed by targeted evidence-gap repair';
+
+// V8.9b — additional lived campus context for high-priority official-only profiles.
+const JUNIOR_CULTURE_V89B_LIVED_CONTEXT = {
+  "107": {
+    currentPicture: "Dr. Radhakrishnan GMC Hamirpur has formal anti-ragging safeguards and multiple verified MBBS student reviews from 2024–26 that describe current campus, faculty, hostel and student-life conditions. The located reviews do not make a ragging-specific claim, so they reduce the lived-evidence gap without implying safety.",
+    trend: "Current lived campus context is available through several verified MBBS reviews, but first-year senior-junior/ragging prevalence remains unresolved.",
+    confidence: "High for formal safeguards; moderate for current general lived campus context; insufficient for ragging prevalence",
+    signal: {label:"Current verified MBBS campus reviews available · ragging prevalence unresolved",tone:"insufficient",confidence:"Moderate for lived context; insufficient for prevalence",window:"2024–Mar 2026 student reviews"},
+    sources: [{kind:"student",label:"Shiksha — verified MBBS reviews of Dr. Radhakrishnan GMC Hamirpur (2024–26)",url:"https://www.shiksha.com/college/dr-radhakrishnan-government-medical-college-hamirpur-64059/reviews",year:2026}]
+  },
+  "138": {
+    currentPicture: "ESIC Medical College Bangalore has current formal anti-ragging safeguards and a substantial set of verified MBBS student reviews describing hostel, academics, campus life and faculty. The reviews located in this pass are not ragging-specific, so the site treats them as current lived campus context only.",
+    trend: "Lived undergraduate campus context is well represented in public verified reviews; current ragging-specific first-year routine remains unresolved.",
+    confidence: "High for formal safeguards; moderate for current lived campus context; insufficient for ragging prevalence",
+    signal: {label:"Multiple verified MBBS lived reviews · ragging-specific prevalence unresolved",tone:"insufficient",confidence:"Moderate for lived campus context",window:"2023–25 verified MBBS reviews"},
+    sources: [{kind:"student",label:"Shiksha — verified ESIC Medical College Bangalore MBBS student reviews",url:"https://www.shiksha.com/college/esic-medical-college-and-pgimsr-and-model-hospital-bangalore-62845/course-mbbs-bachelor-of-medicine-and-bachelor-of-surgery-351785",year:2025}]
+  },
+  "258": {
+    currentPicture: "ESIC Medical College Ludhiana is a very new MBBS programme with formal anti-ragging requirements. August 2026 public discussions provide current lived/counselling context: users describe the academic building as unfinished, classes within hospital premises and a limited social-life environment because the college is still developing. The posts do not establish a ragging pattern; one earlier discussion even noted that the first batch initially had no seniors. This is used only as programme-age/campus context.",
+    trend: "Because the programme is very new, a stable multi-batch senior culture has not yet formed. Current community discussion is dominated by infrastructure and social-life concerns rather than documented ragging routines.",
+    confidence: "High for programme age/formal safeguards; low-to-moderate for community campus context; insufficient for ragging prevalence",
+    signal: {label:"Very new programme · current campus/social-life context available",tone:"insufficient",confidence:"Low-to-moderate for lived context; insufficient for prevalence",window:"Aug 2026 community discussion"},
+    sources: [
+      {kind:"student",label:"Reddit r/indianmedschool — ESIC Ludhiana vs GMC Patiala current student/counselling discussion",url:"https://www.reddit.com/r/indianmedschool/comments/1vthc9i/esic_ludhiana_or_gmc_patiala/",year:2026},
+      {kind:"student",label:"Reddit r/ludhiana — ESIC Ludhiana current campus/infrastructure discussion",url:"https://www.reddit.com/r/ludhiana/comments/1vgxupb/anyone_from_esic_ludhiana/",year:2026}
+    ]
+  },
+  "271": {
+    currentPicture: "GMC Chittorgarh has formal/historical anti-ragging complaint context and a verified MBBS student review from the college's first batch describing current campus conditions, faculty and batch life. The review does not make a ragging-specific statement, so present-day senior-junior prevalence remains unknown.",
+    trend: "A direct MBBS review now provides lived campus context, but ragging-specific first-year evidence remains insufficient.",
+    confidence: "High for formal complaint record; moderate for general lived campus review; insufficient for ragging prevalence",
+    signal: {label:"Direct MBBS campus review available · ragging prevalence unresolved",tone:"insufficient",confidence:"Moderate for lived campus context",window:"2023 first-batch review + formal complaint context"},
+    sources: [{kind:"student",label:"Shiksha — verified GMC Chittorgarh MBBS first-batch review",url:"https://www.shiksha.com/college/government-medical-college-chittorgarh-210115/reviews",year:2023}]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V89B_LIVED_CONTEXT).forEach(([id,patch])=>{
+  const prior=JUNIOR_CULTURE[id]||{};
+  const ps=Array.isArray(prior.sources)?prior.sources:[];
+  const ns=Array.isArray(patch.sources)?patch.sources:[];
+  const m=new Map(); [...ps,...ns].forEach(s=>{if(s&&s.url)m.set(s.url,s)});
+  JUNIOR_CULTURE[id]={...prior,...patch,lastVerified:'27 Aug 2026',signal:{...(prior.signal||{}),...(patch.signal||{})},sources:[...m.values()]};
+});
+
+// V8.10 targeted lived-evidence fill — 27 Aug 2026.
+// Student/community context is not promoted into a ragging-prevalence claim unless the source actually supports it.
+const JUNIOR_CULTURE_V810_LIVED_FILL = {
+  "268": {
+    currentPicture: "Government Medical College Bharatpur now has both historical formal complaint records and a current MBBS lived account. A June 2025 anonymous MBBS review (batch of 2029) describes junior-senior interaction as good and seniors as very helpful. That is a reassuring current lived signal, but it remains one student account and does not erase the 2022–23 formal complaint history or establish batch-wide prevalence.",
+    positives: "A June 2025 MBBS review describes junior-senior interaction as good and seniors as very helpful.",
+    seniorJunior: "One current MBBS review describes helpful seniors and good junior-senior interaction; broader prevalence is still not established.",
+    trend: "Historical complaint records coexist with a more recent reassuring lived account; the evidence is mixed across time rather than contradictory within one batch.",
+    unknowns: "Current first-week routine, hostel-versus-day-scholar gradient, gender differences, opt-out consequences and batch-wide prevalence remain unresolved.",
+    confidence: "High for complaint-record existence · Moderate for one 2025 lived account · Insufficient for batch-wide prevalence",
+    signal: {label:"Historical formal complaints + reassuring 2025 MBBS senior-junior account",tone:"mixed",confidence:"High for complaint records; moderate for one lived account",window:"2022–Jun 2025",socialCoercion:"A 2025 MBBS review describes good junior-senior interaction and helpful seniors; no coercive routine is established from that account.",evidenceMix:"Historical official complaint index + one current MBBS lived review."},
+    sources:[{kind:"student",label:"Careers360 — GMC Bharatpur MBBS review: good junior-senior interaction, helpful seniors",url:"https://www.careers360.com/colleges/government-medical-college-bharatpur/reviews",year:2025}]
+  },
+  "160": {
+    currentPicture: "Government Medical College Kollam/Parippally has current formal safeguards plus a detailed MBBS student review describing hostel and campus life. The review is useful lived context, but it does not make a specific claim about ragging or senior-imposed fresher rules, so senior-junior prevalence remains unresolved.",
+    positives: "A current MBBS student review describes a functional hostel/campus environment and strong academics.",
+    seniorJunior: "Not reconstructed from the located lived review; it discusses campus and hostel life rather than senior-junior coercion.",
+    confidence: "High for formal/campus facts · Moderate for lived campus context · Insufficient for ragging prevalence",
+    signal:{label:"Current MBBS campus/hostel context added · senior-junior prevalence unresolved",tone:"insufficient",confidence:"Moderate lived context; insufficient prevalence evidence",window:"2024–Aug 2026",evidenceMix:"Official facilities/safeguards plus one MBBS student campus review."},
+    sources:[{kind:"student",label:"Zollege — GMC Kollam/Parippally MBBS student review",url:"https://zollege.in/college/218536-government-medical-college-paripally-gmc-kollam",year:2024}]
+  },
+  "325": {
+    currentPicture: "Mohan Kumaramangalam Medical College has formal anti-ragging machinery and a detailed 2024 third-year MBBS review describing hostel life and a strict first-year dress code. The review does not describe a senior-enforced ragging routine, so the dress-code point is treated as institutional/campus context rather than evidence of senior coercion.",
+    dressAppearance: "A 2024 third-year MBBS review says the first-year dress code is strict; the source does not attribute that rule to seniors.",
+    positives: "A detailed third-year MBBS review provides current hostel and first-year campus context.",
+    seniorJunior: "The located student review does not describe ordinary senior-junior coercion or ragging prevalence.",
+    confidence: "High for committee · Moderate for 2024 lived campus context · Insufficient for senior-junior prevalence",
+    signal:{label:"Formal safeguards + 2024 MBBS lived context; no senior-coercion pattern established",tone:"insufficient",confidence:"Moderate lived context; insufficient prevalence evidence",window:"2024–Aug 2026",grooming:"Strict first-year dress code reported by an MBBS student, but not attributed to seniors.",evidenceMix:"Official protection architecture + one detailed MBBS student review."},
+    sources:[{kind:"student",label:"Collegedunia — GMKMC Salem third-year MBBS review",url:"https://collegedunia.com/reviews/712002-dona-review-on-govt-mohan-kumaramangalam-medical-college-gmkmc-salem",year:2024}]
+  },
+  "247": {
+    currentPicture: "Sri Jagannath Medical College, Puri now has unusually direct lived evidence alongside its formal anti-ragging activity. Two 2024 MBBS reviews independently describe the campus as ragging-free; one says there was only one senior batch when the reviewer joined and reports guidance without ragging, while another calls it a genuinely ragging-free zone and notes single-room accommodation in first year. These are still student reviews, not an institutional prevalence audit, but they are stronger lived evidence than a generic positive campus review.",
+    positives: "Two separate 2024 MBBS reviews explicitly describe no ragging/ragging-free campus conditions and positive senior guidance.",
+    seniorJunior: "Two 2024 MBBS reviews describe supportive guidance/no ragging; broader current 2026 conditions still need fresh corroboration.",
+    movementCommonAreas: "No senior-imposed movement restriction is established by the located reviews.",
+    trend: "Reassuring lived reports from 2024 are consistent with the college's formal anti-ragging activity; fresh 2026 lived corroboration is still desirable.",
+    confidence: "High for formal safeguards · Moderate-high for two explicit 2024 MBBS lived reports · Moderate for current 2026 carry-forward",
+    signal:{label:"Two MBBS reviews explicitly report a ragging-free environment",tone:"reassuring",confidence:"Moderate-high for 2024 lived signal; current 2026 corroboration still needed",window:"2024–Aug 2026",hostelRisk:"One 2024 review says first-year students initially receive single rooms; no hostel-specific ragging is reported in the two located reviews.",socialCoercion:"Two student reviews explicitly describe no ragging and positive senior guidance.",evidenceMix:"Official anti-ragging activity + two independent MBBS student reviews."},
+    sources:[{kind:"student",label:"Collegedunia — SJMCH Puri MBBS reviews (2024)",url:"https://collegedunia.com/college/63228-sri-jagannath-medical-college-and-hospital-puri-puri/reviews",year:2024}]
+  },
+  "327": {
+    currentPicture: "Stanley Medical College now has current lived evidence in addition to its formal anti-ragging architecture and old disciplinary history. A November 2024 MBBS review describes the seniors-juniors bond as one of the best parts of college and says seniors help with exam preparation. This is a reassuring current lived signal, but the severe 2003 ragging case remains historical context rather than being erased or projected forward.",
+    positives: "A 2024 MBBS student review describes a strong senior-junior bond and seniors helping juniors prepare for exams.",
+    seniorJunior: "A 2024 MBBS review describes a very positive senior-junior bond; batch-wide 2026 prevalence is not established from one review.",
+    incidents:[{year:2003,label:"Severe hostel ragging case and suspensions",detail:"A later High Court judgment records severe ragging complaints involving first-year hostel students and suspension proceedings. This is historical context only and is not used as a proxy for current culture."}],
+    trend: "Historical severe incidents were followed by formal prevention measures; a 2024 lived account is reassuring, but current 2026 corroboration remains limited.",
+    confidence: "High for formal/historical record · Moderate for one 2024 lived account · Insufficient for batch-wide 2026 prevalence",
+    signal:{label:"Current positive senior-junior account + strong formal controls; historical severe case kept separate",tone:"mixed",confidence:"Moderate current lived signal; high historical/formal evidence",window:"2003 historical + 2024 current lived",socialCoercion:"One 2024 MBBS review describes supportive senior-junior bonding rather than coercion.",evidenceMix:"Official squad + historical court/news record + current MBBS student review."},
+    sources:[
+      {kind:"student",label:"Collegedunia — Stanley MBBS review: positive senior-junior bond",url:"https://collegedunia.com/college/11080-stanley-medical-college-chennai/reviews",year:2024},
+      {kind:"news",label:"Times of India — Stanley student guardians / historical anti-ragging reform",url:"https://timesofindia.indiatimes.com/city/chennai/student-guardians-to-curb-ragging-in-smc/articleshow/4846614.cms",year:2009},
+      {kind:"official",label:"Madras High Court record — 2003 Stanley ragging proceedings",url:"https://indiankanoon.org/doc/143711154/",year:2004}
+    ]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V810_LIVED_FILL).forEach(([id, patch]) => {
+  const prior = JUNIOR_CULTURE[id] || {};
+  const byUrl = new Map();
+  [...(Array.isArray(prior.sources)?prior.sources:[]), ...(Array.isArray(patch.sources)?patch.sources:[])].forEach(s=>{ if(s&&s.url) byUrl.set(s.url,s); });
+  JUNIOR_CULTURE[id] = {...prior, ...patch, lastVerified:'27 Aug 2026', signal:{...(prior.signal||{}), ...(patch.signal||{})}, sources:[...byUrl.values()]};
+});
+
+// V8.11 targeted lived-evidence deepening — 27 Aug 2026.
+// Keeps historical incidents, current lived reports, and generic campus context distinct.
+const JUNIOR_CULTURE_V811_LIVED_DEEPENING = {
+  "154": {
+    currentPicture: "GMC Palakkad has current formal anti-ragging safeguards and a fresh August 2026 community account that explicitly says the college has 'no ragging issues' and describes faculty as chill. A reply in the same thread disagrees with the broader positive characterization, so this is treated as a reassuring but low-confidence lived signal rather than a campus-wide conclusion.",
+    positives: "An Aug 2026 community comment explicitly reports no ragging issues at Palakkad.",
+    seniorJunior: "A fresh Aug 2026 community account says there are no ragging issues; one reply disputes the college's broader quality assessment but does not provide a specific counter-description of ragging.",
+    trend: "Current lived evidence is more reassuring than the previous evidence gap, but remains thin and anonymous.",
+    confidence: "High for formal safeguards · Low-to-moderate for one current community account · Insufficient for batch-wide prevalence",
+    signal: {label:"Fresh 2026 community account reports no ragging issues · limited corroboration",tone:"reassuring",confidence:"Low-to-moderate for lived signal",window:"Aug 2026",socialCoercion:"One current community account explicitly says no ragging issues; broader batch prevalence is not established.",evidenceMix:"Current official safeguards + one fresh community account."},
+    sources:[{kind:"student",label:"Reddit r/Coconaad — Aug 2026 Palakkad comment reports 'no ragging issues'",url:"https://www.reddit.com/r/Coconaad/comments/1vnwqbv/hows_the_quality_of_education_and_so_on_in_newer/",year:2026}]
+  },
+  "261": {
+    currentPicture: "Guru Gobind Singh Medical College, Faridkot has a current anti-ragging helpline plus a direct MBBS student review describing seniors as very supportive and explicitly saying there is 'no concept of ragging' in the college. This is a strong reassuring lived signal for that reviewer, but it is still one public account rather than a representative survey.",
+    positives: "An MBBS student review describes seniors as very supportive and explicitly reports no ragging culture.",
+    seniorJunior: "One enrolled MBBS reviewer describes seniors as supportive and reports no concept of ragging in the college.",
+    trend: "Available lived evidence is reassuring, but fresh multi-student corroboration would strengthen confidence.",
+    confidence: "High for formal helpline · Moderate for direct MBBS lived account · Insufficient for batch-wide prevalence",
+    signal:{label:"MBBS review reports supportive seniors and no ragging culture",tone:"reassuring",confidence:"Moderate for lived signal",window:"2024–Aug 2026",socialCoercion:"One MBBS reviewer explicitly reports no ragging culture and supportive seniors.",evidenceMix:"Official anti-ragging helpline + direct MBBS student review."},
+    sources:[{kind:"student",label:"Zollege — GGS Faridkot MBBS review reports supportive seniors/no ragging",url:"https://zollege.in/college/217197-guru-gobind-singh-medical-college-and-hospital-ggsmch-faridkot/cutoff",year:2024}]
+  },
+  "250": {
+    currentPicture: "VIMSAR Burla now has both repeated formal ragging history and a more recent first-year lived signal. A 2025 first-year thread asking about hostel/ragging received a 2026 reply saying 'Nothing much as of now'. Separately, a 2021 case involved penalties against 18 fourth-year MBBS students for ragging juniors, and a 2019 inquiry documented additional complaint history. The current signal is therefore mixed across time: substantial historical concern, but one recent fresher-era response is comparatively reassuring.",
+    seniorJunior: "Historical records show substantiated/disciplinary ragging concerns. A reply to a first-year VIMSAR thread in Aug 2026 says there is 'nothing much as of now' regarding ragging, providing a limited current counter-signal.",
+    incidents:[{year:2021,label:"18 fourth-year MBBS students penalized for ragging juniors",detail:"VIMSAR's anti-ragging cell imposed penalties on 18 fourth-year students on ragging charges involving juniors."},{year:2018,label:"23 UG students debarred after ragging complaints",detail:"A 2019 New Indian Express report notes that 23 UG students had been debarred in 2018 after first-year students and parents complained to the anti-ragging cell."}],
+    trend: "Repeated historical incidents/actions coexist with one 2026 community reply suggesting limited current ragging. Current batch-wide prevalence remains unresolved.",
+    confidence: "High for historical disciplinary record · Low-to-moderate for one 2026 lived reply · Insufficient for batch-wide current prevalence",
+    signal:{label:"Strong historical concern + limited 2026 'nothing much as of now' fresher signal",tone:"mixed",confidence:"High historical; low-to-moderate current lived signal",window:"2018–Aug 2026",socialCoercion:"One Aug 2026 response to a first-year thread says 'nothing much as of now'; this does not erase older disciplinary history.",evidenceMix:"Formal/news incident history + one current first-year community thread."},
+    sources:[
+      {kind:"student",label:"Reddit — VIMSAR first-year thread; Aug 2026 reply says 'Nothing much as of now' on ragging",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1nla279/help_a_new_mbbs_student_at_vimsar_burla_firstyear/",year:2026},
+      {kind:"news",label:"OTV — 18 VIMSAR MBBS students fined for ragging juniors",url:"https://www.youtube.com/watch?v=ZdctNR4ehAk",year:2021},
+      {kind:"news",label:"New Indian Express — VIMSAR inquiry and earlier ragging action history",url:"https://www.newindianexpress.com/amp/story/states/odisha/2019/Sep/05/vimsar-ragging-a-case-of-brawl-between-two-groups-2029670.html",year:2019}
+    ]
+  },
+  "329": {
+    currentPicture: "Theni Government Medical College has current anti-ragging committee/squad controls and a documented 2019 first-year hostel ragging case. Police booked eight third-year students after a first-year student alleged repeated ragging in his hostel room; reports say the dean lodged a complaint and the college internal council considered further action. This is strong historical incident evidence, but it does not establish 2026 prevalence.",
+    seniorJunior: "A documented 2019 case involved a first-year student alleging repeated hostel-room ragging by eight third-year students. Current routine senior-junior culture remains insufficiently reconstructed.",
+    incidents:[{year:2019,label:"Eight students booked after first-year hostel ragging complaint",detail:"Police booked eight students after a first-year MBBS student alleged repeated ragging in his hostel room; the dean lodged a complaint and the college internal council considered action."}],
+    trend: "A substantiated historical complaint/enforcement record is now visible alongside current formal controls; current prevalence remains unknown.",
+    confidence: "High for current formal controls and 2019 incident record · Insufficient for 2026 prevalence",
+    signal:{label:"Current controls + documented 2019 first-year hostel ragging case · current prevalence unknown",tone:"mixed",confidence:"High historical/formal; insufficient current prevalence",window:"2019–Aug 2026",hostelRisk:"The 2019 complaint concerned repeated hostel-room ragging; no current hostel-vs-day-scholar gradient is established.",physicalSafety:"The 2019 complaint alleged coercive hostel-room ragging; this is not generalized to current batches.",evidenceMix:"Current official controls + historical news/police incident record."},
+    sources:[{kind:"news",label:"DT Next — eight medicos booked in Theni first-year hostel ragging case",url:"https://www.dtnext.in/tamilnadu/2019/08/27/8-medicos-booked-for-ragging",year:2019}]
+  },
+  "257": {
+    currentPicture: "AIMS Mohali now has current lived evidence in addition to its official Mentorship and Anti-Ragging framework. In an Aug 2026 college-comparison thread, a commenter describes AIMS Mohali as a 'No ragging college' with open senior-junior interaction and no cult-like hierarchy. This is anonymous community evidence, but it directly addresses the senior-junior question and is therefore more informative than generic campus praise.",
+    positives: "A current Aug 2026 community account explicitly describes no ragging and open senior-junior interaction.",
+    seniorJunior: "One current college-specific account says senior-junior interaction is open and there is no ragging/cult-like hierarchy.",
+    trend: "The current lived signal is reassuring but rests on limited anonymous community evidence.",
+    confidence: "High for formal framework · Moderate for one current college-specific community account · Insufficient for batch-wide prevalence",
+    signal:{label:"Current community account reports no ragging and open senior-junior interaction",tone:"reassuring",confidence:"Moderate for lived signal",window:"Aug 2026",socialCoercion:"One Aug 2026 college-specific account reports open interaction and no cult-like senior-junior hierarchy.",evidenceMix:"Official anti-ragging framework + fresh community lived account."},
+    sources:[{kind:"student",label:"Reddit — Aug 2026 AIMS Mohali account reports no ragging/open senior-junior interaction",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1voz5v9/aims_mohali_or_gmc_amritsar/",year:2026}]
+  },
+  "300": {
+    currentPicture: "Government Dharmapuri Medical College has a current anti-ragging committee and recent MBBS student reviews describing first-year strictness, campus restrictions and general college life. The located reviews do not directly establish ragging prevalence or a senior-enforced rule system, so they count as lived campus context rather than reassurance.",
+    introCulture: "A 2024 MBBS reviewer says first year is very strict and another describes substantial campus restrictions; neither source attributes those restrictions to seniors.",
+    seniorJunior: "Current reviews provide student-life context but do not directly characterize routine senior-junior coercion.",
+    confidence: "High for formal safeguards · Moderate for current MBBS lived context · Insufficient for ragging prevalence",
+    signal:{label:"Current MBBS lived context added · ragging-specific prevalence unresolved",tone:"insufficient",confidence:"Moderate lived context; insufficient prevalence evidence",window:"2024–Aug 2026",evidenceMix:"Official anti-ragging committee + current MBBS student reviews."},
+    sources:[{kind:"student",label:"Collegedunia — Government Dharmapuri Medical College MBBS reviews",url:"https://collegedunia.com/college/10456-government-dharmapuri-medical-college-dharmapuri/reviews",year:2024}]
+  },
+  "320": {
+    currentPicture: "KAP Viswanatham Government Medical College now has direct first-year MBBS hostel evidence. A February 2025 first-year review says the first-year hostel is separate from seniors and describes routine hostel/campus life positively. That supports a residence-separation safeguard, but the review does not directly quantify ragging or coercive senior interaction.",
+    positives: "A first-year MBBS review documents separate first-year accommodation from seniors.",
+    seniorJunior: "Direct senior-junior coercion is not described; the review does establish physical hostel separation for first-years.",
+    trend: "Current residence-separation evidence improves the First-90 picture, while ragging-specific prevalence remains unresolved.",
+    confidence: "Moderate-high for first-year hostel separation · Insufficient for ragging prevalence",
+    signal:{label:"First-year hostel separated from seniors · ragging prevalence still unresolved",tone:"insufficient",confidence:"Moderate-high for residence separation",window:"Feb 2025–Aug 2026",hostelRisk:"A first-year MBBS reviewer reports a separate first-year hostel from seniors.",evidenceMix:"Direct first-year MBBS hostel review + existing formal context."},
+    sources:[{kind:"student",label:"Zollege — KAP Trichy first-year MBBS review reports separate first-year hostel",url:"https://zollege.in/reviews/163939-s-m-prasanna-review-on-kap-viswanatham-government-medical-college-tiruchirappalli",year:2025}]
+  },
+  "266": {
+    currentPicture: "GMC Alwar has current formal anti-ragging evidence plus a 2025 verified MBBS review describing day-to-day campus, mess, facilities and peer life. The review is useful lived context but does not discuss ragging or senior-junior coercion, so prevalence remains unresolved.",
+    seniorJunior: "Not reconstructed from the located verified MBBS review; it discusses campus life rather than senior-junior coercion.",
+    confidence: "High for formal safeguards · Moderate for verified MBBS campus context · Insufficient for ragging prevalence",
+    signal:{label:"Verified MBBS campus context added · senior-junior prevalence unresolved",tone:"insufficient",confidence:"Moderate lived context; insufficient prevalence evidence",window:"2025–Aug 2026",evidenceMix:"Official safeguards + verified MBBS campus review."},
+    sources:[{kind:"student",label:"Shiksha — GMC Alwar verified MBBS review (batch of 2028)",url:"https://www.shiksha.com/college/government-medical-college-alwar-214007/reviews",year:2025}]
+  },
+  "331": {
+    currentPicture: "Thoothukudi Medical College now has current MBBS lived hostel/campus context in addition to formal controls. A verified MBBS review describes the boys' hostel, student-run mess and supportive faculty, but does not make a ragging-specific or senior-junior claim. It therefore improves lived-context coverage without being converted into a safety signal.",
+    seniorJunior: "The located verified MBBS review does not characterize senior-junior coercion or ragging prevalence.",
+    confidence: "High for formal safeguards · Moderate for verified MBBS hostel/campus context · Insufficient for ragging prevalence",
+    signal:{label:"Verified MBBS hostel/campus context added · ragging-specific prevalence unresolved",tone:"insufficient",confidence:"Moderate lived context; insufficient prevalence evidence",window:"2025–Aug 2026",evidenceMix:"Official controls + verified MBBS hostel/campus review."},
+    sources:[{kind:"student",label:"Shiksha — Thoothukudi Medical College verified MBBS review",url:"https://www.shiksha.com/college/thoothukudi-medical-college-thoothukudi-63175/reviews",year:2025}]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V811_LIVED_DEEPENING).forEach(([id, patch]) => {
+  const prior = JUNIOR_CULTURE[id] || {};
+  const byUrl = new Map();
+  [...(Array.isArray(prior.sources)?prior.sources:[]), ...(Array.isArray(patch.sources)?patch.sources:[])].forEach(s=>{ if(s&&s.url) byUrl.set(s.url,s); });
+  JUNIOR_CULTURE[id] = {...prior, ...patch, lastVerified:'27 Aug 2026', signal:{...(prior.signal||{}), ...(patch.signal||{})}, sources:[...byUrl.values()]};
+});
+
+// V8.11 First-90 additions: only fields directly supported by the located source are marked covered.
+if (JUNIOR_FIRST90['320']) {
+  const src = JUNIOR_CULTURE['320']?.sources || [];
+  JUNIOR_FIRST90['320'] = {...JUNIOR_FIRST90['320'],hostellerVsDayScholar:"A Feb 2025 first-year MBBS review says first-year hostel accommodation is separate from seniors. This supports physical residence separation, not a quantified ragging-risk estimate.",sources:src,coverage:{...(JUNIOR_FIRST90['320'].coverage||{}),residenceMode:true},sourceNote:"V8.11 adds direct first-year hostel separation evidence; first-week, gender, opt-out and after-freshers timing remain unsupported."};
+}
+
+// V8.12 lived-evidence + First-90 reconstruction — 27 Aug 2026.
+// Adds direct MBBS/fresher accounts and keeps supportive-senior signals separate from ragging-specific claims.
+const JUNIOR_CULTURE_V812_FIRST90_DEEPENING = {
+  "51": {
+    currentPicture:"GMCH Chandigarh now has recent MBBS lived evidence in addition to its formal anti-ragging framework. A March 2025 MBBS review says ragging is 'minimalistic in actuality' and describes seniors as cooperative and supportive. This is a useful current lived signal, but the college also has serious historical ragging reporting from 2007, so the profile remains time-layered rather than simply reassuring.",
+    positives:"A 2025 MBBS review describes seniors as cooperative/supportive and says ragging is minimalistic.",
+    seniorJunior:"A March 2025 enrolled MBBS reviewer describes supportive seniors and minimal ragging; this is one current account rather than batch-wide prevalence evidence.",
+    incidents:[{year:2007,label:"Historical first-year ragging allegations",detail:"Contemporary reporting described humiliating first-year 'interaction' and alleged coercive acts. This is historical context only and is not projected onto current batches."}],
+    trend:"Severe historical reporting coexists with a much more reassuring 2025 MBBS account and current formal safeguards.",
+    confidence:"High for formal safeguards/historical reporting · Moderate for one recent MBBS lived account",
+    signal:{label:"2025 MBBS account: supportive seniors + minimal ragging; historical severe reporting kept separate",tone:"mixed",confidence:"Moderate current lived signal",window:"2007 historical + 2025–26 current",socialCoercion:"One recent MBBS reviewer says ragging is minimalistic and seniors supportive; older reports were substantially more concerning.",evidenceMix:"Current official anti-ragging framework + verified/review-platform MBBS account + historical news."},
+    sources:[
+      {kind:"student",label:"Collegedunia — GMCH Chandigarh MBBS review: minimal ragging/supportive seniors",url:"https://collegedunia.com/college/10471-government-medical-college-and-hospital-gmch-chandigarh/reviews/page-1",year:2025},
+      {kind:"news",label:"Hindustan Times — historical GMCH Chandigarh ragging report",url:"https://www.hindustantimes.com/chandigarh/ragging-drives-medical-student-to-suicide/story-AjvW8wJvv7iqx8OP0RkVGJ.html",year:2007}
+    ]
+  },
+  "122": {
+    currentPicture:"Government Medical College Srinagar now has both formal anti-ragging machinery and direct MBBS lived evidence. A January 2025 MBBS reviewer explicitly says there is no ragging or indiscipline in the college. A separate August 2026 hostel discussion shows first-year accommodation can be delayed, with some students reporting no college hostel for roughly a year. These support a reassuring lived signal plus a residence-mode fact, not a guarantee for every batch.",
+    positives:"A 2025 MBBS reviewer explicitly reports no ragging; current hostel discussion provides first-year accommodation context.",
+    seniorJunior:"One enrolled MBBS reviewer explicitly reports no ragging or indiscipline; broader 2026 corroboration remains limited.",
+    trend:"Current lived evidence is reassuring; the strongest remaining uncertainty is first-year residence allocation rather than a documented senior-coercion pattern.",
+    confidence:"High for formal safeguards · Moderate for direct MBBS lived account and 2026 hostel context",
+    signal:{label:"Direct MBBS review reports no ragging + current first-year hostel context",tone:"reassuring",confidence:"Moderate lived signal",window:"2025–Aug 2026",hostelRisk:"Aug 2026 discussion suggests some first-years may wait around a year for college-hostel allotment, shifting early residence exposure off-campus for those students.",socialCoercion:"One 2025 MBBS reviewer explicitly reports no ragging.",evidenceMix:"Official anti-ragging squad + MBBS review + current first-year hostel discussion."},
+    sources:[
+      {kind:"student",label:"Collegedunia — GMC Srinagar MBBS review reports no ragging",url:"https://collegedunia.com/college/10459-government-medical-college-srinagar/reviews",year:2025},
+      {kind:"student",label:"Reddit r/srinagar — Aug 2026 first-year hostel availability discussion",url:"https://www.reddit.com/r/srinagar/comments/1veh44j/hostel_in_gmc_srinagar_kashmir/",year:2026}
+    ]
+  },
+  "158": {
+    currentPicture:"Government Medical College Manjeri now has direct MBBS lived evidence in addition to formal safeguards. A 2024 enrolled MBBS review describes the environment as 'zero ragging' and seniors as lovable/helpful friends. This is a clearly reassuring lived account, while still being one public review rather than a representative survey.",
+    positives:"A 2024 MBBS review explicitly reports zero ragging and helpful/friendly seniors.",
+    seniorJunior:"One enrolled MBBS reviewer describes seniors as helpful friends and reports zero ragging.",
+    trend:"Available lived evidence is reassuring, but additional current-batch corroboration would increase confidence.",
+    confidence:"High for formal safeguards · Moderate for one direct MBBS lived account",
+    signal:{label:"MBBS review reports zero ragging and helpful seniors",tone:"reassuring",confidence:"Moderate lived signal",window:"2024–Aug 2026",socialCoercion:"One direct MBBS review explicitly reports zero ragging and helpful seniors.",evidenceMix:"Official safeguards + direct MBBS review."},
+    sources:[{kind:"student",label:"Collegedunia — GMC Manjeri MBBS review: no ragging/helpful seniors",url:"https://collegedunia.com/college/55336-government-medical-college-gmc-manjeri-malappuram/reviews/page-2",year:2024}]
+  },
+  "200": {
+    currentPicture:"GMC Chhatrapati Sambhajinagar/Aurangabad now has clearer lived evidence. A July 2026 counselling discussion says there is 'some ragging' at Aurangabad, while an older 2024 college discussion contains a much stronger anonymous allegation of extreme ragging, particularly around non-Maharashtra students living off-campus. Separately, another account praises the senior-junior bonding and refers to 'chhoti moti ragging'. These conflicting anonymous reports support a concern/mixed signal, not a precise prevalence estimate.",
+    seniorJunior:"Multiple community accounts acknowledge some form of ragging while disagreeing sharply on severity; some describe strong senior-junior bonding, while another alleges extreme treatment of non-local students.",
+    trend:"Recurring 2024–26 community references suggest ragging is not merely a theoretical issue, but severity and batch-wide prevalence remain unresolved.",
+    confidence:"Moderate for recurring community signal · Low for severity/prevalence because accounts conflict and are anonymous",
+    signal:{label:"Recurring community reports of some ragging; severity sharply disputed",tone:"concern",confidence:"Moderate for existence signal; low for severity estimate",window:"2024–Jul 2026",hostelRisk:"One anonymous 2024 account alleges severe treatment even in off-campus private rooms; this is unverified and not generalized.",socialCoercion:"Several accounts acknowledge some ragging, ranging from minor/bonding framing to allegations of extreme treatment.",evidenceMix:"Existing formal evidence + multiple community accounts with conflicting severity descriptions."},
+    sources:[
+      {kind:"student",label:"Reddit — Jul 2026 GMC Aurangabad vs Baramati discussion mentions some ragging",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1v3jj30/gmc_aurangabad_and_gmc_baramati/",year:2026},
+      {kind:"student",label:"Reddit r/Aurangabad — 2024 GMC Aurangabad review thread with conflicting ragging accounts",url:"https://www.reddit.com/r/Aurangabad/comments/1edkqjm",year:2024}
+    ]
+  },
+  "63": {
+    currentPicture:"NAMO Medical Education & Research Institute, Silvassa now has direct fresher-era lived evidence. A September 2025 first-day account from a self-identified NAMO student says seniors answered questions, gave survival tips, talked nicely and jokingly pretended it was 'ragging time'. This supports a friendly initial senior-contact signal for that day, but it does not establish the full first-year prevalence pattern.",
+    positives:"A self-identified first-year student described seniors as friendly, helpful and willing to give tips on the first day.",
+    seniorJunior:"A first-day 2025 account describes friendly senior contact and joking references to ragging rather than coercive interaction; later-year prevalence remains unresolved.",
+    trend:"The direct first-day account is reassuring for initial contact, but wider first-year evidence remains thin.",
+    confidence:"Moderate for one direct first-day account · Insufficient for full-year prevalence",
+    signal:{label:"Direct first-day account describes friendly/helpful seniors",tone:"reassuring",confidence:"Moderate for initial-contact signal",window:"Sep 2025–Aug 2026",socialCoercion:"Initial senior interaction was described as friendly/helpful in one first-day account; later first-year pattern is not established.",evidenceMix:"Formal safeguards + direct first-day student account."},
+    sources:[{kind:"student",label:"Reddit — NAMO student first-day account: friendly seniors/helpful tips",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1nnm2xs/",year:2025}]
+  },
+  "411": {
+    currentPicture:"S.N. Medical College Agra now has direct recent MBBS evidence showing an important mixed pattern: a December 2024 enrolled MBBS reviewer says seniors are supportive and good, but explicitly adds that ragging is present. A separate 2024 verified review says first-year boys were not being allotted the college boys' hostel because of poor building condition. That creates a useful First-90 residence-context signal without implying that off-campus residence eliminates senior contact.",
+    positives:"A 2024 MBBS reviewer describes seniors as supportive/good.",
+    seniorJunior:"The same enrolled MBBS review explicitly says ragging is present despite supportive seniors; this demonstrates that those two signals can coexist.",
+    trend:"Current lived evidence supports a mixed culture signal rather than either a clean reassurance or severe-prevalence estimate.",
+    confidence:"Moderate-high for direct enrolled MBBS review · Moderate for first-year hostel-allotment context",
+    signal:{label:"Supportive seniors reported, but ragging explicitly present",tone:"mixed",confidence:"Moderate-high for lived signal",window:"2024–Jun 2026",hostelRisk:"A 2024 verified MBBS review says first-year boys were not allotted the boys' hostel due to its condition; this changes residence exposure but does not establish a risk reduction.",socialCoercion:"One enrolled MBBS reviewer explicitly reports ragging while describing seniors as supportive.",evidenceMix:"Official safeguards + direct MBBS review + verified hostel context."},
+    sources:[
+      {kind:"student",label:"Collegedunia — SNMC Agra 2024 MBBS review: supportive seniors but ragging present",url:"https://collegedunia.com/reviews/884714-anonymous-review-on-sarojini-naidu-medical-college-snmc-agra",year:2024},
+      {kind:"student",label:"Shiksha — SNMC Agra verified MBBS hostel review: first-year boys not allotted hostel",url:"https://www.shiksha.com/college/sn-medical-college-agra-63115/infrastructure",year:2024}
+    ]
+  },
+  "113": {
+    currentPicture:"AIIMS Vijaypur/Jammu now has fresh lived campus evidence from a July–August 2026 thread in which a self-identified current student confirms the new campus has functioning labs, acceptable mess, good classrooms and limited off-campus social options. The thread does not answer ragging or senior-junior coercion, so this removes the 'rulebook-only' character of the profile without converting it into a safety signal.",
+    seniorJunior:"Not reconstructed from the located current-student campus discussion; the source is lived campus context rather than ragging-specific evidence.",
+    confidence:"High for formal safeguards · Moderate for current-student campus context · Insufficient for ragging prevalence",
+    signal:{label:"Current AIIMS Jammu student campus context added · senior-culture prevalence unresolved",tone:"insufficient",confidence:"Moderate lived context; insufficient prevalence evidence",window:"Jul–Aug 2026",evidenceMix:"Formal safeguards + current self-identified student campus discussion."},
+    sources:[{kind:"student",label:"Reddit — AIIMS Jammu current-student campus/labs/hostel-life discussion",url:"https://www.reddit.com/r/MBBSindia/comments/1v9n287/pros_and_cons_of_joining_aiims_jammu/",year:2026}]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V812_FIRST90_DEEPENING).forEach(([id, patch]) => {
+  const prior = JUNIOR_CULTURE[id] || {};
+  const byUrl = new Map();
+  [...(Array.isArray(prior.sources)?prior.sources:[]), ...(Array.isArray(patch.sources)?patch.sources:[])].forEach(s=>{ if(s&&s.url) byUrl.set(s.url,s); });
+  JUNIOR_CULTURE[id] = {...prior, ...patch, lastVerified:'27 Aug 2026', signal:{...(prior.signal||{}), ...(patch.signal||{})}, sources:[...byUrl.values()]};
+});
+
+// V8.12 First-90 additions — only directly supported residence/initial-contact facts are marked covered.
+if (JUNIOR_FIRST90['122']) {
+  JUNIOR_FIRST90['122'] = {...JUNIOR_FIRST90['122'],hostellerVsDayScholar:"An Aug 2026 GMC Srinagar hostel discussion says some first-year students may not receive a college-hostel room for roughly a year; those students use nearby private accommodation. This is a residence-allocation fact, not a ragging-risk estimate.",sources:JUNIOR_CULTURE['122']?.sources||[],coverage:{...(JUNIOR_FIRST90['122'].coverage||{}),residenceMode:true},sourceNote:"V8.12 adds current first-year residence-allocation evidence; senior-contact timing, gender differences, opt-out and after-freshers phases remain unsupported."};
+}
+if (JUNIOR_FIRST90['63']) {
+  JUNIOR_FIRST90['63'] = {...JUNIOR_FIRST90['63'],firstWeeks:"A self-identified NAMO student described first-day senior contact as friendly/helpful, with seniors giving tips and joking about ragging. This supports only the initial-contact field, not the later first-year pattern.",sources:JUNIOR_CULTURE['63']?.sources||[],coverage:{...(JUNIOR_FIRST90['63'].coverage||{}),firstWeeks:true},sourceNote:"V8.12 adds one direct first-day senior-contact account; later phases remain unsupported."};
+}
+if (JUNIOR_FIRST90['411']) {
+  JUNIOR_FIRST90['411'] = {...JUNIOR_FIRST90['411'],hostellerVsDayScholar:"A 2024 verified MBBS review says first-year boys were not allotted the college boys' hostel because of its condition. This establishes a first-year residence-mode difference, not a quantified culture-risk gradient.",sources:JUNIOR_CULTURE['411']?.sources||[],coverage:{...(JUNIOR_FIRST90['411'].coverage||{}),residenceMode:true},sourceNote:"V8.12 adds directly supported first-year boys' hostel-allotment context; other timing dimensions remain unsupported."};
+}
+
+// V8.13 First-90 reconstruction deepening — 27 Aug 2026.
+// Adds only directly supported lived/residence/timing facts; generic college reviews do not become ragging claims.
+const JUNIOR_CULTURE_V813_FIRST90 = {
+  "260": {
+    currentPicture:"GMC Patiala now has current 2026 first-year lived/residence evidence in addition to formal safeguards. Two July–August 2026 community threads describe first-year accommodation (boys generally double occupancy; girls often four-sharing/dorm initially, with one account saying first-year girls may spend roughly half the year in dorms before rooms) and no strict salwar-suit requirement. Ragging-specific discussion is mixed and mostly hearsay: one prospective-student thread cites ragging as a concern, while another reply says they guess it does not occur. This supports a mixed/uncertain culture signal, not a prevalence estimate.",
+    dressAppearance:"An Aug 2026 GMC Patiala hostel/dress-code discussion says there is no strict requirement for girls to wear salwar suits. This is one current community account, not an official dress policy.",
+    movementCommonAreas:"Current first-year hostel occupancy is partly reconstructed; no reliable restriction on movement/common areas was established.",
+    seniorJunior:"Current community discussion is contradictory and mostly second-hand on ragging prevalence. No direct 2026 first-year account establishing severity was found in this pass.",
+    trend:"Current residence evidence is concrete; ragging prevalence remains unresolved because the 2026 community signals conflict and are mostly hearsay.",
+    confidence:"High for formal safeguards · Moderate for current first-year residence/dress context · Low for ragging prevalence",
+    signal:{label:"Current first-year hostel structure reconstructed · ragging signal mixed/uncertain",tone:"mixed",confidence:"Moderate for residence context; low for prevalence",window:"Jul–Aug 2026",hostelRisk:"First-year girls may initially be housed in dorms before rooms; boys are reported in double-occupancy rooms. This is residence context, not a quantified risk gradient.",grooming:"No current grooming rule established; one 2026 account says no strict salwar-suit requirement for girls.",socialCoercion:"Current ragging-specific comments conflict and are mostly second-hand; severity/prevalence remain unresolved.",evidenceMix:"Official safeguards + current community first-year hostel/dress reports + mixed hearsay on ragging."},
+    sources:[
+      {kind:"student",label:"Reddit r/Patiala — Aug 2026 GMC Patiala first-year hostel occupancy and dress-code discussion",url:"https://www.reddit.com/r/Patiala/comments/1vdfgiq/anyone_from_gmc_patiala/",year:2026},
+      {kind:"student",label:"Reddit r/Patiala — Jul 2026 GMC Patiala first-year girls dorm/hostel environment discussion",url:"https://www.reddit.com/r/Patiala/comments/1unvypq/suggestions_regarding_mbbs_in_gmc_patiala/",year:2026},
+      {kind:"student",label:"Reddit — Jul 2026 GMC Patiala vs AIMS Mohali discussion with conflicting ragging comments",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1uyu3p8/gmc_patiala_or_aims_mohali/",year:2026}
+    ]
+  },
+  "230": {
+    currentPicture:"Topiwala National Medical College/Nair now has direct MBBS lived evidence in addition to its formal safeguards. A March 2024 MBBS review explicitly says there is 'no ragging culture' and that junior relationships are well maintained. More recent 2025–26 verified MBBS reviews describe hostel/campus conditions but do not contradict that culture claim. The reassuring signal is therefore meaningful but still based on a limited number of explicit ragging-specific accounts.",
+    positives:"A direct 2024 MBBS review explicitly describes no ragging culture and well-maintained junior relationships.",
+    seniorJunior:"A March 2024 enrolled MBBS reviewer reports no ragging culture and good junior relationships; later verified reviews add current campus context but are not ragging-specific.",
+    trend:"Available direct MBBS lived evidence is reassuring; more current ragging-specific corroboration would increase confidence.",
+    confidence:"High for formal safeguards · Moderate for direct MBBS lived evidence",
+    signal:{label:"Direct MBBS review reports no ragging culture and good junior relationships",tone:"reassuring",confidence:"Moderate lived signal",window:"2024–Aug 2026",socialCoercion:"One direct MBBS review explicitly reports no ragging culture; no contradictory current direct MBBS account was found in this pass.",evidenceMix:"Official safeguards + direct MBBS review + newer verified campus/hostel reviews."},
+    sources:[
+      {kind:"student",label:"Zollege — TNMC MBBS review: no ragging culture; junior relationships well maintained",url:"https://zollege.in/reviews/24686-tanmay-laxmanrao-jadhav-review-on-topiwala-national-medical-college-tnmc-mumbai",year:2024},
+      {kind:"student",label:"Shiksha — TNMC verified MBBS reviews / hostel-campus context",url:"https://www.shiksha.com/college/topiwala-national-medical-college-mumbai-63177/reviews",year:2025}
+    ]
+  },
+  "22": {
+    currentPicture:"AIIMS Guwahati now has direct verified MBBS lived/residence evidence in addition to formal safeguards. A 2024 MBBS review says hostel residence is mandatory and gives a detailed occupancy progression: boys are double-occupancy from the start through the seventh semester before single rooms, while girls are double-occupancy through the second semester and single from the third. The review is not ragging-specific, so it improves First-90 residence reconstruction without becoming a safety signal.",
+    seniorJunior:"Not reconstructed from the located verified MBBS review; it provides direct hostel/residence context rather than senior-junior prevalence evidence.",
+    confidence:"High for formal safeguards · High for verified MBBS residence structure · Insufficient for ragging prevalence",
+    signal:{label:"Verified MBBS hostel progression reconstructed · senior-culture prevalence unresolved",tone:"insufficient",confidence:"High residence-context confidence; insufficient prevalence evidence",window:"2024–Aug 2026",hostelRisk:"Hostel residence is reported mandatory; boys start in double occupancy and girls remain double through second semester before single-room progression.",evidenceMix:"Official safeguards + verified enrolled-MBBS hostel/residence review."},
+    sources:[{kind:"student",label:"Collegedunia verified MBBS review — AIIMS Guwahati hostel mandatory; occupancy progression from start of course",url:"https://collegedunia.com/reviews/751771-rahul-jangir-review-on-all-india-institute-of-medical-sciences-guwahati-guwahati",year:2024}]
+  },
+  "255": {
+    currentPicture:"JIPMER now has a fresh August 2026 community signal layered onto its formal anti-ragging framework. In a current medical-student discussion, one commenter says a JIPMER senior from the previous year described interaction as simple introductions without improper tasks; another commenter says JIPMER does not have ragging. These are reassuring but second-hand/anonymous statements, not direct batch-wide verification. A separate current JIPMER hostel thread confirms that incoming MBBS students commonly use campus hostels.",
+    seniorJunior:"Current 2026 community discussion characterizes JIPMER interaction as limited to simple introductions, but the key account is explicitly second-hand from a prior-year senior.",
+    trend:"Fresh 2026 community discussion is reassuring, but direct current first-year corroboration is still limited.",
+    confidence:"High for formal safeguards · Low-moderate for second-hand current lived signal",
+    signal:{label:"Fresh community reports describe intro-only senior interaction",tone:"reassuring",confidence:"Low-moderate; largely second-hand",window:"Aug 2026",hostelRisk:"Current incoming-student discussion confirms campus hostel use, but no residence-mode culture gradient is established.",socialCoercion:"A 2026 commenter reports that a previous-year JIPMER senior described simple introductions only, without improper tasks.",evidenceMix:"Official safeguards + fresh but mostly second-hand community senior-interaction reports + current hostel context."},
+    sources:[
+      {kind:"student",label:"Reddit — Aug 2026 JIPMER ragging discussion: simple intros only (second-hand from prior-year senior)",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1vvy5oy/ragging_at_aiims_bilaspur/",year:2026},
+      {kind:"student",label:"Reddit r/JIPMER — Aug 2026 incoming MBBS hostel/campus discussion",url:"https://www.reddit.com/r/JIPMER/comments/1vp6aoo/hows_the_hostel_and_campusin_general/",year:2026}
+    ]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V813_FIRST90).forEach(([id, patch]) => {
+  const prior = JUNIOR_CULTURE[id] || {};
+  const byUrl = new Map();
+  [...(Array.isArray(prior.sources)?prior.sources:[]), ...(Array.isArray(patch.sources)?patch.sources:[])].forEach(s=>{ if(s&&s.url) byUrl.set(s.url,s); });
+  JUNIOR_CULTURE[id] = {...prior, ...patch, lastVerified:'27 Aug 2026', signal:{...(prior.signal||{}), ...(patch.signal||{})}, sources:[...byUrl.values()]};
+});
+
+// V8.13 First-90 additions — residence/timing fields only where a source directly supports them.
+if (JUNIOR_FIRST90['260']) {
+  JUNIOR_FIRST90['260'] = {...JUNIOR_FIRST90['260'],
+    hostellerVsDayScholar:"Current Jul–Aug 2026 GMC Patiala discussions reconstruct first-year hostel occupancy: boys are generally reported in double-occupancy rooms; girls are often four-sharing/dorm initially, with one account saying first-year girls may spend roughly half the year in dorms before rooms. No day-scholar comparison is established.",
+    genderDifferences:"A current hostel discussion reports different room arrangements for boys and girls (boys generally double occupancy; girls often four-sharing/dorm depending on availability). This is accommodation structure, not a gender-specific ragging prevalence estimate.",
+    sourceNote:"V8.13 adds directly supported current first-year hostel/gender accommodation structure. First-week coercion, opt-out consequences and after-freshers transition remain unsupported.",
+    sources:JUNIOR_CULTURE['260']?.sources||[],coverage:{...(JUNIOR_FIRST90['260'].coverage||{}),residenceMode:true,genderSpecific:true}
+  };
+}
+if (JUNIOR_FIRST90['22']) {
+  JUNIOR_FIRST90['22'] = {...JUNIOR_FIRST90['22'],
+    hostellerVsDayScholar:"A verified enrolled-MBBS review reports hostel residence is mandatory at AIIMS Guwahati. Boys are double-occupancy from the start through the seventh semester before single rooms; girls are double-occupancy through second semester and single from third semester. This establishes residence structure, not a ragging-risk gradient.",
+    genderDifferences:"The same verified MBBS review reports different timing of transition to single rooms: girls from third semester, boys after seventh semester. This is a housing difference only.",
+    afterFreshers:"Residence progression is partly known beyond first year: girls reportedly move to single rooms from third semester, while boys remain double occupancy through seventh semester. No senior-culture transition is inferred from that housing change.",
+    sourceNote:"V8.13 adds verified hostel progression from the start of MBBS; senior-contact timing and opt-out consequences remain unsupported.",
+    sources:JUNIOR_CULTURE['22']?.sources||[],coverage:{...(JUNIOR_FIRST90['22'].coverage||{}),residenceMode:true,genderSpecific:true,afterFreshers:true}
+  };
+}
+if (JUNIOR_FIRST90['255']) {
+  JUNIOR_FIRST90['255'] = {...JUNIOR_FIRST90['255'],
+    firstWeeks:"An Aug 2026 community discussion says a JIPMER senior from the previous year described fresher interaction as simple introductions without improper tasks. This is second-hand and therefore retained as low-confidence first-weeks context, not a verified batch-wide rule.",
+    sourceNote:"V8.13 adds a fresh but second-hand intro-only signal for early senior interaction; other timing dimensions remain unsupported.",
+    sources:JUNIOR_CULTURE['255']?.sources||[],coverage:{...(JUNIOR_FIRST90['255'].coverage||{}),firstWeeks:true}
+  };
+}
+
+const JUNIOR_CULTURE_V813_RESIDENCE_CONTEXT = {
+  "302": {
+    currentPicture:"Government Medical College & ESIC Hospital, Coimbatore now has verified MBBS hostel/campus context in addition to formal safeguards. A May 2025 MBBS review describes hostel rooms, separate boys/girls mess arrangements, sports and campus infrastructure. It does not characterize senior-junior coercion or ragging, so this improves lived-context coverage without becoming a safety signal.",
+    seniorJunior:"Not reconstructed from the located verified MBBS review; the source is hostel/campus context rather than ragging-specific evidence.",
+    confidence:"High for formal safeguards · Moderate-high for verified MBBS hostel context · Insufficient for ragging prevalence",
+    signal:{label:"Verified MBBS hostel context added · senior-culture prevalence unresolved",tone:"insufficient",confidence:"Moderate-high lived context; insufficient prevalence evidence",window:"2025–Aug 2026",hostelRisk:"Verified MBBS review confirms on-campus hostel facilities; no first-year separation or hostel-vs-day-scholar culture gradient is established.",evidenceMix:"Official safeguards + verified MBBS hostel/campus review."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS review — ESIC Coimbatore hostel/campus context",url:"https://www.shiksha.com/college/government-medical-college-and-esic-hosptital-coimbatore-62919/course-mbbs-bachelor-of-medicine-and-bachelor-of-surgery-351961",year:2025}]
+  },
+  "313": {
+    currentPicture:"Government Medical College, Thiruvallur now has verified MBBS lived hostel/campus evidence in addition to formal safeguards. A 2024 MBBS review says both boys' and girls' hostels are on campus and reports a 9 PM hostel in-time. The review does not describe ragging or senior-junior coercion, so the profile remains unresolved on prevalence.",
+    movementCommonAreas:"A verified MBBS review reports a 9 PM hostel in-time; it does not attribute this rule to seniors or describe first-year-specific movement controls.",
+    seniorJunior:"Not reconstructed from the located verified MBBS review; hostel/campus context is available, but ragging-specific prevalence is not.",
+    confidence:"High for formal safeguards · Moderate-high for verified MBBS residence context · Insufficient for ragging prevalence",
+    signal:{label:"Verified on-campus hostel/in-time context added · senior-culture prevalence unresolved",tone:"insufficient",confidence:"Moderate-high residence context; insufficient prevalence evidence",window:"2024–Aug 2026",hostelRisk:"Boys' and girls' hostels are reported on campus; no first-year separation or risk gradient is established.",socialCoercion:"Not established by the located review.",evidenceMix:"Official safeguards + verified MBBS hostel/campus review."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS review — GMC Thiruvallur on-campus hostels and 9 PM in-time",url:"https://www.shiksha.com/college/government-medical-college-thiruvallur-tamil-nadu-other-180715/reviews",year:2024}]
+  },
+  "377": {
+    currentPicture:"Government Medical College, Haridwar now has verified MBBS lived campus/residence evidence in addition to formal safeguards. A December 2025 verified MBBS review says the college had no hostel at that time. That is a strong residence-mode fact for early batches: students necessarily lived outside a college hostel. The review does not discuss senior-junior coercion, so no ragging prevalence inference is made.",
+    movementCommonAreas:"No college-hostel movement rules apply in the located 2025 review because it reports that no hostel was available at that time.",
+    seniorJunior:"Not reconstructed from the located verified MBBS review; the source establishes off-campus residence context, not ragging prevalence.",
+    confidence:"High for formal safeguards · High for verified 2025 no-hostel residence fact · Insufficient for ragging prevalence",
+    signal:{label:"Verified no-college-hostel residence context · senior-culture prevalence unresolved",tone:"insufficient",confidence:"High residence-context confidence; insufficient prevalence evidence",window:"Dec 2025–Aug 2026",hostelRisk:"A verified MBBS review says no college hostel was available in Dec 2025; early-batch students therefore lived off campus. This does not establish lower or higher ragging risk.",evidenceMix:"Official safeguards + verified MBBS residence/campus review."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS review — GMC Haridwar reported no hostel (Dec 2025)",url:"https://www.shiksha.com/college/government-medical-college-haridwar-231204/reviews",year:2025}]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V813_RESIDENCE_CONTEXT).forEach(([id, patch]) => {
+  const prior = JUNIOR_CULTURE[id] || {};
+  const byUrl = new Map();
+  [...(Array.isArray(prior.sources)?prior.sources:[]), ...(Array.isArray(patch.sources)?patch.sources:[])].forEach(s=>{ if(s&&s.url) byUrl.set(s.url,s); });
+  JUNIOR_CULTURE[id] = {...prior, ...patch, lastVerified:'27 Aug 2026', signal:{...(prior.signal||{}), ...(patch.signal||{})}, sources:[...byUrl.values()]};
+});
+if (JUNIOR_FIRST90['377']) {
+  JUNIOR_FIRST90['377'] = {...JUNIOR_FIRST90['377'],
+    hostellerVsDayScholar:"A verified Dec 2025 MBBS review reports that GMC Haridwar had no college hostel at that time, so students were necessarily living outside a college hostel. This is a residence-mode fact only; it does not quantify senior-contact or ragging risk.",
+    sourceNote:"V8.13 adds a verified no-hostel residence fact for the early batch; first-week interaction, gender differences, opt-out and after-freshers senior-culture timing remain unsupported.",
+    sources:JUNIOR_CULTURE['377']?.sources||[],coverage:{...(JUNIOR_FIRST90['377'].coverage||{}),residenceMode:true}
+  };
+}
+
+// V8.14 First-90 residence deepening — 27 Aug 2026.
+// Adds only source-supported early-course housing/contact facts and direct lived context.
+const JUNIOR_CULTURE_V814_FIRST90 = {
+  "167": {
+    currentPicture:"Government Medical College Wayanad now has a detailed 2026 institutional account of first-batch residence arrangements. The college reports no permanent on-campus MBBS hostel yet: women are housed at the KSHB Working Women's Hostel in Mananthavady under faculty/institutional supervision, while men are accommodated in private residential facilities around Mananthavady. This is strong First-90 residence evidence, not a senior-culture prevalence signal.",
+    movementCommonAreas:"Current residence is split across supervised off-campus arrangements because permanent on-campus MBBS hostels are not yet available.",
+    seniorJunior:"Current routine senior-junior social coercion remains insufficiently documented; the new evidence is residence structure rather than lived senior-culture testimony.",
+    confidence:"High for 2026 institutional residence structure; insufficient for prevalence",
+    signal:{label:"Off-campus first-batch residence structure documented · lived senior culture unresolved",tone:"insufficient",confidence:"High residence-context confidence; insufficient prevalence evidence",window:"2026",hostelRisk:"No permanent on-campus MBBS hostel is reported. Women are housed in a supervised working-women's hostel; men in private residential facilities around Mananthavady. No culture-risk gradient is inferred.",evidenceMix:"Current institutional anti-ragging/hostel governance + detailed official residence arrangements; lived senior-culture evidence remains insufficient."}
+  },
+  "166": {
+    currentPicture:"Government Medical College Kasaragod remains a very new one-batch MBBS programme, but its residence transition is now partly reconstructable. The first batch began in late 2025 with temporary hostel accommodation at Cherkala. By May–June 2026, reporting described a newly built large MBBS hostel on the Ukkinadka campus, with nursing students saying MBBS students were expected to relocate there; one report said the completed hostel was intended for female MBBS students while a men's hostel had not yet begun. This improves First-90 residence context without establishing ragging prevalence.",
+    movementCommonAreas:"The first batch initially used temporary off-campus hostel accommodation at Cherkala; 2026 reporting describes transition toward the new campus MBBS hostel.",
+    seniorJunior:"Only one older MBBS cohort exists, so hierarchy depth remains structurally shallow and current coercion prevalence is not established.",
+    confidence:"High for programme age and residence transition; insufficient for lived prevalence",
+    signal:{label:"One-batch programme · temporary-to-campus hostel transition documented",tone:"insufficient",confidence:"High for residence structure; insufficient for prevalence",window:"Sep 2025–Jun 2026",hostelRisk:"The first batch used temporary Cherkala accommodation; 2026 reporting describes a new MBBS hostel at Ukkinadka and gender-asymmetric permanent-hostel development. No ragging-risk gradient is inferred.",evidenceMix:"Official anti-ragging committee + current news reporting on first-batch/hostel transition."},
+    sources:[
+      {kind:"news",label:"Malayala Manorama — Kasaragod first MBBS student; temporary hostel at Cherkala",url:"https://www.manoramaonline.com/district-news/kasargod/2025/09/23/kasaragod-medical-college-first-student.html",year:2025},
+      {kind:"news",label:"Onmanorama — Kasaragod campus hostel intended for MBBS students; nursing-student protest",url:"https://www.onmanorama.com/news/kerala/2026/06/01/nursing-students-protest-hostel.html",year:2026}
+    ]
+  },
+  "194": {
+    currentPicture:"ESIC Andheri now has a concrete early-batch residence fact in addition to formal anti-ragging compliance. Its 2025–26 official fee notice makes hostel accommodation optional: students who want hostel pay hostel fee/security deposit, while those who do not may exclude those charges. A current incoming-student discussion also reports that hostel facility is available. Because the programme is new, senior-culture evidence remains immature.",
+    movementCommonAreas:"Hostel residence is optional rather than universal according to the official fee notice; no first-year-specific movement restrictions were established.",
+    seniorJunior:"Current college-specific senior-culture testimony remains sparse; the located community discussion is mainly about hostel availability and patient flow.",
+    confidence:"High for official optional-hostel structure · Low-moderate for community context · insufficient for prevalence",
+    signal:{label:"Optional hostel structure documented · very new senior culture still immature",tone:"insufficient",confidence:"High residence-context confidence; insufficient prevalence evidence",window:"2025–Aug 2026",hostelRisk:"Students may opt into or out of hostel accommodation under the official fee structure. No hostel-vs-day-scholar culture gradient is established.",evidenceMix:"Official admission/anti-ragging material + official hostel fee structure + current incoming-student community context."},
+    sources:[
+      {kind:"official",label:"ESIC Andheri — MBBS fee structure: hostel accommodation optional",url:"https://mcandheri.esic.gov.in/attachments/admissionfile/Fee_structure_for_MBBS_English_1758187776.pdf",year:2025},
+      {kind:"student",label:"Reddit — Oct 2025 incoming ESIC Andheri student discussion; hostel facility reported available",url:"https://www.reddit.com/r/MEDICOreTARDS/comments/1n6n10h/removed/",year:2025}
+    ]
+  },
+  "213": {
+    currentPicture:"Government Medical College Nashik remains a very new MBBS programme, but its official 2025–26 admission manual now supports a residence-mode reconstruction. The manual provides separate girls' and boys' hostel contacts, charges hostel fees, and requires a hostel declaration/SOP from students requesting accommodation. This establishes that hostel accommodation exists and is request/allotment based; it does not establish senior-culture prevalence.",
+    movementCommonAreas:"The admission manual documents hostel SOP/allotment administration but does not establish first-year movement restrictions.",
+    confidence:"High for official hostel structure; insufficient for lived prevalence",
+    signal:{label:"Very new programme · request/allotment-based hostel structure documented",tone:"insufficient",confidence:"High residence-context confidence; insufficient prevalence evidence",window:"2025–26",hostelRisk:"Official admission material provides separate boys/girls hostel contacts and a compulsory declaration for students seeking hostel allotment. No culture-risk gradient is inferred.",evidenceMix:"Official admission/hostel material; direct current lived senior-culture evidence remains insufficient."}
+  },
+  "267": {
+    currentPicture:"Government Medical College Barmer now has direct MBBS lived evidence layered onto the documented November 2024 disciplinary case. A verified batch-of-2028 review says freshers receive triple-occupancy hostel rooms and students move to single rooms from third year. A separate MBBS student review describes seniors as helpful mentors who can be approached for problems. These reassuring lived accounts do not erase the 2024 first-year ragging complaints and committee action, so the current picture remains time-layered rather than simply reassuring.",
+    positives:"Direct MBBS reviews describe seniors as helpful mentors and provide detailed fresher hostel occupancy.",
+    seniorJunior:"One MBBS student review describes seniors as helpful mentors; this is weighed alongside the separate documented 2024 first-year ragging complaints and disciplinary response.",
+    trend:"Current lived reviews are more reassuring than the 2024 disciplinary signal, but the evidence periods are not treated as interchangeable.",
+    confidence:"Moderate-high for verified residence structure · Moderate for lived senior-support signal · High for 2024 disciplinary record",
+    signal:{label:"Helpful-senior lived reports coexist with a documented 2024 first-year ragging case",tone:"mixed",confidence:"Moderate-high multi-source signal",window:"2024–Aug 2026",hostelRisk:"Verified MBBS review: freshers in triple-occupancy rooms; single rooms from third year. This is residence structure, not a quantified risk gradient.",socialCoercion:"A student review describes seniors as mentors; a separate 2024 report documents first-year ragging complaints and disciplinary action.",evidenceMix:"News disciplinary record + verified MBBS hostel review + direct student senior-support account."},
+    sources:[
+      {kind:"student",label:"Shiksha verified MBBS review — GMC Barmer freshers triple occupancy; single rooms from third year",url:"https://www.shiksha.com/college/government-medical-college-barmer-65289/reviews",year:2025},
+      {kind:"student",label:"CollegeBatch MBBS review — GMC Barmer seniors described as helpful mentors",url:"https://www.collegebatch.com/reviews/20727-government-medical-college-barmer",year:2024}
+    ]
+  },
+  "269": {
+    currentPicture:"GMC Bhilwara now combines the detailed 2024 first-year ragging complaint with current verified MBBS hostel/campus context. The complaint describes alleged online intros, late-night calls and severe offline tasks during the foundation-course period; the college disputed the circumstances and said it had not received such complaints. A 2025 verified MBBS review confirms ordinary hostel residence but does not resolve ragging prevalence. The profile therefore remains a serious documented allegation with contested institutional response, not a batch-wide estimate.",
+    seniorJunior:"The 2024 complainant described online intros, late-night calls and severe offline coercion during the foundation-course period; the college denied receiving the complaints/circumstances. Current verified MBBS reviews add hostel context but are not ragging-specific.",
+    confidence:"High for existence/detail of 2024 complaint and college denial · Moderate for current hostel context · insufficient for current prevalence",
+    signal:{label:"Detailed first-year foundation-course complaint + contested college response",tone:"concern",confidence:"High for complaint/reporting record; current prevalence unresolved",window:"Oct 2024–Aug 2026",hostelRisk:"Current verified reviews confirm hostel residence; no reliable hostel-vs-day-scholar prevalence gradient is established.",socialCoercion:"2024 first-year complaint alleges online intros, late-night calls and severe offline tasks; college disputed complaint receipt/circumstances.",evidenceMix:"Detailed news report embedding first-year complaint + current verified MBBS hostel/campus reviews."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS reviews — GMC Bhilwara current hostel/campus context",url:"https://www.shiksha.com/college/government-medical-college-bhilwara-62891/reviews",year:2025}]
+  },
+  "28": {
+    currentPicture:"Gauhati Medical College now has fresh July 2026 verified MBBS residence evidence alongside its 2026 disciplinary record. A batch-of-2029 verified review says not every MBBS student receives hostel allotment and that more hostels are needed. This directly supports a mixed hosteller/non-hosteller early-batch residence structure; it does not by itself explain the ragging/assault incident or establish a risk gradient.",
+    movementCommonAreas:"A current verified MBBS review says hostel allotment is not available to every MBBS student; transportation between hill-side hostels and hospital/academic areas is also described as an issue.",
+    confidence:"High for 2026 disciplinary record · High for verified current residence context",
+    signal:{label:"2026 disciplinary concern + verified partial-hostel-allotment structure",tone:"concern",confidence:"High incident confidence; high residence-context confidence",window:"2026",hostelRisk:"Not all MBBS students receive hostel allotment according to a July 2026 verified review. This establishes mixed residence mode, not a quantified culture-risk gradient.",evidenceMix:"2026 disciplinary news + verified current MBBS residence review."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS review — Gauhati Medical College hostel not allotted to all students",url:"https://www.shiksha.com/college/gauhati-medical-college-guwahati-62959/reviews",year:2026}]
+  },
+  "393": {
+    currentPicture:"GMC Azamgarh now has direct MBBS lived and residence evidence in addition to formal anti-ragging material. Verified reviews describe seniors as supportive/caring in hostel, academics and health issues. Another review says first- and second-year students are housed two per room, moving to single rooms from third year. This is a useful current lived signal, though it is not an explicit 'no ragging' statement.",
+    positives:"Verified MBBS reviews describe seniors as supportive/caring and document first-/second-year hostel occupancy.",
+    seniorJunior:"A verified MBBS review explicitly describes seniors as supportive and caring in hostel life, academics and health issues.",
+    trend:"Current verified lived evidence is reassuring on senior support; ragging-specific prevalence is still not directly quantified.",
+    confidence:"High for formal safeguards · Moderate-high for verified lived/residence evidence",
+    signal:{label:"Verified MBBS reviews describe supportive seniors and structured hostel progression",tone:"reassuring",confidence:"Moderate-high lived signal",window:"2024–Aug 2026",hostelRisk:"Verified review: first/second years two students per room; single rooms from third year. No risk gradient is inferred.",socialCoercion:"Current verified review describes supportive/caring seniors rather than coercive interaction.",evidenceMix:"Official anti-ragging material + multiple verified MBBS reviews."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS reviews — GMC Azamgarh supportive seniors and hostel progression",url:"https://www.shiksha.com/college/government-medical-college-and-super-facility-hospital-azamgarh-149697/reviews",year:2024}]
+  },
+  "100": {
+    currentPicture:"Kalpana Chawla Government Medical College now has verified MBBS residence/campus evidence alongside its formal anti-ragging framework. Current reviews describe two-seater hostel rooms with attached washrooms/balconies, separate boys' and girls' hostels, security guards and warden oversight. These are strong housing/supervision facts but the reviews do not directly characterize senior-junior coercion, so prevalence remains unresolved.",
+    movementCommonAreas:"Verified reviews describe guarded boys' and girls' hostels with warden oversight; no first-year-specific movement restriction was established.",
+    seniorJunior:"Not directly characterized by the located verified reviews; the new evidence is residence/supervision context.",
+    confidence:"High for formal safeguards · Moderate-high for verified residence context · insufficient for ragging prevalence",
+    signal:{label:"Verified two-seater hostel/supervision context · senior-culture prevalence unresolved",tone:"insufficient",confidence:"Moderate-high residence context; insufficient prevalence evidence",window:"2024–25",hostelRisk:"Verified reviews describe two-seater rooms and separate guarded boys/girls hostels. No first-year separation or culture-risk gradient is established.",evidenceMix:"Official anti-ragging material + verified MBBS hostel/campus reviews."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS reviews — KCGMC two-seater hostels, boys/girls facilities and warden/security",url:"https://www.shiksha.com/college/kalpana-chawla-government-medical-college-karnal-62995/reviews",year:2025}]
+  },
+  "93": {
+    currentPicture:"MP Shah Medical College Jamnagar now has direct historical MBBS lived testimony layered onto current anti-ragging policy. A graduate review published in 2022 describes first-year 'mess ragging' and brief mental harassment, says physical ragging was not involved, and states the practice continued when the reviewer became a senior. Newer 2024 student reviews describe a generally friendly campus but are not explicit ragging assessments. The profile therefore records a historical lived coercion pattern without projecting it unchanged into 2026.",
+    seniorJunior:"A 2022 graduate review describes first-year mess ragging/mental harassment and later repetition as seniors. Newer student reviews are generally positive but not explicit enough to establish whether that pattern persists.",
+    trend:"Historical direct testimony establishes that first-year coercive traditions existed; current persistence/severity remains unresolved.",
+    confidence:"High for current formal controls · Moderate for historical direct lived testimony · insufficient for 2026 prevalence",
+    signal:{label:"Historical direct MBBS testimony of first-year mess ragging · current persistence unresolved",tone:"mixed",confidence:"Moderate historical lived signal; insufficient current prevalence evidence",window:"historical experience published 2022 + current controls 2026",hostelRisk:"Historical review locates part of the practice around mess/hostel social life; current residence-mode gradient is not established.",socialCoercion:"Historical direct review describes brief mental harassment/'mess ragging'; no current equivalent is verified.",evidenceMix:"Current official anti-ragging policy + direct graduate review + newer general student reviews."},
+    sources:[
+      {kind:"student",label:"CollegeBatch graduate MBBS review — MP Shah first-year mess ragging/mental harassment",url:"https://www.collegebatch.com/reviews/3079-mp-shah-government-medical-college-jamnagar",year:2022},
+      {kind:"student",label:"Collegedunia — MP Shah 2024 MBBS reviews / current campus context",url:"https://collegedunia.com/college/10685-mp-shah-government-medical-college-jamnagar/reviews",year:2024}
+    ]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V814_FIRST90).forEach(([id, patch]) => {
+  const prior = JUNIOR_CULTURE[id] || {};
+  const byUrl = new Map();
+  [...(Array.isArray(prior.sources)?prior.sources:[]), ...(Array.isArray(patch.sources)?patch.sources:[])].forEach(s=>{ if(s&&s.url) byUrl.set(s.url,s); });
+  JUNIOR_CULTURE[id] = {...prior, ...patch, lastVerified:'27 Aug 2026', signal:{...(prior.signal||{}), ...(patch.signal||{})}, sources:[...byUrl.values()]};
+});
+
+function v814PatchFirst90(id, patch){
+  if(!JUNIOR_FIRST90[id]) return;
+  const prior=JUNIOR_FIRST90[id];
+  const byUrl=new Map();
+  [...(Array.isArray(prior.sources)?prior.sources:[]), ...(Array.isArray(JUNIOR_CULTURE[id]?.sources)?JUNIOR_CULTURE[id].sources:[])].forEach(s=>{if(s&&s.url)byUrl.set(s.url,s);});
+  JUNIOR_FIRST90[id]={...prior,...patch,sources:[...byUrl.values()],coverage:{...(prior.coverage||{}),...(patch.coverage||{})}};
+}
+v814PatchFirst90('167',{
+  hostellerVsDayScholar:"The 2026 institutional report says there is no permanent on-campus MBBS hostel. Female MBBS students are housed at the KSHB Working Women's Hostel in Mananthavady under institutional/faculty supervision; male students are housed in private residential facilities in and around Mananthavady. This establishes off-campus residence structure, not a culture-risk gradient.",
+  genderDifferences:"Current official residence arrangements differ by gender: women use a designated supervised working-women's hostel, while men use private residential facilities around Mananthavady. This is a housing difference only.",
+  sourceNote:"V8.14 adds detailed 2026 official off-campus residence/gender structure; senior-contact timing, opt-out and after-freshers culture remain unsupported.",
+  coverage:{residenceMode:true,genderSpecific:true}
+});
+v814PatchFirst90('166',{
+  hostellerVsDayScholar:"The first MBBS batch was reported in Sep 2025 to have temporary hostel accommodation at Cherkala. By May–Jun 2026, reporting described a new large MBBS hostel at Ukkinadka and expected relocation from the temporary arrangement. This is residence-transition evidence only.",
+  genderDifferences:"A May 2026 report said the completed hostel was intended for female MBBS students while construction of a men's hostel had not yet begun. Because infrastructure was changing rapidly, this is retained as a time-stamped 2026 housing difference rather than a permanent rule.",
+  afterFreshers:"Residence infrastructure changed within the first academic year: temporary Cherkala accommodation in late 2025 was being replaced by a new campus MBBS hostel by mid-2026. This is a housing transition, not a senior-culture transition.",
+  sourceNote:"V8.14 reconstructs the first batch's temporary-to-campus hostel transition; senior-contact timing remains unsupported.",
+  coverage:{residenceMode:true,genderSpecific:true,afterFreshers:true}
+});
+v814PatchFirst90('194',{
+  hostellerVsDayScholar:"ESIC Andheri's official 2025–26 fee notice makes hostel accommodation optional: students choosing hostel pay hostel fee/security deposit, while students not opting for hostel may exclude both charges. A current incoming-student discussion also reports hostel facility available. No culture-risk gradient is inferred.",
+  sourceNote:"V8.14 adds official optional-hostel structure plus current community availability context; senior-contact timing and ragging prevalence remain unsupported.",
+  coverage:{residenceMode:true}
+});
+v814PatchFirst90('213',{
+  hostellerVsDayScholar:"The official 2025–26 admission manual provides separate girls' and boys' hostel contacts and requires a declaration/SOP for students requesting hostel facility. This supports request/allotment-based hostel residence rather than universal residence; no senior-culture gradient is established.",
+  genderDifferences:"Separate official hostel contacts are listed for girls and boys. This establishes administratively separate accommodation channels, not different culture prevalence.",
+  sourceNote:"V8.14 adds official hostel request/allotment and gender-administration structure for this very new programme; lived senior-contact timing remains unsupported.",
+  coverage:{residenceMode:true,genderSpecific:true}
+});
+v814PatchFirst90('267',{
+  hostellerVsDayScholar:"A verified batch-of-2028 MBBS review says freshers receive triple-occupancy hostel rooms; a separate MBBS review also describes three students per room. No day-scholar comparison is established.",
+  afterFreshers:"The verified review says students move from triple-occupancy fresher rooms to single rooms from third year. This is a residence transition, not evidence that senior culture ends at that point.",
+  sourceNote:"V8.14 adds verified fresher triple-occupancy and later single-room progression, plus a direct senior-mentor account. First-week coercion timing and opt-out remain unsupported.",
+  coverage:{residenceMode:true,afterFreshers:true}
+});
+v814PatchFirst90('269',{
+  firstWeeks:"The Oct 2024 first-year complaint was reported during the foundation-course period and alleged online intros, late-night calls and severe offline tasks. Because this is a complaint rather than a reconstructed batch routine, it supports early-course exposure but not prevalence.",
+  hostellerVsDayScholar:"Current verified MBBS reviews confirm hostel residence/campus facilities, but no reliable day-scholar comparison or hostel-specific prevalence gradient is established.",
+  sourceNote:"V8.14 preserves the detailed foundation-course timing from the 2024 complaint and adds current verified hostel context without extending the allegation to the whole batch.",
+  coverage:{firstWeeks:true,residenceMode:true}
+});
+v814PatchFirst90('28',{
+  hostellerVsDayScholar:"A verified July 2026 MBBS review says not all MBBS students receive hostel allotment and that additional hostels are needed. This establishes mixed hostel/non-hostel residence among current students; no culture-risk gradient is inferred.",
+  sourceNote:"V8.14 adds current verified partial-hostel-allotment evidence. Exact first-week senior-contact timing and opt-out remain unsupported.",
+  coverage:{residenceMode:true}
+});
+v814PatchFirst90('393',{
+  hostellerVsDayScholar:"A verified MBBS review says first- and second-year students are housed two per room; from third year onward students receive single rooms. No day-scholar comparison is established.",
+  afterFreshers:"Residence progression is documented from two-per-room in first/second year to single rooms from third year. This is housing progression only, not a claim about when senior culture changes.",
+  sourceNote:"V8.14 adds verified hostel progression and direct supportive-senior testimony; first-week/opt-out timing remains unsupported.",
+  coverage:{residenceMode:true,afterFreshers:true}
+});
+v814PatchFirst90('100',{
+  hostellerVsDayScholar:"Verified MBBS reviews describe two-seater hostel rooms with attached washrooms/balconies. Separate boys' and girls' hostels are guarded and have warden oversight. No day-scholar comparison is established.",
+  sourceNote:"V8.14 adds verified hostel occupancy/supervision context; first-year separation, senior-contact timing and opt-out remain unsupported.",
+  coverage:{residenceMode:true}
+});
+
+// V8.14 high-value remaining official-only deepening.
+const JUNIOR_CULTURE_V814_HIGH_VALUE = {
+  "64": {
+    currentPicture:"AIIMS Delhi now has current verified MBBS residence/campus evidence layered onto its unusually explicit official anti-ragging framework. A December 2024 verified MBBS review says private hostel rooms are given to students and describes the hostel/mess as part of ordinary student life. This improves lived/residence context, but it does not by itself resolve informal senior-imposed intro practices; the institute's official pre-freshers junior/senior-room separation rule remains the strongest timing evidence.",
+    seniorJunior:"The formal framework expects supportive senior conduct and bars junior entry into senior rooms before the freshers' welcome party. Current verified MBBS reviews add lived hostel context but are not explicit ragging-prevalence accounts.",
+    confidence:"High for official first-month rules · Moderate-high for verified current MBBS residence context · limited for informal prevalence",
+    sources:[{kind:"student",label:"Collegedunia verified MBBS review — AIIMS Delhi private hostel room / current residence context",url:"https://collegedunia.com/reviews/867565-anonymous-review-on-all-india-institute-of-medical-sciences-aiims-new-delhi",year:2024}]
+  },
+  "70": {
+    currentPicture:"North DMC Medical College/Hindu Rao now has direct MBBS lived context in addition to its current anti-ragging committee/squad. Verified student reviews describe hostel accommodation and one MBBS review says the college offers substantial interaction with seniors, professors and patients. That is useful lived context, but it is not an explicit ragging assessment, so severity/prevalence remains unresolved.",
+    positives:"A direct MBBS review describes good exposure to senior interaction; several verified reviews document MBBS hostel life.",
+    seniorJunior:"One direct MBBS review specifically says the college gives strong exposure to interaction with seniors, professors and patients; it does not characterize coercion or ragging severity.",
+    confidence:"High formal · Moderate for direct MBBS lived context · insufficient for ragging prevalence",
+    signal:{label:"Direct MBBS senior-interaction context added · prevalence still unresolved",tone:"insufficient",confidence:"Moderate lived context; insufficient prevalence evidence",window:"2021–Aug 2026",hostelRisk:"MBBS hostel accommodation is documented in verified reviews, but first-year allocation/risk gradient is not reconstructed.",socialCoercion:"Senior interaction is described as part of ordinary college exposure; no explicit current coercion pattern is established.",evidenceMix:"Current official anti-ragging committee + verified MBBS hostel/senior-interaction reviews."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS reviews — NDMC/Hindu Rao senior interaction and hostel context",url:"https://www.shiksha.com/college/north-delhi-municipal-corporation-medical-college-and-hindu-rao-hospital-69823/reviews",year:2023}]
+  },
+  "295": {
+    currentPicture:"AIIMS Madurai remains a transitional institution, but its early-batch residence structure is now much clearer. The official 2025–26 prospectus says students were housed in private accommodation 7 km from the hospital and 11 km from the medical-college campus, with institute transport; hostel is shared, separate for boys and girls, aimed at outstation students and allotted subject to availability. A direct MBBS review from the temporary-campus period also describes the limitations of studying away from the permanent campus. This is strong transition/residence evidence, not a ragging-prevalence signal.",
+    movementCommonAreas:"The 2025 batch used off-campus private hostel accommodation with institute transport between residence, hospital and medical-college sites.",
+    seniorJunior:"Current direct student evidence is mainly about temporary-campus limitations rather than senior-junior coercion; no reliable prevalence claim is made.",
+    confidence:"High for official transitional residence structure · Moderate for direct temporary-campus MBBS context · insufficient for senior-culture prevalence",
+    signal:{label:"Temporary-campus/off-campus hostel structure reconstructed · senior culture unresolved",tone:"insufficient",confidence:"High residence context; insufficient prevalence evidence",window:"2024–26",hostelRisk:"Shared off-campus hostel accommodation is available subject to availability, with separate boys/girls arrangements and institute transport. No ragging-risk gradient is inferred.",evidenceMix:"Current official admission/hostel material + direct MBBS temporary-campus review."},
+    sources:[
+      {kind:"official",label:"AIIMS Madurai Prospectus 2025–26 — private off-campus hostel, separate boys/girls, shared rooms",url:"https://aiimsmadurai.edu.in/downloads/Prospectus%202025-26.pdf",year:2025},
+      {kind:"student",label:"Collegedunia MBBS review — AIIMS Madurai temporary-campus lived context",url:"https://collegedunia.com/university/65125-all-india-institute-of-medical-sciences-aiims-madurai/reviews",year:2024}
+    ]
+  },
+  "314": {
+    currentPicture:"Government Medical College Tiruppur now has direct verified MBBS campus/hostel evidence in addition to current formal anti-ragging machinery. Verified 2025 reviews describe the first-year teaching environment, hostel rooms/restrooms and a generally positive campus experience. They do not discuss senior-junior coercion, so this improves lived-context coverage without becoming a low-risk rating.",
+    positives:"Verified MBBS reviews describe a strong first-year academic environment and good hostel infrastructure.",
+    seniorJunior:"Not directly characterized in the located verified reviews; the new sources are current MBBS campus/hostel context rather than ragging-specific testimony.",
+    confidence:"High for formal safeguards · Moderate-high for verified MBBS lived context · insufficient for prevalence",
+    signal:{label:"Verified MBBS hostel/campus context added · senior culture unresolved",tone:"insufficient",confidence:"Moderate-high lived context; insufficient prevalence evidence",window:"2025–Aug 2026",hostelRisk:"Verified MBBS reviews confirm hostel facilities; first-year separation or hostel-vs-day-scholar culture gradient is not established.",evidenceMix:"Current formal anti-ragging controls + verified MBBS campus/hostel reviews."},
+    sources:[{kind:"student",label:"Shiksha verified MBBS reviews — GMC Tiruppur first-year/campus/hostel context",url:"https://www.shiksha.com/college/government-medical-college-tirupur-180709/reviews",year:2025}]
+  },
+  "231": {
+    currentPicture:"This profile refers to the new Government Medical College at L.T. Marg/GT Hospital, Mumbai, not Grant/JJ. The 2024 MCC institute profile confirms hostel facilities for both male and female students, while the college's own 2024 admission brochure requires hostel-accommodation declarations. With only a young MBBS hierarchy, lived senior-culture evidence remains insufficient; the new evidence improves First-90 residence structure only.",
+    movementCommonAreas:"Hostel facilities for both male and female students are confirmed in the 2024 MCC institute profile; no first-year-specific movement restrictions were established.",
+    confidence:"High for programme identity/age and hostel availability · insufficient for lived senior culture",
+    signal:{label:"Young programme · male/female hostel availability confirmed",tone:"insufficient",confidence:"High residence-context confidence; insufficient prevalence evidence",window:"2024–Aug 2026",hostelRisk:"MCC's 2024 institute profile reports hostel facilities for both male and female students. No culture-risk gradient is inferred.",evidenceMix:"NMC/DMER/MCC/college official material; current lived senior-culture evidence remains insufficient."},
+    sources:[{kind:"official",label:"MCC 2024 institute profile — GMC Mumbai male and female hostel facilities",url:"https://gmcmumbai.org/wp-content/uploads/2024/08/Online-Counselling-System.pdf",year:2024}]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V814_HIGH_VALUE).forEach(([id, patch]) => {
+  const prior = JUNIOR_CULTURE[id] || {};
+  const byUrl = new Map();
+  [...(Array.isArray(prior.sources)?prior.sources:[]), ...(Array.isArray(patch.sources)?patch.sources:[])].forEach(s=>{ if(s&&s.url) byUrl.set(s.url,s); });
+  JUNIOR_CULTURE[id] = {...prior, ...patch, lastVerified:'27 Aug 2026', signal:{...(prior.signal||{}), ...(patch.signal||{})}, sources:[...byUrl.values()]};
+});
+v814PatchFirst90('64',{
+  hostellerVsDayScholar:"AIIMS Delhi's official hostel rules establish a first-month senior-room separation rule, while a verified Dec 2024 MBBS review reports private hostel rooms for students. This adds direct residence context but does not quantify day-scholar exposure.",
+  sourceNote:"V8.14 adds verified MBBS hostel-room context to the existing official pre-freshers senior-room separation evidence.",
+  coverage:{residenceMode:true}
+});
+v814PatchFirst90('295',{
+  hostellerVsDayScholar:"The official 2025–26 prospectus says the 2025 batch used private accommodation 7 km from the hospital and 11 km from the medical-college campus, with institute transport. Hostel is intended for outstation candidates and allotted subject to availability, so residence is not universal.",
+  genderDifferences:"The official prospectus states that separate hostels are available for boys and girls. Rooms are shared; no single accommodation is provided. This is a housing difference/structure only.",
+  sourceNote:"V8.14 reconstructs AIIMS Madurai's temporary off-campus hostel system, separate boys/girls arrangements and shared-room model; senior-contact timing remains unsupported.",
+  coverage:{residenceMode:true,genderSpecific:true}
+});
+v814PatchFirst90('231',{
+  hostellerVsDayScholar:"The 2024 MCC institute profile confirms hostel facilities for both male and female MBBS students at the new GMC Mumbai/GT Hospital college. The admission brochure separately requires hostel-accommodation declarations. Allotment mechanics and day-scholar comparison remain unresolved.",
+  genderDifferences:"Male and female hostel facilities are both explicitly listed in the MCC institute profile. This is accommodation availability, not a gender-specific culture signal.",
+  sourceNote:"V8.14 adds official male/female hostel availability for the new 2024 programme; lived first-week senior culture remains unsupported.",
+  coverage:{residenceMode:true,genderSpecific:true}
+});
+
+// V8.16 — phase-timing deepening II (27 Aug 2026).
+// Adds historical/current phase cells only where timing is explicit enough to defend.
+const JUNIOR_CULTURE_V816_TIMING = {
+  '75': {
+    currentPicture:'BJ Medical College Ahmedabad now includes an older student-authored hostel account describing first-year accommodation and senior-led “intro” sessions. Because the page is undated/legacy material, it is useful as historical first-year structure but not as a current 2026 prevalence estimate. A separate June 2026 PG ragging case remains PG-only and is not extrapolated to MBBS freshers.',
+    confidence:'Moderate for legacy first-year hostel/intro structure; current MBBS prevalence unresolved',
+    signal:{label:'Legacy first-year intro/hostel structure documented · current MBBS prevalence unresolved',tone:'insufficient',confidence:'Moderate historical structure; insufficient current prevalence',window:'legacy + Jun 2026 PG-only context',hostelRisk:'Legacy student material places first-years in designated/temporary accommodation and describes occasional senior “intro” sessions. Current 2026 MBBS fresher routine is not established.'},
+    sources:[{kind:'student',label:'BJMC Ahmedabad student-authored hostel page — first-year accommodation and senior intro sessions',url:'https://bjmc-ahmedabad.blogspot.com/p/about-hostel.html'}]
+  },
+  '241': {
+    currentPicture:'Bhima Bhoi Medical College Balangir now has a historical early-course timing record from 2022. A first-year MBBS student who had joined about one month earlier died after falling from the hostel roof; his family alleged harassment/ragging by seniors in the preceding days. Police later said their investigation found no link with ragging. The profile therefore treats this as a disputed historical concern, not a verified causal finding.',
+    confidence:'High for timing/event chronology · disputed on ragging causation',
+    signal:{label:'Historical ~1-month-after-joining concern · ragging link disputed by later police finding',tone:'mixed',confidence:'High chronology; disputed causal interpretation',window:'Apr–Nov 2022',hostelRisk:'The student was a first-year resident in the New Boys Hostel about one month after admission. Family alleged recent senior harassment; police later said no ragging link was found.'},
+    sources:[
+      {kind:'news',label:'New Indian Express — first-year student joined about one month earlier; family alleged senior harassment',url:'https://www.newindianexpress.com/amp/story/states/odisha/2022/Apr/24/parents-allege-ragging-in-medicos-death-2445882.html',year:2022},
+      {kind:'news',label:'New Indian Express — later police investigation said no ragging link found',url:'https://www.newindianexpress.com/states/odisha/2022/Nov/19/college-raggingtwo-deaths-since-april-in-odisha-policeversion-leaves-parents-worried-2519914.html',year:2022}
+    ]
+  },
+  '142': {
+    currentPicture:'Hassan Institute of Medical Sciences now has a current first-year residence progression record from a 2026 MBBS review: first-year hostel rooms are reported as three-sharing, changing to two-sharing from second year onward. This is useful First-90/later-year housing structure, not a ragging-prevalence finding. A separate March 2026 ragging allegation concerns PG surgery residents and remains PG-only.',
+    confidence:'Moderate-high for current MBBS residence progression; insufficient UG ragging prevalence evidence',
+    signal:{label:'Current first-year → second-year hostel progression documented',tone:'insufficient',confidence:'Moderate-high residence evidence; insufficient UG prevalence',window:'2026',hostelRisk:'A current MBBS review reports three students per room in first year and two per room from second year onward.'},
+    sources:[{kind:'student',label:'Shiksha MBBS review — HIMS first-year triple-sharing, second-year double-sharing',url:'https://www.shiksha.com/college/hassan-institute-of-medical-sciences-karnataka-other-62967/reviews',year:2026}]
+  },
+  '183': {
+    currentPicture:'Shyam Shah Medical College Rewa now has current 2026 evidence on both sides of the senior-junior picture. An April 2026 first-year MBBS review says seniors are helping and notes a freshers party, while February 2026 reporting describes senior students entering the UG hostel and ragging fresher juniors, with several juniors injured in ensuing violence. This supports a mixed current first-year signal rather than a single reassuring or concerning label.',
+    confidence:'Moderate-high for current first-year lived/reported evidence; mixed pattern',
+    signal:{label:'Current first-year evidence is mixed: helpful seniors + reported fresher-hostel incident',tone:'mixed',confidence:'Moderate-high current evidence; mixed pattern',window:'Feb–Apr 2026',hostelRisk:'A Feb 2026 report describes seniors reaching the UG hostel and ragging fresher juniors; an Apr 2026 first-year review says seniors are helping.'},
+    sources:[
+      {kind:'student',label:'Shiksha MBBS review — Apr 2026 first-year student says seniors are helping; freshers party',url:'https://www.shiksha.com/college/shyam-shah-medical-college-rewa-63117/reviews',year:2026},
+      {kind:'news',label:'Amar Ujala — Feb 2026 seniors reportedly ragged fresher juniors in UG hostel',url:'https://www.amarujala.com/video/madhya-pradesh/rewa/lathicharge-in-ug-hostel-half-a-dozen-juniors-injured-riot-erupts-again-during-treatment-at-sanjay-gandhi-hospital-rewa-news-c-1-1-noi1337-3910795-2026-02-03',year:2026}
+    ]
+  },
+  '324': {
+    currentPicture:'Madurai Medical College now has explicit historical phase timing from the 2018 first-year hostel case. First-years said that soon after joining they were told occasional ragging was practiced; the college formally barred seniors from contacting first-years and housed them in a separate block, yet second-years entered the hostel at night and students reported harassment over the preceding weeks. A 2024 first-year review says separate first-year block/mess and strict wardens remain anti-ragging measures, while also saying ragging still existed in some form. This is time-layered evidence, not a current batch-wide prevalence estimate.',
+    confidence:'High for historical first-year phase structure; moderate for 2024 lived continuation signal',
+    signal:{label:'Historical first-weeks ragging + separate first-year block; 2024 lived report says controls remain',tone:'mixed',confidence:'High historical timing; moderate recent lived context',window:'2018 + 2024',hostelRisk:'2018: first-years were kept in a separate block and seniors were barred from contact, but second-years entered at night and complaints described harassment over weeks. 2024: a first-year review still describes separate block/mess and strict warden controls.'},
+    sources:[
+      {kind:'news',label:'Times of India — 2018 first-year complaint; separate block; seniors entered hostel; harassment over weeks',url:'https://timesofindia.indiatimes.com/city/madurai/ragging-22-med-college-students-face-suspension/articleshow/65649173.cms',year:2018},
+      {kind:'student',label:'Zollege first-year MBBS review — 2024 separate first-year block/mess and anti-ragging controls',url:'https://zollege.in/college/168974-madurai-medical-college-madurai/hostel',year:2024}
+    ]
+  },
+  '297': {
+    currentPicture:'Coimbatore Medical College now has unusually explicit historical first-day timing plus newer lived context. A 2016 complaint said first-year hostel students were called by seniors on their first day and subjected to clothing/alcohol-related coercion. A 2024 hostel review says ragging still occurs at night in the boys hostel but has reduced substantially, while another student review describes strict anti-ragging enforcement and friendly seniors. The profile therefore remains mixed and time-layered.',
+    confidence:'High for documented historical first-day allegation; moderate for conflicting 2024 lived reports',
+    signal:{label:'Documented historical first-day coercion · newer boys-hostel reports mixed/reduced',tone:'mixed',confidence:'High historical timing; moderate recent lived evidence',window:'2016 + 2024',hostelRisk:'2016 complaint places coercion on the first hostel day. 2024 reviews conflict: one says night ragging persists but has reduced; another describes strict anti-ragging enforcement and friendly seniors.'},
+    sources:[
+      {kind:'news',label:'New Indian Express — 2016 complaint describes coercion on first day in hostel',url:'https://www.newindianexpress.com/states/tamil-nadu/2016/Aug/24/seniors-forced-us-to-strip-drink-beer-coimbatore-medical-college-student-1512461.html',year:2016},
+      {kind:'student',label:'Collegedunia — 2024 boys-hostel review says night ragging persists but is reduced',url:'https://collegedunia.com/reviews/870155-anonymous-review-on-coimbatore-medical-college-cmc-coimbatore',year:2024},
+      {kind:'student',label:'CollegeBatch MBBS review — strict anti-ragging society; seniors described as friendly',url:'https://www.collegebatch.com/reviews/28777-coimbatore-medical-college-coimbatore',year:2024}
+    ]
+  }
+};
+Object.entries(JUNIOR_CULTURE_V816_TIMING).forEach(([id,patch])=>{
+  const prior=JUNIOR_CULTURE[id]||{}; const byUrl=new Map();
+  [...(prior.sources||[]),...(patch.sources||[])].forEach(s=>{if(s&&s.url)byUrl.set(s.url,s)});
+  JUNIOR_CULTURE[id]={...prior,...patch,lastVerified:'27 Aug 2026',signal:{...(prior.signal||{}),...(patch.signal||{})},sources:[...byUrl.values()]};
+});
+
+function v816F90(id, patch){ if(!JUNIOR_FIRST90[id]) return; JUNIOR_FIRST90[id]={...JUNIOR_FIRST90[id],...patch,sources:JUNIOR_CULTURE[id]?.sources||JUNIOR_FIRST90[id].sources||[],coverage:{...(JUNIOR_FIRST90[id].coverage||{}),...(patch.coverage||{})}}; }
+v816F90('142',{hostellerVsDayScholar:'A current 2026 MBBS review reports three students per hostel room in first year, changing to two per room from second year onward.',afterFreshers:'The same current review reports a residence transition from first-year triple-sharing to two-sharing from second year onward.',coverage:{residenceMode:true,afterFreshers:true},sourceNote:'V8.16 adds current first-year→second-year room progression; it does not infer UG ragging prevalence from a separate PG allegation.'});
+v816F90('183',{firstWeeks:'Current 2026 evidence is mixed: a Feb report describes ragging of fresher juniors in the UG hostel, while an Apr first-year MBBS review says seniors are helping and notes a freshers party. Exact week-of-course timing is not established beyond first-year/fresher status.',coverage:{firstWeeks:true},sourceNote:'V8.16 adds current first-year/fresher evidence but does not invent an exact week number.'});
+v816F90('324',{firstWeeks:'Historical 2018 first-year students said that soon after joining they were told occasional ragging was practiced; a subsequent complaint described harassment over the preceding weeks despite formal senior-contact restrictions.',hostellerVsDayScholar:'Historical and 2024 evidence both describe separate first-year hostel arrangements; the 2024 first-year review mentions a separate block and mess with strict wardens.',coverage:{firstWeeks:true,residenceMode:true},sourceNote:'V8.16 adds historical joining/first-weeks timing plus a 2024 first-year residence-control account; current 2026 prevalence remains unresolved.'});
+v816F90('297',{firstWeeks:'A documented 2016 complaint says first-year hostel students were called by seniors on their first day and subjected to coercive clothing/alcohol-related acts. This is historical first-day evidence.',hostellerVsDayScholar:'Current 2024 reviews discuss boys-hostel ragging specifically; one reports night-time ragging that has reduced substantially, while another describes strict anti-ragging enforcement and friendly seniors.',coverage:{firstWeeks:true,residenceMode:true},sourceNote:'V8.16 adds explicit historical first-day timing and current boys-hostel lived context; the two periods are kept separate.'});
+v816F90('241',{firstWeeks:'In the 2022 case, the first-year student had joined roughly one month earlier and family alleged senior harassment in the preceding days. Police later said their investigation found no ragging link. This is a disputed historical early-course concern.',coverage:{firstWeeks:true},sourceNote:'V8.16 maps only the documented ~one-month-after-joining chronology; causation remains disputed.'});
+
+const FRESHERS_TIMELINE_V816 = {
+  '241':{phases:{weeks2to4:{grade:'C',basis:'historical news chronology; allegation later disputed by police',status:'mixed-disputed',summary:'A 2022 first-year student had joined about one month earlier; family alleged recent senior harassment, while police later said their investigation found no ragging link.',sources:[{label:'NIE Apr 2022 + Nov 2022 follow-up',url:'https://www.newindianexpress.com/amp/story/states/odisha/2022/Apr/24/parents-allege-ragging-in-medicos-death-2445882.html'}]}}},
+  '142':{phases:{restFirstYear:{grade:'B',basis:'current MBBS review',status:'residence-structure',summary:'A 2026 MBBS review reports three-sharing hostel rooms in first year.',sources:[{label:'HIMS Shiksha MBBS review',url:'https://www.shiksha.com/college/hassan-institute-of-medical-sciences-karnataka-other-62967/reviews'}]},secondYear:{grade:'B',basis:'current MBBS review',status:'residence-structure',summary:'The same review reports a shift to two-sharing rooms from second year onward.',sources:[{label:'HIMS Shiksha MBBS review',url:'https://www.shiksha.com/college/hassan-institute-of-medical-sciences-karnataka-other-62967/reviews'}]}}},
+  '183':{phases:{restFirstYear:{grade:'B',basis:'current first-year MBBS review + current news report',status:'mixed-current',summary:'Feb 2026 reporting describes ragging of fresher juniors in the UG hostel; an Apr 2026 first-year review says seniors are helping. Exact week-of-course timing is not available.',sources:[{label:'SSMC Rewa current review/news',url:'https://www.shiksha.com/college/shyam-shah-medical-college-rewa-63117/reviews'}]}}},
+  '324':{phases:{joiningArrival:{grade:'B',basis:'historical first-year testimony',status:'historical-concern',summary:'In 2018, first-years said that soon after joining seniors told them occasional ragging was practiced.',sources:[{label:'NIE/TOI 2018 Madurai first-year case',url:'https://www.newindianexpress.com/states/tamil-nadu/2018/Sep/02/22-medical-students-to-face-six-month-suspension-for-verbal-ragging-1866439.html'}]},weeks2to4:{grade:'B',basis:'historical complaint + disciplinary record',status:'historical-concern',summary:'The 2018 complaint described harassment over the preceding weeks despite separate first-year housing and formal senior-contact restrictions.',sources:[{label:'TOI 2018 Madurai first-year complaint',url:'https://timesofindia.indiatimes.com/city/madurai/ragging-22-med-college-students-face-suspension/articleshow/65649173.cms'}]}}},
+  '297':{phases:{joiningArrival:{grade:'B',basis:'documented historical complaint',status:'historical-concern',summary:'A 2016 complaint says seniors called first-year hostel students on their first day and imposed coercive clothing/alcohol-related acts.',sources:[{label:'NIE 2016 Coimbatore complaint',url:'https://www.newindianexpress.com/states/tamil-nadu/2016/Aug/24/seniors-forced-us-to-strip-drink-beer-coimbatore-medical-college-student-1512461.html'}]},restFirstYear:{grade:'C',basis:'2024 anonymous hostel review',status:'current-mixed',summary:'A 2024 boys-hostel review says night ragging still occurs but has reduced substantially; another student review describes strict anti-ragging enforcement and friendly seniors.',sources:[{label:'Collegedunia 2024 Coimbatore hostel review',url:'https://collegedunia.com/reviews/870155-anonymous-review-on-coimbatore-medical-college-cmc-coimbatore'}]}}}
+};
+Object.entries(FRESHERS_TIMELINE_V816).forEach(([id,patch])=>{ const prior=FRESHERS_TIMELINE[id]||{phases:{}}; FRESHERS_TIMELINE[id]={...prior,phases:{...(prior.phases||{}),...(patch.phases||{})}}; });
+FRESHERS_TIMELINE_META.lastUpdated='27 Aug 2026';
+FRESHERS_TIMELINE_META.scope='200 Junior Culture profiles · phase timing only where supported · V8.16 historical/current timing deepening';
+
+// V8.17 timeline schema normalization.
+// Earlier phase-deepening passes used three legacy keys that were semantically valid
+// but invisible to the canonical six-phase renderer. Normalize them once, without
+// overwriting an already-populated canonical cell.
+(function normalizeFreshersTimelinePhaseKeys(){
+  const aliases={joiningArrival:'arrival',weeks2to4:'weeks1_4',laterFirstYear:'restFirstYear'};
+  Object.values(FRESHERS_TIMELINE).forEach(record=>{
+    const phases=record&&record.phases;if(!phases)return;
+    Object.entries(aliases).forEach(([legacy,canonical])=>{
+      if(phases[legacy]&&!phases[canonical]) phases[canonical]=phases[legacy];
+      if(phases[legacy]) delete phases[legacy];
+    });
+  });
+})();
+FRESHERS_TIMELINE_META.updated='27 Aug 2026';
+FRESHERS_TIMELINE_META.scope='200 Junior Culture profiles · canonical six-phase timing schema · phase timing only where supported';
+
+// V8.18 phase-specific queue deepening — 27 Aug 2026.
+// Adds only explicitly phaseable event/residence/culture evidence.
+const FRESHERS_TIMELINE_V818 = {
+  '388': { phases: {
+    freshers: {grade:'A',basis:'official college event page',status:'official-event',summary:'BRD Medical College says its MBBS fresher party is hosted by second-year students and is generally organized a few months after fresh admissions are completed.',sources:[{label:'BRD Medical College · Events organized in college',url:'https://brdmc.ac.in/EventsOrganizedinCollege'}]}
+  }},
+  '267': { phases: {
+    freshers: {grade:'B',basis:'verified MBBS review',status:'reported-event',summary:'A verified MBBS review says a fresher party is organized every year to welcome the new batch. The review does not establish a fixed month for the party.',sources:[{label:'Shiksha · Government Medical College Barmer MBBS review',url:'https://www.shiksha.com/college/government-medical-college-barmer-65289/course-bachelor-of-medicine-and-bachelor-of-surgery-mbbs-381735'}]}
+  }},
+  '75': { phases: {
+    freshers: {grade:'B',basis:'multiple MBBS reviews',status:'reported-event',summary:'Multiple MBBS reviews describe recurring fresher parties for newly joined juniors at BJ Medical College Ahmedabad; the exact timing within first year is not consistently stated.',sources:[{label:'Zollege · BJ Medical College Ahmedabad hostel/reviews',url:'https://zollege.in/college/169609-b-j-medical-college-bjmc-ahmedabad/hostel'}]}
+  }},
+  '129': { phases: {
+    restFirstYear: {grade:'C',basis:'current self-identified second-year student account',status:'current-residence-control',summary:'A Feb 2026 commenter identifying as a RIMS second-year student says juniors are kept inside their hostel and describes first-year hostel life as highly restricted. This is anonymous lived evidence and does not establish a formal college policy.',sources:[{label:'Reddit · RIMS Ranchi thread',url:'https://www.reddit.com/r/MEDICOreTARDS/comments/1frhw9j/rims_ranchi/'}]}
+  }},
+  '374': { phases: {
+    restFirstYear: {grade:'C',basis:'current anonymous/second-hand community reports',status:'current-concern',summary:'Aug 2026 community reports describe first-year-specific restrictions at GMC Haldwani, including alleged weekly close haircuts, compulsory greetings and limits on roaming/gym/ground use. The reports are anonymous and partly second-hand, so prevalence remains uncertain.',sources:[{label:'Reddit · Doon vs Haldwani discussion',url:'https://www.reddit.com/r/MEDICOreTARDS/comments/1vn4o6v/doon_vs_haldwani_guyssss_please_help_me_choose/'},{label:'Reddit · first-year haircut discussion',url:'https://www.reddit.com/r/indianmedschool/comments/1umyz5v/is_shaving_head_common_practicemandatory_in_first/'}]}
+  }},
+  '166': { phases: {
+    restFirstYear: {grade:'A',basis:'current news/institutional chronology',status:'cohort-structure',summary:'Kasaragod Medical College opened MBBS in Nov 2025; reporting in June 2026 says the first batch of 50 had just completed first year and was still the college\'s only MBBS batch. Therefore that first cohort had no older same-college MBBS batch above it during first year. This is cohort structure, not a safety conclusion.',sources:[{label:'Onmanorama · Kasaragod Medical College infrastructure report, Jun 2026',url:'https://www.onmanorama.com/news/kerala/2026/06/20/satheesan-calls-new-medical-colleges-pathetic-allocation-barely-improves-balagopal-interim-budget.html'}]}
+  }}
+};
+Object.entries(FRESHERS_TIMELINE_V818).forEach(([id,patch])=>{
+  const prior=FRESHERS_TIMELINE[id]||{phases:{}};
+  FRESHERS_TIMELINE[id]={...prior,phases:{...(prior.phases||{}),...(patch.phases||{})}};
+});
+FRESHERS_TIMELINE_META.lastUpdated='27 Aug 2026';
+FRESHERS_TIMELINE_META.scope='200 Junior Culture profiles · phase timing only where supported · V8.18 phase-queue deepening';
+
+// V8.19 — sparse-phase deepening III (27 Aug 2026).
+// Focus: Months 2–3, formal Freshers, and late-first-year transitions.
+const FRESHERS_TIMELINE_V819 = {
+  '74': { phases: {
+    arrival: {grade:'A',basis:'official 2025–26 admission brochure',status:'official-welcome',summary:'AIIMS Rajkot’s admission brochure states that a Freshers Day celebration for the incoming MBBS batch will commence after admission.',sources:[{label:'AIIMS Rajkot MBBS Admission Brochure 2025–26',url:'https://www.scribd.com/document/903941195/MBBS-Admission-Brochure-2025-26'}]},
+    restFirstYear: {grade:'C',basis:'current anonymous student discussion',status:'current-hierarchy-report',summary:'A June 2026 discussion says the immediate-senior-funded gala “freshers” event is usually held only just before the next batch arrives, and alleges that juniors are expected to follow senior rules until then. This is anonymous lived reporting, not an institutional rule.',sources:[{label:'Reddit · AIIMS Rajkot ragging/freshers discussion, Jun 2026',url:'https://www.reddit.com/r/MEDICOreTARDS/comments/1uhotfl/ragging_at_aiims_rajkot_off_topic/'}]}
+  }},
+  '3': { phases: {
+    freshers: {grade:'A',basis:'official institute student magazine',status:'officially-documented-event',summary:'AIIMS Mangalagiri’s official student magazine documents senior-organized MBBS fresher celebrations, including VERVE-VISTA and earlier Astitva editions, with faculty and seniors welcoming the incoming batch.',sources:[{label:'AIIMS Mangalagiri · Atman Vol 3 Issue 1 (VERVE-VISTA)',url:'https://www.aiimsmangalagiri.edu.in/wp-content/uploads/2024/06/Final-Atman-Vol-3-issue-1.pdf'}]}
+  }},
+  '373': { phases: {
+    months2_3: {grade:'B',basis:'official 2025 admission chronology + substantiated anti-ragging finding',status:'current-substantiated-concern',summary:'GDMC’s official 2025 MBBS admission process was still active in late October 2025. On 12 January 2026, two first-year students from the 2025 batch were ragged in the hostel; the anti-ragging committee subsequently found senior students guilty and imposed suspension/hostel penalties. This places the substantiated incident roughly in the first 2–3 months after admission.',sources:[{label:'GDMC official MBBS 2025 admission process · 27 Oct 2025',url:'https://gdmcuk.com/admission-process/'},{label:'Times of India · Doon MBBS students found guilty of ragging juniors, Jan 2026',url:'https://timesofindia.indiatimes.com/city/dehradun/2-mbbs-students-at-doon-medical-college-suspended-after-panel-finds-them-guilty-of-ragging-juniors/articleshow/126701176.cms'}]}
+  }},
+  '41': { phases: {
+    freshers: {grade:'B',basis:'direct MBBS review',status:'reported-event',summary:'A Darbhanga Medical College MBBS review describes a recurring freshers party for the new batch, alongside annual sports/foundation-day and farewell events. The review does not establish a fixed month.',sources:[{label:'Collegedunia · Darbhanga Medical College MBBS review',url:'https://collegedunia.com/reviews/page-17988'}]}
+  }},
+  '98': { phases: {
+    freshers: {grade:'B',basis:'verified MBBS review',status:'reported-event',summary:'Verified BPS Government Medical College MBBS reviews describe the college as organizing a freshers party for incoming students as part of its recurring campus events; exact timing within first year is not stated.',sources:[{label:'Shiksha · BPS GMC Sonepat verified MBBS reviews',url:'https://www.shiksha.com/college/bps-government-medical-college-for-women-sonepat-62687/reviews'}]}
+  }}
+};
+Object.entries(FRESHERS_TIMELINE_V819).forEach(([id,patch])=>{
+  const prior=FRESHERS_TIMELINE[id]||{phases:{}};
+  FRESHERS_TIMELINE[id]={...prior,phases:{...(prior.phases||{}),...(patch.phases||{})}};
+});
+FRESHERS_TIMELINE_META.lastUpdated='27 Aug 2026';
+FRESHERS_TIMELINE_META.scope='200 Junior Culture profiles · phase timing only where supported · V8.19 sparse-phase deepening III';

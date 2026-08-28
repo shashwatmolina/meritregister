@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Final Choices — The Merit Register</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<meta content="V9.2 Theme-Integrated UX · 200-profile build · 2026-08-28" name="merit-register-export"/>
+<meta content="Counselling choice-filling simulator that keeps preference order separate from quota-aware admission reach and historical cutoff context." name="description"/>
+<link href="css/decision.css" rel="stylesheet"/><link href="css/ux-v823.css" rel="stylesheet"/><link href="css/choice.css" rel="stylesheet"/><link href="css/v9-beta.css" rel="stylesheet"/><link href="css/platform-v92.css" rel="stylesheet"/></head>
+<body>
+<header class="masthead"><div class="wrap"><div>
+<p class="eyebrow">Independent · Not affiliated with NMC or MCC</p><h1>The Merit Register</h1>
+<p class="sub">A working ledger of government MBBS colleges in India — counselling data, college intelligence and student-facing decision tools.</p>
+<nav aria-label="Main navigation" class="site-nav"><a class="" href="index.html">Colleges</a><a class="" href="compare.html">Compare</a><a class="nav-my-list" data-my-list-link="true" href="preference.html">♡ My List</a><a class="" href="decision.html">Shortlist Builder</a><a aria-current="page" class="active" href="choice.html">Final Choices</a><span class="nav-more"><button aria-expanded="false" aria-label="More pages" class="nav-more-btn" type="button">More</button><span class="nav-more-menu"><a class="" href="culture.html">Junior Culture</a><a class="" href="assistant.html">Help me choose</a><a class="" href="evidence.html">Data Quality</a><a class="" href="timeline.html">First-Year Timeline</a><a class="" href="movement.html">Cutoff trends</a><a class="" href="status.html">Data status</a><a class="" href="about.html">About</a></span></span></nav>
+</div><div class="masthead-controls"><div class="rhs">Updated Aug 2026<br/>working build</div><button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button"><span aria-hidden="true" class="theme-switch"><span class="theme-thumb"><svg class="theme-symbol sun-symbol" viewbox="0 0 24 24"><circle cx="12" cy="12" r="4.25"></circle><path d="M12 1.75v2.5M12 19.75v2.5M1.75 12h2.5M19.75 12h2.5M4.75 4.75l1.8 1.8M17.45 17.45l1.8 1.8M4.75 19.25l1.8-1.8M17.45 6.55l1.8-1.8"></path></svg><svg class="theme-symbol moon-symbol" viewbox="0 0 24 24"><path d="M20.1 15.15A8.55 8.55 0 0 1 8.85 3.9 9.1 9.1 0 1 0 20.1 15.15Z"></path></svg></span></span></button></div></div></header>
+<section class="choice-hero"><div class="wrap"><p class="eyebrow">Counselling preference simulator</p><h2>Build the order you actually want to submit.</h2><p class="lede">Keep desirability and admission reach separate. Your saved preference order stays intact while the simulator annotates each choice with current 2026 R1 reach and historical round references.</p></div></section>
+<main class="choice-main"><div class="wrap choice-layout">
+<aside class="choice-panel"><p class="eyebrow">Candidate &amp; reference</p><h3>Your counselling context</h3>
+<div class="choice-field"><label for="choice-air">NEET AIR</label><input id="choice-air" min="1" placeholder="e.g. 232" type="number"/></div>
+<div class="choice-field"><label for="choice-category">Category</label><select id="choice-category"><option>General</option><option>OBC</option><option>EWS</option><option>SC</option><option>ST</option></select></div>
+<button class="btn primary" id="choice-save-profile" type="button">Save candidate profile</button>
+<div class="choice-field"><label>Enabled 2026 routes</label><div class="choice-route-list" id="choice-routes"></div></div>
+<div class="choice-field"><label for="choice-round">Historical round reference</label><select id="choice-round"><option value="R1">2025 Round 1</option><option value="R2">2025 Round 2</option><option value="R3">2025 Round 3</option></select></div>
+<p class="choice-note">2026 currently uses the loaded MCC Round-1 quota streams. Later 2026 rounds are not inferred from 2025 data.</p>
+<div class="choice-actions"><a href="decision.html">← Refine in Shortlist Builder</a><a href="preference.html">Edit My List</a><button id="choice-copy" type="button">Copy choice list</button><button id="choice-download" type="button">Export .txt</button></div>
+</aside>
+<section>
+<div class="choice-summary"><div><strong id="choice-total">0</strong><span>choices</span></div><div><strong id="choice-reached">0</strong><span>2026 R1 reached</span></div><div><strong id="choice-anchor">0</strong><span>Safety / likely anchors</span></div><div><strong id="choice-unknown">0</strong><span>unknown reach</span></div></div>
+<div class="choice-alerts" id="choice-alerts"></div>
+<div class="choice-list-card"><div class="choice-list-head"><div><p class="eyebrow">Your actual order</p><h3>Preference list</h3><p>Move colleges only because you prefer one over another—not because one has an easier cutoff.</p></div><a class="btn" href="decision.html">Re-rank by priorities</a></div><div class="choice-list" id="choice-list"></div><div class="choice-empty" hidden="" id="choice-empty"><h3>Your list is empty</h3><p>Add colleges to My List or rank a shortlist in Shortlist Builder first.</p><a href="index.html">Browse colleges →</a></div></div>
+<p class="choice-footnote"><strong>How to read this:</strong> “Safety / likely / competitive / dream” describes current loaded counselling reach only. It is not a recommendation to change your preference order. Historical 2025 cutoffs are references, not predictions for unpublished 2026 rounds. Conditional quota routes are used only when enabled in your saved candidate profile.</p>
+</section></div></main>
+<footer>Independent student resource · not an official government site · verify before relying on it</footer>
+<script defer="" src="js/shared-master-v8.js"></script><script defer="" src="js/shared-counselling-v8.js"></script><script defer="" src="js/choice.js"></script><script defer="" src="js/nav.js"></script>
+<script defer="True" src="js/ux-v823.js"></script><script src="js/v9-beta.js"></script><script defer="True" src="js/platform-v92.js"></script></body></html>

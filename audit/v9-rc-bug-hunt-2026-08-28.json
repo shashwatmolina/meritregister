@@ -1,0 +1,15 @@
+{
+  "build": "V9.0 RC",
+  "date": "2026-08-28",
+  "fixed": [
+    "Choice Filling missing COLLEGE_BY_ID runtime map",
+    "Choice Filling unguarded localStorage reads",
+    "Choice Filling stale preference-order IDs surviving shortlist changes",
+    "Conditional DU/IP route displayed alongside non-comparable AIQ movement text",
+    "Timeline Explorer ?college=<id> deep-links searched numeric IDs as text and returned empty",
+    "Timeline theme storage could crash when localStorage was blocked",
+    "Issue reporter missed college context on college.html"
+  ],
+  "data_changed": false,
+  "research_changed": false
+}

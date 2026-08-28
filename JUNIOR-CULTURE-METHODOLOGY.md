@@ -216,9 +216,9 @@ At the 150-profile milestone, all 150 profiles had a First-90-Days record. The t
 
 Coverage expanded to **200 Junior Culture profiles** and **200 First-90-Days records** using the next 25 unresolved colleges by 2026 General Round-1 demand. The pass keeps formal safeguards, disciplinary history, anonymous student reports and genuine evidence gaps separate. Source-empty profiles are presented as **insufficient evidence** rather than receiving an inferred safety or concern label.
 
-The canonical V8 Freshers Timeline contains **69 college records** across six possible phases per profile. Across all **1,050** profile-phase cells, the current grade counts are **A: 18, B: 28, C: 25, D: 4, explicit GAP: 8**; the remaining cells are blank because no phase-specific claim is supported. Therefore **71 A–C cells are publishable phase evidence**, **4 D cells are lead-only**, and **975 cells are blank or explicit GAP**.
+The canonical V8 Freshers Timeline contains **79 college records** across six possible phases per profile. Across all **1,200** profile-phase cells in the 200-profile research set, the current runtime count is **83 A–C publishable cells**, **4 D lead-only cells**, and **1,113 blank or explicit-GAP cells**. **60 colleges** currently have at least one A–C supported phase. A phase is populated only when the source actually supports that timing; policy documents alone do not create timeline evidence.
 
-The canonical source ledger currently contains **329 unique URLs**: **144 official**, **38 news**, and **147 student/community** sources. Source type is not a truth score: official pages often establish policy rather than lived prevalence, while student reports establish that an account was made rather than that it is universal.
+At that milestone, the canonical source ledger contained **329 unique URLs**: **144 official**, **38 news**, and **147 student/community** sources. Source type is not a truth score: official pages often establish policy rather than lived prevalence, while student reports establish that an account was made rather than that it is universal.
 
 
 ## Demand-ranked expansion: 175 → 200 (27 Aug 2026)
@@ -226,3 +226,71 @@ The canonical source ledger currently contains **329 unique URLs**: **144 offici
 The next 25 unresolved colleges were selected by 2026 General Round-1 demand rather than alphabetically. The pass added College of Medicine & Sagore Dutta Hospital through Kalyan Singh Government Medical College, Bulandshahr.
 
 Evidence remained asymmetric by design. Kakatiya Medical College received a current concern signal because an April 2026 disciplinary case is directly reported; Kanyakumari Government Medical College received a limited reassuring signal from a first-person 2024 report plus current formal controls; several colleges received only formal-safeguard or historical-complaint context; and source-thin colleges remain explicitly insufficient. No new Freshers Timeline phase was populated unless a source actually supported phase timing.
+
+
+## V8.7 zero-source fill (27 Aug 2026)
+The remaining 16 profiles with no attached direct source were targeted. Every researched profile now has at least one traceable source. A source can still be weak, old, formal-only, or context-only; source presence is not treated as evidence strength or safety.
+
+## V8.9 high-value lived-evidence fill (27 Aug 2026)
+
+The next repair pass prioritized prominent/high-demand profiles that were still official-only. A profile leaves the official-only queue only when a college-specific student/community or news source adds genuine lived, disciplinary or campus context. Generic counselling chatter does not qualify. General MBBS reviews can close a *lived-context* gap, but they are not converted into reassurance about ragging unless they actually discuss senior-junior conduct or ragging.
+
+At the V8.10 milestone, **143 of 200** profiles carry student/community evidence, **100** have at least two source classes, **35** remain official-only, and **61** remain single-source. The canonical combined culture / First-90 / timeline ledger contains **425 unique source URLs**. Timing remains strict at **71 A–C supported cells**, **4 D lead-only cells**, and **1,125 blank/explicit-GAP cells** across 1,200 possible phase cells.
+
+Notable evidence patterns are preserved rather than flattened: BPS Sonepat and CIMS Bilaspur have explicit student reports describing supportive/no-ragging senior culture; Mandya has conflicting lived accounts; AIIMS Nagpur combines reassuring lived evidence with separate community rumor/strict-separation discussion; Nahan carries a substantiated 2024 disciplinary case; and several Hamirpur/ESIC/Chittorgarh reviews provide current campus context without supporting a ragging-prevalence conclusion.
+
+
+
+## V8.10 targeted lived-evidence fill
+
+The next queue pass prioritised Bharatpur, Kollam/Parippally, Salem, Puri and Stanley where public student evidence was sufficiently college-specific to add value. Explicit senior-junior or ragging statements are distinguished from generic campus/hostel reviews. A generic positive review can close a lived-context gap but cannot be converted into a reassuring ragging conclusion unless it actually discusses senior-junior conduct.
+
+
+## V8.11 lived-evidence deepening — 27 Aug 2026
+
+This pass continued the high-priority official-only queue and added time-layered lived evidence for Palakkad, Faridkot, VIMSAR Burla, Theni, AIMS Mohali, Dharmapuri, KAP Trichy, GMC Alwar and Thoothukudi. A historical incident is not allowed to overwrite current lived evidence, and a current reassuring account is not allowed to erase historical disciplinary records. Generic MBBS campus reviews count as lived context only when they do not actually discuss senior-junior conduct.
+
+At this milestone, **149 of 200** profiles carry student/community evidence, **106** have at least two source classes, **29** remain official-only, and **53** are single-source. The combined Culture / First-90 / Timeline ledger contains **435 unique source URLs**. KAP Trichy adds one directly supported First-90 residence-separation field; unsupported timing fields remain blank. Timeline grading remains **71 A–C supported cells**, **4 D lead-only cells**, and **1,125 blank/explicit-GAP cells** across 1,200 possible phase cells.
+
+
+## V8.12 lived evidence + First-90 deepening — 27 Aug 2026
+
+The next targeted pass prioritised direct MBBS/fresher accounts and timing-specific residence/contact evidence. GMCH Chandigarh, GMC Srinagar, GMC Manjeri, GMC Chhatrapati Sambhajinagar/Aurangabad, NAMO Silvassa, SNMC Agra and AIIMS Vijaypur/Jammu gained lived evidence. Current and historical layers remain separate: supportive seniors do not erase reported ragging, and a positive campus review is not converted into a ragging-free conclusion unless it explicitly addresses that issue.
+
+At this milestone, **156 of 200** profiles carry student/community evidence, **113** have at least two source classes, **22** remain official-only, and **50** are single-source. The combined Culture / First-90 / Timeline ledger contains **442 unique source URLs**. Three new First-90 facts were added only where directly supported: GMC Srinagar first-year hostel allocation context, NAMO Silvassa first-day senior contact, and SNMC Agra first-year boys' hostel-allotment context. Timeline grading remains **71 A–C supported cells**, **4 D lead-only cells**, and **1,125 blank/explicit-GAP cells** across 1,200 possible phase cells.
+
+
+## V8.14 First-90 residence deepening — 27 Aug 2026
+
+This pass continued the shift from raw source acquisition toward directly supported early-MBBS structure. Wayanad and Kasaragod gained current residence-location evidence; ESIC Andheri and GMC Nashik gained hostel-choice/allotment structure; Barmer and Azamgarh gained room-progression evidence; Gauhati and KCGMC Karnal gained verified hostel-allotment/occupancy context; AIIMS Delhi gained current verified residence context layered onto its official first-month separation rule; AIIMS Madurai gained detailed temporary-campus/off-campus hostel structure; and the new Government Medical College, Mumbai (L.T. Marg/GT Hospital) was explicitly separated from Grant/JJ so evidence is not cross-attributed.
+
+At this milestone, **176 of 200** profiles carry student/community evidence, **135** have at least two source classes, **4** remain official-only, and **41** are single-source. The combined Culture / First-90 / Timeline ledger contains **473 unique source URLs**. **154** profiles still have fewer than two supported First-90 dimensions; **21** have at least three. The strict phase timeline remains **71 A–C supported cells**, **4 D lead-only cells**, and **1,125 blank/explicit-GAP cells** across 1,200 possible phase cells. Residence/campus evidence is never converted into a ragging-prevalence conclusion unless the source actually addresses senior coercion or ragging.
+
+
+## V8.15 phase-timing deepening — 27 Aug 2026
+
+This milestone prioritizes actual phase placement rather than generic source accumulation. Six colleges gained new publishable phase timing: NAMO Silvassa (first-day contact), JIPMER Puducherry (early intro-only context, limited confidence), Saharanpur (immediate post-joining allegation, limited confidence), TNMC/Nair (official 2026–27 first-MBBS girls' residence restriction), AIIMS Nagpur (first-year and second-year room progression), and GMC Srinagar (first-year hostel-allotment pattern). The strict timeline is now **81 A–C supported cells**, **4 D lead-only cells**, and **1,115 blank/explicit-GAP cells** across 1,200 possible cells. The combined Culture / First-90 / Timeline ledger contains **476 unique source URLs**, and **152** profiles still have fewer than two supported First-90 dimensions.
+
+## V8.16 phase-timing deepening II — 27 Aug 2026
+
+This milestone adds phase cells only where chronology is explicit enough to defend. New timing includes: Bhima Bhoi Balangir at roughly one month after joining (historical allegation with later police finding of no ragging link); HIMS Hassan first-year triple-sharing to second-year double-sharing; SSMC Rewa current fresher/first-year evidence showing a mixed 2026 picture; Madurai Medical College historical “soon after joining” and weeks-long first-year hostel evidence; and Coimbatore Medical College a documented historical first-day hostel complaint plus newer mixed boys-hostel reporting. BJMC Ahmedabad gains legacy first-year accommodation/“intro” context but no new A–C phase cell because the material is too old/undated for precise current phase reconstruction.
+
+The corrected runtime is **79 timeline records**, **83 A–C supported cells**, **4 D lead-only cells**, and **1,113 blank/explicit-GAP cells** across 1,200 possible cells. The prior V8.15 release note overstated its A–C count as 81; the actual V8.15 runtime contained 79. V8.16 corrects that drift rather than carrying it forward. Explorer metrics are **180/200** profiles with student/community evidence, **137/200** with 2+ source classes, **20** without a student/community source, **4** official-only, **39** single-source and **149** with fewer than two supported First-90 dimensions. The combined ledger contains **487 unique source URLs**.
+
+
+## Timeline Gap Explorer (V8.17)
+
+The Timeline Explorer treats each of the six canonical phases as a separate evidence question: Joining/foundation, Weeks 1–4, Months 2–3, Freshers/formal welcome, Rest of first year, and Second year. A–C grades are publishable timing evidence; D is lead-only; GAP means timing evidence is absent. Missing timing is not evidence that nothing occurs.
+
+V8.17 also normalizes three legacy internal phase keys into this canonical schema. The correction recovered five valid A–C cells that earlier aggregate counters did not see. After normalization, the 200-profile layer contains 88 A–C cells, 4 D lead-only cells and 1,108 GAP cells.
+
+
+## V8.18 phase-specific queue deepening
+
+The timeline research queue was used to add only explicitly phaseable evidence. The canonical runtime now contains **94 A–C publishable cells**, **4 D-grade lead-only cells**, and **1,102 GAP cells** across 1,200 possible profile-phase cells. **68 colleges** have at least one A–C phase. Event timing (for example, an official fresher party) and cohort/residence structure are stored as timing evidence but are not converted into a ragging-prevalence conclusion.
+
+## V8.19 sparse-phase deepening III
+
+The phase-specific queue was continued without expanding the 200-college research set. New publishable timing was added only where timing could be bounded: AIIMS Rajkot (official post-admission welcome plus a separate late-first-year student-organized fresher-event account), AIIMS Mangalagiri (officially documented MBBS freshers event), Government Doon Medical College (substantiated Jan 2026 ragging of 2025-batch first-years placed against the college's official late-Oct 2025 admission chronology), Darbhanga Medical College (direct MBBS freshers-party report), and BPS Sonepat (verified MBBS freshers-party report).
+
+The canonical six-phase runtime now contains **100 A–C publishable cells**, **4 D-grade lead-only cells**, and **1,096 GAP cells** across 1,200 possible profile-phase cells. **73 colleges** have at least one A–C phase. Phase coverage is Joining **31**, Weeks 1–4 **33**, Months 2–3 **6**, Freshers/formal welcome **8**, Rest of first year **16**, and Second year **6**. Event timing or residence structure is not converted into a ragging-prevalence conclusion unless the source itself supports that conclusion.

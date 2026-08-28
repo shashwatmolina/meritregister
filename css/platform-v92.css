@@ -1,0 +1,114 @@
+/* V9.2 theme-integration layer — platform usability in the native Merit Register visual language. */
+:root{--platform-border:var(--hairline,#d6cab1);--platform-paper:var(--panel-strong,#fffdf9);--platform-muted:var(--panel-muted,#f3ede2)}
+body.platform-search-open{overflow:hidden}
+
+/* --- Universal search: visually identical to the established ledger navigation. --- */
+.site-nav{align-items:center}
+.platform-search-trigger{
+  appearance:none;display:inline-flex;align-items:center;gap:6px;min-height:34px;
+  font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--ink-soft);border:1px solid var(--hairline);border-radius:20px;padding:6px 10px;
+  background:var(--white);cursor:pointer;white-space:nowrap;
+  transition:border-color .18s ease,color .18s ease,background .18s ease
+}
+.platform-search-trigger:hover,.platform-search-trigger:focus-visible{border-color:var(--stamp);color:var(--stamp-dark);background:var(--hover-tint)}
+.platform-search-trigger .search-glyph{font-size:13px;line-height:1;color:var(--stamp)}
+.platform-search-trigger kbd{font:500 9px 'IBM Plex Mono',monospace;color:var(--ink-soft);border:1px solid var(--hairline);border-radius:4px;padding:1px 4px;background:var(--surface-alt);opacity:.9}
+
+.platform-search-overlay{position:fixed;inset:0;z-index:2500;background:var(--overlay,rgba(12,18,25,.72));display:none;align-items:flex-start;justify-content:center;padding:9vh 18px 30px}
+.platform-search-overlay.open{display:flex}
+.platform-search-dialog{width:min(720px,100%);max-height:78vh;overflow:hidden;background:var(--panel-strong);color:var(--ink);border:1px solid var(--border-strong,var(--hairline));border-radius:12px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.platform-search-dialog::before{content:'Search the directory';display:block;padding:12px 16px 0;font:600 10px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--stamp-dark)}
+.platform-search-head{display:flex;align-items:center;gap:8px;padding:8px 12px 12px;border-bottom:3px double var(--hairline)}
+.platform-search-input{width:100%;font:500 15px 'IBM Plex Sans',sans-serif;padding:11px 12px;border:1px solid var(--hairline);border-radius:8px;background:var(--input-bg);color:var(--ink);outline:none}
+.platform-search-input:focus{border-color:var(--stamp);box-shadow:0 0 0 2px color-mix(in srgb,var(--stamp) 12%,transparent)}
+.platform-search-close{appearance:none;border:1px solid var(--hairline);border-radius:999px;background:transparent;color:var(--ink-soft);font:500 18px 'IBM Plex Sans',sans-serif;cursor:pointer;width:36px;height:36px;display:grid;place-items:center;flex:0 0 auto}
+.platform-search-close:hover{border-color:var(--stamp);color:var(--stamp-dark);background:var(--hover-tint)}
+.platform-search-help{padding:8px 14px;font:500 10px/1.45 'IBM Plex Mono',monospace;color:var(--ink-soft);border-bottom:1px solid var(--hairline);background:var(--surface-alt)}
+.platform-search-results{overflow:auto;padding:4px 12px 12px}
+.platform-search-empty{padding:28px 10px;text-align:center;color:var(--ink-soft);font-size:13px;line-height:1.55}
+.platform-search-empty strong{font-family:'Roboto Slab',serif;color:var(--ink);font-size:16px}
+.platform-search-result{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:11px 7px;text-decoration:none;color:inherit;border-bottom:1px solid var(--hairline)}
+.platform-search-result:last-child{border-bottom:0}
+.platform-search-result:hover,.platform-search-result:focus-visible{background:var(--hover-tint);outline:none}
+.platform-search-result strong{display:block;font-family:'Roboto Slab',serif;font-size:14px;line-height:1.3;color:var(--ink)}
+.platform-search-result span{display:block;margin-top:3px;font:500 10px 'IBM Plex Mono',monospace;color:var(--ink-soft)}
+.platform-search-result em{font-style:normal;font:600 10px 'IBM Plex Mono',monospace;color:var(--stamp-dark);align-self:center}
+
+/* --- Counselling journey: a restrained editorial stepper, not a second card system. --- */
+.platform-journey{border-bottom:1px solid var(--hairline);background:color-mix(in srgb,var(--paper) 92%,transparent)}
+.platform-journey .wrap{display:flex;align-items:center;gap:16px;padding-top:9px;padding-bottom:9px;overflow-x:auto;scrollbar-width:none}
+.platform-journey .wrap::-webkit-scrollbar{display:none}
+.platform-journey-title{flex:0 0 auto;margin:0;padding-right:15px;border-right:1px solid var(--hairline);font:600 9px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-soft)}
+.platform-journey-grid{display:flex;align-items:center;gap:0;min-width:max-content}
+.platform-journey-step{position:relative;display:flex;align-items:center;gap:7px;padding:2px 21px 2px 0;margin-right:15px;text-decoration:none;color:var(--ink-soft);background:transparent;border:0}
+.platform-journey-step:not(:last-child)::after{content:'→';position:absolute;right:3px;color:var(--hairline);font:500 12px 'IBM Plex Mono',monospace}
+.platform-journey-step b{width:20px;height:20px;display:inline-grid;place-items:center;border:1px solid var(--hairline);border-radius:999px;font:600 9px 'IBM Plex Mono',monospace;color:var(--ink-soft);flex:0 0 auto;background:var(--paper)}
+.platform-journey-step span{font:600 10px/1.15 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.035em}
+.platform-journey-step small{display:none}
+.platform-journey-step:hover,.platform-journey-step.current{color:var(--stamp-dark)}
+.platform-journey-step:hover b,.platform-journey-step.current b{border-color:var(--stamp);color:var(--stamp-dark);background:var(--hover-tint)}
+
+/* --- Page guidance: reads like an editorial margin note. --- */
+.platform-page-guide{margin:12px auto 0;width:min(var(--wrap,1160px),calc(100% - 40px));padding:9px 0;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);background:transparent;font-size:12px;line-height:1.55;color:var(--ink-soft)}
+.platform-page-guide strong{font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);margin-right:4px}
+.platform-page-guide a{color:var(--stamp-dark);font-weight:700;text-decoration:none;border-bottom:1px dotted var(--stamp)}
+.platform-advanced-badge{display:inline-block;margin-right:7px;padding:2px 6px;border:1px solid color-mix(in srgb,var(--stamp) 55%,var(--hairline));border-radius:999px;font:600 8px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.09em;color:var(--stamp-dark);background:var(--hover-tint);vertical-align:1px}
+
+/* --- Homepage onboarding: four quiet ledger columns, visually part of the hero. --- */
+.platform-home-how{margin-top:20px;padding-top:15px;border-top:3px double var(--hairline);max-width:860px}
+.platform-home-how h3{margin:0;font:700 16px 'Roboto Slab',serif;color:var(--ink)}
+.platform-home-how>p{margin:4px 0 0;font-size:11px;color:var(--ink-soft)}
+.platform-home-how ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;list-style:none;padding:0;margin:13px 0 0;counter-reset:step;border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline)}
+.platform-home-how li{counter-increment:step;position:relative;padding:11px 13px 12px 31px;min-height:70px;border-right:1px solid var(--hairline)}
+.platform-home-how li:last-child{border-right:0}
+.platform-home-how li::before{content:'0' counter(step);position:absolute;left:7px;top:11px;font:600 9px 'IBM Plex Mono',monospace;color:var(--stamp-dark)}
+.platform-home-how li strong{display:block;font-size:11px;color:var(--ink)}
+.platform-home-how li span{display:block;margin-top:3px;font-size:10px;line-height:1.4;color:var(--ink-soft)}
+
+/* The old floating utility buttons duplicated the masthead and visually floated outside the ledger system. */
+.platform-floating-help{display:none!important}
+.platform-tooltip-note{font-size:10px;color:var(--ink-soft);margin:.35rem 0 0}
+.workflow-step{white-space:nowrap}.workflow-step[href="decision.html"]::after,.workflow-step[href="choice.html"]::after{display:none}
+.directory-toolbar select{max-width:100%}
+
+/* Integrate the newer homepage actions back into the original compact editorial card language. */
+.hero-paths{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;max-width:860px!important}
+.hero-paths a{min-height:0!important;display:block!important;padding:12px 13px!important;border-radius:10px!important;background:rgba(var(--surface-rgb),.24)!important}
+.hero-paths a strong{display:block;font:700 13px 'Roboto Slab',serif!important;color:var(--ink)}
+.hero-paths a span{display:block;margin-top:4px;font-size:10.5px!important;line-height:1.45!important;color:var(--ink-soft)}
+.hero-paths a:hover{background:var(--hover-tint)!important;border-color:color-mix(in srgb,var(--stamp) 50%,var(--hairline))!important}
+
+/* More menu + bottom nav inherit the same paper/stamp vocabulary. */
+.site-nav .nav-more-btn{font-family:'IBM Plex Mono',monospace!important;font-size:11px!important;font-weight:500!important;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-soft)!important;background:var(--white)!important;border:1px solid var(--hairline)!important;border-radius:20px!important;padding:6px 10px!important;min-height:34px!important}
+.site-nav .nav-more-btn:hover,.site-nav .nav-more.open>.nav-more-btn{border-color:var(--stamp)!important;color:var(--stamp-dark)!important;background:var(--hover-tint)!important}
+.site-nav .nav-more-menu{border:1px solid var(--hairline)!important;border-radius:10px!important;background:var(--panel-strong)!important;box-shadow:var(--shadow)!important;padding:6px!important}
+.site-nav .nav-more-menu a{font-family:'IBM Plex Mono',monospace!important;font-size:10px!important;text-transform:none!important;letter-spacing:.02em!important;border-radius:6px!important;padding:8px 9px!important}
+.mobile-quick-nav{background:var(--panel-strong)!important;border-top:3px double var(--hairline)!important;box-shadow:none!important}
+.mobile-quick-nav a{font-size:8.5px!important;letter-spacing:.02em}.mobile-quick-nav a.active{background:var(--hover-tint)!important;color:var(--stamp-dark)!important}
+
+body[data-theme="dark"] .platform-search-trigger,body[data-theme="dark"] .site-nav .nav-more-btn{background:var(--surface-strong)!important;color:var(--ink-soft)!important}
+body[data-theme="dark"] .platform-search-dialog{background:var(--panel-strong)}
+
+@media(max-width:1050px){
+  .platform-search-trigger kbd{display:none}
+  .platform-search-trigger{padding:6px 9px}
+}
+@media(max-width:900px){
+  .platform-journey .wrap{gap:10px}
+  .platform-journey-title{display:none}
+  .platform-home-how ol{grid-template-columns:1fr 1fr}
+  .platform-home-how li:nth-child(2){border-right:0}.platform-home-how li:nth-child(-n+2){border-bottom:1px solid var(--hairline)}
+}
+@media(max-width:680px){
+  .platform-search-trigger span:not(.search-glyph){display:none}
+  .platform-search-trigger{width:34px;justify-content:center;padding:6px;border-radius:999px}
+  .platform-search-overlay{padding:10px 7px 70px;align-items:flex-start}
+  .platform-search-dialog{max-height:86vh;border-radius:10px}
+  .platform-journey{display:none}
+  .platform-page-guide{width:calc(100% - 24px);margin-top:8px;padding:8px 0;font-size:11px}
+  .platform-home-how ol{grid-template-columns:1fr}
+  .platform-home-how li,.platform-home-how li:nth-child(2){border-right:0;border-bottom:1px solid var(--hairline)}
+  .platform-home-how li:last-child{border-bottom:0}
+  .hero-paths{grid-template-columns:1fr!important}
+}

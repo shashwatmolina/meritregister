@@ -570,8 +570,24 @@ const STATES = [...new Set(ALL_COLLEGES.map(c=>c.state))].sort();
 
 function directoryCultureSourceStats(id){
   const c=typeof meritJuniorCulture==='function'?meritJuniorCulture(id):null;
-  const src=Array.isArray(c?.sources)?c.sources:[];
+  const f=typeof meritJuniorFirst90==='function'?meritJuniorFirst90(id):null;
+  const raw=[...(Array.isArray(c?.sources)?c.sources:[]),...(Array.isArray(f?.sources)?f.sources:[])];
+  const byKey=new Map();raw.forEach(x=>{const k=String(x?.url||x?.label||'').trim();if(k&&!byKey.has(k))byKey.set(k,x);});
+  const src=[...byKey.values()];
   return {count:src.length,official:src.filter(s=>s.kind==='official').length,student:src.filter(s=>s.kind==='student').length,news:src.filter(s=>s.kind==='news').length};
+}
+function directoryFirst90Coverage(id){
+  const f=typeof meritJuniorFirst90==='function'?meritJuniorFirst90(id):null,c=f?.coverage||{};
+  return ['firstWeeks','residenceMode','genderSpecific','optOut','afterFreshers'].filter(k=>c[k]===true).length;
+}
+function directoryEvidenceMetrics(id){
+  const stats=directoryCultureSourceStats(id),classes=[stats.official>0,stats.student>0,stats.news>0].filter(Boolean).length;
+  const age=directoryCultureVerifiedAgeDays(id),first90=directoryFirst90Coverage(id),timeline=typeof meritCultureEvidenceCount==='function'?meritCultureEvidenceCount(id):0;
+  let coverage=classes*10+Math.min(4,stats.count)*5+(age===null?0:(age<=30?15:age<=90?10:4))+Math.round(first90/5*20)+Math.round(timeline/6*15);
+  coverage=Math.min(100,coverage);
+  let priority=0;
+  if(stats.count===0)priority+=5;if(stats.student===0)priority+=4;if(stats.official>0&&stats.student===0&&stats.news===0)priority+=2;if(stats.count===1)priority+=2;if(timeline===0)priority+=3;if(first90<2)priority+=2;
+  return {coverage,priority,first90,timeline,...stats};
 }
 function directoryCultureVerifiedAgeDays(id){
   const c=typeof meritJuniorCulture==='function'?meritJuniorCulture(id):null;
@@ -598,7 +614,12 @@ function directoryResearchTags(id){
   if(f.clinical)bits.push('<span class="research-mini on">Clinical</span>');
   if(f.research)bits.push('<span class="research-mini on">Research</span>');
   if(f.hostel)bits.push('<span class="research-mini on">Hostel</span>');
-  if(f.culture)bits.push(`<span class="research-mini culture">Culture${f.timeline?' + timeline':''}</span>`);
+  if(f.culture){
+    const e=directoryEvidenceMetrics(id), marks=[];
+    if(e.official)marks.push('O✓'); if(e.student)marks.push('S✓'); if(e.first90)marks.push('F90✓'); if(e.timeline)marks.push(`T${e.timeline}/6`);
+    bits.push('<span class="research-mini culture">Culture</span>');
+    bits.push(`<span class="research-mini ${e.count?'evidence-compact':'evidence-gap'}">Evidence ${marks.length?marks.join(' · '):'—'} · ${e.coverage}/100</span>`);
+  }
   if(f.core>=4)bits.unshift(`<span class="research-depth-tag">${f.core}/6 deep layers</span>`);
   return bits.length?`<div class="row-evidence">${bits.join('')}</div>`:'';
 }
@@ -776,6 +797,9 @@ function getFiltered(){
       if(cs==='student'&&!stats.student)return false;
       if(cs==='news'&&!stats.news)return false;
       if(cs==='gap'&&stats.count!==0)return false;
+      if(cs==='no-student'&&stats.student>0)return false;
+      if(cs==='official-only'&&!(stats.official>0&&stats.student===0&&stats.news===0))return false;
+      if(cs==='single-source'&&stats.count!==1)return false;
     }
     const cc=(document.getElementById('culture-coverage-select')||{}).value||'';
     if(cc){
@@ -802,6 +826,8 @@ function getFiltered(){
   else if(sort==='estd-desc') list.sort((a,b)=>b.established-a.established);
   else if(sort==='cutoff-first') list.sort((a,b)=>(currentDirectoryCutoff(b.id)?1:0)-(currentDirectoryCutoff(a.id)?1:0));
   else if(sort==='research-depth') list.sort((a,b)=>directoryResearchFlags(b.id).total-directoryResearchFlags(a.id).total||directoryResearchFlags(b.id).core-directoryResearchFlags(a.id).core||a.name.localeCompare(b.name));
+  else if(sort==='evidence-complete') list.sort((a,b)=>directoryEvidenceMetrics(b.id).coverage-directoryEvidenceMetrics(a.id).coverage||a.name.localeCompare(b.name));
+  else if(sort==='research-gap') list.sort((a,b)=>(directoryResearchFlags(b.id).culture?1:0)-(directoryResearchFlags(a.id).culture?1:0)||directoryEvidenceMetrics(b.id).priority-directoryEvidenceMetrics(a.id).priority||directoryEvidenceMetrics(a.id).coverage-directoryEvidenceMetrics(b.id).coverage||a.name.localeCompare(b.name));
   else if(sort==='movement-stronger') list.sort((a,b)=>{const ma=getRoundMovement(a.id,'General','R1'),mb=getRoundMovement(b.id,'General','R1');if(ma&&mb)return ma.delta-mb.delta||a.name.localeCompare(b.name);if(ma)return -1;if(mb)return 1;return a.name.localeCompare(b.name);});
   else if(sort==='movement-softer') list.sort((a,b)=>{const ma=getRoundMovement(a.id,'General','R1'),mb=getRoundMovement(b.id,'General','R1');if(ma&&mb)return mb.delta-ma.delta||a.name.localeCompare(b.name);if(ma)return -1;if(mb)return 1;return a.name.localeCompare(b.name);});
   else if(sort==='hostel-quality') list.sort((a,b)=>{
@@ -861,7 +887,7 @@ function renderList(){
     const reach=cp.air?getCollegeReach(c.id,cp.air,cp.category):null;
     const move26=getRoundMovement(c.id,'General','R1');
     row.innerHTML = `
-      <button class="star-btn ${starred?'active':''}" data-id="${c.id}" title="Shortlist">${starred?'&#9733;':'&#9734;'}</button>
+      <button class="star-btn ${starred?'active':''}" data-id="${c.id}" title="Add to My List">${starred?'&#9733;':'&#9734;'}</button>
       <div class="row-main">
         <div class="name"><a class="profile-inline-link" href="college.html?id=${c.id}">${escapeHtml(formatCollegeName(c.name))}</a></div>
         <div class="row-subline">
@@ -869,6 +895,7 @@ function renderList(){
           <button class="compare-mini-btn ${compareSelection.includes(c.id)?'is-active':''}" data-compare-id="${c.id}" type="button">${compareSelection.includes(c.id)?'✓ Compare':'+ Compare'}</button>
         </div>
         ${directoryResearchTags(c.id)}
+        <div class="directory-friendly-meta"><span>${HOSTELS[c.id]&&hasHostelData(HOSTELS[c.id])?'Hostel info ✓':'Hostel info —'}</span><span>${directoryResearchFlags(c.id).culture?'Junior culture ✓':'Junior culture —'}</span><span>${directoryResearchFlags(c.id).clinical?'Clinical info ✓':'Clinical info —'}</span></div>
       </div>
       <span class="type-badge ${c.type}">${c.type}</span>
       <span class="seats-col">${c.seats}</span>

@@ -1,0 +1,25 @@
+{
+  "build": "V9.1 Platform UX candidate",
+  "date": "2026-08-28",
+  "pages": 14,
+  "javascript_files": 20,
+  "broken_local_references": 0,
+  "duplicate_id_pages": 0,
+  "counselling_scenarios": "10/10",
+  "bug_regressions": "7/7",
+  "canonical_colleges": 465,
+  "junior_culture_profiles": 200,
+  "first90_profiles": 200,
+  "timeline_ac_cells": 100,
+  "evidence_urls": 498,
+  "ux_changes": [
+    "Universal college search on every page, with keyboard shortcut /",
+    "Plain-language navigation labels",
+    "Four-step counselling workflow on core pages",
+    "Contextual page guidance and advanced-tool markers",
+    "Simplified research/filter terminology",
+    "Responsive search dialog and mobile-friendly platform shell"
+  ],
+  "visual_automation_note": "Automated Chromium navigation is blocked by the environment administrator; static/runtime regression checks passed.",
+  "issues": []
+}

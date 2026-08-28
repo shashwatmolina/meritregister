@@ -1024,6 +1024,15 @@ function first90KnownCount(f){
   if(f.coverage&&typeof f.coverage==='object')return Object.values(f.coverage).filter(Boolean).length;
   return [f.firstWeeks,f.hostellerVsDayScholar,f.genderDifferences,f.optOut,f.afterFreshers].filter(v=>v&&String(v).trim()&&!/^unknown$/i.test(String(v).trim())).length;
 }
+function renderProfileTimelineStrip(id){
+  const timeline=typeof meritFreshersTimeline==='function'?meritFreshersTimeline(id):[];
+  if(!timeline.length)return '';
+  const publishable=new Set(['A','B','C']);
+  const supported=timeline.filter(x=>publishable.has(x.grade)).length;
+  const leads=timeline.filter(x=>x.grade==='D').length;
+  return `<div class="profile-timeline-strip-wrap"><div class="profile-timeline-strip-head"><span>Freshers timeline coverage</span><strong>${supported}/6 supported${leads?` · ${leads} lead-only`:''}</strong></div><div class="profile-timeline-strip">${timeline.map(x=>{const ok=publishable.has(x.grade),lead=x.grade==='D';return `<div class="profile-timeline-chip ${ok?'supported':lead?'lead':'gap'} grade-${esc(x.grade)}" title="${esc(x.label)}: ${esc(x.summary||'No phase-specific evidence reconstructed.')}\"><span>${esc(x.short||x.label)}</span><b>${ok||lead?esc(x.grade):'—'}</b></div>`;}).join('')}</div><a class="profile-timeline-link" href="timeline.html?college=${id}">Open this college in Timeline Explorer →</a></div>`;
+}
+
 function renderCultureEvidenceSummary(id){
   const d=typeof meritJuniorCulture==='function'?meritJuniorCulture(id):null;
   if(!d)return card('Junior Culture · evidence summary','Why the site currently says what it says about senior-junior culture and the first months.',pending('Junior Culture research is not yet reconstructed for this college. No safety inference is made from the absence of evidence.'));
@@ -1040,7 +1049,7 @@ function renderCultureEvidenceSummary(id){
   const toneClass=/concern|risk|severe|coerc/.test(tone)?'concern':(/positive|improv|low/.test(tone)?'positive':'mixed');
   const srcList=Array.isArray(d.sources)?d.sources:[];
   const sourceDrawer=srcList.length?`<details class="profile-culture-source-drawer"><summary>Open source drawer · ${srcList.length}</summary><div class="profile-culture-source-list">${srcList.map(src=>`<a href="${esc(src.url||'')}" target="_blank" rel="noopener"><span>${esc(src.kind||'Source')}</span><strong>${esc(src.label||'Source')}</strong>${src.year?`<small>${esc(src.year)}</small>`:''}</a>`).join('')}</div></details>`:`<div class="profile-cutoff-note">No direct Junior Culture sources are attached yet. This remains an evidence gap.</div>`;
-  return card('Junior Culture · evidence summary','The conclusion first, then exactly what supports it. Official records and lived/reporting evidence stay separate.',`<div class="profile-culture-summary ${toneClass}"><div class="profile-culture-summary-head"><div><span>Why this assessment?</span><strong>${esc(d.signal?.label||'Evidence-led profile')}</strong></div><div><b>${esc(conf)}</b><small>Last checked: ${esc(checked)}</small></div></div><p class="profile-culture-why">${esc(why)}</p><div class="profile-culture-metrics"><div><span>Source mix</span><strong>${esc(profileSourceMix(stats))}</strong></div><div><span>First 90 days</span><strong>${first90KnownCount(f)}/5 fields</strong></div><div><span>Timed phases</span><strong>${phases}/6 evidenced</strong></div><div><span>Dated incidents</span><strong>${(d.incidents||[]).length}</strong></div></div><div class="profile-culture-evidence-grid"><div class="official"><span>Official / institutional record</span><p>${esc(official)}</p></div><div class="lived"><span>Lived / reported evidence</span><p>${esc(lived)}</p></div><div class="gap"><span>What remains unknown</span><p>${esc(unknown)}</p></div></div>${sourceDrawer}<div class="profile-cutoff-note">This is not a ragging or safety score. A complaint, allegation or student report is shown as evidence of a report—not automatically as proof of prevalence or institutional guilt.</div></div>`,conf);
+  return card('Junior Culture · evidence summary','The conclusion first, then exactly what supports it. Official records and lived/reporting evidence stay separate.',`<div class="profile-culture-summary ${toneClass}"><div class="profile-culture-summary-head"><div><span>Why this assessment?</span><strong>${esc(d.signal?.label||'Evidence-led profile')}</strong></div><div><b>${esc(conf)}</b><small>Last checked: ${esc(checked)}</small></div></div><p class="profile-culture-why">${esc(why)}</p><div class="profile-culture-metrics"><div><span>Source mix</span><strong>${esc(profileSourceMix(stats))}</strong></div><div><span>First 90 days</span><strong>${first90KnownCount(f)}/5 fields</strong></div><div><span>Timed phases</span><strong>${phases}/6 evidenced</strong></div><div><span>Dated incidents</span><strong>${(d.incidents||[]).length}</strong></div></div><div class="profile-culture-evidence-grid"><div class="official"><span>Official / institutional record</span><p>${esc(official)}</p></div><div class="lived"><span>Lived / reported evidence</span><p>${esc(lived)}</p></div><div class="gap"><span>What remains unknown</span><p>${esc(unknown)}</p></div></div>${renderProfileTimelineStrip(id)}${sourceDrawer}<div class="profile-cutoff-note">This is not a ragging or safety score. A complaint, allegation or student report is shown as evidence of a report—not automatically as proof of prevalence or institutional guilt.</div></div>`,conf);
 }
 
 function renderJuniorCulture(id){
@@ -1114,19 +1123,33 @@ function renderHero(c){
   <div class="profile-stat-grid">${[['2026 MBBS seats',c.seats_2026||c.seats],['Established',c.established],['MCC code',c.mcc_code_2026||'Not recorded'],['AIQ/Open Gen R1',r1?fmt(r1):'Not loaded'],['R1 vs 2025',mv?(mv.direction==='stronger'?'↓ ':'↑ ')+fmt(mv.magnitude)+' AIR':'Not comparable'],['Research depth',`${coverage}/7 layers`]].map(([lab,val])=>`<div class="profile-stat"><div class="label">${esc(lab)}</div><div class="value">${esc(val)}</div></div>`).join('')}</div></section>`;
 }
 
+function renderQuickSummary(c){
+  const id=c.id;
+  const r1=generalR1(id);
+  const hostel=(typeof HOSTELS!=='undefined'&&HOSTELS[id])?'Researched':'Not yet researched';
+  const clinical=(typeof CLINICAL_EXPOSURE!=='undefined'&&CLINICAL_EXPOSURE[id])?'Researched':'Not yet researched';
+  const research=(typeof RESEARCH_USMLE!=='undefined'&&RESEARCH_USMLE[id])?'Researched':'Not yet researched';
+  const jc=typeof meritJuniorCulture==='function'?meritJuniorCulture(id):null;
+  let culture='Not yet reconstructed';
+  if(jc){culture=jc.currentSignal||jc.signal||jc.current_signal||'Profile available';}
+  const fee=(typeof FEES_BOND_STIPEND!=='undefined'&&FEES_BOND_STIPEND[id])?'Researched':'Not yet researched';
+  const item=(label,value)=>`<div class="profile-quick-item"><span class="q-label">${esc(label)}</span><span class="q-value">${esc(String(value))}</span></div>`;
+  return `<section class="profile-quick-summary"><h3>At a glance</h3><div class="profile-quick-grid">${item('General R1',r1?fmt(r1):'Not loaded')}${item('Clinical',clinical)}${item('Hostel',hostel)}${item('Research',research)}${item('Junior culture',culture)}${item('Fees',fee)}</div><p class="profile-quick-note">Start here. Open the detailed sections below only for the evidence you need. “Not yet researched” is not a negative finding.</p></section>`;
+}
+
 function bindActions(c){
   const pref=$('#profile-pref-btn'),cmp=$('#profile-compare-btn'),openCmp=$('#profile-open-compare');
   function refresh(){
     const shortlist=readIds(SHORTLIST_KEY),selected=readIds(COMPARE_KEY).slice(0,4);
     const inPref=shortlist.includes(c.id),inCmp=selected.includes(c.id);
-    pref.textContent=inPref?'★ In preference list':'☆ Add to preference list';pref.classList.toggle('is-active',inPref);
+    pref.textContent=inPref?'In My List':'Add to My List';pref.classList.toggle('is-active',inPref);
     cmp.textContent=inCmp?'✓ In compare':'+ Add to compare';cmp.classList.toggle('is-active',inCmp);
     const p=new URLSearchParams();if(selected.length)p.set('c',selected.join(','));p.set('cat','General');openCmp.href='compare.html?'+p.toString();openCmp.textContent=selected.length>=2?'Compare selected →':'Open Compare →';
   }
   pref.addEventListener('click',()=>{
     let shortlist=readIds(SHORTLIST_KEY),order=readIds(ORDER_KEY);const ix=shortlist.indexOf(c.id);
-    if(ix>=0){shortlist=shortlist.filter(id=>id!==c.id);order=order.filter(id=>id!==c.id);showToast('Removed from preference list');}
-    else{shortlist.push(c.id);if(!order.includes(c.id))order.push(c.id);showToast('Added to preference list');}
+    if(ix>=0){shortlist=shortlist.filter(id=>id!==c.id);order=order.filter(id=>id!==c.id);showToast('Removed from My List');}
+    else{shortlist.push(c.id);if(!order.includes(c.id))order.push(c.id);showToast('Added to My List');}
     writeIds(SHORTLIST_KEY,shortlist);writeIds(ORDER_KEY,order);refresh();
   });
   cmp.addEventListener('click',()=>{
@@ -1141,7 +1164,7 @@ function bindActions(c){
 function renderProfile(c){
   const root=$('#profile-root');
   document.title=`${shortName(c.name)} — The Merit Register`;
-  root.innerHTML=`${renderHero(c)}<div class="profile-layout"><div class="profile-main">${renderLatest(c.id)}${renderDecisionDossier(c.id)}${renderCultureEvidenceSummary(c.id)}${renderCutoffs(c.id)}${renderMovementCard(c.id)}${renderDemand(c.id)}${renderEvidenceSection('Clinical exposure','Hospitals, patient load, trauma, specialty breadth and MBBS learning context.',CLINICAL_EXPOSURE[c.id],FIELD_MAPS.clinical)}${renderEvidenceSection('Academics & teaching','Teaching model, attendance, internal assessment, clinical teaching and study infrastructure.',ACADEMICS_TEACHING[c.id],FIELD_MAPS.academics)}${renderEvidenceSection('Research & international pathway','Institutional research strength, undergraduate access, mentorship, funding and international context.',RESEARCH_USMLE[c.id],FIELD_MAPS.research)}${renderHostel(c.id)}${renderJuniorCulture(c.id)}${renderEvidenceSection('Campus & student life','Sports, clubs, festivals, city access, social environment and the main lifestyle trade-off.',CAMPUS_STUDENT_LIFE[c.id],FIELD_MAPS.campus)}${renderEvidenceSection('Fees & internship stipend','Current fee evidence, hostel/mess cost and internship stipend. Service-bond terms are intentionally kept out of the decision profile.',FEES_BOND_STIPEND[c.id],FIELD_MAPS.finance)}</div><aside class="profile-side">${renderCoverage(c.id)}${renderSimilar(c)}${renderMethod()}</aside></div>`;
+  root.innerHTML=`${renderHero(c)}${renderQuickSummary(c)}<div class="profile-layout"><div class="profile-main">${renderCutoffs(c.id)}${renderDecisionDossier(c.id)}${renderCultureEvidenceSummary(c.id)}${renderMovementCard(c.id)}${renderDemand(c.id)}${renderEvidenceSection('Clinical exposure','Hospitals, patient load, trauma, specialty breadth and MBBS learning context.',CLINICAL_EXPOSURE[c.id],FIELD_MAPS.clinical)}${renderEvidenceSection('Academics & teaching','Teaching model, attendance, internal assessment, clinical teaching and study infrastructure.',ACADEMICS_TEACHING[c.id],FIELD_MAPS.academics)}${renderEvidenceSection('Research & international pathway','Institutional research strength, undergraduate access, mentorship, funding and international context.',RESEARCH_USMLE[c.id],FIELD_MAPS.research)}${renderHostel(c.id)}${renderJuniorCulture(c.id)}${renderEvidenceSection('Campus & student life','Sports, clubs, festivals, city access, social environment and the main lifestyle trade-off.',CAMPUS_STUDENT_LIFE[c.id],FIELD_MAPS.campus)}${renderLatest(c.id)}${renderEvidenceSection('Fees & internship stipend','Current fee evidence, hostel/mess cost and internship stipend. Service-bond terms are intentionally kept out of the decision profile.',FEES_BOND_STIPEND[c.id],FIELD_MAPS.finance)}</div><aside class="profile-side">${renderCoverage(c.id)}${renderSimilar(c)}${renderMethod()}</aside></div>`;
   root.hidden=false;$('#profile-loading').hidden=true;bindActions(c);
 }
 

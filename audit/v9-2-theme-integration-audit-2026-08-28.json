@@ -1,0 +1,22 @@
+{
+  "release": "V9.2 Theme-Integrated UX",
+  "goal": "Keep V9.1 usability while making new platform components visually native to the established Merit Register theme.",
+  "changes": [
+    "Universal search trigger now uses the same mono pill language as primary navigation.",
+    "Search overlay uses paper/input/hairline/stamp tokens and editorial typography.",
+    "Workflow cards replaced by a quiet horizontal ledger stepper.",
+    "Homepage onboarding replaced by ruled editorial columns.",
+    "Page guidance converted from a generic callout box to an understated editorial note.",
+    "Redundant floating Search/Colleges control removed.",
+    "More menu and mobile quick navigation aligned with paper/stamp theme.",
+    "Homepage primary action cards reduced in height and typography to match original site cards."
+  ],
+  "unchanged": [
+    "college data",
+    "cutoffs",
+    "scoring",
+    "Junior Culture evidence",
+    "First-90 evidence",
+    "timeline evidence"
+  ]
+}

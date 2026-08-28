@@ -216,7 +216,7 @@ At the 150-profile milestone, all 150 profiles had a First-90-Days record. The t
 
 Coverage expanded to **200 Junior Culture profiles** and **200 First-90-Days records** using the next 25 unresolved colleges by 2026 General Round-1 demand. The pass keeps formal safeguards, disciplinary history, anonymous student reports and genuine evidence gaps separate. Source-empty profiles are presented as **insufficient evidence** rather than receiving an inferred safety or concern label.
 
-The canonical V8 Freshers Timeline contains **69 college records** across six possible phases per profile. Across all **1,050** profile-phase cells, the current grade counts are **A: 18, B: 28, C: 25, D: 4, explicit GAP: 8**; the remaining cells are blank because no phase-specific claim is supported. Therefore **71 A–C cells are publishable phase evidence**, **4 D cells are lead-only**, and **975 cells are blank or explicit GAP**.
+The canonical V8 Freshers Timeline contains **75 college records** across six possible phases per profile. Across all **1,200** profile-phase cells in the 200-profile research set, the current runtime count is **81 A–C publishable cells**, **4 D lead-only cells**, and **1,115 blank or explicit-GAP cells**. A phase is populated only when the source actually supports that timing; policy documents alone do not create timeline evidence.
 
 The canonical source ledger currently contains **329 unique URLs**: **144 official**, **38 news**, and **147 student/community** sources. Source type is not a truth score: official pages often establish policy rather than lived prevalence, while student reports establish that an account was made rather than that it is universal.
 
@@ -226,3 +226,8 @@ The canonical source ledger currently contains **329 unique URLs**: **144 offici
 The next 25 unresolved colleges were selected by 2026 General Round-1 demand rather than alphabetically. The pass added College of Medicine & Sagore Dutta Hospital through Kalyan Singh Government Medical College, Bulandshahr.
 
 Evidence remained asymmetric by design. Kakatiya Medical College received a current concern signal because an April 2026 disciplinary case is directly reported; Kanyakumari Government Medical College received a limited reassuring signal from a first-person 2024 report plus current formal controls; several colleges received only formal-safeguard or historical-complaint context; and source-thin colleges remain explicitly insufficient. No new Freshers Timeline phase was populated unless a source actually supported phase timing.
+
+
+## V8.15 phase-timing deepening — 27 Aug 2026
+
+This milestone prioritizes actual phase placement rather than generic source accumulation. Six colleges gained new publishable phase timing: NAMO Silvassa (first-day contact), JIPMER Puducherry (early intro-only context, limited confidence), Saharanpur (immediate post-joining allegation, limited confidence), TNMC/Nair (official 2026–27 first-MBBS girls' residence restriction), AIIMS Nagpur (first-year and second-year room progression), and GMC Srinagar (first-year hostel-allotment pattern). The strict timeline is now **81 A–C supported cells**, **4 D lead-only cells**, and **1,115 blank/explicit-GAP cells** across 1,200 possible cells. The combined Culture / First-90 / Timeline ledger contains **476 unique source URLs**, and **152** profiles still have fewer than two supported First-90 dimensions.

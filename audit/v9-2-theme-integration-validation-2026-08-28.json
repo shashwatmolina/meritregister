@@ -1,0 +1,22 @@
+{
+  "build": "V9.2 Theme-Integrated UX",
+  "date": "2026-08-28",
+  "pages": 14,
+  "javascript_files": 21,
+  "missing_local_references": 0,
+  "duplicate_id_pages": 0,
+  "counselling_scenarios": {
+    "passed": 10,
+    "total": 10
+  },
+  "bug_regressions": {
+    "passed": 7,
+    "total": 7
+  },
+  "canonical_colleges": 465,
+  "junior_culture_profiles": 200,
+  "first90_profiles": 200,
+  "supported_timeline_cells_ac": 100,
+  "evidence_urls": 498,
+  "logic_or_research_changes": false
+}

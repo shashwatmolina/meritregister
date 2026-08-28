@@ -1162,3 +1162,11 @@ body[data-theme="dark"] .site-nav .nav-more-btn,body[data-theme="dark"] .site-na
 
 /* V8.4: preserve V7 styling while allowing the expanded evidence filters to wrap cleanly. */
 @media(min-width:1001px){.directory-toolbar-secondary{grid-template-columns:repeat(3,minmax(180px,1fr));}.directory-toolbar-secondary .directory-unknown-note{grid-column:1/-1;}}
+
+/* V8.5 evidence-completeness micro-indicators; preserves original directory geometry. */
+.research-mini.evidence-official{border-color:#6f8d82;}
+.research-mini.evidence-student{border-color:#99784c;}
+.research-mini.evidence-timeline{border-color:#6f7899;}
+.research-mini.evidence-gap{border-color:var(--stamp);color:var(--stamp-dark);}
+.directory-unknown-note a{font-weight:700;white-space:nowrap;}
+.research-mini.evidence-compact{border-color:#8b806d;color:var(--ink-soft);}

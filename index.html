@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>The Merit Register — Government MBBS Colleges of India</title>
-<link href="css/index.css" rel="stylesheet"/><meta content="V8.4 original-style 200-profile build 2026-08-27" name="merit-register-export"/><meta content="The Merit Register: independent government MBBS college directory, counselling data and evidence-backed college intelligence." name="description"/></head>
+<link href="css/index.css" rel="stylesheet"/><meta content="V9.2 Theme-Integrated UX · 200-profile build · 2026-08-28" name="merit-register-export"/><meta content="The Merit Register: independent government MBBS college directory, counselling data and evidence-backed college intelligence." name="description"/><link href="css/ux-v823.css" rel="stylesheet"/><link href="css/v9-beta.css" rel="stylesheet"/><link href="css/platform-v92.css" rel="stylesheet"/></head>
 <body>
 <header class="masthead">
 <div class="wrap">
@@ -13,7 +13,7 @@
 <p class="eyebrow">Independent · Not affiliated with NMC or MCC</p>
 <h1>The Merit Register</h1>
 <p class="sub">A working ledger of government MBBS colleges in India — counselling data, college intelligence and student-facing decision tools.</p>
-<nav aria-label="Main navigation" class="site-nav"><a aria-current="page" class="active" href="index.html">Directory</a><a href="compare.html">Compare</a><a href="assistant.html">Choice Assistant</a><a href="culture.html">Junior Culture</a><a href="preference.html">♡ My List</a><span class="nav-more"><button aria-label="More pages" class="nav-more-btn" type="button" aria-expanded="false">More</button><span class="nav-more-menu"><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
+<nav aria-label="Main navigation" class="site-nav"><a aria-current="page" class="active" href="index.html">Colleges</a><a href="compare.html">Compare</a><a class="nav-my-list" data-my-list-link="true" href="preference.html">♡ My List</a><a href="decision.html">Shortlist Builder</a><a href="choice.html">Final Choices</a><span class="nav-more"><button aria-expanded="false" aria-label="More pages" class="nav-more-btn" type="button">More</button><span class="nav-more-menu"><a href="culture.html">Junior Culture</a><a href="assistant.html">Help me choose</a><a href="evidence.html">Data Quality</a><a href="timeline.html">First-Year Timeline</a><a href="movement.html">Cutoff trends</a><a href="status.html">Data status</a><a href="about.html">About</a></span></span></nav>
 </div>
 <div class="masthead-controls">
 <div class="rhs">Updated Aug 2026<br/>working build</div>
@@ -37,13 +37,9 @@
 <div class="wrap">
 <div class="hero-head">
 <p class="eyebrow">2026 counselling + evidence-backed college intelligence</p>
-<h2>Find what your rank reaches — then decide what is actually worth choosing.</h2>
-<p class="lede">The Merit Register combines current MCC Round-1 routes with deeper profiles on clinical exposure, academics, research, hostel life, campus trade-offs and junior culture. Cutoffs tell you what is possible; the research layers help you decide what you would actually prefer.</p>
-<div aria-label="Core tools" class="hero-paths">
-<a href="compare.html"><strong>Compare</strong><span>2–4 colleges across the full evidence stack.</span></a>
-<a href="assistant.html"><strong>Choice Assistant</strong><span>Check list breadth without replacing your own preference order.</span></a>
-<a href="culture.html"><strong>Junior Culture</strong><span>First 90 days, senior rules, incidents and evidence timelines.</span></a>
-</div>
+<h2>Start with the decision you need to make.</h2>
+<p class="lede">Search colleges, compare the ones you are considering, or build a shortlist around what matters to you. The deeper evidence is still there when you want it.</p>
+<div aria-label="Core tools" class="hero-paths"><a href="index.html#directory"><strong>Find colleges</strong><span>Search the full directory and check what your rank can reach.</span></a><a href="compare.html"><strong>Compare colleges</strong><span>Put 2–4 colleges side by side without digging through separate tabs.</span></a><a href="decision.html"><strong>Build my shortlist</strong><span>Tell us what matters to you and rank only the colleges you care about.</span></a></div>
 </div>
 <div class="checker home-checker">
 <div class="checker-kicker">Rank &amp; route checker</div>
@@ -90,11 +86,11 @@
 <div class="stat"><div class="n" id="movement-pair-count">0</div><div class="l">R1 year-on-year pairs</div></div>
 </div>
 </section>
-<section class="directory">
+<section class="directory" id="directory">
 <div class="wrap">
 <div class="directory-headline">
 <div><p class="eyebrow">465-college master directory</p><h2>Full directory</h2></div>
-<p class="lede">Search every college, then use the evidence filters to surface the institutions for which we have actually reconstructed the deeper story. <strong>Unknown never means poor.</strong></p>
+<p class="lede">Search by college, city or state. Open Filters only when you need to narrow the list further.</p>
 </div>
 <div class="directory-toolbar">
 <div class="directory-toolbar-primary">
@@ -107,12 +103,14 @@
 <option value="estd-desc">Sort: Newest first</option>
 <option value="cutoff-first">Sort: Cutoff data first</option>
 <option value="research-depth">Sort: Deepest research first</option>
+<option value="evidence-complete">Sort: Evidence coverage</option>
+<option value="research-gap">Sort: Research gaps first</option>
 <option value="movement-stronger">Sort: Biggest R1 stronger shift</option>
 <option value="movement-softer">Sort: Biggest R1 softer shift</option>
 <option value="hostel-quality">Sort: Hostel quality</option>
 </select>
 </div>
-<div class="directory-toolbar-secondary">
+<details class="directory-filter-drawer" id="directory-filter-drawer"><summary>Filters</summary><div class="directory-toolbar-secondary">
 <select aria-label="Filter by research evidence" id="research-filter-select">
 <option value="">Evidence: Any</option>
 <option value="deep">Deep profile (4+ core layers)</option>
@@ -129,6 +127,9 @@
 <option value="student">Student/community source present</option>
 <option value="news">News/formal case source present</option>
 <option value="gap">Evidence gap / no direct source</option>
+<option value="no-student">No student/community source</option>
+<option value="official-only">Official-only evidence</option>
+<option value="single-source">Single-source evidence</option>
 </select>
 <select aria-label="Filter Freshers evidence coverage" id="culture-coverage-select">
 <option value="">Freshers coverage: Any</option>
@@ -152,8 +153,8 @@
 <option value="cooling">AC / cooler allowed</option>
 <option value="freedom">No / loose curfew reported</option>
 </select>
-<span class="directory-unknown-note">Evidence filters only use researched fields; missing data is never treated as a negative.</span>
-</div>
+<span class="directory-unknown-note">Evidence filters only use researched fields; missing data is never treated as a negative. <a href="evidence.html">Open Data Quality →</a></span>
+</div></details>
 <div class="chip-row" id="type-chips"></div>
 </div>
 <div class="result-count" id="result-count"></div>
@@ -180,5 +181,5 @@
 <div class="modal" id="modal-content"></div>
 </div>
 <footer>Independent student resource · not an official government site · data may contain errors, verify before relying on it</footer>
-<script defer="" src="js/shared-master-v8.js"></script><script defer="" src="js/shared-counselling-v8.js"></script><script defer="" src="js/shared-intelligence-v8.js"></script><script defer="" src="js/shared-culture-v8.js"></script><script defer="True" src="js/index.js"></script><script defer src="js/nav.js"></script></body>
+<script defer="" src="js/shared-master-v8.js"></script><script defer="" src="js/shared-counselling-v8.js"></script><script defer="" src="js/shared-intelligence-v8.js"></script><script defer="" src="js/shared-culture-v8.js"></script><script defer="True" src="js/index.js"></script><script defer="" src="js/nav.js"></script><script defer="True" src="js/ux-v823.js"></script><script src="js/v9-beta.js"></script><script defer="True" src="js/platform-v92.js"></script></body>
 </html>

@@ -1,0 +1,24 @@
+{
+  "build": "V9.1 Platform UX candidate",
+  "principle": "Make the common counselling journey obvious; keep research depth available but secondary.",
+  "changes": [
+    "Universal college search on every page, with keyboard shortcut /",
+    "Plain-language navigation labels",
+    "Four-step counselling workflow on core pages",
+    "Contextual page guidance and advanced-tool markers",
+    "Simplified research/filter terminology",
+    "Responsive search dialog and mobile-friendly platform shell"
+  ],
+  "labels": {
+    "Decision Mode": "Shortlist Builder",
+    "Choice Filling": "Final Choices",
+    "Evidence Explorer": "Data Quality",
+    "Timeline Explorer": "First-Year Timeline",
+    "Choice Assistant": "Help me choose"
+  },
+  "regressions": {
+    "counselling": "10/10",
+    "bugs": "7/7"
+  },
+  "data_changed": false
+}

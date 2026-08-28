@@ -1,0 +1,143 @@
+{
+  "build": "V9 Beta",
+  "generated": "2026-08-28T15:03:28.641268+00:00",
+  "summary": {
+    "total": 10,
+    "passed": 10,
+    "failed": 0
+  },
+  "results": [
+    {
+      "scenario": "canonical college IDs are unique",
+      "status": "pass",
+      "detail": true
+    },
+    {
+      "scenario": "all canonical colleges have positive 2026 seats",
+      "status": "pass",
+      "detail": true
+    },
+    {
+      "scenario": "MCC quota records reference canonical IDs",
+      "status": "pass",
+      "detail": true
+    },
+    {
+      "scenario": "AIR 232 General AIQ/Open scenario",
+      "status": "pass",
+      "detail": {
+        "All India Institute of Medical Sciences, New Delhi": {
+          "route": "SO",
+          "cutoff": 52,
+          "band": "Dream",
+          "state": "missed-current"
+        },
+        "University College of Medical Sciences & GTB Hospital, New Delhi": {
+          "route": "AI",
+          "cutoff": 435,
+          "band": "Safety",
+          "state": "reached"
+        },
+        "Atal Bihari Vajpayee Institute of Medical Sciences and Dr. RML Hospital, New Delhi": {
+          "route": "AI",
+          "cutoff": 166,
+          "band": "Dream",
+          "state": "missed-current"
+        },
+        "Vardhman Mahavir Medical College & Safdarjung Hospital, Delhi": {
+          "route": "AI",
+          "cutoff": 124,
+          "band": "Dream",
+          "state": "missed-current"
+        }
+      }
+    },
+    {
+      "scenario": "conditional Delhi routes activate only when enabled",
+      "status": "pass",
+      "detail": {
+        "UCMS": {
+          "code": "DU",
+          "cutoff": 4952,
+          "margin": 4720,
+          "relative": 0.9531502423263328,
+          "state": "reached"
+        },
+        "MAMC": {
+          "code": "DU",
+          "cutoff": 2662,
+          "margin": 2430,
+          "relative": 0.912847483095417,
+          "state": "reached"
+        },
+        "ABVIMS": {
+          "code": "IP",
+          "cutoff": 3117,
+          "margin": 2885,
+          "relative": 0.9255694578119987,
+          "state": "reached"
+        },
+        "VMMC": {
+          "code": "IP",
+          "cutoff": 1381,
+          "margin": 1149,
+          "relative": 0.832005792903693,
+          "state": "reached"
+        }
+      }
+    },
+    {
+      "scenario": "conditional quota routes do not leak into default profile",
+      "status": "pass",
+      "detail": "DU/IP/CW/FQ routes excluded without eligibility toggles"
+    },
+    {
+      "scenario": "AIR 8000 OBC broad profile resolves substantial data",
+      "status": "pass",
+      "detail": {
+        "known_2026_routes": 449,
+        "reached_colleges": 325
+      }
+    },
+    {
+      "scenario": "missing eligible cutoff remains Unknown rather than ineligible",
+      "status": "pass",
+      "detail": {
+        "unknown_count": 14,
+        "sample": [
+          "Tomo Riba Institute of Health & Medical Sciences, Naharlagun",
+          "GMERS Medical College, Dharpur, Patan",
+          "GMERS Medical College, Gandhinagar",
+          "GMERS Medical College, Gotri, Vadodara",
+          "GMERS Medical College, Himmatnagar"
+        ]
+      }
+    },
+    {
+      "scenario": "preference order is preserved despite easier/lower reach bands",
+      "status": "pass",
+      "detail": {
+        "saved_order": [
+          71,
+          64,
+          72
+        ],
+        "reach_annotations": [
+          "Safety",
+          "Dream",
+          "Dream"
+        ],
+        "reordered": false
+      }
+    },
+    {
+      "scenario": "30-choice list remains unique and ordered",
+      "status": "pass",
+      "detail": {
+        "choices": 30,
+        "first": "Andaman & Nicobar Islands Institute of Medical Sciences, Port Blair",
+        "last": "Jorhat Medical College & Hospital, Jorhat"
+      }
+    }
+  ]
+}

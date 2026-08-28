@@ -1,0 +1,31 @@
+{
+  "build": "V8.23",
+  "changes": [
+    "workflow strip",
+    "mobile quick nav",
+    "active filter count + clear",
+    "shortlist/order storage normalization",
+    "storage failure warning",
+    "failed local asset warning",
+    "skip link/focus-visible",
+    "choice three-step guidance",
+    "release metadata synchronization"
+  ],
+  "researchChanged": false,
+  "decisionScoringChanged": false,
+  "runtime": {
+    "colleges": 465,
+    "culture": 200,
+    "first90": 200,
+    "timelineRecords": 88,
+    "timeline": {
+      "abc": 100,
+      "d": 4,
+      "gapExplicit": 8,
+      "collegesWithABC": 73,
+      "totalPossible": 1200,
+      "blankOrGap": 1096
+    },
+    "sources": 498
+  }
+}
